@@ -1,109 +1,144 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"; 
+import { Videos } from '../assets/assets';
 
 const ChestBeginner = () => {
   const exercises = [
     {
       id: 1,
       name: "Chest Press Machine",
-      muscles: ["Pectoralis Major (Middle)", "Anterior Deltoids", "Triceps"],
+      muscles: ["Chest", "Shoulders", "Triceps"],
+      video: Videos.vid1,
       instructions: [
-        "Adjust seat to align handles with mid-chest",
-        "Keep back flat against pad throughout",
-        "Push handles forward without locking elbows",
-        "Control weight back to start position"
+        "Adjust the seat height so that the handles are at chest level.",
+        "Sit down and grip the handles firmly.",
+        "Push the handles forward until your arms are fully extended.",
+        "Slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
       ],
       benefits: [
-        "Builds overall chest strength",
-        "Guided motion for beginners",
-        "Adjustable resistance levels"
+        "Strengthens the chest, shoulders, and triceps.",
+        "Improves upper body strength and muscle tone.",
+        "Enhances functional movements like pushing and lifting.",
+        "Suitable for beginners and can be adjusted for different fitness levels."
       ],
       tips: [
-        "Squeeze chest at peak contraction",
-        "Use 3-second eccentric (lowering) phase",
-        "Keep shoulders depressed"
-      ]
+        "Start with a light weight to master the form.",
+        "Keep your back flat against the seat and avoid arching.",
+        "Breathe out while pushing the handles and inhale while returning.",
+        "Maintain a controlled motion to prevent injury.",
+        "Consult a trainer if you're unsure about your form."
+      ],
+      image: "https://imgs.search.brave.com/c4qu6h88mtyArWiAS6xUEfONuFHxUNLK3buQyZ-b2Sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b3Jr/b3V0aGVhbHRoeS5j/b20vY2RuL3Nob3Av/ZmlsZXMvRk1JLVBM/MjEwMF9TdGVlbEZs/ZXgtSW5jbGluZS1D/aGVzdC1QcmVzcy1N/YWNoaW5lLndlYnA_/dj0xNzA0OTI1MTk1/JndpZHRoPTkwMA"
     },
     {
       id: 2,
       name: "Pec Deck (Butterfly Machine)",
-      muscles: ["Pectoralis Major (Inner)", "Anterior Deltoids"],
+      muscles: ["Chest", "Shoulders"],
+       video: Videos.vid2,
       instructions: [
-        "Set seat height so elbows align with chest",
-        "Press arms together in hugging motion",
-        "Return slowly to stretched position"
+        "Adjust the seat height so that the handles are at chest level.",
+        "Sit down and place your forearms against the pads.",
+        "Push the pads together in front of your chest.",
+        "Slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
       ],
       benefits: [
-        "Isolates inner chest muscles",
-        "Improves chest muscle endurance",
-        "Reduces shoulder strain"
+        "Isolates the chest muscles for targeted strengthening.",
+        "Improves muscle tone and definition.",
+        "Enhances overall chest development.",
+        "Suitable for beginners and can be adjusted for different fitness levels."
       ],
       tips: [
-        "Imagine holding a beach ball between arms",
-        "Pause for 2 seconds at peak contraction",
-        "Avoid using momentum"
-      ]
+        "Start with a light weight to master the form.",
+        "Keep your back flat against the seat and avoid arching.",
+        "Breathe out while pushing the pads and inhale while returning.",
+        "Maintain a controlled motion to prevent injury.",
+        "Consult a trainer if you're unsure about your form."
+      ],
+      image: "https://imgs.search.brave.com/ExampleImageURLForPecDeck"
     },
     {
       id: 3,
       name: "Incline Chest Press Machine",
-      muscles: ["Pectoralis Major (Upper)", "Anterior Deltoids", "Triceps"],
+      muscles: ["Upper Chest", "Shoulders", "Triceps"],
+       video: Videos.vid3,
       instructions: [
-        "Set incline to 30-45 degrees",
-        "Push handles upward at angle",
-        "Lower slowly to chest level"
+        "Adjust the seat height so that the handles are at chest level.",
+        "Sit down and grip the handles firmly.",
+        "Push the handles forward and upward until your arms are fully extended.",
+        "Slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
       ],
       benefits: [
-        "Targets upper chest specifically",
-        "Reduces lower back strain vs free weights",
-        "Easier to control than dumbbells"
+        "Strengthens the upper chest, shoulders, and triceps.",
+        "Improves upper body strength and muscle tone.",
+        "Enhances functional movements like pushing and lifting.",
+        "Suitable for beginners and can be adjusted for different fitness levels."
       ],
       tips: [
-        "Focus on pushing 'up and out'",
-        "Maintain scapular retraction",
-        "Don't let elbows drop below bench"
-      ]
+        "Start with a light weight to master the form.",
+        "Keep your back flat against the seat and avoid arching.",
+        "Breathe out while pushing the handles and inhale while returning.",
+        "Maintain a controlled motion to prevent injury.",
+        "Consult a trainer if you're unsure about your form."
+      ],
+      image: "https://imgs.search.brave.com/ExampleImageURLForInclineChestPress"
     },
     {
       id: 4,
       name: "Dumbbell Bench Press",
-      muscles: ["Pectoralis Major (All)", "Anterior Deltoids", "Triceps"],
+      muscles: ["Chest", "Shoulders", "Triceps"],
+       video: Videos.vid4,
       instructions: [
-        "Lie on bench with dumbbells at chest",
-        "Press upward until arms nearly straight",
-        "Lower slowly with control"
+        "Lie down on a flat bench with a dumbbell in each hand, resting on your thighs.",
+        "Lift the dumbbells one at a time to shoulder width.",
+        "Press the dumbbells upward until your arms are fully extended.",
+        "Slowly lower the dumbbells back to the starting position.",
+        "Repeat for the desired number of repetitions."
       ],
       benefits: [
-        "Builds stabilizing muscles",
-        "Allows natural arm movement",
-        "Improves muscle balance"
+        "Strengthens the chest, shoulders, and triceps.",
+        "Improves upper body strength and muscle tone.",
+        "Enhances functional movements like pushing and lifting.",
+        "Allows for a greater range of motion compared to barbell bench press."
       ],
       tips: [
-        "Rotate palms slightly inward at top",
-        "Keep dumbbells in line with elbows",
-        "Touch dumbbells lightly at chest"
-      ]
+        "Start with a light weight to master the form.",
+        "Keep your feet flat on the ground and your back flat against the bench.",
+        "Breathe out while pushing the dumbbells and inhale while returning.",
+        "Maintain a controlled motion to prevent injury.",
+        "Use a spotter if lifting heavy weights."
+      ],
+      image: "https://imgs.search.brave.com/ExampleImageURLForDumbbellBenchPress"
     },
     {
       id: 5,
       name: "Resistance Band Chest Fly",
-      muscles: ["Pectoralis Major (All)", "Anterior Deltoids"],
+      muscles: ["Chest", "Shoulders"],
+       video: Videos.vid5,
       instructions: [
-        "Anchor band behind you at chest height",
-        "Extend arms forward in wide arc",
-        "Control return to stretched position"
+        "Attach the resistance band to a stable object at chest height.",
+        "Stand with your back to the attachment point and hold the band handles with your arms extended out to the sides.",
+        "Bring your hands together in front of your chest, keeping your arms slightly bent.",
+        "Slowly return to the starting position.",
+        "Repeat for the desired number of repetitions."
       ],
       benefits: [
-        "Portable home workout option",
-        "Constant tension on muscles",
-        "Reduces joint stress"
+        "Strengthens the chest and shoulders.",
+        "Improves muscle tone and definition.",
+        "Enhances overall chest development.",
+        "Provides constant tension throughout the movement."
       ],
       tips: [
-        "Maintain slight elbow bend",
-        "Focus on chest squeeze at midpoint",
-        "Use slow tempo (3-1-3 count)"
-      ]
+        "Start with a light resistance band to master the form.",
+        "Keep your back straight and avoid arching.",
+        "Breathe out while bringing your hands together and inhale while returning.",
+        "Maintain a controlled motion to prevent injury.",
+        "Consult a trainer if you're unsure about your form."
+      ],
+      image: "https://imgs.search.brave.com/ExampleImageURLForResistanceBandChestFly"
     }
   ];
 
@@ -127,19 +162,19 @@ const ChestBeginner = () => {
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
-          
-          {/* Muscle Targets */}
-          <div className='text-white mb-4 text-center'>
+
+          <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-          
-          {/* Image placeholder */}
+
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          
-          {/* Instructions */}
+
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -148,8 +183,7 @@ const ChestBeginner = () => {
               ))}
             </ul>
           </div>
-          
-          {/* Benefits */}
+
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -158,8 +192,7 @@ const ChestBeginner = () => {
               ))}
             </ul>
           </div>
-          
-          {/* Pro Tips */}
+
           <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -173,7 +206,7 @@ const ChestBeginner = () => {
 
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default ChestBeginner;

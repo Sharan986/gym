@@ -20,6 +20,17 @@ import Beginner from './Exercises/Beginner'
 import Intermediate from './Exercises/Intermediate'
 import Advance from './Exercises/Advance'
 import ChestBeginner from './Beginner/ChestBeginner'
+import BackBeginner from './Beginner/BackBeginner'
+import ShouldersBeginner from './Beginner/ShouldersBeginner'
+import LegsBeginner from './Beginner/LegsBeginner'
+import ArmsBeginner from './Beginner/ArmsBeginner'
+import ChestIntermediate from './Intermediate/ChestIntermediate'
+import BackIntermediate from './Intermediate/BackIntermediate'
+import ShouldersIntermediate from './Intermediate/ShouldersIntermediate'
+import ArmsIntermediate from './Intermediate/ArmsIntermediate'
+import LegsIntermediate from './Intermediate/LegsIntermediate'
+
+
 const App = () => {
   return (
    <>
@@ -42,7 +53,22 @@ const App = () => {
       <Route path="/WorkoutGuide/Intermediate" element={<Intermediate/>} />
       <Route path="/WorkoutGuide/Advance" element={<Advance />} />
       <Route path="/WorkoutGuide/Beginner/Chest" element={<ChestBeginner />} />
+      <Route path="/WorkoutGuide/Beginner/Back" element={<BackBeginner />} />
+      <Route path="/WorkoutGuide/Beginner/Shoulders" element={<ShouldersBeginner />} />
+      <Route path="/WorkoutGuide/Beginner/Legs" element={<LegsBeginner />} />
+      <Route path="/WorkoutGuide/Beginner/Arms" element={<ArmsBeginner />} />
+      <Route path="/WorkoutGuide/Intermediate/Chest" element={<ChestIntermediate />} />
+      <Route path="/WorkoutGuide/Intermediate/Back" element={<BackIntermediate />} />
+      <Route path="/WorkoutGuide/Intermediate/Shoulders" element={<ShouldersIntermediate />} /> 
+      <Route path="/WorkoutGuide/Intermediate/Arms" element={<ArmsIntermediate />} />
+      <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsBeginner />} />
+
+      
+  
+      {/* Add more routes for other exercises as needed */}
+      
     </Routes>
+
     
    </div>
   
