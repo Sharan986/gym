@@ -15,6 +15,11 @@ import ScrollToTop from './components/ScrollToTop'
 import JoinUs from './pages/JoinUs'
 import ServicesDetail from './pages/ServicesDetail'
 import TrainersPage from './pages/TrainersPage'
+import WorkoutGuide from './Exercises/WorkoutGuide'
+import Beginner from './Exercises/Beginner'
+import Intermediate from './Exercises/Intermediate'
+import Advance from './Exercises/Advance'
+import ChestBeginner from './Beginner/ChestBeginner'
 const App = () => {
   return (
    <>
@@ -32,6 +37,11 @@ const App = () => {
       <Route path="/Supplement" element={<Supplement />} />
       <Route path="/JoinUs" element={<JoinUs />} />
       <Route path="TrainersPage" element={<TrainersPage />} />
+      <Route path="/WorkoutGuide" element={<WorkoutGuide />} />
+      <Route path="/WorkoutGuide/Beginner" element={<Beginner />} />
+      <Route path="/WorkoutGuide/Intermediate" element={<Intermediate/>} />
+      <Route path="/WorkoutGuide/Advance" element={<Advance />} />
+      <Route path="/WorkoutGuide/Beginner/Chest" element={<ChestBeginner />} />
     </Routes>
     
    </div>
