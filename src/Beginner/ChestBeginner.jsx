@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer"; 
 import { Videos } from '../assets/assets';
+
+const Footer = React.lazy(() => import("../components/Footer"));
 
 const ChestBeginner = () => {
   const exercises = [
@@ -36,7 +37,7 @@ const ChestBeginner = () => {
       id: 2,
       name: "Pec Deck (Butterfly Machine)",
       muscles: ["Chest", "Shoulders"],
-       video: Videos.vid2,
+      video: Videos.vid2,
       instructions: [
         "Adjust the seat height so that the handles are at chest level.",
         "Sit down and place your forearms against the pads.",
@@ -63,7 +64,7 @@ const ChestBeginner = () => {
       id: 3,
       name: "Incline Chest Press Machine",
       muscles: ["Upper Chest", "Shoulders", "Triceps"],
-       video: Videos.vid3,
+      video: Videos.vid3,
       instructions: [
         "Adjust the seat height so that the handles are at chest level.",
         "Sit down and grip the handles firmly.",
@@ -90,7 +91,7 @@ const ChestBeginner = () => {
       id: 4,
       name: "Dumbbell Bench Press",
       muscles: ["Chest", "Shoulders", "Triceps"],
-       video: Videos.vid4,
+      video: Videos.vid4,
       instructions: [
         "Lie down on a flat bench with a dumbbell in each hand, resting on your thighs.",
         "Lift the dumbbells one at a time to shoulder width.",
@@ -117,7 +118,7 @@ const ChestBeginner = () => {
       id: 5,
       name: "Resistance Band Chest Fly",
       muscles: ["Chest", "Shoulders"],
-       video: Videos.vid5,
+      video: Videos.vid5,
       instructions: [
         "Attach the resistance band to a stable object at chest height.",
         "Stand with your back to the attachment point and hold the band handles with your arms extended out to the sides.",
@@ -149,6 +150,7 @@ const ChestBeginner = () => {
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
           alt="Chest Workout Banner"
           className="w-screen h-60 object-cover object-center scale-125"
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
           <h1 className="text-5xl font-One z-10">CHEST</h1>
@@ -169,7 +171,7 @@ const ChestBeginner = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -204,7 +206,9 @@ const ChestBeginner = () => {
         </div>
       ))}
 
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
     </>
   );
 };

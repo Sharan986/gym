@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const BackBeginner = () => {
   const exercises = [
     {
       id: 1,
       name: "Lat Pulldown Machine",
+      video: Videos.vid6,
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+
       instructions: [
         "Adjust thigh pad to secure legs",
         "Grip bar slightly wider than shoulders",
@@ -28,6 +31,7 @@ const BackBeginner = () => {
     {
       id: 2,
       name: "Seated Cable Row",
+      video: Videos.vid7,
       muscles: ["Rhomboids", "Middle Trapezius", "Latissimus Dorsi"],
       instructions: [
         "Sit with knees slightly bent",
@@ -50,6 +54,7 @@ const BackBeginner = () => {
       id: 3,
       name: "Resistance Band Row",
       muscles: ["Rear Deltoids", "Rhomboids", "Trapezius"],
+      video: Videos.vid8,
       instructions: [
         "Anchor band at chest height",
         "Step back to create tension",
@@ -71,6 +76,7 @@ const BackBeginner = () => {
       id: 4,
       name: "Back Extension Machine",
       muscles: ["Erector Spinae", "Glutes", "Hamstrings"],
+      video: Videos.vid9,
       instructions: [
         "Adjust pad to align with hip crease",
         "Cross arms over chest",
@@ -92,6 +98,7 @@ const BackBeginner = () => {
       id: 5,
       name: "Dumbbell Row (Bench-Supported)",
       muscles: ["Latissimus Dorsi", "Rear Deltoids", "Biceps"],
+      video: Videos.vid10,
       instructions: [
         "Place knee and hand on bench",
         "Pull dumbbell to hip pocket",
@@ -137,10 +144,13 @@ const BackBeginner = () => {
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
+
           
-          {/* Image placeholder */}
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           
           {/* Instructions */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const ArmsBeginner = () => {
   const exercises = [
@@ -8,6 +9,7 @@ const ArmsBeginner = () => {
       id: 1,
       name: "Dumbbell Bicep Curl (Seated)",
       muscles: ["Biceps", "Forearms"],
+      video: Videos.vid16,
       instructions: [
         "Sit on a bench with a dumbbell in each hand, palms facing forward",
         "Keep your elbows close to your torso",
@@ -30,6 +32,7 @@ const ArmsBeginner = () => {
       id: 2,
       name: "Resistance Band Hammer Curl",
       muscles: ["Biceps", "Brachialis", "Forearms"],
+      video: Videos.vid17,
       instructions: [
         "Stand on the middle of the resistance band with feet shoulder-width apart",
         "Hold the ends of the band with your palms facing your torso",
@@ -52,6 +55,7 @@ const ArmsBeginner = () => {
       id: 3,
       name: "Overhead Dumbbell Tricep Extension",
       muscles: ["Triceps"],
+      video: Videos.vid18,
       instructions: [
         "Stand or sit on a bench with a dumbbell held by both hands",
         "Raise the dumbbell overhead until both arms are fully extended",
@@ -73,6 +77,7 @@ const ArmsBeginner = () => {
       id: 4,
       name: "Incline Dumbbell Curl (on bench)",
       muscles: ["Biceps", "Forearms"],
+      video: Videos.vid19,
       instructions: [
         "Set an incline bench to a 45-degree angle and sit back with a dumbbell in each hand",
         "Let your arms hang down at your sides with your palms facing forward",
@@ -94,6 +99,7 @@ const ArmsBeginner = () => {
     {
       id: 5,
       name: "Tricep Pushdown (Cable)",
+      video: Videos.vid20,
       muscles: ["Triceps"],
       instructions: [
         "Attach a straight or angled bar to a high pulley and grab it with an overhand grip",
@@ -139,9 +145,11 @@ const ArmsBeginner = () => {
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+  <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>

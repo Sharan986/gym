@@ -33,11 +33,11 @@ const WorkoutGuide = () => {
             <Link to="/WorkoutGuide/Beginner" className="no-underline">
               <div className="relative  rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-300 h-64">
                 <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  src="https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Beginner workout"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center text-black">
+                <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center text-white">
                   <h2 className="text-3xl font-bold ">Beginner</h2>
                   <p className="text-white mt-4 text-lg">
                     Start your fitness journey with simple and effective
@@ -51,7 +51,7 @@ const WorkoutGuide = () => {
             <Link to="/WorkoutGuide/Intermediate">
             <div className="relative rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-300 h-64">
               <img
-                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Intermediate workout"
                 className="w-full h-full object-cover"
               />
@@ -68,7 +68,7 @@ const WorkoutGuide = () => {
            
             <div className="relative rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-300 h-64">
               <img
-                src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80"
+                src="https://images.unsplash.com/photo-1604335788369-94f349ae5243?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Advanced workout"
                 className="w-full h-full object-cover"
               />

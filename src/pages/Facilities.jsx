@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import Boss2 from "../assets/BOSS2.jpg";
 
 const Facilities = () => {
     const FacilitiesData = [
@@ -66,7 +67,7 @@ const Facilities = () => {
             </div>
 
             <div>
-              <img src="https://framerusercontent.com/images/1u1P4IwQpMVbJQFutraspJBKAo.png?scale-down-to=1024" alt="" 
+              <img src={Boss2} alt="" 
               className="
               sm:h-[90vh] sm:object-center sm:object-cover sm:w-screen"
               />

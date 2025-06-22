@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const ShouldersBeginner = () => {
   const exercises = [
     {
       id: 1,
       name: "Dumbbell Shoulder Press (seated)",
+      video: Videos.vid21,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps"],
       instructions: [
         "Sit on bench with back support",
@@ -28,6 +30,7 @@ const ShouldersBeginner = () => {
     {
       id: 2,
       name: "Resistance Band Lateral Raise",
+      video: Videos.vid22,
       muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
         "Stand on center of resistance band",
@@ -49,6 +52,7 @@ const ShouldersBeginner = () => {
     {
       id: 3,
       name: "Front Raise (dumbbells)",
+      video: Videos.vid23,
       muscles: ["Anterior Deltoids", "Pectoralis Major"],
       instructions: [
         "Stand with dumbbells in front of thighs",
@@ -70,6 +74,7 @@ const ShouldersBeginner = () => {
     {
       id: 4,
       name: "Cable Lateral Raise",
+      video: Videos.vid24,
       muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
         "Stand beside cable machine",
@@ -91,6 +96,7 @@ const ShouldersBeginner = () => {
     {
       id: 5,
       name: "Upright Row (machine or barbell)",
+      video: Videos.vid25,
       muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
       instructions: [
         "Grip bar with hands shoulder-width apart",
@@ -137,8 +143,11 @@ const ShouldersBeginner = () => {
             {exercise.muscles.join(", ")}
           </div>
           
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+        <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           
           <div className='text-white mt-4'>

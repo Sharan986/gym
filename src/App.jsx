@@ -31,6 +31,7 @@ import ArmsIntermediate from './Intermediate/ArmsIntermediate'
 import LegsIntermediate from './Intermediate/LegsIntermediate'
 
 
+
 const App = () => {
   return (
    <>
@@ -62,6 +63,7 @@ const App = () => {
       <Route path="/WorkoutGuide/Intermediate/Shoulders" element={<ShouldersIntermediate />} /> 
       <Route path="/WorkoutGuide/Intermediate/Arms" element={<ArmsIntermediate />} />
       <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsBeginner />} />
+      
 
       
   

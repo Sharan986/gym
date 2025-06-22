@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const LegsBeginner = () => {
   const exercises = [
@@ -8,6 +9,7 @@ const LegsBeginner = () => {
       id: 1,
       name: "Leg Press Machine",
       muscles: ["Quadriceps", "Hamstrings", "Glutes"],
+      video: Videos.vid11,
       instructions: [
         "Sit on the leg press machine with your back against the pad",
         "Place your feet on the platform shoulder-width apart",
@@ -29,6 +31,7 @@ const LegsBeginner = () => {
       id: 2,
       name: "Stiff-Leg Dumbbell Deadlift",
       muscles: ["Hamstrings", "Glutes", "Lower Back"],
+      video: Videos.vid12,
       instructions: [
         "Stand with feet hip-width apart, holding dumbbells in front of your thighs",
         "Keep your legs straight and bend at the hips to lower the dumbbells",
@@ -50,6 +53,7 @@ const LegsBeginner = () => {
       id: 3,
       name: "Cable Glute Kickbacks",
       muscles: ["Glutes", "Hamstrings"],
+      video: Videos.vid13,
       instructions: [
         "Attach an ankle strap to a low cable pulley and secure it around your ankle",
         "Stand facing the cable machine and hold onto it for support",
@@ -71,6 +75,7 @@ const LegsBeginner = () => {
       id: 4,
       name: "Leg Extension Machine",
       muscles: ["Quadriceps"],
+      video: Videos.vid14,
       instructions: [
         "Sit on the leg extension machine with your back against the pad",
         "Place your ankles behind the roller pad",
@@ -92,6 +97,7 @@ const LegsBeginner = () => {
       id: 5,
       name: "Standing Calf Raise Machine",
       muscles: ["Calves"],
+      video: Videos.vid15,
       instructions: [
         "Stand on the calf raise machine with your shoulders under the pads",
         "Place the balls of your feet on the edge of the platform",
@@ -137,8 +143,11 @@ const LegsBeginner = () => {
             {exercise.muscles.join(", ")}
           </div>
 
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
