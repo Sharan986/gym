@@ -29,8 +29,11 @@ import BackIntermediate from './Intermediate/BackIntermediate'
 import ShouldersIntermediate from './Intermediate/ShouldersIntermediate'
 import ArmsIntermediate from './Intermediate/ArmsIntermediate'
 import LegsIntermediate from './Intermediate/LegsIntermediate'
-
-
+import Membership from './pages/Membership'
+import Protein from './Supplements/Protein'
+import PreWorkout from './Supplements/PreWorkout'
+import Vitamins from "./Supplements/Vitamins"
+import WeightGainers from './Supplements/WeightGainer'
 
 const App = () => {
   return (
@@ -63,11 +66,13 @@ const App = () => {
       <Route path="/WorkoutGuide/Intermediate/Shoulders" element={<ShouldersIntermediate />} /> 
       <Route path="/WorkoutGuide/Intermediate/Arms" element={<ArmsIntermediate />} />
       <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsBeginner />} />
+      <Route path="/Membership" element={<Membership />} />
+      <Route path="/Supplement/Protein" element={<Protein />} />
+      <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
+      <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
+      <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
       
-
       
-  
-      {/* Add more routes for other exercises as needed */}
       
     </Routes>
 
