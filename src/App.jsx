@@ -34,6 +34,8 @@ import Protein from './Supplements/Protein'
 import PreWorkout from './Supplements/PreWorkout'
 import Vitamins from "./Supplements/Vitamins"
 import WeightGainers from './Supplements/WeightGainer'
+import Gallery from './pages/Gallery'
+
 
 const App = () => {
   return (
@@ -71,6 +73,7 @@ const App = () => {
       <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
       <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
       <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
+      <Route path="/Gallery" element={<Gallery />} />
       
       
       

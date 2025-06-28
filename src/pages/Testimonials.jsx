@@ -1,6 +1,7 @@
 import React from 'react';
 import Review from '../components/Review'; // Adjust the import path as necessary
 import BOSSD from '../assets/BOSSD.jpeg'; // Adjust the import path as necessary
+import PhotoGrid from '../components/PhotoGrid';
 
 const Testimonials = () => {
   return (
@@ -9,12 +10,7 @@ const Testimonials = () => {
       <div className='max-w-7xl mx-auto'>
 
         {/* Responsive Image */}
-        <div className='w-full flex justify-center items-center mb-8'>
-          <img 
-            src={BOSSD} // Adjust the path as necessary
-            alt="Testimonial"
-            className='max-w-full h-auto object-contain' />
-        </div>
+        <PhotoGrid />
 
         {/* Review Component */}
         <Review />

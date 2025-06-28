@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import Boss2 from "../assets/BOSS2.jpg";
 
+
 const Facilities = () => {
     const FacilitiesData = [
         {
