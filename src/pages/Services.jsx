@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Services = () => {
@@ -23,23 +23,16 @@ const Services = () => {
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Group Fitness",
     },
-    {
-      id: 1,
-      img: "https://framerusercontent.com/images/T7EIUAZkFOhzzTjVuUeUIISwL0.jpg?scale-down-to=2048",
-      logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
-      title: "Personal Training",
-    },
   ];
 
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen size on mount and resize
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    checkScreenSize(); // Initial check
+    checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
@@ -57,12 +50,12 @@ const Services = () => {
 
   return (
     <div className="text-white text-xl pt-16 px-4 font-One">
-      <header className="text-xl sm:text-3xl text-[#48D3A3] italic mx-7">Our Services</header>
-      <p className="text-4xl sm:text-6xl mt-4 mx-7 uppercase w-fit">
+      <header className="text-xl lg:text-center sm:text-3xl text-[#48D3A3] italic mx-7">Our Services</header>
+      <p className="text-4xl lg:text-center sm:text-6xl mt-4 mx-5 uppercase">
         What We Can Do Best For Our Clients
       </p>
 
-      <div className="mt-12 mx-auto max-w-6xl">
+      <div className="mt-12 mx-3">
         {isMobile ? (
           <Slider {...settings}>
             {services.map((service) => (
@@ -76,14 +69,18 @@ const Services = () => {
             ))}
           </Slider>
         ) : (
-          <div className="grid grid-cols-2 gap-6 ">
+          <div className="flex justify-between mx-2">
             {services.map((service) => (
-              <div key={service.id} className="border-2 border-gray-600 text-center font-One mx-7">
-                <div className="flex justify-center pt-6 md:pt-0 md:flex md:justify-start">
-                  <img src={service.logo} alt={service.title} className="w-24 h-24 sm:w-28 sm:h-28 md:w-20 md:h-20 p-2" />
+              <div key={service.id} className="border-2 border-gray-600 h-140 overflow-hidden font-One w-1/3 mx-3">
+                <div className="flex pt-6 md:pt-0 md:flex md:justify-start h-96 overflow-hidden">
+                  <img src={service.img} alt={service.title} className="w-full h-full object-cover lg:object-top object-center" />
                 </div>
-                <h1 className="text-3xl sm:text-4xl py-3">{service.title}</h1>
-                <img src={service.img} alt={service.title} className="w-full object-cover pt-4 rounded" />
+                <div className="p-4 text-center">
+                  <div className="flex justify-center">
+                    <img src={service.logo} alt={service.title} className="w-60 h-10 sm:w-28 sm:h-28 md:w-20 md:h-20 p-2" />
+                  </div>
+                  <h1 className="text-3xl sm:text-4xl py-3">{service.title}</h1>
+                </div>
               </div>
             ))}
           </div>

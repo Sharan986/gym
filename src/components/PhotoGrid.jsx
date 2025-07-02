@@ -15,33 +15,35 @@ const PhotoGrid = () => {
     },
     {
       id: 3,
-      url: 'https://source.unsplash.com/random/300x300/?nature,3',
+      url: 'https://images.unsplash.com/photo-1751076547771-ff3a1e5267a4?q=80&w=870&auto=format&fit=crop',
       alt: 'Nature 3'
     },
-    {
-      id: 4,
-      url: 'https://source.unsplash.com/random/300x300/?nature,4',
-      alt: 'Nature 4'
-    }
+   
   ];
 
   return (
-    <div className="max-w-md mx-auto p-4">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {photos.map((photo) => (
-          <div key={photo.id} className="relative h-32 rounded-lg overflow-hidden">
+    <div className="max-w-6xl mx-auto p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4">
+        {photos.map((photo, index) => (
+          <div
+            key={photo.id}
+            className={`
+              relative rounded-lg overflow-hidden 
+              ${index === 0 ? 'h-28   md:h-full md:row-span-2 md:col-span-2' : 'h-48 md:h-full'}
+            `}
+          >
             <img
               src={photo.url}
               alt={photo.alt}
               className="w-full h-full object-cover"
-              loading="lazy"
             />
           </div>
         ))}
       </div>
-      <div className="mt-4">
+
+      <div className="mt-6">
         <Link to="/Gallery">
-          <button className="w-full bg-yellow-300 text-black text-2xl font-semibold py-2 px-4 rounded">
+          <button className="w-full bg-yellow-400 text-black text-2xl font-semibold py-3 px-4 rounded">
             View Gallery
           </button>
         </Link>

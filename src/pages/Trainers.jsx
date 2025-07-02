@@ -2,12 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import One from "../assets/1.jpeg"
-import Two from "../assets/2.jpeg"
+import One from "../assets/1.jpeg";
+import Two from "../assets/2.jpeg";
 import Three from "../assets/3.jpeg";
 
 const Trainers = () => {
-  const Trainers = [
+  const trainers = [
     {
       id: 1,
       img: One,
@@ -22,11 +22,10 @@ const Trainers = () => {
     },
     {
       id: 3,
-      img:Three,
+      img: Three,
       name: "David Nguyen",
       title: "Yoga Instructor",
     },
-    
   ];
 
   const settings = {
@@ -41,28 +40,27 @@ const Trainers = () => {
   };
 
   return (
-    <div className="text-white text-xl pt-16 mx-8 font-One">
-      <header className="text-xl sm:text-3xl text-[#48D3A3] italic">
+    <div className="text-white text-xl pt-16 px-4 sm:px-8 font-One">
+      <header className="text-xl sm:text-3xl text-[#48D3A3] italic text-center">
         Our Trainers
       </header>
-      <p className="text-5xl w-fit sm:text-6xl mt-4 uppercase">
+      <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase text-center">
         Fitness team supporting goals
       </p>
 
-     
       <div className="block md:hidden mt-10">
         <Slider {...settings}>
-          {Trainers.map((trainer) => (
-            <div key={trainer.id} className="md:h-96">
-              <div className="border-2 overflow-hidden border-gray-600  ">
+          {trainers.map((trainer) => (
+            <div key={trainer.id} className="p-2">
+              <div className="border-2 border-gray-600 rounded-lg overflow-hidden">
                 <img
                   src={trainer.img}
                   alt={trainer.name}
-                  className="w-full h-80 object-cover  object-top"
+                  className="w-full h-96 sm:h-96 object-cover object-center"
                 />
                 <div className="p-4 text-center">
-                  <h1 className="text-2xl">{trainer.name}</h1>
-                  <p className="text-lg text-gray-400">{trainer.title}</p>
+                  <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>
+                  <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
                 </div>
               </div>
             </div>
@@ -70,21 +68,19 @@ const Trainers = () => {
         </Slider>
       </div>
 
-      
-      <div className="hidden md:grid grid-cols-2 gap-6 mt-10">
-        {Trainers.map((trainer) => (
-          <div
-            key={trainer.id}
-            className="border-2 border-gray-600 overflow-hidden"
-          >
-            <img
-              src={trainer.img}
-              alt={trainer.name}
-              className="w-full h-60 object-cover object-top"
-            />
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-10">
+        {trainers.map((trainer) => (
+          <div key={trainer.id} className="border-2 border-gray-600 h-128 overflow-hidden">
+            <div className="h-96 overflow-hidden">
+              <img
+                src={trainer.img}
+                alt={trainer.name}
+                className="w-full h-full object-cover lg:object-top object-center"
+              />
+            </div>
             <div className="p-4 text-center">
-              <h1 className="text-2xl">{trainer.name}</h1>
-              <p className="text-lg text-gray-400">{trainer.title}</p>
+              <h1 className="text-xl sm:text-2xl lg:text-5xl">{trainer.name}</h1>
+              <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
             </div>
           </div>
         ))}
