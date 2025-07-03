@@ -7,7 +7,7 @@ const MembershipSection = () => {
   const membershipOptions = [
     {
       name: "Starter",
-      price: "$45/month",
+      price: "1000/month",
       description: "Ideal for beginners",
       features: [
         "Access to all gym equipment",
@@ -19,7 +19,7 @@ const MembershipSection = () => {
     },
     {
       name: "Starter",
-      price: "$45/month",
+      price: "4500/month",
       description: "Ideal for beginners",
       features: [
         "Access to all gym equipment",
@@ -31,7 +31,7 @@ const MembershipSection = () => {
     },
     {
       name: "Starter",
-      price: "$45/month",
+      price: "1200/month",
       description: "Ideal for beginners",
       features: [
         "Access to all gym equipment",
@@ -43,7 +43,7 @@ const MembershipSection = () => {
     },
     {
       name: "Starter",
-      price: "$45/month",
+      price: "600/month",
       description: "Ideal for beginners",
       features: [
         "Access to all gym equipment",
@@ -99,9 +99,9 @@ const MembershipSection = () => {
     <div className="bg-[#070915] text-white p-8 mx-1">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/3 p-4">
-          <h2 className="text-[#48D3A3] text-3xl font-bold mb-4 font-One">OUR MEMBERSHIP</h2>
+          <h2 className="text-[#48D3A3] text-3xl font-bold mb-4 font-One text-center italic">OUR MEMBERSHIP</h2>
           <p className="mb-8 text-white font-One text-3xl">
-            Fight School has specialized in martial arts since 1986 and offers top-notch training programs.
+            Fight School has specialized in martial arts 
           </p>
           <ul className="space-y-4">
             {services.map((service, index) => (
@@ -126,7 +126,7 @@ const MembershipSection = () => {
           <Slider {...sliderSettings}>
             {membershipOptions.map((option, index) => (
               <div key={index} className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
-                <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-2xl">{option.name}</h2>
+                <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">{option.name}</h2>
                 <p className="text-2xl font-bold mb-2 text-yellow-400">{option.price}</p>
                 <p className="mb-4 text-gray-400">{option.description}</p>
                 <ul className="space-y-2 mb-4">

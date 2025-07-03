@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import One from "../assets/1.jpeg";
 import Two from "../assets/2.jpeg";
 import Three from "../assets/3.jpeg";
-import MembershipSection from './Membership';
+
 
 const Trainers = () => {
   const trainers = [
@@ -42,7 +42,7 @@ const Trainers = () => {
 
   return (
     <>
-    <MembershipSection />
+    
     <div className="text-white text-xl pt-16 px-4 sm:px-8 font-One">
       <header className="text-xl sm:text-3xl text-[#48D3A3] italic text-center">
         Our Trainers
@@ -55,7 +55,7 @@ const Trainers = () => {
         <Slider {...settings}>
           {trainers.map((trainer) => (
             <div key={trainer.id} className="p-2">
-              <div className="border-2 border-gray-600 rounded-lg overflow-hidden">
+              <div className="border-2 border-gray-600  overflow-hidden">
                 <img
                   src={trainer.img}
                   alt={trainer.name}

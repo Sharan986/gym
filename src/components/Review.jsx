@@ -62,11 +62,11 @@ const Review = () => {
     <div className="py-8 mx-6 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="  mb-12">
-          <h2 className="text-3xl font-bold text-[#48D3A3] italic mb-4">Our Testimonials</h2>
-          <h1 className="text-4xl md:text-5xl font-bold text-white uppercase mb-6">
+          <h2 className="text-3xl font-bold text-[#48D3A3] italic text-center mb-4">Our Testimonials</h2>
+          <h1 className="text-4xl text-center md:text-5xl font-bold text-white uppercase mb-6">
             What Our Members Are Saying OneRepMaax
           </h1>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 text-center max-w-2xl mx-auto">
             Discover how our gym transformed our members' lives.
           </p>
         </div>
