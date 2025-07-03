@@ -42,17 +42,29 @@ const MembershipSection = () => {
       ]
     },
     {
-      name: "Elite",
-      price: "$76/month",
-      description: "Best for fitness enthusiasts",
+      name: "Starter",
+      price: "$45/month",
+      description: "Ideal for beginners",
       features: [
         "Access to all gym equipment",
-        "Unlimited personal training",
-        "Premium nutrition and meal plan",
-        "Priority support from coaches",
-        "Exclusive access to special events"
+        "Monthly fitness assessment",
+        "Basic group classes included",
+        "Free water bottle on signup",
+        "Support & Mentoring"
       ]
-    }
+    },
+ {
+      name: "Starter",
+      price: "$45/month",
+      description: "Ideal for beginners",
+      features: [
+        "Access to all gym equipment",
+        "Monthly fitness assessment",
+        "Basic group classes included",
+        "Free water bottle on signup",
+        "Support & Mentoring"
+      ]
+    },
   ];
 
   const services = [
@@ -84,17 +96,17 @@ const MembershipSection = () => {
   };
 
   return (
-    <div className="bg-[#070915] text-white p-8 mx-4">
+    <div className="bg-[#070915] text-white p-8 mx-1">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/3 p-4">
-          <h2 className="text-green-500 text-3xl font-bold mb-4 font-One">OUR MEMBERSHIP</h2>
+          <h2 className="text-[#48D3A3] text-3xl font-bold mb-4 font-One">OUR MEMBERSHIP</h2>
           <p className="mb-8 text-white font-One text-3xl">
             Fight School has specialized in martial arts since 1986 and offers top-notch training programs.
           </p>
           <ul className="space-y-4">
             {services.map((service, index) => (
               <li key={index} className="flex items-center font-M">
-                <span className="mr-2 text-green-500">✓</span>
+                <span className="mr-2 text-[#48D3A3]">✓</span>
                 <span className="text-gray-300">{service}</span>
               </li>
             ))}
@@ -113,14 +125,14 @@ const MembershipSection = () => {
           </style>
           <Slider {...sliderSettings}>
             {membershipOptions.map((option, index) => (
-              <div key={index} className="p-4 border-2 border-green-500 font-M transition-transform transform">
-                <h2 className="text-green-500 font-bold mb-2 font-One text-2xl">{option.name}</h2>
+              <div key={index} className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
+                <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-2xl">{option.name}</h2>
                 <p className="text-2xl font-bold mb-2 text-yellow-400">{option.price}</p>
                 <p className="mb-4 text-gray-400">{option.description}</p>
                 <ul className="space-y-2 mb-4">
                   {option.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-gray-300">
-                      <span className="mr-2 text-green-500">✓</span>
+                      <span className="mr-2 text-[#48D3A3]">✓</span>
                       <span>{feature}</span>
                     </li>
                   ))}
