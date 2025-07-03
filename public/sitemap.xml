@@ -1,96 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.onerepmaaxgym.in/</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/about</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/ServicesDetail</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/trainers</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/facilities</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/join</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/JoinUs</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/testimonials</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/footer</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/Supplement</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/TrainersPage</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Beginner Guides -->
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Advance</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+
+  <!-- Beginner Exercises -->
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Chest</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Back</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Shoulders</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Legs</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Arms</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
+
+  <!-- Intermediate Exercises -->
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Chest</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Back</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Shoulders</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Arms</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Legs</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/Membership</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Supplements -->
   <url>
     <loc>https://www.onerepmaaxgym.in/Supplement/Protein</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/Supplement/Preworkout</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/Supplement/Vitamins</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.onerepmaaxgym.in/Supplement/WeightGainers</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.onerepmaaxgym.in/Gallery</loc>
+    <lastmod>2025-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+
 </urlset>
