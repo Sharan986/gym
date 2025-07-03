@@ -43,11 +43,11 @@ const Trainers = () => {
   return (
     <>
     
-    <div className="text-white text-xl pt-16 px-4 sm:px-8 font-One">
-      <header className="text-xl sm:text-3xl text-[#48D3A3] italic text-center">
+    <div className="text-white text-xl pt-16 mx-7 sm:px-8 font-One">
+      <header className="text-xl sm:text-3xl text-[#48D3A3] italic ">
         Our Trainers
       </header>
-      <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase text-center">
+      <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase ">
         Fitness team supporting goals
       </p>
 

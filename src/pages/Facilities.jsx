@@ -39,29 +39,29 @@ const Facilities = () => {
 
   return (
     <>
-    <div className="text-white text-xl pt-16 mx-7">
-      <header className="text-xl font-One w-full text-[#48D3A3] italic sm:text-3xl text-center">
+    <div className="text-white text-xl pt-16 mx-8">
+      <header className="text-xl font-One w-full text-[#48D3A3] italic sm:text-3xl ">
         OUR FACILITIES
       </header>
-      <p className="text-5xl sm:text-6xl w-full mt-4 font-One uppercase text-center">
+      <p className="text-5xl sm:text-6xl w-full mt-4 font-One uppercase ">
         We Help To Get Fitness Goal
       </p>
-      <p className="w-full text-gray-400 font-M text-lg mt-6 mb-4 text-center">
+      <p className="w-full text-gray-400 font-M text-lg mt-6 mb-4 ">
         Our mission has always been to create a welcoming and supportive environment where everyone, regardless of their fitness level.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center mt-8">
         {FacilitiesData.map((facility) => (
           <div
             key={facility.id}
-            className="font-One mb-4 border border-gray-300 p-4 flex flex-col items-center"
+            className="font-One mb-4 p-2 flex flex-col"
           >
             <img
               src={facility.imageUrl}
               alt={facility.title}
-              className="h-16 w-16 object-cover mb-2 text-start"
+              className="h-16 w-16 object-cover mb-2 "
             />
-            <div className=" text-start">
-              <h1 className="text-2xl text-center">{facility.title}</h1>
+            <div className="">
+              <h1 className="text-2xl ">{facility.title}</h1>
               <p className="text-lg lg:w-80 font-DM text-gray-400 ">
                 {facility.description}
               </p>
@@ -70,11 +70,11 @@ const Facilities = () => {
         ))}
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <img
           src={Boss2}
           alt="Boss"
-          className="h-[60vw] w-full object-top object-cover mt-4"
+          className="lg:h-[60vw]  w-full object-top object-cover mt-4"
         />
       </div>
     </div>

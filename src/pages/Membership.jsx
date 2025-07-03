@@ -137,7 +137,7 @@ const MembershipSection = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full rounded hover:bg-yellow-500 transition-colors">
+                <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full  hover:bg-yellow-500 transition-colors">
                   BOOK NOW
                 </button>
               </div>
