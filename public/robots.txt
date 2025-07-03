@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Add disallow if you want to block any pages or folders:
+# If you want to block any pages, add lines like:
 # Disallow: /admin/
 
-Sitemap: https://www.onerepmaaxgym.in//sitemap.xml
+Sitemap: https://www.onerepmaaxgym.in/sitemap.xml

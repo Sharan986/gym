@@ -1,22 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://www.onerepmaaxgym.in/</loc>
-    <lastmod>2025-07-03</lastmod>
-    <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.onerepmaaxgym.in/about</loc>
-    <lastmod>2025-07-03</lastmod>
-    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>hhttps://www.onerepmaaxgym.in/JoinUs</loc>
-    <lastmod>2025-07-03</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.onerepmaaxgym.in/ServicesDetail</loc>
   </url>
-
+  <url>
+    <loc>https://www.onerepmaaxgym.in/trainers</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/facilities</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/join</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/JoinUs</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/testimonials</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/footer</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Supplement</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/TrainersPage</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Advance</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Chest</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Back</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Shoulders</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Legs</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Beginner/Arms</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Chest</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Back</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Shoulders</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Arms</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/WorkoutGuide/Intermediate/Legs</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Membership</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Supplement/Protein</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Supplement/Preworkout</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Supplement/Vitamins</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Supplement/WeightGainers</loc>
+  </url>
+  <url>
+    <loc>https://www.onerepmaaxgym.in/Gallery</loc>
+  </url>
 </urlset>
