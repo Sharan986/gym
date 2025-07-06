@@ -1,6 +1,7 @@
 import React from "react";
 import Boss2 from "../assets/BOSS2.jpg";
 import MembershipSection from "./Membership";
+import WkGuid from "../components/WkGuid";
 
 const Facilities = () => {
   const FacilitiesData = [
@@ -78,7 +79,11 @@ const Facilities = () => {
         />
       </div>
     </div>
+    <div className="mx-3">
+    <WkGuid />
+
     <MembershipSection />
+    </div>
     </>
   );
 };

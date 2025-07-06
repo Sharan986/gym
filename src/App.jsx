@@ -34,8 +34,17 @@ import Protein from './Supplements/Protein'
 import PreWorkout from './Supplements/PreWorkout'
 import Vitamins from "./Supplements/Vitamins"
 import WeightGainers from './Supplements/WeightGainer'
-import Gallery from './pages/Gallery'
+import Gallery from './Gallery/Gallery'
+import One from './Gallery/One'
+import Fitness from './Gallery/Fitness'
 
+import GYM from './Gallery/GYM'
+import Running from './Gallery/Running'
+import Armsadvance from './Advance/Arms'
+import ShouldersAdvanced from './Advance/Sholders'
+import BackAdvanced from './Advance/Back'
+import LegsAdvanced from './Advance/Legs'
+import ChestAdvanced from './Advance/Chest'
 
 const App = () => {
   return (
@@ -67,14 +76,25 @@ const App = () => {
       <Route path="/WorkoutGuide/Intermediate/Back" element={<BackIntermediate />} />
       <Route path="/WorkoutGuide/Intermediate/Shoulders" element={<ShouldersIntermediate />} /> 
       <Route path="/WorkoutGuide/Intermediate/Arms" element={<ArmsIntermediate />} />
-      <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsBeginner />} />
+      <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsIntermediate />} />
+
+      <Route path="/WorkoutGuide/Advance/Chest" element={<ChestAdvanced />} />
+      <Route path="/WorkoutGuide/Advance/Back" element={<BackAdvanced />} />
+      <Route path="/WorkoutGuide/Advance/Shoulders" element={<ShouldersAdvanced />} />
+      <Route path="/WorkoutGuide/Advance/Arms" element={<Armsadvance />} />
+      <Route path="/WorkoutGuide/Advance/Legs" element={<LegsAdvanced />} />
+
       <Route path="/Membership" element={<Membership />} />
       <Route path="/Supplement/Protein" element={<Protein />} />
       <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
       <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
       <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
       <Route path="/Gallery" element={<Gallery />} />
-      
+      <Route path="/item/:Yoga" element={<One />} />
+      <Route path="/item/:Fitness" element={<Fitness />} />
+      <Route path="/item/:GYM" element={<GYM />} />
+      <Route path="/item/:Running" element={<Running />} />
+
       
       
     </Routes>
