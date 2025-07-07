@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const WkGuid = () => {
   return (
@@ -19,9 +20,10 @@ const WkGuid = () => {
             className='w-full max-w-md'
           />
         </div>
+        <Link to='/WorkoutGuide' className='w-full lg:w-auto'>
         <div className="mt-4 bg-[#FCDE3B] font-One h-20 w-full flex justify-center items-center  lg:justify-start">
            <div className="text-3xl md:text-2xl font-bold">Workout-Guide</div>
-         </div>
+         </div></Link>
       </div>
     </div>
   );

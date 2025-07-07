@@ -12,21 +12,25 @@ import Join from "../components/Join";
 import Testimonials from "../pages/Testimonials";
 import Num from "./Num";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 const Header = () => {
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
+        <Nav />
         <img
           src={HeaderImg}
           alt=""
           className="h-screen w-screen object-cover object-center scale-100"
         />
+        
+      
 
         <div className="absolute top-0 left-0  h-20 w-24 sm:w-full mx-6  font-One uppercase  ">
-          <Navbar />
+         
           <div className="text-white w-screen text-xl  mt-36 md:mt-30">
-            <header className="text-2xl  w-screen text-[#48D3A3] italic md:text-4xl">FITNESS & GYM</header>
+            <header className="text-2xl  w-screen text-[#48D3A3] italic md:text-4xl pt-6">FITNESS & GYM</header>
             <p className=" text-5xl w-80 md:w-full md:text-7xl">
               Discover 
               <br />
