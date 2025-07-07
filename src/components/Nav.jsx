@@ -14,10 +14,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#010101] text-white px-6 flex justify-between items-center relative z-50 pb-1">
+    <nav className="bg-[#010101] text-white  px-6 flex justify-between items-center relative z-50 pb-1">
       {/* Logo */}
       <Link to="/">
-        <img src={logo} alt="Logo" className="w-32" />
+        <img src={logo} alt="Logo" className="w-24" />
       </Link>
 
       {/* Desktop Links */}
@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link
             key={index}
             to={link.path}
-            className="hover:text-[#48D3A3] transition-colors"
+            className="hover:text-[#48D3A3] transition-colors text-4xl font-One"
           >
             {link.name}
           </Link>

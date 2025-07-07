@@ -79,9 +79,8 @@ const Facilities = () => {
         />
       </div>
     </div>
-    <div className="mx-3">
+    <div className="mx-3 mb-8">
     <WkGuid />
-
     <MembershipSection />
     </div>
     </>

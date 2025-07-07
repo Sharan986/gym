@@ -10,7 +10,7 @@ const WkGuid = () => {
           Workout Guide
         </h1>
         <h1 className='text-3xl italic font-One text-white'>Stronger Faster Healthier Happier Fitter</h1>
-        <p className='text-base md:text-lg font-DM text-gray-400 mt-2 lg:text-left'>
+        <p className='text-base font-M md:text-lg text-gray-400 mt-2 lg:text-left'>
           Our workout guide is designed to help you achieve your fitness goals, whether you're a beginner or an experienced athlete. We provide detailed instructions and tips for various exercises.
         </p>
         <div className='w-full lg:w-1/2 flex justify-center mt-3 mb-3'>

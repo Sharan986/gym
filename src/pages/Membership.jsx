@@ -25,37 +25,40 @@ const MembershipSection = () => {
   };
 
   return (
-    <div className="bg-[#070915] text-white p-8 mx-1">
+    <div className="bg-[#070915] text-white p-2 mx-1">
       <div className="flex flex-col md:flex-row">
+
         <div className="w-full md:w-1/3 p-4">
-          <h2 className="text-[#48D3A3] text-xl font-bold mb-4 font-One italic">OUR MEMBERSHIP</h2>
+          <h2 className="text-[#48D3A3] text-2xl font-bold mb-4 font-One italic">OUR MEMBERSHIP</h2>
           <p className="mb-8 text-white font-One text-3xl">
-            Fight School has specialized in martial arts
+            Fight School has specialized <br />in martial arts
           </p>
-          <ul className="space-y-4 font-DM">
+          <ul className="space-y-4 font-M  ">
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
-              <span className="text-gray-300">Personal Training</span>
+              <span className="text-gray-300">P . T</span>
             </li>
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
-              <span className="text-gray-300">Body Building</span>
+              <span className="text-gray-300">ZUMBA</span>
             </li>
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
-              <span className="text-gray-300">Boxing Classes</span>
+              <span className="text-gray-300">YOGA</span>
             </li>
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
-              <span className="text-gray-300">Specialized Workouts</span>
+              <span className="text-gray-300">NUTRITION @1000/Month</span>
             </li>
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
-              <span className="text-gray-300">Cardio and More</span>
+              <span className="text-gray-300">Free Wifi ,COFFE ,SEP CHANGING ROOMS AND MANY MORE</span>
             </li>
           </ul>
         </div>
-        <div className="w-full md:w-2/3 p-4">
+
+
+        <div className="w-83  md:w-2/3 p-4">
           <style>
             {`
               .slick-slide > div {
@@ -67,151 +70,100 @@ const MembershipSection = () => {
             `}
           </style>
           <Slider {...sliderSettings}>
-            <div className="p-4 border-2 border-[#48D3A3] font-DM transition-transform transform">
-              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">1 Month</h2>
-              <p className="text-2xl font-bold mb-2 text-yellow-400">Rs1200</p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Access to all gym equipment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Monthly fitness assessment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Basic group classes included</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Free water bottle on signup</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Support & Mentoring</span>
-                </li>
-              </ul>
+            <div className="p-4 border-2 border-[#48D3A3] font-DM transition-transform transform ">
+              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">Membership</h2>
+            <div className='flex justify-between mb-4'>
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Duration</li>
+                <li className="text-gray-300">1 Month</li>
+                <li className="text-gray-300">3 Months</li>
+                <li className="text-gray-300">6 Months</li>
+                <li className="text-gray-300">9 Months</li>
+                <li className="text-gray-300">12 Months</li>
+              </ol>
+             </div>
+
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Price</li>
+                <li className="text-yellow-400">Rs1200</li>
+                <li className="text-yellow-400">Rs2700</li>
+                <li className="text-yellow-400">Rs5100</li>
+                <li className="text-yellow-400">Rs6800</li>
+                <li className="text-yellow-400">Rs7500</li>
+              </ol>
+             </div>
+
+             </div>
               <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
                 BOOK NOW
               </button>
             </div>
             <div className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
-              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">3 Months</h2>
-              <p className="text-2xl font-bold mb-2 text-yellow-400">Rs2700</p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Access to all gym equipment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Monthly fitness assessment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Basic group classes included</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Free water bottle on signup</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Support & Mentoring</span>
-                </li>
-              </ul>
+              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">Locker Facility</h2>
+             
+                  <div className='flex justify-between mb-4'>
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Duration</li>
+                <li className="text-gray-300">1 Month</li>
+                <li className="text-gray-300">3 Months</li>
+                <li className="text-gray-300">6 Months</li>
+                <li className="text-gray-300">9 Months</li>
+                <li className="text-gray-300">12 Months</li>
+              </ol>
+             </div>
+
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Price</li>
+                <li className="text-yellow-400">Rs1200</li>
+                <li className="text-yellow-400">Rs2700</li>
+                <li className="text-yellow-400">Rs5100</li>
+                <li className="text-yellow-400">Rs6800</li>
+                <li className="text-yellow-400">Rs7500</li>
+              </ol>
+             </div>
+
+             </div>
+
               <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
                 BOOK NOW
               </button>
             </div>
             <div className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
-              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">6 Months</h2>
-              <p className="text-2xl font-bold mb-2 text-yellow-400">Rs5100</p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Access to all gym equipment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Monthly fitness assessment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Basic group classes included</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Free gym bag on signup</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Support & Mentoring</span>
-                </li>
-              </ul>
+              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">Personal Training</h2>
+
+                <div className='flex justify-between mb-4'>
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Duration</li>
+                <li className="text-gray-300">1 Month</li>
+                <li className="text-gray-300">3 Months</li>
+      
+              </ol>
+             </div>
+
+             <div>
+              <ol className='font-One text-2xl space-y-2'>
+                <li className='text-3xl'>Price</li>
+                <li className="text-yellow-400">Rs  5000</li>
+                <li className="text-yellow-400">Rs  1000</li>
+           <div className='pt-28'>
+
+           </div>
+              </ol>
+
+             </div>
+
+             </div>
+
               <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
                 BOOK NOW
               </button>
             </div>
-            <div className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
-              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">9 Months</h2>
-              <p className="text-2xl font-bold mb-2 text-yellow-400">Rs6800</p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Access to all gym equipment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Monthly fitness assessment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>All group classes included</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Free gym bag on signup</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Support & Mentoring</span>
-                </li>
-              </ul>
-              <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
-                BOOK NOW
-              </button>
-            </div>
-            <div className="p-4 border-2 border-[#48D3A3] font-M transition-transform transform">
-              <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-3xl italic">12 Months</h2>
-              <p className="text-2xl font-bold mb-2 text-yellow-400">Rs7500</p>
-              <ul className="space-y-2 mb-4">
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Access to all gym equipment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Monthly fitness assessment</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>All group classes included</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Free gym bag and shaker</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <span className="mr-2 text-[#48D3A3]">✓</span>
-                  <span>Priority Support</span>
-                </li>
-              </ul>
-              <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
-                BOOK NOW
-              </button>
-            </div>
+            
           </Slider>
         </div>
       </div>
