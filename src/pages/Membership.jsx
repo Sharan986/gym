@@ -25,7 +25,7 @@ const MembershipSection = () => {
   };
 
   return (
-    <div className="bg-[#070915] text-white p-2 mx-1">
+    <div className="bg-[#070915] text-white p-2 mx-1 mb-6">
       <div className="flex flex-col md:flex-row">
 
         <div className="w-full md:w-1/3 p-4">
@@ -33,7 +33,7 @@ const MembershipSection = () => {
           <p className="mb-8 text-white font-One text-3xl">
             Fight School has specialized <br />in martial arts
           </p>
-          <ul className="space-y-4 font-M  ">
+          <ul className="space-y-4 font-M">
             <li className="flex items-center ">
               <span className="mr-2 text-[#48D3A3]">✓</span>
               <span className="text-gray-300">P . T</span>

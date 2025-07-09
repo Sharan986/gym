@@ -34,13 +34,13 @@ const Supplement = () => {
           alt="About Us Banner"
           className="w-full h-60 object-cover object-center"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-          <h1 className="text-5xl font-One">Supplements</h1>
-          <h1 className="font-One text-2xl mt-6">
-            <Link to="/">HOME</Link>
-            <span className="text-yellow-300">/Supplement</span>
-          </h1>
-        </div>
+       <div className="absolute bottom-0 left-0 text-white p-10">
+        <h1 className="text-5xl font-One">Supplements</h1>
+        <h1 className="font-One text-2xl mt-4">
+          <Link to="/" className="hover:underline">HOME</Link>
+          <span className="text-yellow-300"> / Supplements</span>
+        </h1>
+      </div>
       </div>
 
       <div className="flex justify-center items-center flex-col font-One px-4">

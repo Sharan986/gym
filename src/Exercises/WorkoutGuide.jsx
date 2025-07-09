@@ -12,13 +12,13 @@ const WorkoutGuide = () => {
             alt="Workout Banner"
             className="w-full h-60 object-cover object-center opacity-70"
           />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4">
-            <h1 className="text-5xl font-bold">Workout Guide</h1>
-            <h2 className="font-One text-2xl mt-4">
-              <Link to="/" className="hover:text-yellow-300">HOME</Link>
-              <span className="text-yellow-300"> / Workout</span>
-            </h2>
-          </div>
+          <div className="absolute bottom-0 left-0 text-white p-10">
+           <h1 className="text-5xl font-One">Workout-Guide</h1>
+           <h1 className="font-One text-2xl mt-4">
+             <Link to="/" className="hover:underline">HOME</Link>
+             <span className="text-yellow-300"> / Workout-Guide</span>
+           </h1>
+         </div>
         </div>
         <div className="px-4 md:px-8 py-8">
           <p className="text-gray-300 font-DM text-lg  mx-auto max-w-6xl">

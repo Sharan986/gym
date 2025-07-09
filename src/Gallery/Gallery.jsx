@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import Join from '../components/Join';
 import Membership from "../pages/Membership"; // ✅ Make sure this path is correct
 
+
+
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState('Facility');
 
@@ -56,43 +58,46 @@ const Gallery = () => {
         <img
           src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
           alt="Gallery Banner"
-          className="w-full h-60 object-cover object-center"
+          className="w-full h-60 object-cover "
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-          <h1 className="text-5xl font-One">Our Gallery</h1>
-          <h1 className="font-One text-2xl mt-4">
-            <Link to="/" className="hover:underline">HOME</Link>
-            <span className="text-yellow-300"> / Gallery</span>
-          </h1>
-        </div>
+ <div className="absolute bottom-0 left-0 text-white p-10">
+  <h1 className="text-5xl font-One">Our Gallery</h1>
+  <h1 className="font-One text-2xl mt-4">
+    <Link to="/" className="hover:underline">HOME</Link>
+    <span className="text-yellow-300"> / Gallery</span>
+  </h1>
+</div>
+
+
       </div>
 
       {/* ✅ Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 my-10 px-4">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 font-M text-xl sm:text-2xl cursor-pointer ${
-              activeTab === tab
-                ? 'bg-white text-green-600 font-One shadow'
-                : 'bg-gray-200 text-green-600 font-One'
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
+  <div className="grid grid-cols-2 mx-7 justify-center gap-7 my-10 ">
+  {tabs.map((tab) => (
+    <button
+      key={tab}
+      onClick={() => setActiveTab(tab)}
+      className={`px-6 py-2 font-M text-xl sm:text-2xl cursor-pointer ${
+        activeTab === tab
+          ? 'bg-white text-green-600 font-One shadow'
+          : 'bg-gray-200 text-green-600 font-One'
+      }`}
+    >
+      {tab}
+    </button>
+  ))}
+</div>
+
 
       {/* ✅ Conditional: Grid or Membership */}
       {activeTab === 'Members' ? (
         <Membership />
       ) : (
-        <div className="mx-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+        <div className="mx-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-7 lg:grid-cols-4 gap-6 mb-16">
           {getItems().map((item) => (
             <div
               key={item.id}
-              className="bg-white shadow-md overflow-hidden flex flex-col justify-between"
+              className="bg-white hover:bg-gray-400 hover:scale-110 duration-75 shadow-md overflow-hidden flex flex-col justify-between"
             >
               <img
                 src={item.img}
