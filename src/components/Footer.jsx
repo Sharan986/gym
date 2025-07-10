@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="py-10 max-w-7xl mx-auto font-sans text-gray-800 px-9">
+    <div className="py-10  mx-8 font-sans text-lg text-gray-800 ">
       {/* Logo and Description */}
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />

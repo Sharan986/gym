@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,18 +25,6 @@ const Services = () => {
     },
   ];
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -54,37 +42,55 @@ const Services = () => {
       <p className="text-4xl lg:text-center sm:text-6xl mt-4 mx-5 uppercase">
         What We Can Do Best For Our Clients
       </p>
-
       <div className="mt-12 mx-3">
-        {isMobile ? (
+        {/* Desktop View (lg and up) */}
+        <div className="hidden lg:flex lg:flex-wrap lg:-mx-3">
+          {services.map((service) => (
+            <div key={service.id} className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+              <div className="border-2 border-gray-600 overflow-hidden font-One h-full">
+                <div className="h-64 md:h-96 overflow-hidden">
+                  <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-4 text-center">
+                  <div className="flex justify-center">
+                    <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
+                  </div>
+                  <h1 className="text-3xl py-3">{service.title}</h1>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Tablet View (md only) */}
+        <div className="hidden md:block lg:hidden">
           <Slider {...settings}>
             {services.map((service) => (
               <div key={service.id} className="px-4">
                 <div className="flex flex-col items-center border-2 border-gray-600 font-One h-full">
-                  <img src={service.logo} alt={service.title} className="w-20 h-20 sm:w-28 sm:h-28 p-2" />
-                  <h1 className="text-3xl sm:text-4xl py-3">{service.title}</h1>
+                  <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
+                  <h1 className="text-3xl py-3">{service.title}</h1>
                   <img src={service.img} alt={service.title} className="w-full object-cover pt-4 rounded" />
                 </div>
               </div>
             ))}
           </Slider>
-        ) : (
-          <div className="flex justify-between mx-2">
+        </div>
+
+        {/* Mobile View (sm only) */}
+        <div className="md:hidden">
+          <Slider {...settings}>
             {services.map((service) => (
-              <div key={service.id} className="border-2 border-gray-600 h-140 overflow-hidden font-One w-1/3 mx-3">
-                <div className="flex pt-6 md:pt-0 md:flex md:justify-start h-96 overflow-hidden">
-                  <img src={service.img} alt={service.title} className="w-full h-full object-cover lg:object-top object-center" />
-                </div>
-                <div className="p-4 text-center">
-                  <div className="flex justify-center">
-                    <img src={service.logo} alt={service.title} className="w-60 h-10 sm:w-28 sm:h-28 md:w-20 md:h-20 p-2" />
-                  </div>
-                  <h1 className="text-3xl sm:text-4xl py-3">{service.title}</h1>
+              <div key={service.id} className="px-4">
+                <div className="flex flex-col items-center border-2 border-gray-600 font-One h-full">
+                  <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
+                  <h1 className="text-3xl py-3">{service.title}</h1>
+                  <img src={service.img} alt={service.title} className="w-full object-cover pt-4 rounded" />
                 </div>
               </div>
             ))}
-          </div>
-        )}
+          </Slider>
+        </div>
       </div>
     </div>
   );

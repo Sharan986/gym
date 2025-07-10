@@ -5,9 +5,9 @@ import PhotoGrid from '../components/PhotoGrid';
 
 const Testimonials = () => {
   return (
-    <div className='font-One text-white px-7 py-10 md:py-12 '>
+    <div className='font-One text-white mt-10 '>
       {/* Container for centering content */}
-      <div className='max-w-7xl mx-auto'>
+      <div className='mx-9 '>
        <PhotoGrid />
         {/* Responsive Image */}
          <Review />

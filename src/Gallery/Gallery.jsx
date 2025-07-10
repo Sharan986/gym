@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Join from '../components/Join';
 import Membership from "../pages/Membership"; // ✅ Make sure this path is correct
+import BackButton from '../components/Back'; // ✅ Import Back Button
 
 
 
@@ -53,23 +54,27 @@ const Gallery = () => {
 
   return (
     <>
+    
       {/* ✅ Banner */}
-      <div className="relative overflow-hidden">
-        <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-          alt="Gallery Banner"
-          className="w-full h-60 object-cover "
-        />
- <div className="absolute bottom-0 left-0 text-white p-10">
-  <h1 className="text-5xl font-One">Our Gallery</h1>
-  <h1 className="font-One text-2xl mt-4">
-    <Link to="/" className="hover:underline">HOME</Link>
-    <span className="text-yellow-300"> / Gallery</span>
-  </h1>
+<div className="relative overflow-hidden">
+  <img
+    src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+    alt="Gallery Banner"
+    className="w-full h-60 object-cover"
+  />
+  <div className="absolute top-0 left-0 p-4">
+    <BackButton />
+  </div>
+  <div className="absolute bottom-0 left-0 text-white p-10">
+    <h1 className="text-5xl font-One">Our Gallery</h1>
+    <h1 className="font-One text-2xl mt-4">
+      <Link to="/" className="hover:underline">HOME</Link>
+      <span className="text-yellow-300"> / Gallery</span>
+    </h1>
+  </div>
 </div>
 
 
-      </div>
 
       {/* ✅ Tabs */}
   <div className="grid grid-cols-2 mx-7 justify-center gap-7 my-10 ">
@@ -79,8 +84,8 @@ const Gallery = () => {
       onClick={() => setActiveTab(tab)}
       className={`px-6 py-2 font-M text-xl sm:text-2xl cursor-pointer ${
         activeTab === tab
-          ? 'bg-white text-green-600 font-One shadow'
-          : 'bg-gray-200 text-green-600 font-One'
+          ? 'bg-white text-[#53f0b8] font-One shadow'
+          : 'bg-gray-200 text-[#53f0b8] font-One'
       }`}
     >
       {tab}
@@ -93,7 +98,7 @@ const Gallery = () => {
       {activeTab === 'Members' ? (
         <Membership />
       ) : (
-        <div className="mx-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-7 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-7 lg:grid-cols-4 gap-6 mb-16">
           {getItems().map((item) => (
             <div
               key={item.id}
@@ -111,7 +116,7 @@ const Gallery = () => {
       )}
 
       {/* ✅ Join & Footer */}
-      <Join />
+      <Join className="mx-7" />
       <Footer />
     </>
   );

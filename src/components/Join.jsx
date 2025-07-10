@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Join = () => {
   return (
-    <div className="bg-[#FCDE3B] flex flex-col md:flex-row justify-between mx-8 items-center font-One mt-2 p-1">
-      <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4">
+    <div className="bg-[#FCDE3B] flex flex-col md:flex-row justify-between items-center font-One mt-2 mx-10">
+      <div className="flex flex-col justify-center items-center">
         <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-3 pt-5 text-center md:text-left">
           Join Our Gym and Start
         </p>

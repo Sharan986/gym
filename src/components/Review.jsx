@@ -59,21 +59,21 @@ const Review = () => {
   };
 
   return (
-    <div className="py-8 mx-6 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <div className=" mt-9 ">
+      <div >
         <div className="  mb-12">
-          <h2 className="text-3xl font-bold text-[#48D3A3] italic text-center mb-4">Our Testimonials</h2>
-          <h1 className="text-4xl text-center md:text-5xl font-bold text-white uppercase mb-6">
+          <h2 className="text-2xl  text-[#48D3A3] italic ">Our Testimonials</h2>
+          <h1 className="text-4xl  md:text-5xl  text-white uppercase mb-5">
             What Our Members Are Saying OneRepMaax
           </h1>
-          <p className="text-lg text-gray-400 text-center max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 font-M">
             Discover how our gym transformed our members' lives.
           </p>
         </div>
 <Slider {...settings}>
   {reviews.map((review) => (
     <div key={review.id} className="p-1">
-      <div className="p-2 border-2 border-[#1c5440] shadow-2xl text-center h-[46vh] md:h-96 flex flex-col justify-between">
+      <div className="p-2 border-2 border-[#53f0b8]shadow-2xl text-center h-[46vh] md:h-96 flex flex-col justify-between">
         <div>
           <div className="flex justify-center mb-3">
             <img
@@ -83,9 +83,9 @@ const Review = () => {
             />
           </div>
 
-          <blockquote className="text-white text-xl md:mx-20 md:text-3xl ">
+          <div className="text-white font-M text-sm  ">
             "{review.quote}"
-          </blockquote>
+          </div>
         </div>
 
         <div>

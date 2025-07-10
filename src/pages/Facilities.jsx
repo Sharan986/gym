@@ -1,5 +1,5 @@
 import React from "react";
-import Boss2 from "../assets/BOSS2.jpg";
+
 import MembershipSection from "./Membership";
 import WkGuid from "../components/WkGuid";
 
@@ -40,14 +40,14 @@ const Facilities = () => {
 
   return (
     <>
-    <div className="text-white text-xl pt-16 mx-8">
+    <div className="text-white text-xl pt-16 lg:mx-15 mx-8">
       <header className="text-xl font-One w-full text-[#48D3A3] italic sm:text-3xl ">
         OUR FACILITIES
       </header>
       <p className="text-5xl sm:text-6xl w-full mt-4 font-One uppercase ">
         We Help To Get Fitness Goal
       </p>
-      <p className="w-full text-gray-400 font-M text-lg mt-6 mb-4 ">
+      <p className="w-full text-gray-400 font-M text-lg lg:text-xl mt-6 mb-4 ">
         Our mission has always been to create a welcoming and supportive environment where everyone, regardless of their fitness level.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center mt-8">
@@ -63,7 +63,7 @@ const Facilities = () => {
             />
             <div className="">
               <h1 className="text-2xl ">{facility.title}</h1>
-              <p className="text-lg lg:w-80 font-DM text-gray-400 ">
+              <p className="text-lg lg:text-2xl lg:w-160 font-DM text-gray-400 ">
                 {facility.description}
               </p>
             </div>
@@ -71,13 +71,7 @@ const Facilities = () => {
         ))}
       </div>
 
-      <div className="flex justify-center ">
-        <img
-          src={Boss2}
-          alt="Boss"
-          className="lg:h-[60vw]  w-full object-top object-cover mt-4"
-        />
-      </div>
+      
     </div>
     <div className="mx-3 mb-8">
     <WkGuid />

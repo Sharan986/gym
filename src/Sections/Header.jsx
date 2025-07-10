@@ -17,9 +17,9 @@ import Nav from "../components/Nav";
 const Header = () => {
   return (
     <>
-
+     <Nav className="pb-1" />
       <div className="relative overflow-hidden mb-4">
-             <Nav />
+            
         <img
           src={HeaderImg}
           alt=""
