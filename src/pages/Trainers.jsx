@@ -6,7 +6,6 @@ import One from "../assets/1.jpeg";
 import Two from "../assets/2.jpeg";
 import Three from "../assets/3.jpeg";
 
-
 const Trainers = () => {
   const trainers = [
     {
@@ -42,62 +41,77 @@ const Trainers = () => {
 
   return (
     <>
-    
-    <div className="text-white text-xl pt-16 mx-7 sm:px-8 font-One">
-      <header className="text-xl sm:text-3xl text-[#48D3A3] italic ">
-        Our Trainers
-      </header>
-      <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase ">
-        Fitness team supporting goals
-      </p>
+      <div className="text-white text-xl pt-16 mx-7 sm:px-8 font-One">
+        <header className="text-xl sm:text-3xl text-[#48D3A3] italic">
+          Our Trainers
+        </header>
+        <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase">
+          Fitness team supporting goals
+        </p>
 
-      <div className="block md:hidden mt-10">
-        <Slider {...settings}>
+        {/* ✅ Mobile Slider */}
+        <div className="block md:hidden mt-10">
+          <Slider {...settings}>
+            {trainers.map((trainer) => (
+              <div key={trainer.id} className="p-2">
+                <div className="border-2 border-gray-600 overflow-hidden max-w-md mx-auto">
+                  <img
+                    src={trainer.img}
+                    alt={trainer.name}
+                    className="w-full h-[28rem] object-cover object-center"
+                  />
+                  <div className="p-4 text-center">
+                    <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>
+                    <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* ✅ Tablet Slider */}
+        <div className="hidden md:block lg:hidden mt-10">
+          <Slider {...settings}>
+            {trainers.map((trainer) => (
+              <div key={trainer.id} className="p-2">
+                <div className="border-2 border-gray-600 overflow-hidden max-w-2xl mx-auto">
+                  <img
+                    src={trainer.img}
+                    alt={trainer.name}
+                    className="w-full h-[28rem] object-cover object-center"
+                  />
+                  <div className="p-4 text-center">
+                    <h1 className="text-3xl">{trainer.name}</h1>
+                    <p className="text-lg text-gray-400">{trainer.title}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* ✅ Desktop Grid */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-4 sm:gap-6 mt-10">
           {trainers.map((trainer) => (
-            <div key={trainer.id} className="p-2">
-              <div className="border-2 border-gray-600  overflow-hidden">
+            <div key={trainer.id} className="border-2 border-gray-600 overflow-hidden">
+              <div className="h-[28rem] overflow-hidden">
                 <img
                   src={trainer.img}
                   alt={trainer.name}
-                  className="w-full h-96 sm:h-96 object-cover object-center"
+                  className="w-full h-full object-cover lg:object-top object-center"
                 />
-                <div className="p-4 text-center">
-                  <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>
-                  <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
-                </div>
+              </div>
+              <div className="p-4 text-center">
+                <h1 className="text-xl sm:text-2xl lg:text-5xl">{trainer.name}</h1>
+                <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
               </div>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
-
-      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-10">
-        {trainers.map((trainer) => (
-          <div key={trainer.id} className="border-2 border-gray-600 h-128 overflow-hidden">
-            <div className="h-96 overflow-hidden">
-              <img
-                src={trainer.img}
-                alt={trainer.name}
-                className="w-full h-full object-cover lg:object-top object-center"
-              />
-            </div>
-            <div className="p-4 text-center">
-              <h1 className="text-xl sm:text-2xl lg:text-5xl">{trainer.name}</h1>
-              <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div></>
+    </>
   );
 };
-
-
-
-
-
-
-
-
 
 export default Trainers;

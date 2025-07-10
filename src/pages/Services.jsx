@@ -62,20 +62,25 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Tablet View (md only) */}
-        <div className="hidden md:block lg:hidden">
-          <Slider {...settings}>
-            {services.map((service) => (
-              <div key={service.id} className="px-4">
-                <div className="flex flex-col items-center border-2 border-gray-600 font-One h-full">
-                  <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
-                  <h1 className="text-3xl py-3">{service.title}</h1>
-                  <img src={service.img} alt={service.title} className="w-full object-cover pt-4 rounded" />
-                </div>
-              </div>
-            ))}
-          </Slider>
+{/* Tablet View (md only) */}
+<div className="hidden md:block lg:hidden">
+  <Slider {...settings}>
+    {services.map((service) => (
+      <div key={service.id} className="px-4">
+        <div className="max-w-[700px] mx-auto flex flex-col items-center border-2 border-gray-600 font-One h-full">
+          <img src={service.logo} alt={service.title} className="w-24 h-24 p-2" /> {/* Bigger logo */}
+          <h1 className="text-3xl py-3">{service.title}</h1>
+          <img
+            src={service.img}
+            alt={service.title}
+            className="w-full h-[22rem] object-cover pt-4 rounded"  />
         </div>
+      </div>
+    ))}
+  </Slider>
+</div>
+
+
 
         {/* Mobile View (sm only) */}
         <div className="md:hidden">

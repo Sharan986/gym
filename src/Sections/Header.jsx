@@ -17,7 +17,8 @@ import Nav from "../components/Nav";
 const Header = () => {
   return (
     <>
-     <Nav className="pb-1" />
+      <Nav />
+   
       <div className="relative overflow-hidden mb-4">
             
         <img
@@ -30,7 +31,7 @@ const Header = () => {
 
         <div className="absolute top-0 left-0  h-20 w-24 sm:w-full mx-6  font-One uppercase  ">
          
-          <div className="text-white w-screen text-xl  mt-36 md:mt-30">
+          <div className="text-white w-screen text-xl  mt-10 md:mt-10">
             <header className="text-2xl  w-screen text-[#48D3A3] italic md:text-4xl ">FITNESS & GYM</header>
             <p className=" text-5xl w-80 md:w-full md:text-7xl">
               Discover 

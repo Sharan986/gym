@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Join from '../components/Join';
 import Membership from "../pages/Membership"; // ✅ Make sure this path is correct
-import BackButton from '../components/Back'; // ✅ Import Back Button
-
 
 
 const Gallery = () => {
@@ -54,43 +52,41 @@ const Gallery = () => {
 
   return (
     <>
-    
       {/* ✅ Banner */}
-<div className="relative overflow-hidden">
-  <img
-    src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-    alt="Gallery Banner"
-    className="w-full h-60 object-cover"
-  />
-  <div className="absolute top-0 left-0 p-4">
-    <BackButton />
+      <div className="relative overflow-hidden">
+        <img
+          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+          alt="Gallery Banner"
+          className="w-full h-60 object-cover"
+        />
+        <div className="absolute top-0 left-0 p-4">
+         
+        </div>
+        <div className="absolute bottom-0 left-0 text-white p-10">
+          <h1 className="text-5xl font-One">Our Gallery</h1>
+          <h1 className="font-One text-2xl mt-4">
+            <Link to="/" className="hover:underline">HOME</Link>
+            <span className="text-yellow-300"> / Gallery</span>
+          </h1>
+        </div>
+      </div>
+
+<div className="flex justify-center my-10 px-8">
+  <div className="inline-flex flex-wrap bg-gray-200 p-1 max-w-xl lg:flex-nowrap">
+    {tabs.map((tab) => (
+      <button
+        key={tab}
+        onClick={() => setActiveTab(tab)}
+        className={`w-1/2 lg:w-auto px-4 font-One py-2  text-xs sm:text-lg md:text-xl transition-all duration-200
+          ${activeTab === tab
+            ? 'bg-white text-[#070915] font-semibold shadow'
+            : 'text-gray-700 hover:bg-white hover:text-[#070915]'
+          }`}
+      >
+        {tab}
+      </button>
+    ))}
   </div>
-  <div className="absolute bottom-0 left-0 text-white p-10">
-    <h1 className="text-5xl font-One">Our Gallery</h1>
-    <h1 className="font-One text-2xl mt-4">
-      <Link to="/" className="hover:underline">HOME</Link>
-      <span className="text-yellow-300"> / Gallery</span>
-    </h1>
-  </div>
-</div>
-
-
-
-      {/* ✅ Tabs */}
-  <div className="grid grid-cols-2 mx-7 justify-center gap-7 my-10 ">
-  {tabs.map((tab) => (
-    <button
-      key={tab}
-      onClick={() => setActiveTab(tab)}
-      className={`px-6 py-2 font-M text-xl sm:text-2xl cursor-pointer ${
-        activeTab === tab
-          ? 'bg-white text-[#53f0b8] font-One shadow'
-          : 'bg-gray-200 text-[#53f0b8] font-One'
-      }`}
-    >
-      {tab}
-    </button>
-  ))}
 </div>
 
 

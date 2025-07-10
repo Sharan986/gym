@@ -18,53 +18,37 @@ const supplementData = [
     imageUrl:
       "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  {
-    title: "Weight Gainer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1604480133054-2597dad6f610?q=80&w=1869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
+
 ];
 
 const Supplement = () => {
   return (
     <>
-      <div className="relative overflow-hidden">
-        <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-          alt="About Us Banner"
-          className="w-full h-60 object-cover object-center"
-        />
-       <div className="absolute bottom-0 left-0 text-white p-10">
-        <h1 className="text-5xl font-One">Supplements</h1>
-        <h1 className="font-One text-2xl mt-4">
-          <Link to="/" className="hover:underline">HOME</Link>
-          <span className="text-yellow-300"> / Supplements</span>
-        </h1>
-      </div>
-      </div>
+   
+<div className="flex flex-col lg:flex-row justify-center gap-5 font-One mx-4 lg:mx-8 mb-6">
+  <div className="text-white text-center lg:text-left mt-8 lg:mt-16">
+    <header className="text-2xl lg:text-3xl text-[#48D3A3] italic">Supplements</header>
+    <p className="text-3xl lg:text-6xl mt-2 uppercase">
+      Boost strength, endurance, muscle growth.
+    </p>
+    <p className="text-gray-400 text-lg lg:text-2xl font-DM mt-4 lg:mt-6 mb-4">
+      Supplements support muscle growth, enhance performance, boost recovery, fill nutritional gaps,
+      help achieve fitness goals efficiently, increase endurance, aid fat loss, improve strength,
+      and promote overall physical well-being.
+    </p>
+  </div>
+  <div className="flex justify-center lg:justify-start mt-4 lg:mt-5">
+    <img
+      src="https://images.unsplash.com/photo-1683394275459-ea44637a4e57?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Supplements"
+      className="w-full max-w-xs lg:max-w-md"
+    />
+  </div>
+</div>
 
-      <div className="flex justify-center items-center flex-col font-One px-4">
-        <div className="text-white text-center max-w-2xl mt-16">
-          <header className="text-xl text-[#48D3A3] italic">Supplements</header>
-          <p className="text-4xl mt-2 uppercase">
-            Boost strength, endurance, muscle growth.
-          </p>
-          <div className="text-center mt-5">
-            <img
-              src="https://images.unsplash.com/photo-1683394275459-ea44637a4e57?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Supplements"
-              className="w-full max-w-md mx-auto"
-            />
-          </div>
-          <p className="max-w-screen text-gray-400 font-DM text-lg mt-6 mb-4">
-            Supplements support muscle growth, enhance performance, boost recovery, fill nutritional gaps,
-            help achieve fitness goals efficiently, increase endurance, aid fat loss, improve strength,
-            and promote overall physical well-being.
-          </p>
-        </div>
-      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-4">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mx-8">
         {supplementData.map((item, index) => (
           <Link to={`/Supplement/${item.title}`} key={index}>
             <div className="relative">
