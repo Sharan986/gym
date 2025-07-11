@@ -68,7 +68,7 @@ import calf_raises from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/calf-raise.mp4";
 import leg_extension from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/leg-extension.mp4";
 import squats from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/squat.mp4";
 import leg_press from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/LEG-PRESS.mp4";
-import Romanian from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/Romanian-deadlift-RDL.mp4";
+import Romanian from "../assets/GYMVIDEO/INTERMEDIATE/LEGS/ROMANIAN-DEADLIFT-RDL.mp4";
 
 export const interLEGS = {
   calf_raises,
