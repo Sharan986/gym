@@ -21,7 +21,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Logo"
-          className="w-28 md:w-48 hover:scale-105 transition-transform duration-200 cursor-pointer"
+          className="w-28 pl-5 md:w-48 hover:scale-105 transition-transform duration-200 cursor-pointer"
         />
       </Link>
 
@@ -54,10 +54,10 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Fullscreen Mobile Menu: slide down */}
+      {/* Fullscreen Mobile Menu: slide from the right */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-[#070915] z-40 transform ${
-          isOpen ? 'translate-y-0' : '-translate-y-full'
+        className={`fixed top-0 right-0 w-full h-full bg-[#070915] z-40 transform ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-500 ease-in-out lg:hidden`}
       >
         <div className="h-full flex flex-col">
@@ -79,7 +79,7 @@ const Navbar = () => {
                 key={index}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className="text-2xl font-One hover:text-[#48D3A3] transition-colors py-2"
+                className="text-3xl font-One hover:text-[#48D3A3] transition-colors py-2"
               >
                 {link.name}
               </Link>

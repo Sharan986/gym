@@ -1,111 +1,140 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const ShouldersIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "Arnold Press",
-      muscles: ["Deltoids", "Triceps", "Trapezius"],
+      name: "Reverse Fly Machine",
+      muscles: ["Rear Deltoids", "Trapezius", "Rhomboids"],
+      video: Videos.vid21,
       instructions: [
-        "Sit on a bench with back support and hold two dumbbells at shoulder height with your palms facing your body",
-        "As you press the dumbbells overhead, rotate your palms to face forward",
-        "Continue pressing until your arms are fully extended overhead",
-        "Reverse the movement to return to the starting position"
+        "Adjust seat height so handles are at shoulder level",
+        "Sit with chest against pad and grip handles",
+        "Keep slight bend in elbows throughout movement",
+        "Squeeze shoulder blades together as you pull arms back",
+        "Pause when arms are parallel to floor",
+        "Control return to starting position"
       ],
       benefits: [
-        "Targets all three deltoid heads",
-        "Improves shoulder strength and stability",
-        "Enhances overall shoulder definition"
+        "Isolates often-neglected rear delts",
+        "Improves posture and shoulder health",
+        "Counters effects of rounded shoulders",
+        "Enhances upper back thickness"
       ],
       tips: [
-        "Keep your core engaged throughout the movement",
-        "Avoid locking your elbows at the top",
-        "Use a controlled movement"
+        "Imagine squeezing a pencil between shoulder blades",
+        "Use lighter weight with perfect form",
+        "Keep movement slow and controlled",
+        "Exhale during contraction phase",
+        "Maintain neutral neck position"
       ]
     },
     {
       id: 2,
-      name: "Seated Barbell Overhead Press",
-      muscles: ["Deltoids", "Triceps", "Trapezius"],
+      name: "Dumbbell Lateral Raises",
+      muscles: ["Lateral Deltoids", "Supraspinatus"],
+      video: Videos.vid22,
       instructions: [
-        "Sit on a bench with back support and hold a barbell at shoulder height with an overhand grip",
-        "Press the barbell overhead until your arms are fully extended",
-        "Lower the barbell back to the starting position with control"
+        "Stand with dumbbells at sides, palms facing inward",
+        "Keep slight bend in elbows (10-15°)",
+        "Raise arms to shoulder height forming 'T' shape",
+        "Pause briefly at top (elbows slightly higher than hands)",
+        "Lower slowly with control (3-4 second descent)"
       ],
       benefits: [
-        "Builds overall shoulder strength",
-        "Improves upper body power",
-        "Enhances shoulder stability"
+        "Builds shoulder width and definition",
+        "Improves shoulder mobility",
+        "Enhances mind-muscle connection",
+        "Creates balanced shoulder development"
       ],
       tips: [
-        "Keep your core engaged throughout the movement",
-        "Avoid arching your back",
-        "Use a controlled movement"
+        "Imagine pouring water from cups",
+        "Use lighter weights (12-15 rep range)",
+        "Avoid shrugging shoulders upward",
+        "Lean slightly forward to increase lateral delt activation",
+        "Try alternating arms for better focus"
       ]
     },
     {
       id: 3,
-      name: "Dumbbell Rear Delt Fly (on incline bench)",
-      muscles: ["Rear Deltoids", "Trapezius", "Rhomboids"],
+      name: "Military Press (Barbell)",
+      muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Upper Chest"],
+      video: Videos.vid23,
       instructions: [
-        "Set an incline bench to a 45-degree angle and lie face down with a dumbbell in each hand",
-        "Let your arms hang straight down with your palms facing each other",
-        "Raise the dumbbells out to the sides until your arms are parallel to the floor",
-        "Lower the dumbbells back to the starting position with control"
+        "Stand with feet shoulder-width apart",
+        "Grip barbell slightly wider than shoulders",
+        "Clean bar to front rack position",
+        "Press bar overhead until arms are straight",
+        "Lower bar to chin level with control",
+        "Keep core braced throughout"
       ],
       benefits: [
-        "Isolates the rear deltoids",
-        "Improves posture",
-        "Enhances overall shoulder definition"
+        "Builds overall shoulder strength and size",
+        "Improves overhead mobility",
+        "Enhances core stability",
+        "Develops functional pressing strength"
       ],
       tips: [
-        "Keep a slight bend in your elbows",
-        "Squeeze your shoulder blades together at the top of the movement",
-        "Use a controlled movement"
+        "Use power rack with safety bars",
+        "Don't arch back excessively",
+        "Press bar slightly back (not straight up)",
+        "Keep elbows slightly in front of bar",
+        "Use wrist wraps for heavy sets"
       ]
     },
     {
       id: 4,
-      name: "Smith Machine Overhead Press",
-      muscles: ["Deltoids", "Triceps", "Trapezius"],
+      name: "Upright Rows (Barbell or Cable)",
+      muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
+      video: Videos.vid24,
       instructions: [
-        "Set a bench inside the Smith machine and sit with back support",
-        "Grip the barbell at shoulder height with an overhand grip",
-        "Press the barbell overhead until your arms are fully extended",
-        "Lower the barbell back to the starting position with control"
+        "Stand holding barbell with narrow grip (6-8 inches)",
+        "Keep bar close to body as you pull upward",
+        "Raise elbows to shoulder height",
+        "Pause briefly at top position",
+        "Lower slowly with control"
       ],
       benefits: [
-        "Provides stability for controlled movements",
-        "Builds overall shoulder strength",
-        "Enhances shoulder stability"
+        "Targets side delts and traps simultaneously",
+        "Improves shoulder girdle strength",
+        "Enhances upper body posture",
+        "Can be done with various equipment"
       ],
       tips: [
-        "Keep your core engaged throughout the movement",
-        "Avoid locking your elbows at the top",
-        "Use a controlled movement"
+        "Don't raise above collarbone (prevents impingement)",
+        "Keep shoulders relaxed (don't shrug)",
+        "Use moderate weight with strict form",
+        "Try cable version for constant tension",
+        "Warm up rotator cuffs first"
       ]
     },
     {
       id: 5,
-      name: "Cable Front Raise",
-      muscles: ["Front Deltoids", "Pectoralis Major"],
+      name: "Face Pulls (Cable)",
+      muscles: ["Rear Deltoids", "Rotator Cuff", "Trapezius"],
+      video: Videos.vid25,
       instructions: [
-        "Attach a straight bar to a low pulley and stand facing the cable machine",
-        "Grip the bar with an overhand grip and your hands shoulder-width apart",
-        "Raise the bar straight out in front of you until it is at shoulder height",
-        "Lower the bar back to the starting position with control"
+        "Attach rope to high pulley cable",
+        "Grab ends with thumbs pointing back",
+        "Pull rope towards forehead while flaring elbows",
+        "Squeeze rear delts at peak contraction",
+        "Control return to starting position"
       ],
       benefits: [
-        "Isolates the front deltoids",
-        "Improves shoulder strength and definition",
-        "Enhances overall upper body stability"
+        "Improves shoulder health and posture",
+        "Strengthens rotator cuff muscles",
+        "Counters effects of pressing movements",
+        "Enhances rear delt development"
       ],
       tips: [
-        "Keep a slight bend in your elbows",
-        "Avoid using momentum to lift the weight",
-        "Use a controlled movement"
+        "Use light-to-moderate weight",
+        "Imagine showing your biceps at peak",
+        "Keep upper arms parallel to floor",
+        "Perform as warm-up and finisher",
+        "Focus on quality reps over weight"
       ]
     }
   ];
@@ -137,11 +166,14 @@ const ShouldersIntermediate = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

@@ -7,10 +7,35 @@ const BackBeginner = () => {
   const exercises = [
     {
       id: 1,
+      name: "Assisted Pull-Ups/Chin-Ups",
+      video: Videos.vid6, // Replace with actual video path
+      muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Upper Back"],
+      instructions: [
+        "Set the assisted machine to your desired weight support",
+        "Grip the handles (palms facing away for pull-ups, toward you for chin-ups)",
+        "Step onto the platform and keep your body straight",
+        "Pull yourself up until your chin clears the bar",
+        "Lower yourself slowly with control"
+      ],
+      benefits: [
+        "Builds functional upper body strength",
+        "Progressively develops pull-up ability",
+        "Targets entire back and arm musculature",
+        "Improves grip strength"
+      ],
+      tips: [
+        "Focus on using your back muscles, not just arms",
+        "Avoid swinging or using momentum",
+        "Start with more assistance and gradually reduce",
+        "Keep core engaged throughout movement",
+        "Full range of motion is key - go all the way down"
+      ]
+    },
+    {
+      id: 2,
       name: "Lat Pulldown Machine",
-      video: Videos.vid6,
+      video: Videos.vid7, // Replace with actual video path
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
-
       instructions: [
         "Adjust thigh pad to secure legs",
         "Grip bar slightly wider than shoulders",
@@ -20,100 +45,63 @@ const BackBeginner = () => {
       benefits: [
         "Builds upper back width",
         "Easier alternative to pull-ups",
-        "Adjustable resistance for progression"
+        "Adjustable resistance for progression",
+        "Improves posture"
       ],
       tips: [
         "Initiate movement by squeezing shoulder blades",
         "Keep elbows tracking slightly forward",
-        "Avoid using momentum from swinging"
+        "Avoid using momentum from swinging",
+        "Don't pull behind neck - this can injure shoulders"
       ]
     },
     {
-      id: 2,
+      id: 3,
       name: "Seated Cable Row",
-      video: Videos.vid7,
+      video: Videos.vid8, // Replace with actual video path
       muscles: ["Rhomboids", "Middle Trapezius", "Latissimus Dorsi"],
       instructions: [
         "Sit with knees slightly bent",
         "Pull handle to waist while keeping chest up",
-        "Squeeze shoulder blades together at peak",
+        "Squeeze shoulder blades together at peak contraction",
         "Extend arms fully for complete stretch"
       ],
       benefits: [
         "Improves posture",
         "Targets mid-back muscles",
-        "Low impact on joints"
+        "Low impact on joints",
+        "Counters effects of prolonged sitting"
       ],
       tips: [
         "Imagine squeezing a pencil between shoulder blades",
         "Maintain slight forward lean on extension",
-        "Use straps if grip fatigues first"
-      ]
-    },
-    {
-      id: 3,
-      name: "Resistance Band Row",
-      muscles: ["Rear Deltoids", "Rhomboids", "Trapezius"],
-      video: Videos.vid8,
-      instructions: [
-        "Anchor band at chest height",
-        "Step back to create tension",
-        "Pull elbows back to torso",
-        "Control return to stretched position"
-      ],
-      benefits: [
-        "Portable home workout option",
-        "Constant tension through full range",
-        "Scalable resistance"
-      ],
-      tips: [
-        "Focus on squeezing rear delts",
-        "Keep shoulders down away from ears",
-        "Use slow tempo (2-1-2 count)"
+        "Use straps if grip fatigues first",
+        "Keep movement controlled - no jerking"
       ]
     },
     {
       id: 4,
-      name: "Back Extension Machine",
+      name: "Hyperextension",
+      video: Videos.vid9, // Replace with actual video path
       muscles: ["Erector Spinae", "Glutes", "Hamstrings"],
-      video: Videos.vid9,
       instructions: [
         "Adjust pad to align with hip crease",
-        "Cross arms over chest",
+        "Cross arms over chest or hold weight",
         "Lower torso until parallel to floor",
         "Raise back to neutral spine position"
       ],
       benefits: [
         "Strengthens lower back",
         "Improves spinal stability",
-        "Can help alleviate back pain"
+        "Can help alleviate back pain",
+        "Enhances posterior chain development"
       ],
       tips: [
         "Avoid hyperextension at top",
         "Engage core throughout movement",
-        "Progress by holding weight to chest"
-      ]
-    },
-    {
-      id: 5,
-      name: "Dumbbell Row (Bench-Supported)",
-      muscles: ["Latissimus Dorsi", "Rear Deltoids", "Biceps"],
-      video: Videos.vid10,
-      instructions: [
-        "Place knee and hand on bench",
-        "Pull dumbbell to hip pocket",
-        "Lower with control to full stretch",
-        "Keep torso parallel to floor"
-      ],
-      benefits: [
-        "Reduces lower back strain",
-        "Allows independent arm work",
-        "Improves mind-muscle connection"
-      ],
-      tips: [
-        "Lead with elbow, not hand",
-        "Imagine pulling elbow to ceiling",
-        "Maintain neutral spine position"
+        "Start with bodyweight only",
+        "Keep movement slow and controlled",
+        "Don't round your back when lowering"
       ]
     }
   ];
@@ -145,8 +133,7 @@ const BackBeginner = () => {
             {exercise.muscles.join(", ")}
           </div>
 
-          
-            <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
             <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
@@ -155,7 +142,7 @@ const BackBeginner = () => {
           
           {/* Instructions */}
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

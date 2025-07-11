@@ -7,112 +7,127 @@ const ShouldersBeginner = () => {
   const exercises = [
     {
       id: 1,
-      name: "Dumbbell Shoulder Press (seated)",
+      name: "Machine Shoulder Press",
       video: Videos.vid21,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps"],
       instructions: [
-        "Sit on bench with back support",
-        "Hold dumbbells at shoulder height",
-        "Press weights upward until arms are nearly straight",
-        "Lower slowly back to starting position"
+        "Adjust seat height so handles align with shoulders",
+        "Grip handles with palms facing forward",
+        "Press upward until arms are nearly straight",
+        "Lower slowly back to starting position",
+        "Keep back flat against the pad"
       ],
       benefits: [
-        "Builds overall shoulder strength",
-        "Improves shoulder stability",
-        "Allows natural arm movement"
+        "Provides stable movement path for beginners",
+        "Reduces strain on lower back",
+        "Allows controlled weight progression",
+        "Isolates shoulder muscles effectively"
       ],
       tips: [
-        "Keep core engaged throughout",
-        "Don't lock elbows at top",
-        "Use controlled movement"
+        "Don't lock elbows at the top",
+        "Exhale while pressing up, inhale while lowering",
+        "Use full range of motion without overextending",
+        "Start with lighter weight to perfect form"
       ]
     },
     {
       id: 2,
-      name: "Resistance Band Lateral Raise",
+      name: "Dumbbell Lateral Raises",
       video: Videos.vid22,
       muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
-        "Stand on center of resistance band",
-        "Hold ends with palms facing inward",
-        "Raise arms to shoulder height",
+        "Stand with dumbbells at sides, palms facing inward",
+        "Keep slight bend in elbows",
+        "Raise arms to shoulder height (forming a 'T')",
+        "Pause briefly at the top",
         "Lower slowly with control"
       ],
       benefits: [
-        "Portable workout option",
-        "Constant tension on muscles",
-        "Reduces joint stress"
+        "Builds shoulder width and definition",
+        "Improves shoulder mobility",
+        "Can be done with various equipment",
+        "Enhances mind-muscle connection"
       ],
       tips: [
-        "Keep slight bend in elbows",
         "Imagine pouring water from cups",
-        "Avoid shrugging shoulders"
+        "Use lighter weights for proper form",
+        "Avoid shrugging shoulders upward",
+        "Control the descent (3-4 seconds)"
       ]
     },
     {
       id: 3,
-      name: "Front Raise (dumbbells)",
+      name: "Reverse Dumbbell Flys",
       video: Videos.vid23,
-      muscles: ["Anterior Deltoids", "Pectoralis Major"],
+      muscles: ["Rear Deltoids", "Rhomboids", "Trapezius"],
       instructions: [
-        "Stand with dumbbells in front of thighs",
-        "Raise one arm straight forward to eye level",
-        "Lower slowly and alternate arms",
-        "Keep slight bend in elbows"
+        "Bend forward at hips about 45 degrees",
+        "Hold dumbbells with palms facing each other",
+        "Raise arms out to sides, squeezing shoulder blades",
+        "Pause at top when arms parallel to floor",
+        "Lower slowly to starting position"
       ],
       benefits: [
-        "Targets front shoulder muscles",
-        "Improves shoulder mobility",
-        "Can be done unilaterally"
+        "Targets often-neglected rear delts",
+        "Improves posture and upper back strength",
+        "Counters effects of rounded shoulders",
+        "Enhances shoulder stability"
       ],
       tips: [
-        "Control the descent",
-        "Avoid using momentum",
-        "Keep wrists neutral"
+        "Keep slight bend in elbows",
+        "Lead with elbows, not hands",
+        "Maintain neutral spine position",
+        "Use lighter weights for control"
       ]
     },
     {
       id: 4,
-      name: "Cable Lateral Raise",
+      name: "Front Raises",
       video: Videos.vid24,
-      muscles: ["Lateral Deltoids", "Supraspinatus"],
+      muscles: ["Anterior Deltoids", "Pectoralis Major"],
       instructions: [
-        "Stand beside cable machine",
-        "Grab handle with opposite hand",
-        "Raise arm to shoulder height",
-        "Control return to starting position"
+        "Stand with dumbbells in front of thighs",
+        "Keep slight bend in elbows",
+        "Raise one arm straight forward to eye level",
+        "Lower slowly and alternate arms",
+        "Maintain controlled movement throughout"
       ],
       benefits: [
-        "Constant tension throughout",
-        "Adjustable resistance",
-        "Isolates side delts effectively"
+        "Isolates front shoulder muscles",
+        "Improves shoulder flexion strength",
+        "Can identify muscle imbalances",
+        "Enhances shoulder definition"
       ],
       tips: [
-        "Lean slightly away from machine",
-        "Focus on elbow leading the movement",
-        "Use light weight for proper form"
+        "Avoid swinging or using momentum",
+        "Keep wrists neutral (not bent)",
+        "Control the descent (2-3 seconds)",
+        "Alternate arms or lift both together"
       ]
     },
     {
       id: 5,
-      name: "Upright Row (machine or barbell)",
+      name: "Dumbbell Shrugs",
       video: Videos.vid25,
-      muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
+      muscles: ["Trapezius", "Levator Scapulae"],
       instructions: [
-        "Grip bar with hands shoulder-width apart",
-        "Pull elbows upward to chin level",
-        "Lower slowly to starting position",
-        "Keep bar close to body"
+        "Stand with dumbbells at sides",
+        "Keep arms straight, shoulders relaxed",
+        "Elevate shoulders straight upward",
+        "Squeeze traps at the top position",
+        "Lower slowly to full stretch"
       ],
       benefits: [
-        "Works multiple upper body muscles",
-        "Improves shoulder mobility",
-        "Can use various equipment"
+        "Develops upper trap muscles",
+        "Improves shoulder girdle stability",
+        "Enhances neck support",
+        "Can be done with various equipment"
       ],
       tips: [
-        "Don't raise above collarbone",
-        "Keep shoulders relaxed",
-        "Use controlled tempo"
+        "Avoid rolling shoulders (move straight up/down)",
+        "Hold contraction at top for 1-2 seconds",
+        "Use straps if grip fails before traps",
+        "Keep chin neutral (don't jut forward)"
       ]
     }
   ];
@@ -135,15 +150,15 @@ const ShouldersBeginner = () => {
       </div>
 
       {exercises.map((exercise) => (
-        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4 '>
+        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
           
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-          
-        <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+
+          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
             <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
@@ -151,7 +166,7 @@ const ShouldersBeginner = () => {
           </div>
           
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

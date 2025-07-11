@@ -7,134 +7,181 @@ const BackAdvanced = () => {
   const exercises = [
     {
       id: 1,
-      name: "Pull-Ups (Weighted)",
+      name: "Deadlifts / Rack Pulls",
       video: Videos.vid26,
-      muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Core"],
+      muscles: ["Erector Spinae", "Latissimus Dorsi", "Trapezius", "Glutes", "Hamstrings"],
       instructions: [
-        "Hang from a pull-up bar with an overhand grip, hands slightly wider than shoulder-width.",
-        "Engage your core and pull your body up until your chin clears the bar.",
-        "Lower your body back down with control until your arms are fully extended.",
-        "Add weight using a dip belt or weighted vest for increased resistance."
+        "Stand with feet hip-width apart, barbell over mid-foot",
+        "Bend at hips and knees to grip bar (overhand or mixed grip)",
+        "Keep back flat, chest up, and core braced",
+        "Drive through heels to lift bar, extending hips and knees",
+        "For rack pulls: Set pins at knee height or slightly below",
+        "Stand tall at top, then lower with control"
       ],
       benefits: [
-        "Builds significant upper body strength",
-        "Enhances grip strength",
-        "Improves overall back and core stability"
+        "Builds overall back thickness and strength",
+        "Develops powerful hip extension",
+        "Improves grip strength",
+        "Rack pulls target upper back specifically"
       ],
       tips: [
-        "Focus on controlled movements, both up and down.",
-        "Avoid swinging or using momentum.",
-        "Engage your lats by imagining pulling your elbows down to your hips."
+        "Keep bar close to body throughout lift",
+        "Engage lats by bending the bar",
+        "Use straps for heavy sets if grip fails",
+        "For rack pulls: Focus on squeezing shoulder blades at top",
+        "Maintain neutral spine position"
       ]
     },
     {
       id: 2,
-      name: "Bent-Over Barbell Row",
+      name: "Underhand Bent-Over Rows",
       video: Videos.vid27,
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      muscles: ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Delts"],
       instructions: [
-        "Stand with feet shoulder-width apart, knees slightly bent, and bend at the hips to lower your torso.",
-        "Grip the barbell with an overhand grip, hands slightly wider than shoulder-width.",
-        "Pull the barbell to your waist, keeping your elbows close to your body.",
-        "Lower the barbell back to the starting position with control."
+        "Stand with feet shoulder-width apart, knees slightly bent",
+        "Bend at hips to 45° angle with underhand grip on barbell",
+        "Pull bar to lower abdomen, elbows tucked at 45°",
+        "Squeeze shoulder blades together at top",
+        "Lower with control to full arm extension"
       ],
       benefits: [
-        "Increases back thickness and strength",
-        "Improves posture and spinal stability",
-        "Engages multiple muscle groups"
+        "Targets lower lats more effectively",
+        "Allows greater range of motion",
+        "Engages biceps more than overhand grip",
+        "Improves scapular retraction"
       ],
       tips: [
-        "Keep your back straight and avoid rounding your shoulders.",
-        "Focus on squeezing your shoulder blades together at the peak of the movement.",
-        "Use a controlled tempo to maximize muscle engagement."
+        "Maintain flat back - never round shoulders",
+        "Lead with elbows, not hands",
+        "Use straps for heavy sets to focus on back",
+        "Pause for 1 second at contraction",
+        "Keep head in line with spine"
       ]
     },
     {
       id: 3,
-      name: "Deadlifts",
+      name: "Single-Arm Dumbbell Rows",
       video: Videos.vid28,
-      muscles: ["Erector Spinae", "Glutes", "Hamstrings", "Trapezius"],
+      muscles: ["Latissimus Dorsi", "Rear Delts", "Rotator Cuff", "Core"],
       instructions: [
-        "Stand with feet hip-width apart, with a barbell on the floor in front of you.",
-        "Bend at the hips and knees to grip the barbell with an overhand or mixed grip.",
-        "Lift the barbell by extending your hips and knees to stand up straight.",
-        "Lower the barbell back to the floor with control, maintaining a straight back."
+        "Place knee and hand on bench, other foot on floor",
+        "Hold dumbbell with neutral grip, arm fully extended",
+        "Pull elbow up and back to hip level",
+        "Squeeze shoulder blade at top position",
+        "Lower with control to full stretch"
       ],
       benefits: [
-        "Builds overall back and posterior chain strength",
-        "Improves posture and spinal stability",
-        "Enhances full-body power and coordination"
+        "Corrects muscle imbalances",
+        "Improves core stability",
+        "Allows greater range of motion",
+        "Enhances mind-muscle connection"
       ],
       tips: [
-        "Keep the barbell close to your body throughout the lift.",
-        "Engage your core and maintain a neutral spine.",
-        "Avoid jerking the weight; use a smooth, controlled motion."
+        "Keep torso parallel to floor",
+        "Imagine pulling with elbow, not hand",
+        "Pause for 2 seconds at peak contraction",
+        "Use straps to focus purely on back muscles",
+        "Control the eccentric (3-4 second descent)"
       ]
     },
     {
       id: 4,
-      name: "T-Bar Row",
+      name: "Chest-Supported Dumbbell Rows",
       video: Videos.vid29,
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      muscles: ["Middle Back", "Rear Delts", "Rhomboids"],
       instructions: [
-        "Straddle a T-bar row machine with feet shoulder-width apart.",
-        "Bend at the hips and knees to grip the handles.",
-        "Pull the handles to your torso, keeping your elbows close to your body.",
-        "Lower the handles back to the starting position with control."
+        "Set incline bench to 45° and lie chest-down",
+        "Let arms hang straight down with dumbbells",
+        "Row weights up to hips, elbows high",
+        "Squeeze shoulder blades together at top",
+        "Lower with control to full stretch"
       ],
       benefits: [
-        "Targets the entire back for balanced development",
-        "Improves grip and forearm strength",
-        "Allows for heavy loading with reduced lower back strain"
+        "Eliminates cheating and momentum",
+        "Reduces lower back strain",
+        "Improves scapular movement",
+        "Allows strict focus on back muscles"
       ],
       tips: [
-        "Keep your chest up and shoulders back throughout the movement.",
-        "Focus on squeezing your shoulder blades together.",
-        "Use a controlled tempo to maximize muscle engagement."
+        "Imagine pulling with elbows, not hands",
+        "Pause at top for 2-second contraction",
+        "Use moderate weight with perfect form",
+        "Keep neck neutral (don't look up)",
+        "Try pronated grip variation"
       ]
     },
     {
       id: 5,
-      name: "Single-Arm Dumbbell Row",
+      name: "Wide-Grip Seated Cable Rows",
       video: Videos.vid30,
-      muscles: ["Latissimus Dorsi", "Rear Deltoids", "Biceps", "Core"],
+      muscles: ["Upper Back", "Rear Delts", "Trapezius"],
       instructions: [
-        "Place one knee and hand on a bench for support.",
-        "Hold a dumbbell in the opposite hand with your arm extended.",
-        "Pull the dumbbell to your hip, keeping your elbow close to your body.",
-        "Lower the dumbbell back to the starting position with control."
+        "Use wide bar attachment on cable machine",
+        "Sit with knees slightly bent, chest up",
+        "Pull handle to upper abdomen",
+        "Squeeze shoulder blades together",
+        "Return slowly to full stretch"
       ],
       benefits: [
-        "Allows for unilateral strength development",
-        "Improves core stability and balance",
-        "Enhances mind-muscle connection"
+        "Develops thickness in upper back",
+        "Improves scapular retraction",
+        "Counters effects of rounded shoulders",
+        "Enhances posture"
       ],
       tips: [
-        "Keep your torso parallel to the floor and avoid rotating.",
-        "Focus on pulling with your back muscles, not your arm.",
-        "Use a full range of motion for maximum benefit."
+        "Imagine squeezing pencil between shoulder blades",
+        "Maintain slight forward lean on extension",
+        "Don't let weight stack touch between reps",
+        "Keep elbows at 90° angle to torso",
+        "Exhale on pull, inhale on release"
+      ]
+    },
+    {
+      id: 6,
+      name: "Wide-Grip Lat Pulldowns",
+      video: Videos.vid31,
+      muscles: ["Latissimus Dorsi", "Teres Major", "Biceps"],
+      instructions: [
+        "Grip bar wide (1.5x shoulder width)",
+        "Sit with thighs secured under pads",
+        "Pull bar to upper chest while leaning back slightly",
+        "Squeeze lats at bottom position",
+        "Control return to full stretch"
+      ],
+      benefits: [
+        "Builds impressive back width",
+        "Improves scapular depression",
+        "Enhances V-taper development",
+        "Good alternative to pull-ups"
+      ],
+      tips: [
+        "Imagine pulling elbows to pockets",
+        "Don't use momentum - controlled movement",
+        "Pause for 1 second at contraction",
+        "Keep chest up throughout",
+        "Adjust weight to maintain strict form"
       ]
     }
   ];
 
   return (
     <>
-        <div className="relative overflow-hidden">
-              <img
-                src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-                alt="Chest Workout Banner"
-                className="w-screen h-60 object-cover object-center scale-125"
-                loading="lazy"
-              />
-              <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-                <h1 className="text-5xl font-One z-10">Back</h1>
-                <h1 className="font-One text-2xl mt-6">
-                  <Link to="/"> HOME </Link>
-                  <span className="text-yellow-300">/BACK</span>
-                </h1>
-              </div>
-            </div>
-      
+      <div className="relative overflow-hidden">
+        <img
+          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
+          alt="Back Workout Banner"
+          className="w-screen h-60 object-cover object-center scale-125"
+          loading="lazy"
+        />
+        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
+          <h1 className="text-5xl font-One z-10">BACK</h1>
+          <h1 className="font-One text-2xl mt-6">
+            <Link to="/"> HOME </Link>
+            <span className="text-yellow-300">/BACK</span>
+          </h1>
+        </div>
+      </div>
+
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
@@ -152,7 +199,7 @@ const BackAdvanced = () => {
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>
@@ -179,6 +226,7 @@ const BackAdvanced = () => {
           </div>
         </div>
       ))}
+
       <Footer />
     </>
   );

@@ -66,7 +66,7 @@ const Review = () => {
           <h1 className="text-4xl  md:text-5xl  text-white uppercase mb-5">
             What Our Members Are Saying OneRepMaax
           </h1>
-          <p className="text-xl text-gray-400 font-M">
+          <p className="text-xl text-gray-400 font-DM">
             Discover how our gym transformed our members' lives.
           </p>
         </div>

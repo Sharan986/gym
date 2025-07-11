@@ -1,113 +1,139 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const ChestIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Bench Press",
-      muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
+      name: "Push-Ups (Weighted or Decline)",
+      muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids", "Core"],
+      video: Videos.vid1,
       instructions: [
-        "Lie back on a flat bench with your feet flat on the floor",
-        "Grip the barbell with hands slightly wider than shoulder-width apart",
-        "Lift the barbell from the rack and hold it straight over you with your arms locked",
-        "Lower the barbell to your chest, then push it back up to the starting position"
+        "Start in a high plank position (hands slightly wider than shoulders)",
+        "For decline: Place feet on elevated surface (bench/step)",
+        "For weighted: Have partner place plate on your back",
+        "Lower body until chest nearly touches the ground",
+        "Push through palms to return to starting position",
+        "Keep body in straight line throughout"
       ],
       benefits: [
-        "Builds overall chest strength",
-        "Increases muscle mass",
-        "Improves upper body power"
+        "Builds functional chest and core strength",
+        "No equipment needed (for basic version)",
+        "Improves shoulder stability",
+        "Can be scaled for all fitness levels"
       ],
       tips: [
-        "Keep your back arched slightly",
-        "Control the weight on the way down",
-        "Use a spotter for heavy lifts"
+        "Engage glutes and core to prevent sagging hips",
+        "Go slow (2 seconds down, 1 second up)",
+        "Increase difficulty by elevating feet or adding weight",
+        "Wider hand placement emphasizes chest",
+        "Keep elbows at 45° angle to body"
       ]
     },
     {
       id: 2,
       name: "Incline Dumbbell Press",
-      muscles: ["Upper Pectoralis Major", "Triceps", "Anterior Deltoids"],
+      muscles: ["Upper Pectoralis Major", "Anterior Deltoids", "Triceps"],
+      video: Videos.vid2,
       instructions: [
-        "Set an incline bench to a 45-degree angle and lie back with a dumbbell in each hand",
-        "Hold the dumbbells at shoulder level with your palms facing forward",
-        "Press the dumbbells upward until your arms are fully extended",
-        "Lower the dumbbells back to the starting position"
+        "Set bench to 30-45 degree incline",
+        "Press dumbbells up until arms are extended (not locked)",
+        "Lower slowly until dumbbells reach chest level",
+        "Keep wrists straight and forearms vertical",
+        "Press back up along same arc"
       ],
       benefits: [
-        "Targets the upper chest muscles",
+        "Targets often-underdeveloped upper chest",
+        "Allows greater range of motion than barbell",
         "Improves shoulder stability",
-        "Enhances overall chest definition"
+        "Reduces strain on rotator cuffs"
       ],
       tips: [
-        "Keep your feet flat on the floor",
-        "Avoid locking your elbows at the top",
-        "Use a controlled movement"
+        "Start with lighter weight to perfect form",
+        "Keep feet planted firmly on ground",
+        "Don't let elbows flare beyond 90°",
+        "Squeeze chest at top of movement",
+        "Use spotter for heavy weights"
       ]
     },
     {
       id: 3,
-      name: "Cable Crossover",
-      muscles: ["Pectoralis Major", "Anterior Deltoids"],
+      name: "Flat Dumbbell Chest Press",
+      muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
+      video: Videos.vid3,
       instructions: [
-        "Set the cable pulleys to the highest position and select the desired weight",
-        "Stand in the center of the cable machine with a staggered stance",
-        "Grab the handles with your palms facing down",
-        "Bring your hands together in front of your body, crossing one hand over the other",
-        "Return to the starting position with control"
+        "Lie flat on bench with dumbbells at chest level",
+        "Press weights up until arms are extended (don't lock)",
+        "Lower slowly until elbows reach bench level",
+        "Keep dumbbells in line with shoulders",
+        "Maintain neutral wrist position"
       ],
       benefits: [
-        "Isolates the chest muscles",
-        "Improves muscle definition",
-        "Enhances flexibility and range of motion"
+        "Builds overall chest mass and strength",
+        "Allows deeper stretch than barbell press",
+        "Improves muscle balance (each side works independently)",
+        "Reduces shoulder strain"
       ],
       tips: [
-        "Keep a slight bend in your elbows",
-        "Squeeze your chest muscles at the peak of the contraction",
-        "Use a slow and controlled movement"
+        "Imagine 'hugging a barrel' on the way down",
+        "Control the negative (3 second descent)",
+        "Squeeze chest at top for 1 second",
+        "Don't let dumbbells touch at top",
+        "Keep slight arch in lower back"
       ]
     },
     {
       id: 4,
-      name: "Smith Machine Chest Press",
-      muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
+      name: "Incline Dumbbell Flys",
+      muscles: ["Upper Pectoralis Major", "Anterior Deltoids"],
+      video: Videos.vid4,
       instructions: [
-        "Set the bench inside the Smith machine and lie back with your feet flat on the floor",
-        "Grip the barbell with hands slightly wider than shoulder-width apart",
-        "Unrack the barbell and lower it to your chest",
-        "Press the barbell back up to the starting position"
+        "Set bench to 30 degree incline",
+        "Start with dumbbells extended above chest (palms facing)",
+        "Lower arms in wide arc until parallel with shoulders",
+        "Keep slight bend in elbows (like hugging a tree)",
+        "Return along same arc to starting position"
       ],
       benefits: [
-        "Provides stability for controlled movements",
-        "Builds overall chest strength",
-        "Reduces the need for a spotter"
+        "Stretches and isolates upper chest fibers",
+        "Improves chest muscle definition",
+        "Enhances shoulder mobility",
+        "Develops mind-muscle connection"
       ],
       tips: [
-        "Keep your back flat on the bench",
-        "Control the weight on the way down",
-        "Avoid locking your elbows at the top"
+        "Use lighter weight than pressing movements",
+        "Control the stretch at bottom position",
+        "Imagine string between dumbbells keeping them aligned",
+        "Don't lower below shoulder level",
+        "Squeeze chest at top of movement"
       ]
     },
     {
       id: 5,
-      name: "Dumbbell Chest Fly",
+      name: "Pec Deck Fly Machine",
       muscles: ["Pectoralis Major", "Anterior Deltoids"],
+      video: Videos.vid5,
       instructions: [
-        "Lie back on a flat bench with a dumbbell in each hand, palms facing each other",
-        "Extend your arms above your chest with a slight bend in your elbows",
-        "Lower the dumbbells out to the sides in a wide arc until you feel a stretch in your chest",
-        "Bring the dumbbells back up to the starting position"
+        "Adjust seat height so handles are at chest level",
+        "Grip handles with elbows slightly bent",
+        "Bring arms together in front of chest",
+        "Squeeze chest muscles at peak contraction",
+        "Return slowly to stretched position"
       ],
       benefits: [
-        "Stretches and contracts the chest muscles",
-        "Improves muscle definition",
-        "Enhances flexibility and range of motion"
+        "Isolates chest without triceps involvement",
+        "Provides constant tension throughout movement",
+        "Great for finishing chest workout",
+        "Easy to control weight progression"
       ],
       tips: [
-        "Keep a slight bend in your elbows throughout the movement",
-        "Avoid lowering the weights too far",
-        "Use a controlled movement"
+        "Don't use momentum - control the weight",
+        "Lean slightly forward to increase chest activation",
+        "Hold contraction for 1-2 seconds",
+        "Adjust grip width to target different chest areas",
+        "Exhale while bringing arms together"
       ]
     }
   ];
@@ -139,11 +165,14 @@ const ChestIntermediate = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

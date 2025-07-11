@@ -2,29 +2,36 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import One from "../assets/1.jpeg";
-import Two from "../assets/2.jpeg";
-import Three from "../assets/3.jpeg";
+import One from "../assets/Trainers/ONE.jpg";
+import Two from "../assets/Trainers/TWO.jpg";
+import Three from "../assets/Trainers/THREE.jpg";
+import FOUR from "../assets/Trainers/FOUR.jpg";
 
 const Trainers = () => {
   const trainers = [
     {
       id: 1,
       img: One,
-      name: "John Smith",
-      title: "Head Trainer",
+      name: "SMRITI ROY",
+      title: "CO-FOUNDER & TRAINER",
     },
     {
       id: 2,
       img: Two,
-      name: "Michael Brown",
-      title: "Fitness Consultant",
+      name: "FAZAL RAHMAAN",
+      title: "TRAINER",
     },
     {
       id: 3,
       img: Three,
-      name: "David Nguyen",
-      title: "Yoga Instructor",
+      name: "RAJ KUMAR",
+      title: "TRAINER",
+    },
+    {
+      id: 4,
+      img: FOUR,
+      name: "ADITYA SINGH",
+      title: "K11 CERTIFIED TRAINER",
     },
   ];
 
@@ -41,11 +48,11 @@ const Trainers = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-16 mx-7 sm:px-8 font-One">
-        <header className="text-xl sm:text-3xl text-[#48D3A3] italic">
+      <div className="text-white text-xl pt-16 mx-7  font-One">
+        <header className="text-2xl sm:text-3xl text-[#48D3A3] italic">
           Our Trainers
         </header>
-        <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase">
+        <p className="text-4xl  w-full mt-4 font-One uppercase">
           Fitness team supporting goals
         </p>
 
@@ -58,7 +65,7 @@ const Trainers = () => {
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[28rem] object-cover object-center"
+                    className="w-full h-[18rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
                     <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>

@@ -37,9 +37,9 @@ const Services = () => {
   };
 
   return (
-    <div className="text-white text-xl pt-16 px-4 font-One">
-      <header className="text-xl lg:text-center sm:text-3xl text-[#48D3A3] italic mx-7">Our Services</header>
-      <p className="text-4xl lg:text-center sm:text-6xl mt-4 mx-5 uppercase">
+    <div className="text-white text-xl pt-16 mx-7 font-One">
+      <header className="text-2xl lg:text-center  text-[#48D3A3] italic ">Our Services</header>
+      <p className="text-4xl lg:text-center sm:text-6xl mt-4  uppercase">
         What We Can Do Best For Our Clients
       </p>
       <div className="mt-12 mx-3">
@@ -86,7 +86,7 @@ const Services = () => {
         <div className="md:hidden">
           <Slider {...settings}>
             {services.map((service) => (
-              <div key={service.id} className="px-4">
+              <div key={service.id} className="">
                 <div className="flex flex-col items-center border-2 border-gray-600 font-One h-full">
                   <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
                   <h1 className="text-3xl py-3">{service.title}</h1>

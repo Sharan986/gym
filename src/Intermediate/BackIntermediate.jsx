@@ -1,114 +1,166 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const BackIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Bent-Over Row",
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      name: "Pull-Ups (Assisted if needed)",
+      muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Trapezius"],
+      video: Videos.vid6,
       instructions: [
-        "Stand with your feet shoulder-width apart and knees slightly bent",
-        "Bend at your hips and knees to lower your torso until it's almost parallel to the floor",
-        "Grip the barbell with hands slightly wider than shoulder-width apart",
-        "Lift the barbell to your torso, keeping your elbows close to your body",
-        "Lower the barbell back to the starting position"
+        "Grab pull-up bar with overhand grip (palms facing away)",
+        "Hands slightly wider than shoulder-width",
+        "Hang with arms fully extended, engage core",
+        "Pull yourself up until chin clears the bar",
+        "Lower slowly with control (3-4 second descent)",
+        "Keep shoulders down (avoid shrugging)"
       ],
       benefits: [
-        "Strengthens the entire back",
-        "Improves posture",
-        "Enhances overall upper body strength"
+        "Builds functional upper body strength",
+        "Develops impressive back width",
+        "Improves grip strength",
+        "Enhances shoulder stability"
       ],
       tips: [
-        "Keep your back straight and avoid rounding your shoulders",
-        "Use a controlled movement",
-        "Engage your core for stability"
+        "Start with assisted version if needed",
+        "Focus on pulling with elbows (not just arms)",
+        "Full range of motion is key",
+        "Add weight with dip belt for progression",
+        "Try different grips (wide/narrow/neutral)"
       ]
     },
     {
       id: 2,
-      name: "T-Bar Row (with machine or landmine attachment)",
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      name: "Bent-Over Barbell Row",
+      muscles: ["Middle Back", "Lats", "Rear Delts", "Biceps"],
+      video: Videos.vid7,
       instructions: [
-        "Place a barbell in a landmine attachment or use a T-bar row machine",
-        "Stand over the barbell with your feet shoulder-width apart",
-        "Bend at your hips and knees to lower your torso",
-        "Grip the handles and lift the weight to your torso",
-        "Lower the weight back to the starting position"
+        "Stand with feet shoulder-width, knees slightly bent",
+        "Bend at hips until torso is 45° to floor",
+        "Grip bar slightly wider than shoulder-width",
+        "Pull bar to lower ribcage, elbows at 45°",
+        "Squeeze shoulder blades together at top",
+        "Lower with control to full stretch"
       ],
       benefits: [
-        "Targets the middle back muscles",
-        "Improves overall back strength",
-        "Enhances muscle definition"
+        "Builds overall back thickness",
+        "Improves posture and spinal stability",
+        "Enhances deadlift strength",
+        "Develops strong core muscles"
       ],
       tips: [
-        "Keep your back straight and avoid rounding your shoulders",
-        "Use a controlled movement",
-        "Engage your core for stability"
+        "Maintain neutral spine - never round back",
+        "Lead with elbows, not hands",
+        "Use straps if grip fails before back",
+        "Start with lighter weight to perfect form",
+        "Keep head in line with spine"
       ]
     },
     {
       id: 3,
-      name: "Dumbbell Renegade Row (on bench)",
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Core"],
+      name: "Close-Grip Lat Pulldown",
+      muscles: ["Lower Lats", "Biceps", "Brachialis"],
+      video: Videos.vid8,
       instructions: [
-        "Place two dumbbells on the floor and assume a push-up position with each hand gripping a dumbbell",
-        "Row one dumbbell up to your torso while balancing on the other arm",
-        "Lower the dumbbell back to the starting position and repeat with the other arm",
-        "Continue alternating arms"
+        "Use V-bar or close-grip attachment",
+        "Sit with thighs secured under pads",
+        "Pull bar to upper chest, lean back slightly",
+        "Squeeze lats at bottom position",
+        "Control return to full stretch"
       ],
       benefits: [
-        "Strengthens the back and core",
-        "Improves stability and balance",
-        "Enhances overall upper body strength"
+        "Targets lower lat fibers specifically",
+        "Reduces strain on shoulders",
+        "Improves mind-muscle connection",
+        "Great for V-taper development"
       ],
       tips: [
-        "Keep your hips level and avoid rotating your torso",
-        "Use a controlled movement",
-        "Engage your core for stability"
+        "Imagine pulling elbows to pockets",
+        "Don't use momentum - controlled movement",
+        "Pause for 1 second at contraction",
+        "Keep chest up throughout",
+        "Adjust weight to maintain strict form"
       ]
     },
     {
       id: 4,
-      name: "Iso-Lateral Row Machine",
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      name: "Wide-Grip Seated Cable Row",
+      muscles: ["Upper Back", "Rear Delts", "Trapezius"],
+      video: Videos.vid9,
       instructions: [
-        "Sit on the iso-lateral row machine with your chest against the pad",
-        "Grip the handles with your palms facing each other",
-        "Pull the handles back to your torso, squeezing your shoulder blades together",
-        "Return to the starting position with control"
+        "Use wide bar attachment on cable machine",
+        "Sit with knees slightly bent, chest up",
+        "Pull handle to upper abdomen",
+        "Squeeze shoulder blades together",
+        "Return slowly to full stretch"
       ],
       benefits: [
-        "Isolates the back muscles",
-        "Improves muscle definition",
-        "Enhances overall back strength"
+        "Develops thickness in upper back",
+        "Improves scapular retraction",
+        "Counters effects of rounded shoulders",
+        "Enhances posture"
       ],
       tips: [
-        "Keep your back straight and avoid rounding your shoulders",
-        "Use a controlled movement",
-        "Squeeze your shoulder blades together at the peak of the contraction"
+        "Imagine squeezing pencil between shoulder blades",
+        "Maintain slight forward lean on extension",
+        "Don't let weight stack touch between reps",
+        "Keep elbows at 90° angle to torso",
+        "Exhale on pull, inhale on release"
       ]
     },
     {
       id: 5,
-      name: "Cable Lat Row",
-      muscles: ["Latissimus Dorsi", "Rhomboids", "Trapezius", "Biceps"],
+      name: "Chest-Supported Dumbbell Row",
+      muscles: ["Middle Back", "Rear Delts", "Rhomboids"],
+      video: Videos.vid10,
       instructions: [
-        "Sit on the cable row machine with your feet on the platform and knees slightly bent",
-        "Grip the handle with your palms facing down",
-        "Pull the handle to your torso, squeezing your shoulder blades together",
-        "Return to the starting position with control"
+        "Set incline bench to 45° and lie chest-down",
+        "Let arms hang straight down with dumbbells",
+        "Row weights up to hips, elbows high",
+        "Squeeze shoulder blades at top",
+        "Lower with control to full stretch"
       ],
       benefits: [
-        "Strengthens the entire back",
-        "Improves posture",
-        "Enhances overall upper body strength"
+        "Eliminates cheating and momentum",
+        "Reduces lower back strain",
+        "Improves scapular movement",
+        "Allows strict focus on back muscles"
       ],
       tips: [
-        "Keep your back straight and avoid rounding your shoulders",
-        "Use a controlled movement",
-        "Squeeze your shoulder blades together at the peak of the contraction"
+        "Imagine pulling with elbows, not hands",
+        "Pause at top for 2-second contraction",
+        "Use moderate weight with perfect form",
+        "Keep neck neutral (don't look up)",
+        "Try single-arm variations for imbalances"
+      ]
+    },
+    {
+      id: 6,
+      name: "Hyperextensions (Weighted)",
+      muscles: ["Erector Spinae", "Glutes", "Hamstrings"],
+      video: Videos.vid11,
+      instructions: [
+        "Position hips on pad of hyperextension bench",
+        "Cross arms or hold weight plate to chest",
+        "Lower torso until parallel to floor",
+        "Raise back up to neutral spine position",
+        "Squeeze glutes at top"
+      ],
+      benefits: [
+        "Strengthens entire posterior chain",
+        "Improves spinal stability",
+        "Reduces risk of back injuries",
+        "Enhances deadlift and squat performance"
+      ],
+      tips: [
+        "Avoid hyperextension at top",
+        "Keep movement slow and controlled",
+        "Progress gradually with added weight",
+        "Engage core throughout movement",
+        "Don't round back when lowering"
       ]
     }
   ];
@@ -140,11 +192,14 @@ const BackIntermediate = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

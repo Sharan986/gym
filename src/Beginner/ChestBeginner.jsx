@@ -5,143 +5,118 @@ import { Videos } from '../assets/assets';
 const Footer = React.lazy(() => import("../components/Footer"));
 
 const ChestBeginner = () => {
-  const exercises = [
-    {
-      id: 1,
-      name: "Chest Press Machine",
-      muscles: ["Chest", "Shoulders", "Triceps"],
-      video: Videos.vid1,
-      instructions: [
-        "Adjust the seat height so that the handles are at chest level.",
-        "Sit down and grip the handles firmly.",
-        "Push the handles forward until your arms are fully extended.",
-        "Slowly return to the starting position.",
-        "Repeat for the desired number of repetitions."
-      ],
-      benefits: [
-        "Strengthens the chest, shoulders, and triceps.",
-        "Improves upper body strength and muscle tone.",
-        "Enhances functional movements like pushing and lifting.",
-        "Suitable for beginners and can be adjusted for different fitness levels."
-      ],
-      tips: [
-        "Start with a light weight to master the form.",
-        "Keep your back flat against the seat and avoid arching.",
-        "Breathe out while pushing the handles and inhale while returning.",
-        "Maintain a controlled motion to prevent injury.",
-        "Consult a trainer if you're unsure about your form."
-      ],
-      image: "https://imgs.search.brave.com/c4qu6h88mtyArWiAS6xUEfONuFHxUNLK3buQyZ-b2Sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b3Jr/b3V0aGVhbHRoeS5j/b20vY2RuL3Nob3Av/ZmlsZXMvRk1JLVBM/MjEwMF9TdGVlbEZs/ZXgtSW5jbGluZS1D/aGVzdC1QcmVzcy1N/YWNoaW5lLndlYnA_/dj0xNzA0OTI1MTk1/JndpZHRoPTkwMA"
-    },
-    {
-      id: 2,
-      name: "Pec Deck (Butterfly Machine)",
-      muscles: ["Chest", "Shoulders"],
-      video: Videos.vid2,
-      instructions: [
-        "Adjust the seat height so that the handles are at chest level.",
-        "Sit down and place your forearms against the pads.",
-        "Push the pads together in front of your chest.",
-        "Slowly return to the starting position.",
-        "Repeat for the desired number of repetitions."
-      ],
-      benefits: [
-        "Isolates the chest muscles for targeted strengthening.",
-        "Improves muscle tone and definition.",
-        "Enhances overall chest development.",
-        "Suitable for beginners and can be adjusted for different fitness levels."
-      ],
-      tips: [
-        "Start with a light weight to master the form.",
-        "Keep your back flat against the seat and avoid arching.",
-        "Breathe out while pushing the pads and inhale while returning.",
-        "Maintain a controlled motion to prevent injury.",
-        "Consult a trainer if you're unsure about your form."
-      ],
-      image: "https://imgs.search.brave.com/ExampleImageURLForPecDeck"
-    },
-    {
-      id: 3,
-      name: "Incline Chest Press Machine",
-      muscles: ["Upper Chest", "Shoulders", "Triceps"],
-      video: Videos.vid3,
-      instructions: [
-        "Adjust the seat height so that the handles are at chest level.",
-        "Sit down and grip the handles firmly.",
-        "Push the handles forward and upward until your arms are fully extended.",
-        "Slowly return to the starting position.",
-        "Repeat for the desired number of repetitions."
-      ],
-      benefits: [
-        "Strengthens the upper chest, shoulders, and triceps.",
-        "Improves upper body strength and muscle tone.",
-        "Enhances functional movements like pushing and lifting.",
-        "Suitable for beginners and can be adjusted for different fitness levels."
-      ],
-      tips: [
-        "Start with a light weight to master the form.",
-        "Keep your back flat against the seat and avoid arching.",
-        "Breathe out while pushing the handles and inhale while returning.",
-        "Maintain a controlled motion to prevent injury.",
-        "Consult a trainer if you're unsure about your form."
-      ],
-      image: "https://imgs.search.brave.com/ExampleImageURLForInclineChestPress"
-    },
-    {
-      id: 4,
-      name: "Dumbbell Bench Press",
-      muscles: ["Chest", "Shoulders", "Triceps"],
-      video: Videos.vid4,
-      instructions: [
-        "Lie down on a flat bench with a dumbbell in each hand, resting on your thighs.",
-        "Lift the dumbbells one at a time to shoulder width.",
-        "Press the dumbbells upward until your arms are fully extended.",
-        "Slowly lower the dumbbells back to the starting position.",
-        "Repeat for the desired number of repetitions."
-      ],
-      benefits: [
-        "Strengthens the chest, shoulders, and triceps.",
-        "Improves upper body strength and muscle tone.",
-        "Enhances functional movements like pushing and lifting.",
-        "Allows for a greater range of motion compared to barbell bench press."
-      ],
-      tips: [
-        "Start with a light weight to master the form.",
-        "Keep your feet flat on the ground and your back flat against the bench.",
-        "Breathe out while pushing the dumbbells and inhale while returning.",
-        "Maintain a controlled motion to prevent injury.",
-        "Use a spotter if lifting heavy weights."
-      ],
-      image: "https://imgs.search.brave.com/ExampleImageURLForDumbbellBenchPress"
-    },
-    {
-      id: 5,
-      name: "Resistance Band Chest Fly",
-      muscles: ["Chest", "Shoulders"],
-      video: Videos.vid5,
-      instructions: [
-        "Attach the resistance band to a stable object at chest height.",
-        "Stand with your back to the attachment point and hold the band handles with your arms extended out to the sides.",
-        "Bring your hands together in front of your chest, keeping your arms slightly bent.",
-        "Slowly return to the starting position.",
-        "Repeat for the desired number of repetitions."
-      ],
-      benefits: [
-        "Strengthens the chest and shoulders.",
-        "Improves muscle tone and definition.",
-        "Enhances overall chest development.",
-        "Provides constant tension throughout the movement."
-      ],
-      tips: [
-        "Start with a light resistance band to master the form.",
-        "Keep your back straight and avoid arching.",
-        "Breathe out while bringing your hands together and inhale while returning.",
-        "Maintain a controlled motion to prevent injury.",
-        "Consult a trainer if you're unsure about your form."
-      ],
-      image: "https://imgs.search.brave.com/ExampleImageURLForResistanceBandChestFly"
-    }
-  ];
+  
+const exercises = [
+  {
+    id: 1,
+    name: "PUSH UPS",
+    muscles: ["Chest", "Shoulders", "Triceps"],
+    video: "Videos.vid1",
+    instructions: [
+      "Start in a high plank position with your hands placed slightly wider than shoulder-width apart.",
+      "Keep your body in a straight line from head to heels.",
+      "Lower your body until your chest nearly touches the floor, keeping your elbows tucked in.",
+      "Push through your palms to return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    benefits: [
+      "Strengthens the chest, shoulders, arms, and core.",
+      "Improves overall upper body strength and endurance.",
+      "Enhances stability and balance.",
+      "Can be modified for different fitness levels and goals.",
+      "Requires no equipment, making it accessible for everyone."
+    ],
+    tips: [
+      "Keep your core engaged throughout the movement to protect your lower back.",
+      "Avoid letting your hips sag or rise too high to maintain proper form.",
+      "Breathe in as you lower your body and exhale as you push up.",
+      "Start with knee push-ups if full push-ups are too challenging.",
+      "Consult a trainer if you need help with form or modifications."
+    ],
+    image: "https://imgs.search.brave.com/c4qu6h88mtyArWiAS6xUEfONuFHxUNLK3buQyZ-b2Sg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b3Jr/b3V0aGVhbHRoeS5j/b20vY2RuL3Nob3Av/ZmlsZXMvRk1JLVBM/MjEwMF9TdGVlbEZs/ZXgtSW5jbGluZS1D/aGVzdC1QcmVzcy1N/YWNoaW5lLndlYnA_/dj0xNzA0OTI1MTk1/JndpZHRoPTkwMA"
+  },
+  {
+    id: 2,
+    name: "Machine Chest Press (Incline)",
+    muscles: ["Upper Chest", "Shoulders", "Triceps"],
+    video: "Videos.vid2",
+    instructions: [
+      "Adjust the seat height so that the handles are at upper chest level.",
+      "Sit down and grip the handles firmly.",
+      "Push the handles forward and upward until your arms are fully extended.",
+      "Slowly return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    benefits: [
+      "Targets the upper chest, enhancing muscle tone and strength.",
+      "Improves overall upper body strength and endurance.",
+      "Enhances functional movements like pushing and lifting.",
+      "Suitable for different fitness levels with adjustable resistance."
+    ],
+    tips: [
+      "Start with a lighter weight to master the form.",
+      "Keep your back flat against the seat to avoid strain.",
+      "Exhale while pushing the handles and inhale while returning.",
+      "Maintain a controlled motion to maximize effectiveness.",
+      "Consult a trainer for personalized adjustments."
+    ],
+    image: "https://imgs.search.brave.com/ExampleImageURLForInclineChestPress"
+  },
+  {
+    id: 3,
+    name: "Flat Chest Press Machine",
+    muscles: ["Chest", "Shoulders", "Triceps"],
+    video: "Videos.vid3",
+    instructions: [
+      "Adjust the seat so that the handles are aligned with your mid-chest.",
+      "Sit down and grip the handles firmly.",
+      "Push the handles forward until your arms are fully extended.",
+      "Slowly return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    benefits: [
+      "Strengthens the chest, shoulders, and triceps.",
+      "Improves muscle tone and overall upper body strength.",
+      "Enhances pushing movements and functional fitness.",
+      "Adjustable for various fitness levels and goals."
+    ],
+    tips: [
+      "Begin with a lighter weight to ensure proper form.",
+      "Keep your back flat against the seat throughout the exercise.",
+      "Exhale on exertion and inhale on the return for better performance.",
+      "Use controlled movements to prevent injury.",
+      "Consider consulting a trainer for optimal settings."
+    ],
+    image: "https://imgs.search.brave.com/ExampleImageURLForFlatChestPress"
+  },
+  {
+    id: 4,
+    name: "Pec Deck Fly",
+    muscles: ["Chest", "Shoulders"],
+    video: "Videos.vid4",
+    instructions: [
+      "Adjust the seat height so that the handles are at chest level.",
+      "Sit down and place your forearms against the pads.",
+      "Bring your arms together in front of your chest.",
+      "Slowly return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    benefits: [
+      "Isolates the chest muscles, improving muscle tone and definition.",
+      "Enhances overall chest development and strength.",
+      "Provides a focused workout for the pectoral muscles.",
+      "Suitable for all fitness levels with adjustable resistance."
+    ],
+    tips: [
+      "Start with a lighter resistance to master the form.",
+      "Keep your back flat against the seat and avoid arching.",
+      "Exhale while bringing your arms together and inhale while returning.",
+      "Maintain a controlled motion to maximize muscle engagement.",
+      "Consult a trainer for personalized adjustments and form checks."
+    ],
+    image: "https://imgs.search.brave.com/ExampleImageURLForPecDeckFly"
+  }
+];
 
   return (
     <>

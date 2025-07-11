@@ -8,9 +8,10 @@
     --font-Two: "Oswald", sans-serif;
     --font-M: "Montserrat", sans-serif;
     --font-DM: "DM Sans", sans-serif;
+    --font-B:"Bayon", sans-serif;
+    
 }
-   
-  /* Custom dot styling */
+   /* Custom dot styling */
 .slick-dots li button:before {
   color: white !important;
   opacity: 0.5 !important;

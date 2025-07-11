@@ -45,12 +45,12 @@ const MembershipSection = () => {
   return (
     <div className="bg-[#070915] text-white mb-6 ">
       <div className="flex flex-col md:flex-col">
-        <div className="w-full mx-7 pt-5 mb-2">
+        <div className="mx-7 pt-5 mb-2">
           <h2 className="text-[#48D3A3] text-2xl mb-4 font-One italic">OUR MEMBERSHIP</h2>
           <p className="mb-8 text-white font-One text-3xl">
             Fight School has specialized in martial arts
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 font-M text-lg">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3  gap-y-2 font-DM text-lg">
             {[
               "PERSONAL TRAINING",
               "ZUMBA",

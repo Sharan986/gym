@@ -7,115 +7,132 @@ const ArmsBeginner = () => {
   const exercises = [
     {
       id: 1,
-      name: "Dumbbell Bicep Curl (Seated)",
-      muscles: ["Biceps", "Forearms"],
+      name: "Standing Barbell Bicep Curls",
+      muscles: ["Biceps Brachii", "Brachialis", "Forearms"],
       video: Videos.vid16,
       instructions: [
-        "Sit on a bench with a dumbbell in each hand, palms facing forward",
-        "Keep your elbows close to your torso",
-        "Curl the weights while contracting your biceps",
-        "Continue until your biceps are fully contracted and the dumbbells are at shoulder level",
-        "Lower the dumbbells back to the starting position"
+        "Stand with feet shoulder-width apart, holding a barbell with underhand grip",
+        "Keep elbows close to your torso and shoulders back",
+        "Curl the barbell upward while contracting your biceps",
+        "Pause when the bar reaches shoulder height",
+        "Slowly lower back to starting position (3-4 second descent)"
       ],
       benefits: [
-        "Isolates the biceps",
-        "Improves arm strength",
-        "Enhances muscle definition"
+        "Builds overall bicep mass and strength",
+        "Engages forearm muscles for grip development",
+        "Allows progressive overload with weight increases",
+        "Improves mind-muscle connection with biceps"
       ],
       tips: [
-        "Keep your elbows stationary",
-        "Avoid swinging the weights",
-        "Use a controlled movement"
+        "Avoid swinging your body - keep torso stationary",
+        "Squeeze biceps hard at the top of movement",
+        "Use full range of motion without hyperextending elbows",
+        "Start with lighter weight to perfect form",
+        "Keep wrists straight to prevent strain"
       ]
     },
     {
       id: 2,
-      name: "Resistance Band Hammer Curl",
-      muscles: ["Biceps", "Brachialis", "Forearms"],
+      name: "Dumbbell Overhead Tricep Extensions",
+      muscles: ["Triceps Brachii (All Three Heads)", "Anconeus"],
       video: Videos.vid17,
       instructions: [
-        "Stand on the middle of the resistance band with feet shoulder-width apart",
-        "Hold the ends of the band with your palms facing your torso",
-        "Keep your elbows close to your torso and curl the band upward",
-        "Continue until your biceps are fully contracted",
-        "Lower the band back to the starting position"
+        "Stand or sit holding one dumbbell with both hands",
+        "Press the weight overhead until arms are fully extended",
+        "Keeping elbows close to ears, lower dumbbell behind head",
+        "Pause when forearms reach parallel to floor",
+        "Extend arms back to starting position"
       ],
       benefits: [
-        "Targets the brachialis for arm thickness",
-        "Improves grip strength",
-        "Portable and versatile"
+        "Targets all three heads of the triceps",
+        "Improves shoulder stability and mobility",
+        "Enhances arm definition and strength",
+        "Can be done seated or standing"
       ],
       tips: [
-        "Keep your elbows close to your sides",
-        "Maintain a neutral wrist position",
-        "Control the resistance band throughout the movement"
+        "Keep elbows pointing forward (don't flare outward)",
+        "Move slowly through full range of motion",
+        "Use lighter weight than you think for proper form",
+        "Engage core to prevent back arching",
+        "Focus on stretch at bottom of movement"
       ]
     },
     {
       id: 3,
-      name: "Overhead Dumbbell Tricep Extension",
-      muscles: ["Triceps"],
+      name: "Hammer Curls",
+      muscles: ["Brachialis", "Biceps Brachii", "Brachioradialis"],
       video: Videos.vid18,
       instructions: [
-        "Stand or sit on a bench with a dumbbell held by both hands",
-        "Raise the dumbbell overhead until both arms are fully extended",
-        "Lower the dumbbell behind your head by bending your elbows",
-        "Return to the starting position by extending your arms"
+        "Stand holding dumbbells with neutral grip (palms facing inward)",
+        "Keep elbows close to sides and shoulders back",
+        "Curl weights upward while maintaining neutral grip",
+        "Pause when dumbbells reach shoulder height",
+        "Lower slowly with control (3 second count)"
       ],
       benefits: [
-        "Isolates the triceps",
-        "Improves arm strength and stability",
-        "Enhances muscle definition"
+        "Develops arm thickness and width",
+        "Targets often-neglected brachialis muscle",
+        "Reduces wrist strain compared to supinated curls",
+        "Improves functional grip strength"
       ],
       tips: [
-        "Keep your elbows close to your head",
-        "Avoid moving your upper arms",
-        "Use a controlled movement"
+        "Imagine hammering nails with each rep",
+        "Keep slight bend in elbows at bottom position",
+        "Alternate arms or lift simultaneously",
+        "Avoid rocking body for momentum",
+        "Squeeze at top for peak contraction"
       ]
     },
     {
       id: 4,
-      name: "Incline Dumbbell Curl (on bench)",
-      muscles: ["Biceps", "Forearms"],
+      name: "Tricep Rope Pushdown",
+      muscles: ["Triceps Brachii (Especially Lateral Head)", "Anconeus"],
       video: Videos.vid19,
       instructions: [
-        "Set an incline bench to a 45-degree angle and sit back with a dumbbell in each hand",
-        "Let your arms hang down at your sides with your palms facing forward",
-        "Curl the dumbbells while contracting your biceps",
-        "Continue until your biceps are fully contracted",
-        "Lower the dumbbells back to the starting position"
+        "Attach rope to high pulley cable machine",
+        "Stand with slight forward lean, elbows pinned to sides",
+        "Push rope downward until arms fully extended",
+        "At bottom, pull rope ends apart for extra contraction",
+        "Control return to starting position"
       ],
       benefits: [
-        "Targets the long head of the biceps",
-        "Improves arm strength and definition",
-        "Enhances muscle stretch and contraction"
+        "Isolates triceps with constant tension",
+        "Improves arm definition and separation",
+        "Allows varied hand positions for different emphasis",
+        "Reduces joint stress compared to heavy presses"
       ],
       tips: [
-        "Keep your elbows stationary",
-        "Avoid swinging the weights",
-        "Use a controlled movement"
+        "Keep elbows stationary - only forearms should move",
+        "Lean forward slightly for better muscle engagement",
+        "Use moderate weight with perfect form",
+        "Focus on squeezing at full extension",
+        "Try single-arm variations for imbalances"
       ]
     },
     {
       id: 5,
-      name: "Tricep Pushdown (Cable)",
+      name: "EZ Bar Preacher Curls",
+      muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
       video: Videos.vid20,
-      muscles: ["Triceps"],
       instructions: [
-        "Attach a straight or angled bar to a high pulley and grab it with an overhand grip",
-        "Stand with your feet shoulder-width apart and your elbows close to your sides",
-        "Push the bar down until your arms are fully extended",
-        "Return to the starting position by bending your elbows"
+        "Set preacher bench to support underarms comfortably",
+        "Grip EZ bar with shoulder-width underhand grip",
+        "Curl weight up until forearms are vertical",
+        "Squeeze biceps hard at top position",
+        "Lower slowly with control (3-4 second count)"
       ],
       benefits: [
-        "Isolates the triceps",
-        "Improves arm strength and definition",
-        "Enhances muscle endurance"
+        "Isolates biceps by eliminating body English",
+        "Reduces shoulder and wrist strain",
+        "Allows strict form and heavy weights",
+        "Enhances bicep peak development"
       ],
       tips: [
-        "Keep your elbows close to your sides",
-        "Avoid using your body weight to push the bar down",
-        "Use a controlled movement"
+        "Don't fully extend elbows at bottom (maintain tension)",
+        "Keep back flat against pad throughout",
+        "Use full range of motion without hyperextending",
+        "Try different grip widths to target various angles",
+        "Control the negative portion of the lift"
       ]
     }
   ];
@@ -124,7 +141,7 @@ const ArmsBeginner = () => {
     <>
       <div className="relative overflow-hidden">
         <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
+          src="https://example.com/arms-banner.jpg"
           alt="Arms Workout Banner"
           className="w-screen h-60 object-cover object-center scale-125"
         />
@@ -145,7 +162,8 @@ const ArmsBeginner = () => {
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-  <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
+
+          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
             <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
@@ -153,7 +171,7 @@ const ArmsBeginner = () => {
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

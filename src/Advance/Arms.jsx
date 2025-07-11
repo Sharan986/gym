@@ -7,113 +7,159 @@ const ArmsAdvanced = () => {
   const exercises = [
     {
       id: 1,
-      name: "Close-Grip Barbell Bench Press",
-      muscles: ["Triceps", "Chest", "Shoulders"],
+      name: "Barbell Skull Crushers",
+      muscles: ["Triceps (Long Head)", "Anconeus"],
       video: Videos.vid21,
       instructions: [
-        "Lie back on a flat bench with a barbell grasped using a close grip (hands closer than shoulder-width).",
-        "Lift the bar from the rack and hold it straight over you with your arms locked.",
-        "As you breathe in, lower the bar until it touches the middle of your chest.",
-        "After a second pause, bring the bar back to the starting position as you breathe out.",
+        "Lie on flat bench with barbell (EZ bar preferred) using narrow overhand grip",
+        "Extend arms straight up over shoulders",
+        "Lower bar slowly toward forehead by bending elbows",
+        "Stop when forearms reach parallel to floor",
+        "Extend arms back to starting position without locking elbows"
       ],
       benefits: [
-        "Builds triceps mass and strength",
-        "Enhances chest and shoulder stability",
-        "Improves overall pressing power"
+        "Maximizes long head triceps development",
+        "Increases elbow extension strength",
+        "Builds overall arm mass",
+        "Improves lockout strength for pressing movements"
       ],
       tips: [
-        "Keep your elbows tucked in to maximize triceps engagement.",
-        "Avoid flaring your elbows out to prevent shoulder strain.",
-        "Use a controlled motion for both lifting and lowering the barbell."
+        "Keep elbows tucked in at 45° angle",
+        "Use spotter for heavy sets",
+        "Control negative (3 second descent)",
+        "Try incline bench variation for different angle",
+        "Use wrist wraps if needed for support"
       ]
     },
     {
       id: 2,
-      name: "Weighted Dips",
-      muscles: ["Triceps", "Chest", "Shoulders"],
+      name: "Incline Dumbbell Curls",
+      muscles: ["Biceps (Long Head)", "Brachialis"],
       video: Videos.vid22,
       instructions: [
-        "Use parallel bars and lift yourself with your arms fully extended.",
-        "Lower your body by bending your elbows while leaning forward slightly.",
-        "Dip down until your shoulders are below your elbows.",
-        "Lift your body back up by extending your arms.",
+        "Set incline bench to 45-60 degree angle",
+        "Let arms hang straight down with dumbbells",
+        "Curl weights while keeping elbows back",
+        "Rotate palms up (supinate) during ascent",
+        "Squeeze at top when palms face shoulders",
+        "Lower slowly with control (3 second count)"
       ],
       benefits: [
-        "Increases triceps strength and size",
-        "Improves upper body stability",
-        "Enhances muscle endurance"
+        "Targets long head of biceps for peak development",
+        "Provides greater stretch at bottom position",
+        "Reduces cheating and body momentum",
+        "Improves mind-muscle connection"
       ],
       tips: [
-        "Keep your body upright to focus more on the triceps.",
-        "Avoid swinging or using momentum to lift yourself.",
-        "Use a weight belt to add resistance as you progress."
+        "Keep shoulders back against bench",
+        "Don't swing weights - controlled movement only",
+        "Pause for 1 second at peak contraction",
+        "Alternate arms or lift simultaneously",
+        "Increase weight gradually"
       ]
     },
     {
       id: 3,
-      name: "EZ-Bar Skull Crushers",
-      muscles: ["Triceps"],
+      name: "Tricep Rope Pushdown",
+      muscles: ["Triceps (All Heads)", "Anconeus"],
       video: Videos.vid23,
       instructions: [
-        "Lie on a flat bench with an EZ-bar grasped with an inner close grip.",
-        "Extend your arms so they are perpendicular to the floor.",
-        "Lower the bar by bending your elbows, bringing the bar towards your forehead.",
-        "Extend your arms back to the starting position.",
+        "Attach rope to high pulley cable machine",
+        "Stand with slight forward lean, elbows pinned to sides",
+        "Push rope downward until arms fully extended",
+        "At bottom, pull rope ends apart for extra contraction",
+        "Control return to starting position"
       ],
       benefits: [
-        "Isolates and strengthens the triceps",
-        "Improves arm extension power",
-        "Enhances muscle definition"
+        "Isolates triceps with constant tension",
+        "Improves arm definition and separation",
+        "Allows varied hand positions for different emphasis",
+        "Reduces joint stress compared to heavy presses"
       ],
       tips: [
-        "Keep your upper arms stationary and perpendicular to the floor.",
-        "Avoid lowering the bar too quickly to prevent injury.",
-        "Use a controlled movement throughout the exercise."
+        "Keep elbows stationary - only forearms should move",
+        "Lean forward slightly for better muscle engagement",
+        "Use moderate weight with perfect form",
+        "Focus on squeezing at full extension",
+        "Try single-arm variations for imbalances"
       ]
     },
     {
       id: 4,
-      name: "Incline Dumbbell Curl (Alternating)",
-      muscles: ["Biceps", "Forearms"],
+      name: "Concentration Curls",
+      muscles: ["Biceps Brachii", "Brachialis"],
       video: Videos.vid24,
       instructions: [
-        "Set an incline bench to a 45-degree angle and sit back with a dumbbell in each hand.",
-        "Let your arms hang down at your sides with your palms facing forward.",
-        "Curl one dumbbell while keeping the other arm stationary.",
-        "Alternate arms with each repetition.",
+        "Sit on bench with legs spread, elbow resting inside thigh",
+        "Start with arm fully extended, dumbbell hanging down",
+        "Curl weight up while keeping elbow stationary",
+        "Squeeze bicep hard at top position",
+        "Lower slowly with control (3-4 second count)"
       ],
       benefits: [
-        "Enhances bicep peak and strength",
-        "Improves muscle balance and coordination",
-        "Increases muscle endurance"
+        "Maximizes bicep isolation",
+        "Eliminates cheating and momentum",
+        "Enhances peak contraction",
+        "Improves mind-muscle connection"
       ],
       tips: [
-        "Keep your elbows stationary and avoid swinging the weights.",
-        "Focus on a slow and controlled movement.",
-        "Ensure full range of motion for maximum benefit."
+        "Use bench support to prevent body movement",
+        "Focus on squeezing at top for 2 seconds",
+        "Keep wrist neutral throughout movement",
+        "Use lighter weight than standing curls",
+        "Try alternating arms or both together"
       ]
     },
     {
       id: 5,
-      name: "Overhead Rope Cable Tricep Extension",
-      muscles: ["Triceps"],
+      name: "Tricep Dumbbell Kickbacks",
+      muscles: ["Triceps (Lateral Head)", "Anconeus"],
       video: Videos.vid25,
       instructions: [
-        "Attach a rope to the low pulley of a cable station.",
-        "Stand with your back to the machine and grasp the rope with both hands.",
-        "Extend your arms fully overhead, keeping your elbows close to your head.",
-        "Lower the rope behind your head by bending your elbows.",
-        "Return to the starting position by extending your arms.",
+        "Bend forward at waist with dumbbell in hand",
+        "Keep upper arm parallel to floor, elbow bent at 90°",
+        "Extend arm backward until it's straight",
+        "Squeeze triceps at full extension",
+        "Return slowly to starting position"
       ],
       benefits: [
-        "Targets all three heads of the triceps",
-        "Improves arm extension and stability",
-        "Enhances muscle definition and endurance"
+        "Isolates triceps with strict form",
+        "Improves muscle definition",
+        "Enhances mind-muscle connection",
+        "Good finishing exercise for triceps"
       ],
       tips: [
-        "Keep your elbows close to your head throughout the movement.",
-        "Avoid using your body weight to move the rope.",
-        "Use a controlled motion for both lifting and lowering."
+        "Keep shoulder stationary - only forearm moves",
+        "Use lighter weight with perfect form",
+        "Hold contraction at top for 1-2 seconds",
+        "Maintain neutral spine position",
+        "Try cable version for constant tension"
+      ]
+    },
+    {
+      id: 6,
+      name: "EZ Bar Reverse Curls",
+      muscles: ["Brachioradialis", "Brachialis", "Forearms"],
+      video: Videos.vid26,
+      instructions: [
+        "Stand holding EZ bar with overhand grip (palms down)",
+        "Keep elbows pinned to sides",
+        "Curl bar up while maintaining grip position",
+        "Squeeze forearms at top position",
+        "Lower slowly with control"
+      ],
+      benefits: [
+        "Develops forearm and brachialis muscles",
+        "Improves grip strength",
+        "Balances arm development",
+        "Enhances elbow joint stability"
+      ],
+      tips: [
+        "Use lighter weight than regular curls",
+        "Keep wrists straight throughout",
+        "Focus on squeezing at top of movement",
+        "Control the eccentric (lowering) phase",
+        "Try single-arm variations for imbalances"
       ]
     }
   ];
@@ -134,27 +180,32 @@ const ArmsAdvanced = () => {
           </h1>
         </div>
       </div>
+
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
+          
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
+
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
             <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
+
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>
               ))}
             </ul>
           </div>
+
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -163,6 +214,7 @@ const ArmsAdvanced = () => {
               ))}
             </ul>
           </div>
+
           <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -173,6 +225,7 @@ const ArmsAdvanced = () => {
           </div>
         </div>
       ))}
+
       <Footer />
     </>
   );

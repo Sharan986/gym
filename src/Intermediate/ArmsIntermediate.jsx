@@ -1,112 +1,139 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const ArmsIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Curl",
-      muscles: ["Biceps", "Forearms"],
+      name: "EZ Bar Overhead Tricep Extensions",
+      muscles: ["Triceps (Long Head)", "Anconeus"],
+      video: Videos.vid16,
       instructions: [
-        "Stand with your feet shoulder-width apart and hold a barbell with an underhand grip, hands slightly wider than shoulder-width apart",
-        "Keep your elbows close to your torso and curl the barbell up towards your shoulders",
-        "Squeeze your biceps at the top of the movement",
-        "Lower the barbell back to the starting position with control"
+        "Sit on bench with back support, hold EZ bar with narrow overhand grip",
+        "Press weight overhead until arms are fully extended",
+        "Keeping elbows close to ears, lower bar behind head",
+        "Pause when forearms reach parallel to floor",
+        "Extend arms back to starting position"
       ],
       benefits: [
-        "Builds overall bicep strength",
-        "Increases muscle mass",
-        "Improves arm definition"
+        "Targets the often underdeveloped long head of triceps",
+        "Improves shoulder stability and mobility",
+        "Enhances arm definition and strength",
+        "Reduces wrist strain compared to straight bar"
       ],
       tips: [
-        "Keep your elbows stationary and close to your torso",
-        "Avoid using momentum to lift the weight",
-        "Use a controlled movement"
+        "Keep elbows pointing forward (don't flare outward)",
+        "Move slowly through full range of motion (3 sec down, 1 sec up)",
+        "Use lighter weight than you think for proper form",
+        "Engage core to prevent back arching",
+        "Focus on stretch at bottom of movement"
       ]
     },
     {
       id: 2,
-      name: "Concentration Curl (Dumbbell)",
-      muscles: ["Biceps", "Forearms"],
+      name: "EZ Bar Preacher Curls",
+      muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
+      video: Videos.vid17,
       instructions: [
-        "Sit on a bench with your legs spread apart and hold a dumbbell in one hand",
-        "Rest your elbow against the inside of your thigh and let the dumbbell hang down",
-        "Curl the dumbbell up towards your shoulder, squeezing your bicep at the top of the movement",
-        "Lower the dumbbell back to the starting position with control"
+        "Set preacher bench to support underarms comfortably",
+        "Grip EZ bar with shoulder-width underhand grip",
+        "Curl weight up until forearms are vertical",
+        "Squeeze biceps hard at top position",
+        "Lower slowly with control (3-4 second count)"
       ],
       benefits: [
-        "Isolates the biceps for maximum contraction",
-        "Improves muscle definition",
-        "Enhances overall arm strength"
+        "Isolates biceps by eliminating body English",
+        "Reduces shoulder and wrist strain",
+        "Allows strict form and heavy weights",
+        "Enhances bicep peak development"
       ],
       tips: [
-        "Keep your elbow stationary against your thigh",
-        "Avoid swinging the weight",
-        "Use a controlled movement"
+        "Don't fully extend elbows at bottom (maintain tension)",
+        "Keep back flat against pad throughout",
+        "Use full range of motion without hyperextending",
+        "Try different grip widths to target various angles",
+        "Control the negative portion of the lift"
       ]
     },
     {
       id: 3,
-      name: "Skull Crushers (EZ Bar)",
-      muscles: ["Triceps"],
+      name: "Tricep Rope Pushdown",
+      muscles: ["Triceps (All Heads)", "Anconeus"],
+      video: Videos.vid18,
       instructions: [
-        "Lie on a flat bench and hold an EZ bar with an overhand grip, hands close together",
-        "Extend your arms so the bar is directly above your chest",
-        "Lower the bar towards your forehead by bending your elbows",
-        "Extend your arms back to the starting position, squeezing your triceps at the top of the movement"
+        "Attach rope to high pulley cable machine",
+        "Stand with slight forward lean, elbows pinned to sides",
+        "Push rope downward until arms fully extended",
+        "At bottom, pull rope ends apart for extra contraction",
+        "Control return to starting position"
       ],
       benefits: [
-        "Targets the triceps for maximum growth",
-        "Improves arm strength and definition",
-        "Enhances overall upper body stability"
+        "Isolates triceps with constant tension",
+        "Improves arm definition and separation",
+        "Allows varied hand positions for different emphasis",
+        "Reduces joint stress compared to heavy presses"
       ],
       tips: [
-        "Keep your elbows stationary and close to your head",
-        "Avoid flaring your elbows out",
-        "Use a controlled movement"
+        "Keep elbows stationary - only forearms should move",
+        "Lean forward slightly for better muscle engagement",
+        "Use moderate weight with perfect form",
+        "Focus on squeezing at full extension",
+        "Try single-arm variations for imbalances"
       ]
     },
     {
       id: 4,
-      name: "Cable Rope Overhead Extension",
-      muscles: ["Triceps"],
+      name: "Incline Dumbbell Curls",
+      muscles: ["Biceps Brachii (Long Head)", "Brachialis"],
+      video: Videos.vid19,
       instructions: [
-        "Attach a rope to a high pulley and stand facing the cable machine",
-        "Grip the rope with both hands and extend your arms overhead",
-        "Lower the rope behind your head by bending your elbows",
-        "Extend your arms back to the starting position, squeezing your triceps at the top of the movement"
+        "Set incline bench to 45-60 degree angle",
+        "Let arms hang straight down with dumbbells",
+        "Curl weights while keeping elbows back",
+        "Squeeze at top when palms face shoulders",
+        "Lower slowly with control (3 second count)"
       ],
       benefits: [
-        "Isolates the triceps for maximum contraction",
-        "Improves arm strength and definition",
-        "Enhances overall upper body stability"
+        "Targets long head of biceps for peak development",
+        "Provides greater stretch at bottom position",
+        "Reduces cheating and body momentum",
+        "Improves mind-muscle connection"
       ],
       tips: [
-        "Keep your elbows close to your head",
-        "Avoid using momentum to lift the weight",
-        "Use a controlled movement"
+        "Keep shoulders back against bench",
+        "Don't swing weights - controlled movement only",
+        "Rotate palms up as you curl (supination)",
+        "Pause for 1 second at peak contraction",
+        "Alternate arms or lift simultaneously"
       ]
     },
     {
       id: 5,
-      name: "Dumbbell Hammer Curl",
-      muscles: ["Biceps", "Brachialis", "Forearms"],
+      name: "Reverse Cable Curls",
+      muscles: ["Brachioradialis", "Brachialis", "Forearms"],
+      video: Videos.vid20,
       instructions: [
-        "Stand with your feet shoulder-width apart and hold a dumbbell in each hand with a neutral grip (palms facing your torso)",
-        "Keep your elbows close to your torso and curl the dumbbells up towards your shoulders",
-        "Squeeze your biceps at the top of the movement",
-        "Lower the dumbbells back to the starting position with control"
+        "Attach straight bar to low pulley cable machine",
+        "Grip bar with overhand grip (palms down)",
+        "Keep elbows pinned to sides",
+        "Curl bar up to shoulder height",
+        "Squeeze forearms at top position",
+        "Lower slowly with control"
       ],
       benefits: [
-        "Targets the brachialis for arm thickness",
+        "Develops forearm and brachialis muscles",
         "Improves grip strength",
-        "Enhances overall arm definition"
+        "Balances arm development",
+        "Enhances elbow joint stability"
       ],
       tips: [
-        "Keep your elbows stationary and close to your torso",
-        "Avoid swinging the weights",
-        "Use a controlled movement"
+        "Use lighter weight than regular curls",
+        "Keep wrists straight throughout",
+        "Focus on squeezing at top of movement",
+        "Control the eccentric (lowering) phase",
+        "Try single-arm variations for imbalances"
       ]
     }
   ];
@@ -138,11 +165,14 @@ const ArmsIntermediate = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>

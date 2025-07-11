@@ -73,67 +73,111 @@ const ShouldersAdvanced = () => {
     },
     {
       id: 4,
-      name: "Single-Arm Dumbbell Shoulder Press",
+      name: "Cable Lateral Raises",
       video: Videos.vid29,
-      muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Core"],
+      muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
-        "Sit on a bench with a dumbbell in one hand at shoulder height.",
-        "Press the dumbbell overhead until your arm is fully extended.",
-        "Lower the dumbbell back to shoulder height with control.",
-        "Repeat for the desired number of reps and switch arms."
+        "Stand next to a cable machine with the pulley at its lowest setting.",
+        "Grab the handle with your outside hand, keeping a slight bend in your elbow.",
+        "Raise your arm out to the side until it's parallel to the floor.",
+        "Slowly lower back to the starting position with control."
       ],
       benefits: [
-        "Improves unilateral strength and balance",
-        "Engages core for stability",
-        "Enhances shoulder mobility and control"
+        "Isolates the lateral deltoids effectively",
+        "Provides constant tension throughout the movement",
+        "Improves shoulder width and definition"
       ],
       tips: [
-        "Keep your core engaged to maintain balance.",
-        "Avoid leaning to one side.",
-        "Use a controlled motion for both lifting and lowering."
+        "Keep your torso upright and avoid leaning.",
+        "Raise only to shoulder height to avoid impingement.",
+        "Control the weight on both the lift and descent."
       ]
     },
     {
       id: 5,
-      name: "Bent-Over Rear Delt Fly (Dumbbells)",
+      name: "Reverse Flys (Machine or Dumbbells)",
       video: Videos.vid30,
       muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
       instructions: [
-        "Bend at the hips with a dumbbell in each hand, keeping your back straight.",
-        "Raise the dumbbells out to the sides until your arms are parallel to the floor.",
-        "Lower the dumbbells back to the starting position with control.",
-        "Keep a slight bend in your elbows throughout the movement."
+        "Sit at a reverse fly machine or bend forward with dumbbells.",
+        "Keep a slight bend in your elbows and open your arms outward.",
+        "Squeeze your shoulder blades together at the top of the movement.",
+        "Return to the starting position with control."
       ],
       benefits: [
-        "Strengthens rear deltoids and upper back",
-        "Improves posture and shoulder health",
-        "Balances shoulder development"
+        "Targets the often-neglected rear delts",
+        "Improves posture and upper back strength",
+        "Helps balance shoulder development"
       ],
       tips: [
-        "Keep your shoulders relaxed and avoid shrugging.",
-        "Focus on squeezing your shoulder blades together.",
-        "Use a light to moderate weight for proper form."
+        "Focus on using your rear delts, not your arms.",
+        "Keep your movements controlled and deliberate.",
+        "Avoid arching your back during the movement."
+      ]
+    },
+    {
+      id: 6,
+      name: "Upright Rows",
+      video: Videos.vid31,
+      muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
+      instructions: [
+        "Stand holding a barbell or dumbbells with an overhand grip.",
+        "Pull the weight straight up along your torso to chin level.",
+        "Keep your elbows higher than your hands throughout.",
+        "Lower back down with control."
+      ],
+      benefits: [
+        "Develops the lateral deltoids and traps",
+        "Improves shoulder and upper back strength",
+        "Can be done with various equipment"
+      ],
+      tips: [
+        "Use a shoulder-width grip to reduce strain.",
+        "Don't raise the weight higher than chin level.",
+        "Keep the movement smooth and controlled."
+      ]
+    },
+    {
+      id: 7,
+      name: "Front Raises",
+      video: Videos.vid32,
+      muscles: ["Anterior Deltoids", "Pectoralis Major (upper)"],
+      instructions: [
+        "Stand holding dumbbells or a barbell with palms facing your thighs.",
+        "Raise the weight straight in front of you to shoulder height.",
+        "Pause briefly at the top of the movement.",
+        "Lower back down with control."
+      ],
+      benefits: [
+        "Isolates the front deltoids effectively",
+        "Improves shoulder definition and strength",
+        "Can be done with various equipment"
+      ],
+      tips: [
+        "Keep a slight bend in your elbows.",
+        "Avoid using momentum to swing the weights up.",
+        "Control the descent to maximize muscle engagement."
       ]
     }
   ];
 
   return (
     <>
-       <div className="relative overflow-hidden">
-             <img
-               src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-               alt="Chest Workout Banner"
-               className="w-screen h-60 object-cover object-center scale-125"
-               loading="lazy"
-             />
-             <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-               <h1 className="text-5xl font-One z-10">shoulder</h1>
-               <h1 className="font-One text-2xl mt-6">
-                 <Link to="/"> HOME </Link>
-                 <span className="text-yellow-300">/shoulder</span>
-               </h1>
-             </div>
-           </div>
+      <div className="relative overflow-hidden">
+        <img
+          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
+          alt="Chest Workout Banner"
+          className="w-screen h-60 object-cover object-center scale-125"
+          loading="lazy"
+        />
+        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
+          <h1 className="text-5xl font-One z-10">shoulder</h1>
+          <h1 className="font-One text-2xl mt-6">
+            <Link to="/"> HOME </Link>
+            <span className="text-yellow-300">/shoulder</span>
+          </h1>
+        </div>
+      </div>
      
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>

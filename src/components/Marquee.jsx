@@ -15,9 +15,9 @@ const Marquee = () => {
         }}
       >
         {texts.concat(texts).map((text, index) => (
-          <span key={index} className="text-xl md:text-3xl ">
+          <span key={index} className="text-lg md:text-3xl ">
             ✦
-            <span className="mx-6 font-semibold text-black text-xl md:text-3xl ">
+            <span className="mx-6 font-semibold text-black text-lg md:text-3xl ">
               {text}
             </span>
           </span>

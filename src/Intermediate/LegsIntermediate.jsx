@@ -1,112 +1,147 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Videos } from '../assets/assets';
 
 const LegsIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Back Squat",
-      muscles: ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      name: "Barbell Back Squats",
+      muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core", "Calves"],
+      video: Videos.vid21,
       instructions: [
-        "Stand with your feet shoulder-width apart and hold a barbell across your upper back.",
-        "Keep your chest up and core braced, then lower your body by bending your knees and pushing your hips back.",
-        "Lower until your thighs are parallel to the floor.",
-        "Push through your heels to return to the starting position."
+        "Position barbell on upper back (not neck) with hands slightly wider than shoulder-width",
+        "Stand with feet shoulder-width apart, toes slightly out",
+        "Lower hips back and down like sitting in a chair",
+        "Descend until thighs are parallel to floor (or lower)",
+        "Drive through heels to return to standing position",
+        "Keep chest up and back straight throughout"
       ],
       benefits: [
-        "Builds overall leg strength",
-        "Increases muscle mass",
-        "Improves mobility and balance"
+        "Builds overall leg strength and size",
+        "Enhances core stability and balance",
+        "Boosts testosterone and growth hormone production",
+        "Improves functional movement patterns",
+        "Increases bone density"
       ],
       tips: [
-        "Keep your knees in line with your toes",
-        "Maintain a neutral spine",
-        "Use a controlled movement"
+        "Use squat rack with safety bars for heavy sets",
+        "Start with just the bar to perfect form",
+        "Brace core before descending",
+        "Keep knees tracking over toes",
+        "Control the descent (2-3 seconds)"
       ]
     },
     {
       id: 2,
-      name: "Romanian Deadlift (Barbell or Dumbbell)",
-      muscles: ["Hamstrings", "Glutes", "Lower Back"],
+      name: "Leg Press Machine",
+      muscles: ["Quadriceps", "Hamstrings", "Glutes"],
+      video: Videos.vid22,
       instructions: [
-        "Stand with your feet hip-width apart and hold a barbell or dumbbells in front of your thighs.",
-        "Keep your knees slightly bent and lower the weights by pushing your hips back.",
-        "Lower until you feel a stretch in your hamstrings.",
-        "Return to the starting position by pushing your hips forward."
+        "Sit on machine with back flat against pad",
+        "Place feet shoulder-width apart on platform",
+        "Release safety handles and lower weight slowly",
+        "Bend knees to 90° (or comfortable range)",
+        "Press through heels to extend legs",
+        "Don't lock knees at top"
       ],
       benefits: [
-        "Strengthens the posterior chain",
-        "Improves hip mobility",
-        "Enhances overall lower body strength"
+        "Allows heavy loading with less spinal compression",
+        "Good alternative for those with back issues",
+        "Easier to focus on leg muscles without balance requirement",
+        "Adjustable foot positions target different muscles",
+        "Can safely train to failure"
       ],
       tips: [
-        "Keep the weights close to your body",
-        "Maintain a neutral spine",
-        "Avoid rounding your back"
+        "Never lock knees at full extension",
+        "Keep feet flat throughout movement",
+        "Don't let knees collapse inward",
+        "Control the negative (3 second descent)",
+        "Try single-leg variations for imbalances"
       ]
     },
     {
       id: 3,
-      name: "Dumbbell Walking Lunges",
-      muscles: ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      name: "Romanian Deadlifts (RDL)",
+      muscles: ["Hamstrings", "Glutes", "Erector Spinae"],
+      video: Videos.vid23,
       instructions: [
-        "Stand with your feet hip-width apart and hold a dumbbell in each hand.",
-        "Take a step forward with one foot and lower your body until both knees are bent at a 90-degree angle.",
-        "Push through your front heel to return to the starting position.",
-        "Repeat with the other leg."
+        "Stand with feet hip-width apart holding barbell or dumbbells",
+        "Keep slight bend in knees, push hips back",
+        "Lower weight along front of legs",
+        "Descend until stretch in hamstrings (usually mid-shin)",
+        "Drive hips forward to return to standing",
+        "Squeeze glutes at top"
       ],
       benefits: [
-        "Improves leg strength and endurance",
-        "Enhances balance and coordination",
-        "Increases muscle mass"
+        "Develops posterior chain strength",
+        "Improves hip hinge mechanics",
+        "Enhances deadlift and squat performance",
+        "Increases hamstring flexibility",
+        "Reduces risk of hamstring injuries"
       ],
       tips: [
-        "Keep your torso upright",
-        "Maintain a controlled movement",
-        "Avoid letting your front knee extend past your toes"
+        "Maintain neutral spine - never round back",
+        "Keep bar/dumbbells close to body",
+        "Lead with hips, not shoulders",
+        "Use straps if grip fails first",
+        "Focus on hamstring stretch at bottom"
       ]
     },
     {
       id: 4,
-      name: "Hip Thrust (with barbell or machine)",
-      muscles: ["Glutes", "Hamstrings", "Lower Back"],
+      name: "Leg Extensions",
+      muscles: ["Quadriceps"],
+      video: Videos.vid24,
       instructions: [
-        "Sit on the ground with your upper back against a bench and a barbell across your hips.",
-        "Bend your knees and place your feet flat on the ground.",
-        "Push through your heels to lift your hips until your body forms a straight line from your shoulders to your knees.",
-        "Lower your hips back to the starting position."
+        "Adjust machine so knees align with rotation point",
+        "Place ankles behind pad, legs at 90°",
+        "Extend legs fully without locking knees",
+        "Squeeze quads at top for 1 second",
+        "Lower slowly back to starting position"
       ],
       benefits: [
-        "Strengthens the glutes and hamstrings",
-        "Improves hip mobility",
-        "Enhances overall lower body strength"
+        "Isolates quadriceps muscles",
+        "Improves knee joint stability",
+        "Helps develop teardrop quad shape",
+        "Good for rehab after knee injuries",
+        "Can train to complete muscle failure"
       ],
       tips: [
-        "Keep your chin tucked and ribs down",
-        "Squeeze your glutes at the top of the movement",
-        "Use a controlled movement"
+        "Avoid swinging or using momentum",
+        "Use full range of motion",
+        "Try single-leg variations for imbalances",
+        "Don't use excessive weight that compromises form",
+        "Keep back flat against pad"
       ]
     },
     {
       id: 5,
-      name: "Smith Machine Split Squat",
-      muscles: ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      name: "Standing & Seated Calf Raises",
+      muscles: ["Gastrocnemius (standing)", "Soleus (seated)"],
+      video: Videos.vid25,
       instructions: [
-        "Stand in a split stance with one foot in front of the other and the barbell across your upper back.",
-        "Lower your body by bending your knees until your back knee is close to the ground.",
-        "Push through your front heel to return to the starting position.",
-        "Repeat with the other leg."
+        "Standing: Use machine or step with weights",
+        "Stand on balls of feet, lower heels below step",
+        "Raise up onto toes as high as possible",
+        "Pause at top for 1-2 seconds",
+        "Seated: Place knees under pad with toes on platform",
+        "Lift weight by extending ankles"
       ],
       benefits: [
-        "Improves leg strength and endurance",
-        "Enhances balance and coordination",
-        "Increases muscle mass"
+        "Develops calf size and definition",
+        "Improves ankle stability and mobility",
+        "Enhances jumping ability",
+        "Helps prevent shin splints",
+        "Balances lower leg development"
       ],
       tips: [
-        "Keep your torso upright",
-        "Maintain a controlled movement",
-        "Avoid letting your front knee extend past your toes"
+        "Use full range of motion",
+        "Control the lowering phase (3 seconds)",
+        "Try single-leg variations for imbalances",
+        "Perform higher reps (15-20) for calves",
+        "Stretch calves between sets"
       ]
     }
   ];
@@ -138,11 +173,14 @@ const LegsIntermediate = () => {
           </div>
 
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <p className='text-gray-400'>[Exercise demonstration image]</p>
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+              <source src={exercise.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
+            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
                 <li key={i}>{step}</li>
