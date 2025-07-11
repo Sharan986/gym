@@ -26,9 +26,9 @@ export const interLEGS = {
 
 import CABLE from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/CABLE-UPRIGHT-ROW.mp4";
 import lateral from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/lateral-raises.mp4";
-import Military from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/military-press.mp4";
+import Military from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/MILITARY-PRESS.mp4";
 import reverse from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/reverse-fly.mp4";
-import ROPE from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/rope-face-pull.mp4";
+import ROPE from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/ROPE-FACE-pull.mp4";
 
 export const interSHOULDERS = {
   CABLE,
