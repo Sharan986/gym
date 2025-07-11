@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Videos } from '../assets/assets';
+import { interSHOULDERS } from '../assets/assets';
 
 const ShouldersIntermediate = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const ShouldersIntermediate = () => {
       id: 1,
       name: "Reverse Fly Machine",
       muscles: ["Rear Deltoids", "Trapezius", "Rhomboids"],
-      video: Videos.vid21,
+      video: interSHOULDERS.reverse,
       instructions: [
         "Adjust seat height so handles are at shoulder level",
         "Sit with chest against pad and grip handles",
@@ -36,7 +37,7 @@ const ShouldersIntermediate = () => {
       id: 2,
       name: "Dumbbell Lateral Raises",
       muscles: ["Lateral Deltoids", "Supraspinatus"],
-      video: Videos.vid22,
+      video: interSHOULDERS.lateral,
       instructions: [
         "Stand with dumbbells at sides, palms facing inward",
         "Keep slight bend in elbows (10-15°)",
@@ -62,7 +63,7 @@ const ShouldersIntermediate = () => {
       id: 3,
       name: "Military Press (Barbell)",
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Upper Chest"],
-      video: Videos.vid23,
+      video: interSHOULDERS.Military,
       instructions: [
         "Stand with feet shoulder-width apart",
         "Grip barbell slightly wider than shoulders",
@@ -89,7 +90,7 @@ const ShouldersIntermediate = () => {
       id: 4,
       name: "Upright Rows (Barbell or Cable)",
       muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
-      video: Videos.vid24,
+      video: interSHOULDERS.CABLE,
       instructions: [
         "Stand holding barbell with narrow grip (6-8 inches)",
         "Keep bar close to body as you pull upward",
@@ -115,7 +116,7 @@ const ShouldersIntermediate = () => {
       id: 5,
       name: "Face Pulls (Cable)",
       muscles: ["Rear Deltoids", "Rotator Cuff", "Trapezius"],
-      video: Videos.vid25,
+      video: interSHOULDERS.ROPE,
       instructions: [
         "Attach rope to high pulley cable",
         "Grab ends with thumbs pointing back",

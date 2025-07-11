@@ -57,7 +57,7 @@ const Facilities = () => {
             />
             <div className="">
               <h1 className="text-2xl ">{facility.title}</h1>
-              <p className="text-lg lg:text-2xl lg:w-160 font-DM text-gray-400 ">
+              <p className="text-lg lg:text-2xl md:text-lg lg:w-160 font-DM text-gray-400 ">
                 {facility.description}
               </p>
             </div>
@@ -68,7 +68,6 @@ const Facilities = () => {
       
     </div>
     <div className="mx-3 mb-8">
-    <WkGuid />
     <MembershipSection />
     </div>
     </>

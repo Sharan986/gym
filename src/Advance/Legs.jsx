@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Videos } from '../assets/assets';
+import { advLEGS } from '../assets/assets';
 
 const LegsAdvanced = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const LegsAdvanced = () => {
       id: 1,
       name: "Hack Squat",
       muscles: ["Quadriceps", "Glutes", "Hamstrings"],
-      video: Videos.vid21,
+      video:  advLEGS.hack_squat,
       instructions: [
         "Position yourself in the hack squat machine with shoulders against pads",
         "Place feet shoulder-width apart on platform",
@@ -36,7 +37,7 @@ const LegsAdvanced = () => {
       id: 2,
       name: "Bulgarian Split Squats (Weighted)",
       muscles: ["Quadriceps", "Glutes", "Hamstrings", "Core"],
-      video: Videos.vid22,
+      video: advLEGS.bulgariasplit,
       instructions: [
         "Stand facing away from bench, place one foot on bench behind you",
         "Hold dumbbells at sides or kettlebells at chest",
@@ -63,7 +64,7 @@ const LegsAdvanced = () => {
       id: 3,
       name: "Hamstring-Focused Leg Press",
       muscles: ["Hamstrings", "Glutes"],
-      video: Videos.vid23,
+      video: advLEGS.legpress,
       instructions: [
         "Position feet high and wide on platform",
         "Press weight out and release safety handles",
@@ -90,7 +91,7 @@ const LegsAdvanced = () => {
       id: 4,
       name: "Leg Extensions",
       muscles: ["Quadriceps"],
-      video: Videos.vid24,
+      video: advLEGS.leg_ext,
       instructions: [
         "Adjust seat so knees align with machine's axis",
         "Place ankles behind pad with legs at 90°",
@@ -116,7 +117,7 @@ const LegsAdvanced = () => {
       id: 5,
       name: "Hip Adduction/Abduction Machine",
       muscles: ["Adductors", "Abductors", "Glutes"],
-      video: Videos.vid25,
+      video: advLEGS.hip_adduction,
       instructions: [
         "For adduction: Sit with pads between thighs, squeeze inward",
         "For abduction: Sit with pads outside thighs, push outward",
@@ -142,7 +143,7 @@ const LegsAdvanced = () => {
       id: 6,
       name: "Barbell Hip Thrust",
       muscles: ["Glutes", "Hamstrings", "Core"],
-      video: Videos.vid26,
+      video: advLEGS.hip_thrust,
       instructions: [
         "Sit on ground with upper back against bench",
         "Roll barbell over hips (use pad for comfort)",
@@ -168,7 +169,7 @@ const LegsAdvanced = () => {
       id: 7,
       name: "Standing Calf Raises (Weighted)",
       muscles: ["Gastrocnemius"],
-      video: Videos.vid27,
+      video: advLEGS.weiged_calf,
       instructions: [
         "Stand on edge of step or calf raise machine",
         "Hold dumbbells or use machine shoulder pads",

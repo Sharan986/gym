@@ -6,20 +6,20 @@ const WorkoutGuide = () => {
   return (
     <>
       <div className="bg-[#070915] overflow-hidden font-One">
-        <div className="relative">
-          <img
-            src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-            alt="Workout Banner"
-            className="w-full h-60 object-cover object-center opacity-70"
-          />
-          <div className="absolute bottom-0 left-0 text-white p-10">
-           <h1 className="text-5xl font-One">Workout-Guide</h1>
-           <h1 className="font-One text-2xl mt-4">
-             <Link to="/" className="hover:underline">HOME</Link>
-             <span className="text-yellow-300"> / Workout-Guide</span>
-           </h1>
-         </div>
-        </div>
+          <div className="relative overflow-hidden">
+       <img
+         src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+         alt="About Us Banner"
+         className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+       />
+       <div className="absolute bottom-8 left-8 text-white">
+         <h1 className="text-5xl font-One lg:text-7xl z-10">WORKOUT GUIDE</h1>
+         <h1 className="font-One text-2xl mt-4 lg:text-5xl">
+           <Link to='/'>HOME</Link>
+           <span className="text-yellow-300 lg:text-4xl">/WORKOUT GUIDE</span>
+         </h1>
+       </div>
+     </div>
         <div className="px-4 md:px-8 py-8">
           <p className="text-gray-300 font-DM text-lg  mx-auto max-w-6xl">
             Regular workouts offer numerous benefits for both body and mind. They strengthen muscles, improve cardiovascular health, and boost endurance, enhancing overall physical fitness. Exercise helps maintain a healthy weight by burning calories and increasing metabolism. It reduces stress and anxiety by releasing endorphins, promoting mental well-being.

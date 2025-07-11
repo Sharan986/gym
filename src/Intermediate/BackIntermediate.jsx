@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Videos } from '../assets/assets';
+import { interBACK } from '../assets/assets';
 
 const BackIntermediate = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const BackIntermediate = () => {
       id: 1,
       name: "Pull-Ups (Assisted if needed)",
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Trapezius"],
-      video: Videos.vid6,
+      video: interBACK.pullup,
       instructions: [
         "Grab pull-up bar with overhand grip (palms facing away)",
         "Hands slightly wider than shoulder-width",
@@ -36,7 +37,7 @@ const BackIntermediate = () => {
       id: 2,
       name: "Bent-Over Barbell Row",
       muscles: ["Middle Back", "Lats", "Rear Delts", "Biceps"],
-      video: Videos.vid7,
+      video: interBACK.bentover,
       instructions: [
         "Stand with feet shoulder-width, knees slightly bent",
         "Bend at hips until torso is 45° to floor",
@@ -63,7 +64,7 @@ const BackIntermediate = () => {
       id: 3,
       name: "Close-Grip Lat Pulldown",
       muscles: ["Lower Lats", "Biceps", "Brachialis"],
-      video: Videos.vid8,
+      video: interBACK.closegrid,
       instructions: [
         "Use V-bar or close-grip attachment",
         "Sit with thighs secured under pads",
@@ -89,7 +90,7 @@ const BackIntermediate = () => {
       id: 4,
       name: "Wide-Grip Seated Cable Row",
       muscles: ["Upper Back", "Rear Delts", "Trapezius"],
-      video: Videos.vid9,
+      video: interBACK.widegrid,
       instructions: [
         "Use wide bar attachment on cable machine",
         "Sit with knees slightly bent, chest up",
@@ -115,7 +116,7 @@ const BackIntermediate = () => {
       id: 5,
       name: "Chest-Supported Dumbbell Row",
       muscles: ["Middle Back", "Rear Delts", "Rhomboids"],
-      video: Videos.vid10,
+      video: interBACK.chestsupported,
       instructions: [
         "Set incline bench to 45° and lie chest-down",
         "Let arms hang straight down with dumbbells",
@@ -141,7 +142,7 @@ const BackIntermediate = () => {
       id: 6,
       name: "Hyperextensions (Weighted)",
       muscles: ["Erector Spinae", "Glutes", "Hamstrings"],
-      video: Videos.vid11,
+      video: interBACK.HYPER,
       instructions: [
         "Position hips on pad of hyperextension bench",
         "Cross arms or hold weight plate to chest",

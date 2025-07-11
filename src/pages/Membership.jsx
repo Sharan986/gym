@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import the image
+const tickImageUrl = 'https://framerusercontent.com/images/9xXwvl2NRjYTbf3p3zXQldvvrU.svg';
+
 const MembershipSection = () => {
   const sliderSettings = {
     dots: true,
@@ -38,37 +41,40 @@ const MembershipSection = () => {
     {
       title: 'Personal Training',
       durations: ['1 Month', '3 Months'],
-      prices: ['Rs  5000', 'Rs  1000'],
+      prices: ['Rs 5000', 'Rs 1000'],
     },
   ];
 
+  const membershipBenefits = [
+    "PERSONAL TRAINING",
+    "ZUMBA",
+    "YOGA",
+    "NUTRITION @1000/Month",
+    "Free Wifi, COFFEE",
+    "CHANGING ROOMS AND MANY MORE",
+    "SEPARATE CHANGING ROOMS AND MANY MORE",
+
+  ];
+
   return (
-    <div className="bg-[#070915] text-white mb-6 ">
+    <div className="bg-[#070915] text-white mb-6">
       <div className="flex flex-col md:flex-col">
         <div className="mx-7 pt-5 mb-2">
           <h2 className="text-[#48D3A3] text-2xl mb-4 font-One italic">OUR MEMBERSHIP</h2>
           <p className="mb-8 text-white font-One text-3xl">
             Fight School has specialized in martial arts
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3  gap-y-2 font-DM text-lg">
-            {[
-              "PERSONAL TRAINING",
-              "ZUMBA",
-              "YOGA",
-              "NUTRITION @1000/Month",
-              "Free Wifi ,COFFE ,SEP CHANGING ROOMS AND MANY MORE",
-              "CHANGING ROOMS AND MANY MORE"
-            ].map((item, idx) => (
-              <li key={idx} className="flex items-center">
-                <span className="mr-2 text-[#48D3A3]">✓</span>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-DM text-lg">
+            {membershipBenefits.map((item, idx) => (
+              <li key={idx} className="flex">
+                <img src={tickImageUrl} alt="Tick" className="mr-2 w-4 h-4" />
                 <span className="text-gray-300">{item}</span>
               </li>
             ))}
           </ul>
         </div>
-
         <div className="w-full p-2 mt-6">
-          <div className="px-4 sm:px-8"> {/* ✅ Added margin-x */}
+          <div className="px-4 sm:px-8">
             <style>
               {`
                 .slick-slide > div {

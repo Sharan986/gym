@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Videos } from '../assets/assets';
+import { advARMS } from '../assets/assets';
 
 const ArmsAdvanced = () => {
   const exercises = [
@@ -35,7 +36,7 @@ const ArmsAdvanced = () => {
       id: 2,
       name: "Incline Dumbbell Curls",
       muscles: ["Biceps (Long Head)", "Brachialis"],
-      video: Videos.vid22,
+      video: advARMS.inclinedb,
       instructions: [
         "Set incline bench to 45-60 degree angle",
         "Let arms hang straight down with dumbbells",
@@ -62,7 +63,7 @@ const ArmsAdvanced = () => {
       id: 3,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps (All Heads)", "Anconeus"],
-      video: Videos.vid23,
+      video: advARMS.rope,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -88,7 +89,7 @@ const ArmsAdvanced = () => {
       id: 4,
       name: "Concentration Curls",
       muscles: ["Biceps Brachii", "Brachialis"],
-      video: Videos.vid24,
+      video: advARMS.concentration,
       instructions: [
         "Sit on bench with legs spread, elbow resting inside thigh",
         "Start with arm fully extended, dumbbell hanging down",
@@ -114,7 +115,7 @@ const ArmsAdvanced = () => {
       id: 5,
       name: "Tricep Dumbbell Kickbacks",
       muscles: ["Triceps (Lateral Head)", "Anconeus"],
-      video: Videos.vid25,
+      video: advARMS.tricepkick,
       instructions: [
         "Bend forward at waist with dumbbell in hand",
         "Keep upper arm parallel to floor, elbow bent at 90°",
@@ -140,7 +141,7 @@ const ArmsAdvanced = () => {
       id: 6,
       name: "EZ Bar Reverse Curls",
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
-      video: Videos.vid26,
+      video: advARMS.reversecurls,
       instructions: [
         "Stand holding EZ bar with overhand grip (palms down)",
         "Keep elbows pinned to sides",

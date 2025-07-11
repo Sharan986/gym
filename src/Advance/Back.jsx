@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Videos } from '../assets/assets';
+import { advBACK } from '../assets/assets';
 
 const BackAdvanced = () => {
   const exercises = [
     {
       id: 1,
       name: "Deadlifts / Rack Pulls",
-      video: Videos.vid26,
+      video: advBACK.DEADLIFT,
       muscles: ["Erector Spinae", "Latissimus Dorsi", "Trapezius", "Glutes", "Hamstrings"],
       instructions: [
         "Stand with feet hip-width apart, barbell over mid-foot",
@@ -35,7 +36,7 @@ const BackAdvanced = () => {
     {
       id: 2,
       name: "Underhand Bent-Over Rows",
-      video: Videos.vid27,
+      video: advBACK.dbrowing,
       muscles: ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Delts"],
       instructions: [
         "Stand with feet shoulder-width apart, knees slightly bent",
@@ -61,7 +62,7 @@ const BackAdvanced = () => {
     {
       id: 3,
       name: "Single-Arm Dumbbell Rows",
-      video: Videos.vid28,
+      video: advBACK.chestbarbell,
       muscles: ["Latissimus Dorsi", "Rear Delts", "Rotator Cuff", "Core"],
       instructions: [
         "Place knee and hand on bench, other foot on floor",
@@ -87,7 +88,7 @@ const BackAdvanced = () => {
     {
       id: 4,
       name: "Chest-Supported Dumbbell Rows",
-      video: Videos.vid29,
+      video: advBACK.chestbarbell,
       muscles: ["Middle Back", "Rear Delts", "Rhomboids"],
       instructions: [
         "Set incline bench to 45° and lie chest-down",
@@ -113,7 +114,7 @@ const BackAdvanced = () => {
     {
       id: 5,
       name: "Wide-Grip Seated Cable Rows",
-      video: Videos.vid30,
+      video: advBACK.widegrip,
       muscles: ["Upper Back", "Rear Delts", "Trapezius"],
       instructions: [
         "Use wide bar attachment on cable machine",
@@ -139,7 +140,7 @@ const BackAdvanced = () => {
     {
       id: 6,
       name: "Wide-Grip Lat Pulldowns",
-      video: Videos.vid31,
+      video: advBACK.widegriplat,
       muscles: ["Latissimus Dorsi", "Teres Major", "Biceps"],
       instructions: [
         "Grip bar wide (1.5x shoulder width)",

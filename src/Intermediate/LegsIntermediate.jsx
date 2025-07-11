@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+
+import { interLEGS } from '../assets/assets';
 
 const LegsIntermediate = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const LegsIntermediate = () => {
       id: 1,
       name: "Barbell Back Squats",
       muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core", "Calves"],
-      video: Videos.vid21,
+      video: interLEGS.squats,
       instructions: [
         "Position barbell on upper back (not neck) with hands slightly wider than shoulder-width",
         "Stand with feet shoulder-width apart, toes slightly out",
@@ -37,7 +38,7 @@ const LegsIntermediate = () => {
       id: 2,
       name: "Leg Press Machine",
       muscles: ["Quadriceps", "Hamstrings", "Glutes"],
-      video: Videos.vid22,
+      video: interLEGS.leg_press,
       instructions: [
         "Sit on machine with back flat against pad",
         "Place feet shoulder-width apart on platform",
@@ -65,7 +66,7 @@ const LegsIntermediate = () => {
       id: 3,
       name: "Romanian Deadlifts (RDL)",
       muscles: ["Hamstrings", "Glutes", "Erector Spinae"],
-      video: Videos.vid23,
+      video: interLEGS.Romanian,
       instructions: [
         "Stand with feet hip-width apart holding barbell or dumbbells",
         "Keep slight bend in knees, push hips back",
@@ -93,7 +94,7 @@ const LegsIntermediate = () => {
       id: 4,
       name: "Leg Extensions",
       muscles: ["Quadriceps"],
-      video: Videos.vid24,
+      video: interLEGS.leg_extension,
       instructions: [
         "Adjust machine so knees align with rotation point",
         "Place ankles behind pad, legs at 90°",
@@ -120,7 +121,7 @@ const LegsIntermediate = () => {
       id: 5,
       name: "Standing & Seated Calf Raises",
       muscles: ["Gastrocnemius (standing)", "Soleus (seated)"],
-      video: Videos.vid25,
+      video: interLEGS.calf_raises,
       instructions: [
         "Standing: Use machine or step with weights",
         "Stand on balls of feet, lower heels below step",

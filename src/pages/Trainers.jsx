@@ -6,6 +6,8 @@ import One from "../assets/Trainers/ONE.jpg";
 import Two from "../assets/Trainers/TWO.jpg";
 import Three from "../assets/Trainers/THREE.jpg";
 import FOUR from "../assets/Trainers/FOUR.jpg";
+import FIVE from "../assets/Trainers/FIVE.jpg";
+import SIX from "../assets/Trainers/SIX.jpg";
 
 const Trainers = () => {
   const trainers = [
@@ -33,7 +35,19 @@ const Trainers = () => {
       name: "ADITYA SINGH",
       title: "K11 CERTIFIED TRAINER",
     },
-  ];
+    {
+      id: 5,
+      img: FIVE,
+      name: "ABHISHEK KUMAR",
+      title: "TRAINER",
+    },
+    {
+      id: 6,
+      img: SIX,
+      name: "ZAIN IBRAHIM",
+      title: "TRAINER",
+    },
+    ];
 
   const settings = {
     dots: true,
@@ -86,7 +100,7 @@ const Trainers = () => {
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[28rem] object-cover object-center"
+                    className="w-full h-[28rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
                     <h1 className="text-3xl">{trainer.name}</h1>

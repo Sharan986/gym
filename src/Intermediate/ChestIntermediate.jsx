@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+
+import {interCHEST} from '../assets/assets';
 
 const ChestIntermediate = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const ChestIntermediate = () => {
       id: 1,
       name: "Push-Ups (Weighted or Decline)",
       muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids", "Core"],
-      video: Videos.vid1,
+      video: interCHEST.inclinepress,
       instructions: [
         "Start in a high plank position (hands slightly wider than shoulders)",
         "For decline: Place feet on elevated surface (bench/step)",
@@ -36,7 +37,7 @@ const ChestIntermediate = () => {
       id: 2,
       name: "Incline Dumbbell Press",
       muscles: ["Upper Pectoralis Major", "Anterior Deltoids", "Triceps"],
-      video: Videos.vid2,
+      video: interCHEST.inclinepress,
       instructions: [
         "Set bench to 30-45 degree incline",
         "Press dumbbells up until arms are extended (not locked)",
@@ -62,7 +63,7 @@ const ChestIntermediate = () => {
       id: 3,
       name: "Flat Dumbbell Chest Press",
       muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
-      video: Videos.vid3,
+      video: interCHEST.inclinepress,
       instructions: [
         "Lie flat on bench with dumbbells at chest level",
         "Press weights up until arms are extended (don't lock)",
@@ -88,7 +89,7 @@ const ChestIntermediate = () => {
       id: 4,
       name: "Incline Dumbbell Flys",
       muscles: ["Upper Pectoralis Major", "Anterior Deltoids"],
-      video: Videos.vid4,
+      video: interCHEST.inclinedumbell,
       instructions: [
         "Set bench to 30 degree incline",
         "Start with dumbbells extended above chest (palms facing)",
@@ -114,7 +115,7 @@ const ChestIntermediate = () => {
       id: 5,
       name: "Pec Deck Fly Machine",
       muscles: ["Pectoralis Major", "Anterior Deltoids"],
-      video: Videos.vid5,
+      video: interCHEST.pecfly,
       instructions: [
         "Adjust seat height so handles are at chest level",
         "Grip handles with elbows slightly bent",

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+
+import { interARMS } from '../assets/assets';
 
 const ArmsIntermediate = () => {
   const exercises = [
@@ -9,7 +10,7 @@ const ArmsIntermediate = () => {
       id: 1,
       name: "EZ Bar Overhead Tricep Extensions",
       muscles: ["Triceps (Long Head)", "Anconeus"],
-      video: Videos.vid16,
+      video: interARMS.tricep,
       instructions: [
         "Sit on bench with back support, hold EZ bar with narrow overhand grip",
         "Press weight overhead until arms are fully extended",
@@ -35,7 +36,7 @@ const ArmsIntermediate = () => {
       id: 2,
       name: "EZ Bar Preacher Curls",
       muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
-      video: Videos.vid17,
+      video: interARMS.preacher,
       instructions: [
         "Set preacher bench to support underarms comfortably",
         "Grip EZ bar with shoulder-width underhand grip",
@@ -61,7 +62,7 @@ const ArmsIntermediate = () => {
       id: 3,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps (All Heads)", "Anconeus"],
-      video: Videos.vid18,
+      video: interARMS.rope,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -87,7 +88,7 @@ const ArmsIntermediate = () => {
       id: 4,
       name: "Incline Dumbbell Curls",
       muscles: ["Biceps Brachii (Long Head)", "Brachialis"],
-      video: Videos.vid19,
+      video: interARMS.inclinedumbellbicep,
       instructions: [
         "Set incline bench to 45-60 degree angle",
         "Let arms hang straight down with dumbbells",
@@ -113,7 +114,7 @@ const ArmsIntermediate = () => {
       id: 5,
       name: "Reverse Cable Curls",
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
-      video: Videos.vid20,
+      video: interARMS.reversecurl,
       instructions: [
         "Attach straight bar to low pulley cable machine",
         "Grip bar with overhand grip (palms down)",

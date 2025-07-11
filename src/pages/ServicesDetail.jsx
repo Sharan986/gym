@@ -57,20 +57,20 @@ const ServicesDetail = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
-        <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-          alt="About Us Banner"
-          className="w-screen h-60 object-cover object-center scale-125"
-        />
-        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">SERVICES</h1>
-          <h1 className="font-One text-2xl mt-9">
-            <Link to='/'>HOME</Link>
-            <span className="text-yellow-300">/Services</span>
-          </h1>
-        </div>
-      </div>
+     <div className="relative overflow-hidden">
+  <img
+    src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+    alt="About Us Banner"
+    className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+  />
+  <div className="absolute bottom-8 left-8 text-white">
+    <h1 className="text-5xl font-One lg:text-7xl z-10">SERVICES</h1>
+    <h1 className="font-One text-2xl mt-4 lg:text-5xl">
+      <Link to='/'>HOME</Link>
+      <span className="text-yellow-300 lg:text-5xl">/Services</span>
+    </h1>
+  </div>
+</div>
 
       <div className="flex justify-center flex-col items-start font-One">
         <div className="text-white pt-16 ml-6 mr-6">

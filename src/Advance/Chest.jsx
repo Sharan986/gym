@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Link } from "react-router-dom";
 import { Videos } from '../assets/assets';
+import { advCHEST } from '../assets/assets';
 
 const Footer = React.lazy(() => import("../components/Footer"));
 
@@ -10,7 +11,7 @@ const ChestAdvanced = () => {
       id: 1,
       name: "Weighted Push-Ups",
       muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids", "Core"],
-      video: Videos.vid6,
+      video: advCHEST.pushup,
       instructions: [
         "Assume standard push-up position with hands slightly wider than shoulders",
         "Have partner place weight plate on your upper back",
@@ -38,7 +39,7 @@ const ChestAdvanced = () => {
       id: 2,
       name: "Flat Barbell Bench Press",
       muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
-      video: Videos.vid7,
+      video: advCHEST.bench_press,
       instructions: [
         "Lie on flat bench with eyes under barbell",
         "Grip bar slightly wider than shoulder width",
@@ -65,7 +66,7 @@ const ChestAdvanced = () => {
       id: 3,
       name: "Incline Dumbbell Press",
       muscles: ["Upper Pectorals", "Anterior Deltoids", "Triceps"],
-      video: Videos.vid8,
+      video: advCHEST.inclinedpress,
       instructions: [
         "Set bench to 30-45° incline",
         "Press dumbbells up until arms are extended",
@@ -92,7 +93,7 @@ const ChestAdvanced = () => {
       id: 4,
       name: "Decline Cable Press",
       muscles: ["Lower Pectorals", "Triceps", "Anterior Deltoids"],
-      video: Videos.vid9,
+      video: advCHEST.cablepress,
       instructions: [
         "Set cable pulleys to highest position",
         "Stand between cables with slight forward lean",
@@ -119,7 +120,7 @@ const ChestAdvanced = () => {
       id: 5,
       name: "Parallel Bar Dips (Weighted)",
       muscles: ["Lower Pectorals", "Triceps", "Anterior Deltoids"],
-      video: Videos.vid10,
+      video: advCHEST.parallel,
       instructions: [
         "Use dip belt to add weight",
         "Grip bars and lift body to starting position",
@@ -146,7 +147,7 @@ const ChestAdvanced = () => {
       id: 6,
       name: "Pec Deck Fly Machine",
       muscles: ["Pectoralis Major", "Anterior Deltoids"],
-      video: Videos.vid11,
+      video: advCHEST.pecdec,
       instructions: [
         "Adjust seat height so handles are at chest level",
         "Grip handles with elbows slightly bent",

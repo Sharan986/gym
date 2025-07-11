@@ -33,20 +33,20 @@ const About = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
-        <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-          alt="About Us Banner"
-          className="w-full h-60 object-cover object-center scale-125"
-        />
-        <div className="absolute inset-0 flex flex-col  text-white justify-center ml-10">
-          <h1 className="text-5xl font-One">About Us</h1>
-          <h1 className="font-One text-2xl mt-9">
-            <Link to="/" className="hover:text-yellow-300">HOME</Link>
-            <span className="text-yellow-300"> / ABOUT</span>
-          </h1>
-        </div>
-      </div>
+        <div className="relative overflow-hidden">
+     <img
+       src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+       alt="About Us Banner"
+       className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+     />
+     <div className="absolute bottom-8 left-8 text-white">
+       <h1 className="text-5xl font-One lg:text-7xl z-10">ABOUT US</h1>
+       <h1 className="font-One text-2xl mt-4 lg:text-5xl">
+         <Link to='/'>HOME</Link>
+         <span className="text-yellow-300 lg:text-5xl">/About Us</span>
+       </h1>
+     </div>
+   </div>
       <div className="bg-[#070915] font-One mx-3">
     <div className="flex flex-col md:flex-row  text-white p-4 md:p-8">
       <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
