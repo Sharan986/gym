@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+import { begBACK} from '../assets/assets';
 
 const BackBeginner = () => {
   const exercises = [
     {
       id: 1,
       name: "Assisted Pull-Ups/Chin-Ups",
-      video: Videos.vid6, // Replace with actual video path
+      video: begBACK.assistedpullup, // Replace with actual video path
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Upper Back"],
       instructions: [
         "Set the assisted machine to your desired weight support",
@@ -34,7 +34,7 @@ const BackBeginner = () => {
     {
       id: 2,
       name: "Lat Pulldown Machine",
-      video: Videos.vid7, // Replace with actual video path
+      video: begBACK.latspulldown, // Replace with actual video path
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
       instructions: [
         "Adjust thigh pad to secure legs",
@@ -58,7 +58,7 @@ const BackBeginner = () => {
     {
       id: 3,
       name: "Seated Cable Row",
-      video: Videos.vid8, // Replace with actual video path
+      video: begBACK.machinerowing, // Replace with actual video path
       muscles: ["Rhomboids", "Middle Trapezius", "Latissimus Dorsi"],
       instructions: [
         "Sit with knees slightly bent",
@@ -82,7 +82,7 @@ const BackBeginner = () => {
     {
       id: 4,
       name: "Hyperextension",
-      video: Videos.vid9, // Replace with actual video path
+      video: begBACK.hyperextension, // Replace with actual video path
       muscles: ["Erector Spinae", "Glutes", "Hamstrings"],
       instructions: [
         "Adjust pad to align with hip crease",

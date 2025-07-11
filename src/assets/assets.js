@@ -132,3 +132,75 @@ export const advLEGS = {
   legpress,
   weiged_calf
 };
+
+import  frontraise from "./GYMVIDEO/ADVANCE/SHOULDERS/front-raise.mp4";
+import reversefly from "./GYMVIDEO/ADVANCE/SHOULDERS/reverse-fly.mp4";
+import ropefacepull from "./GYMVIDEO/ADVANCE/SHOULDERS/rope-face-pull.mp4";
+import ropepushdown from "./GYMVIDEO/ADVANCE/SHOULDERS/rope-pushdown.mp4";
+
+export const advSHOULDERS = {
+  frontraise,
+  reversefly,
+  ropefacepull,
+  ropepushdown
+};
+
+import frontraises from "./GYMVIDEO/BIGGNERS/SHOLDERS/front-raises.mp4";
+import lateralraises from "./GYMVIDEO/BIGGNERS/SHOLDERS/lateral-raise.mp4";
+import machinesholder from "./GYMVIDEO/BIGGNERS/SHOLDERS/machine-shoulder-press.mp4";
+import reardelt from "./GYMVIDEO/BIGGNERS/SHOLDERS/rear-delt-fly.mp4";
+
+export const begSHOULDERS = {
+  frontraises,
+  lateralraises,
+  machinesholder,
+  reardelt
+};
+
+import bicep from "./GYMVIDEO/BIGGNERS/ARMS/bicep-curl.mp4";
+import cableoverhead from "./GYMVIDEO/BIGGNERS/ARMS/cable-overhead-extension.mp4";
+import hammercurl from "./GYMVIDEO/BIGGNERS/ARMS/hammer-curl.mp4";
+import inclinecurl from "./GYMVIDEO/BIGGNERS/ARMS/incline-curl.mp4";
+
+export const begARMS = {
+  bicep,
+  cableoverhead,
+  hammercurl,
+  inclinecurl
+};
+
+import assistedpullup from "./GYMVIDEO/BIGGNERS/BACK/assisted-pullups-1.mp4";
+import hyperextension from "./GYMVIDEO/BIGGNERS/BACK/hyperextension.mp4";
+import latspulldown from "./GYMVIDEO/BIGGNERS/BACK/lats-pulldown.mp4";
+import machinerowing from "./GYMVIDEO/BIGGNERS/BACK/machine-rowing.mp4";
+
+export const begBACK = {
+  assistedpullup,
+  hyperextension,
+  latspulldown,
+  machinerowing
+};
+
+import bandchest from "./GYMVIDEO/BIGGNERS/CHEST/band-chest-fly.mp4";
+import benchpress from "./GYMVIDEO/BIGGNERS/CHEST/bench-press.mp4";
+import inclinechest from "./GYMVIDEO/BIGGNERS/CHEST/incline-chest-press-machine.mp4";
+import pecde from "./GYMVIDEO/BIGGNERS/CHEST/pec-dec-fly.mp4";
+import pushups from "./GYMVIDEO/BIGGNERS/CHEST/push-ups.mp4";
+
+export const begCHEST = {
+  bandchest,
+  benchpress,
+  inclinechest,
+  pecde,
+  pushups
+};
+
+import barbellsqt from "./GYMVIDEO/BIGGNERS/LEGS/BARBELL-SQUATS.mp4";
+import legscurl from "./GYMVIDEO/BIGGNERS/LEGS/leg-curl.mp4";
+import sumosqt from "./GYMVIDEO/BIGGNERS/LEGS/sumo-squat.mp4";
+
+export const begLEGS = {
+  barbellsqt,
+  legscurl,
+  sumosqt
+};

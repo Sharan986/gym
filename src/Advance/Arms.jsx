@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+
 import { advARMS } from '../assets/assets';
 
 const ArmsAdvanced = () => {
@@ -10,7 +10,7 @@ const ArmsAdvanced = () => {
       id: 1,
       name: "Barbell Skull Crushers",
       muscles: ["Triceps (Long Head)", "Anconeus"],
-      video: Videos.vid21,
+      video:advARMS.inclinedb ,
       instructions: [
         "Lie on flat bench with barbell (EZ bar preferred) using narrow overhand grip",
         "Extend arms straight up over shoulders",

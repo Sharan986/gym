@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+import { advSHOULDERS } from '../assets/assets';
 
 const ShouldersAdvanced = () => {
   const exercises = [
     {
       id: 1,
       name: "Barbell Overhead Press (Standing)",
-      video: Videos.vid26,
+      video: advSHOULDERS.frontraise,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Core"],
       instructions: [
         "Stand with feet shoulder-width apart, holding a barbell at shoulder height.",
@@ -30,7 +30,7 @@ const ShouldersAdvanced = () => {
     {
       id: 2,
       name: "Arnold Press",
-      video: Videos.vid27,
+      video: advSHOULDERS.reversefly,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps"],
       instructions: [
         "Sit on a bench with dumbbells at shoulder height, palms facing your body.",
@@ -52,7 +52,7 @@ const ShouldersAdvanced = () => {
     {
       id: 3,
       name: "Face Pulls (Cable)",
-      video: Videos.vid28,
+      video: advSHOULDERS.ropefacepull,
       muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
       instructions: [
         "Attach a rope to a cable machine at upper chest height.",
@@ -74,7 +74,7 @@ const ShouldersAdvanced = () => {
     {
       id: 4,
       name: "Cable Lateral Raises",
-      video: Videos.vid29,
+      video: advSHOULDERS.ropepushdown,
       muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
         "Stand next to a cable machine with the pulley at its lowest setting.",
@@ -96,7 +96,7 @@ const ShouldersAdvanced = () => {
     {
       id: 5,
       name: "Reverse Flys (Machine or Dumbbells)",
-      video: Videos.vid30,
+      video: advSHOULDERS.reversefly,
       muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
       instructions: [
         "Sit at a reverse fly machine or bend forward with dumbbells.",
@@ -118,7 +118,7 @@ const ShouldersAdvanced = () => {
     {
       id: 6,
       name: "Upright Rows",
-      video: Videos.vid31,
+      video: advSHOULDERS.ropepushdown,
       muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
       instructions: [
         "Stand holding a barbell or dumbbells with an overhand grip.",
@@ -140,7 +140,7 @@ const ShouldersAdvanced = () => {
     {
       id: 7,
       name: "Front Raises",
-      video: Videos.vid32,
+      video: advSHOULDERS.frontraise,
       muscles: ["Anterior Deltoids", "Pectoralis Major (upper)"],
       instructions: [
         "Stand holding dumbbells or a barbell with palms facing your thighs.",

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+import { begSHOULDERS } from '../assets/assets';
 
 const ShouldersBeginner = () => {
   const exercises = [
     {
       id: 1,
       name: "Machine Shoulder Press",
-      video: Videos.vid21,
+      video: begSHOULDERS.machinesholder,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps"],
       instructions: [
         "Adjust seat height so handles align with shoulders",
@@ -33,7 +33,7 @@ const ShouldersBeginner = () => {
     {
       id: 2,
       name: "Dumbbell Lateral Raises",
-      video: Videos.vid22,
+      video: begSHOULDERS.lateralraises,
       muscles: ["Lateral Deltoids", "Supraspinatus"],
       instructions: [
         "Stand with dumbbells at sides, palms facing inward",
@@ -58,7 +58,7 @@ const ShouldersBeginner = () => {
     {
       id: 3,
       name: "Reverse Dumbbell Flys",
-      video: Videos.vid23,
+      video: begSHOULDERS.reardelt,
       muscles: ["Rear Deltoids", "Rhomboids", "Trapezius"],
       instructions: [
         "Bend forward at hips about 45 degrees",
@@ -83,7 +83,7 @@ const ShouldersBeginner = () => {
     {
       id: 4,
       name: "Front Raises",
-      video: Videos.vid24,
+      video: begSHOULDERS.frontraises,
       muscles: ["Anterior Deltoids", "Pectoralis Major"],
       instructions: [
         "Stand with dumbbells in front of thighs",
@@ -108,7 +108,7 @@ const ShouldersBeginner = () => {
     {
       id: 5,
       name: "Dumbbell Shrugs",
-      video: Videos.vid25,
+      video: begSHOULDERS.machinesholder,
       muscles: ["Trapezius", "Levator Scapulae"],
       instructions: [
         "Stand with dumbbells at sides",

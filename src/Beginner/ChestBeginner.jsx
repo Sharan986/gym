@@ -1,8 +1,6 @@
 import React, { Suspense } from 'react';
 import { Link } from "react-router-dom";
-import { Videos } from '../assets/assets';
-
-const Footer = React.lazy(() => import("../components/Footer"));
+import { begCHEST } from '../assets/assets';
 
 const ChestBeginner = () => {
   
@@ -11,7 +9,7 @@ const exercises = [
     id: 1,
     name: "PUSH UPS",
     muscles: ["Chest", "Shoulders", "Triceps"],
-    video: "Videos.vid1",
+    video: begCHEST.pushups,
     instructions: [
       "Start in a high plank position with your hands placed slightly wider than shoulder-width apart.",
       "Keep your body in a straight line from head to heels.",
@@ -39,7 +37,7 @@ const exercises = [
     id: 2,
     name: "Machine Chest Press (Incline)",
     muscles: ["Upper Chest", "Shoulders", "Triceps"],
-    video: "Videos.vid2",
+    video: begCHEST.inclinechest,
     instructions: [
       "Adjust the seat height so that the handles are at upper chest level.",
       "Sit down and grip the handles firmly.",
@@ -66,7 +64,7 @@ const exercises = [
     id: 3,
     name: "Flat Chest Press Machine",
     muscles: ["Chest", "Shoulders", "Triceps"],
-    video: "Videos.vid3",
+    video: begCHEST.benchpress,
     instructions: [
       "Adjust the seat so that the handles are aligned with your mid-chest.",
       "Sit down and grip the handles firmly.",
@@ -93,7 +91,7 @@ const exercises = [
     id: 4,
     name: "Pec Deck Fly",
     muscles: ["Chest", "Shoulders"],
-    video: "Videos.vid4",
+    video: begCHEST.pecde,
     instructions: [
       "Adjust the seat height so that the handles are at chest level.",
       "Sit down and place your forearms against the pads.",

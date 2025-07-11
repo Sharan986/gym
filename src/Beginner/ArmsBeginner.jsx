@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+import { begARMS } from '../assets/assets';
 
 const ArmsBeginner = () => {
   const exercises = [
@@ -9,7 +9,7 @@ const ArmsBeginner = () => {
       id: 1,
       name: "Standing Barbell Bicep Curls",
       muscles: ["Biceps Brachii", "Brachialis", "Forearms"],
-      video: Videos.vid16,
+      video: begARMS.bicep,
       instructions: [
         "Stand with feet shoulder-width apart, holding a barbell with underhand grip",
         "Keep elbows close to your torso and shoulders back",
@@ -35,7 +35,7 @@ const ArmsBeginner = () => {
       id: 2,
       name: "Dumbbell Overhead Tricep Extensions",
       muscles: ["Triceps Brachii (All Three Heads)", "Anconeus"],
-      video: Videos.vid17,
+      video: begARMS.cableoverhead,
       instructions: [
         "Stand or sit holding one dumbbell with both hands",
         "Press the weight overhead until arms are fully extended",
@@ -61,7 +61,7 @@ const ArmsBeginner = () => {
       id: 3,
       name: "Hammer Curls",
       muscles: ["Brachialis", "Biceps Brachii", "Brachioradialis"],
-      video: Videos.vid18,
+      video: begARMS.hammercurl,
       instructions: [
         "Stand holding dumbbells with neutral grip (palms facing inward)",
         "Keep elbows close to sides and shoulders back",
@@ -87,7 +87,7 @@ const ArmsBeginner = () => {
       id: 4,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps Brachii (Especially Lateral Head)", "Anconeus"],
-      video: Videos.vid19,
+      video: begARMS.inclinecurl,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -113,7 +113,7 @@ const ArmsBeginner = () => {
       id: 5,
       name: "EZ Bar Preacher Curls",
       muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
-      video: Videos.vid20,
+      video: begARMS.inclinecurl,
       instructions: [
         "Set preacher bench to support underarms comfortably",
         "Grip EZ bar with shoulder-width underhand grip",

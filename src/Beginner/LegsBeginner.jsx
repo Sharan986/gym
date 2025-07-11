@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Videos } from '../assets/assets';
+import { begLEGS } from '../assets/assets';
 
 const LegsBeginner = () => {
   const exercises = [
@@ -9,7 +9,7 @@ const LegsBeginner = () => {
       id: 1,
       name: "Barbell Back Squats",
       muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core"],
-      video: Videos.vid11, // Replace with actual video path
+      video: begLEGS.barbellsqt,
       instructions: [
         "Position barbell on upper back (not neck)",
         "Feet shoulder-width apart, toes slightly out",
@@ -35,7 +35,7 @@ const LegsBeginner = () => {
       id: 2,
       name: "Sumo Squats",
       muscles: ["Inner Thighs", "Glutes", "Quadriceps"],
-      video: Videos.vid12, // Replace with actual video path
+      video: begLEGS.sumosqt,
       instructions: [
         "Stand with feet wider than shoulder-width, toes at 45°",
         "Hold dumbbell/kettlebell at chest or between legs",
@@ -60,7 +60,7 @@ const LegsBeginner = () => {
       id: 3,
       name: "Leg Extensions",
       muscles: ["Quadriceps"],
-      video: Videos.vid13, // Replace with actual video path
+      video: begLEGS.legext,
       instructions: [
         "Adjust machine so knees align with rotation point",
         "Place ankles behind pad, legs at 90°",
@@ -84,7 +84,7 @@ const LegsBeginner = () => {
       id: 4,
       name: "Leg Curls",
       muscles: ["Hamstrings"],
-      video: Videos.vid14, // Replace with actual video path
+      video: begLEGS.legscurl,
       instructions: [
         "Lie face down on machine, knees just off bench",
         "Position roller pad just above ankles",
@@ -108,7 +108,7 @@ const LegsBeginner = () => {
       id: 5,
       name: "Standing Calf Raises",
       muscles: ["Gastrocnemius", "Soleus"],
-      video: Videos.vid15, // Replace with actual video path
+      video: begLEGS.weiged_calf,
       instructions: [
         "Stand on edge of step or calf raise machine",
         "Raise onto toes as high as possible",

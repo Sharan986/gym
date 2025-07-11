@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Link } from "react-router-dom";
-import { Videos } from '../assets/assets';
+
 import { advCHEST } from '../assets/assets';
 
 const Footer = React.lazy(() => import("../components/Footer"));
