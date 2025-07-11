@@ -13,7 +13,7 @@ export const interCHEST = {
 import calf_raises from "./GYMVIDEO/INTERMEDIATE/LEGS/calf-raise.mp4";
 import leg_extension from "./GYMVIDEO/INTERMEDIATE/LEGS/leg-extension.mp4";
 import squats from "./GYMVIDEO/INTERMEDIATE/LEGS/squat.mp4";
-import leg_press from ".//GYMVIDEO/INTERMEDIATE/LEGS/LEG-PRESS.mp4";
+import leg_press from "./GYMVIDEO/INTERMEDIATE/LEGS/LEG-PRESS.mp4";
 import RDL from "./GYMVIDEO/INTERMEDIATE/LEGS/ROMANIAN-DEADLIFT-RDL.mp4";
 
 export const interLEGS = {
