@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { advSHOULDERS } from '../assets/assets';
+import { interSHOULDERS } from '../assets/assets';
 
 const ShouldersAdvanced = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Overhead Press (Standing)",
-      video: advSHOULDERS.frontraise,
+      name:  "Face Pulls (ROPE)",
+      video: advSHOULDERS.ropefacepull,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Core"],
       instructions: [
         "Stand with feet shoulder-width apart, holding a barbell at shoulder height.",
@@ -27,10 +28,34 @@ const ShouldersAdvanced = () => {
         "Use a controlled motion for both lifting and lowering."
       ]
     },
-    {
+      {
       id: 2,
+      name: "Cable Lateral Raises",
+      video: advSHOULDERS.cable,
+      muscles: ["Lateral Deltoids", "Supraspinatus"],
+      instructions: [
+        "Stand next to a cable machine with the pulley at its lowest setting.",
+        "Grab the handle with your outside hand, keeping a slight bend in your elbow.",
+        "Raise your arm out to the side until it's parallel to the floor.",
+        "Slowly lower back to the starting position with control."
+      ],
+      benefits: [
+        "Isolates the lateral deltoids effectively",
+        "Provides constant tension throughout the movement",
+        "Improves shoulder width and definition"
+      ],
+      tips: [
+        "Keep your torso upright and avoid leaning.",
+        "Raise only to shoulder height to avoid impingement.",
+        "Control the weight on both the lift and descent."
+      ]
+    },
+   
+    
+    {
+      id: 4,
       name: "Arnold Press",
-      video: advSHOULDERS.reversefly,
+      video: advSHOULDERS.arnoldpress,
       muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps"],
       instructions: [
         "Sit on a bench with dumbbells at shoulder height, palms facing your body.",
@@ -50,52 +75,8 @@ const ShouldersAdvanced = () => {
       ]
     },
     {
-      id: 3,
-      name: "Face Pulls (Cable)",
-      video: advSHOULDERS.ropefacepull,
-      muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
-      instructions: [
-        "Attach a rope to a cable machine at upper chest height.",
-        "Grab the rope with both hands and step back to create tension.",
-        "Pull the rope towards your forehead, separating your hands as you pull.",
-        "Return to the starting position with control."
-      ],
-      benefits: [
-        "Strengthens rear deltoids and upper back",
-        "Improves posture and shoulder health",
-        "Balances shoulder development"
-      ],
-      tips: [
-        "Keep your shoulders relaxed and avoid shrugging.",
-        "Focus on squeezing your shoulder blades together.",
-        "Use a light to moderate weight for proper form."
-      ]
-    },
-    {
-      id: 4,
-      name: "Cable Lateral Raises",
-      video: advSHOULDERS.ropepushdown,
-      muscles: ["Lateral Deltoids", "Supraspinatus"],
-      instructions: [
-        "Stand next to a cable machine with the pulley at its lowest setting.",
-        "Grab the handle with your outside hand, keeping a slight bend in your elbow.",
-        "Raise your arm out to the side until it's parallel to the floor.",
-        "Slowly lower back to the starting position with control."
-      ],
-      benefits: [
-        "Isolates the lateral deltoids effectively",
-        "Provides constant tension throughout the movement",
-        "Improves shoulder width and definition"
-      ],
-      tips: [
-        "Keep your torso upright and avoid leaning.",
-        "Raise only to shoulder height to avoid impingement.",
-        "Control the weight on both the lift and descent."
-      ]
-    },
-    {
       id: 5,
-      name: "Reverse Flys (Machine or Dumbbells)",
+      name: "Reverse Fly Machine",
       video: advSHOULDERS.reversefly,
       muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
       instructions: [
@@ -118,7 +99,7 @@ const ShouldersAdvanced = () => {
     {
       id: 6,
       name: "Upright Rows",
-      video: advSHOULDERS.ropepushdown,
+      video: interSHOULDERS.CABLE,
       muscles: ["Lateral Deltoids", "Trapezius", "Biceps"],
       instructions: [
         "Stand holding a barbell or dumbbells with an overhand grip.",

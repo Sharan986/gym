@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-
+import { interARMS } from '../assets/assets';
 import { advARMS } from '../assets/assets';
 
 const ArmsAdvanced = () => {
@@ -10,7 +10,7 @@ const ArmsAdvanced = () => {
       id: 1,
       name: "Barbell Skull Crushers",
       muscles: ["Triceps (Long Head)", "Anconeus"],
-      video:advARMS.inclinedb ,
+      video:advARMS.tricepskull ,
       instructions: [
         "Lie on flat bench with barbell (EZ bar preferred) using narrow overhand grip",
         "Extend arms straight up over shoulders",
@@ -63,7 +63,7 @@ const ArmsAdvanced = () => {
       id: 3,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps (All Heads)", "Anconeus"],
-      video: advARMS.rope,
+      video: interARMS.rope,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -113,7 +113,7 @@ const ArmsAdvanced = () => {
     },
     {
       id: 5,
-      name: "Tricep Dumbbell Kickbacks",
+      name: "Tricep Kickbacks",
       muscles: ["Triceps (Lateral Head)", "Anconeus"],
       video: advARMS.tricepkick,
       instructions: [
@@ -139,7 +139,7 @@ const ArmsAdvanced = () => {
     },
     {
       id: 6,
-      name: "EZ Bar Reverse Curls",
+      name: "Reverse Curls",
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
       video: advARMS.reversecurls,
       instructions: [

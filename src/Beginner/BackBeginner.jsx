@@ -8,7 +8,7 @@ const BackBeginner = () => {
     {
       id: 1,
       name: "Assisted Pull-Ups/Chin-Ups",
-      video: begBACK.assistedpullup, // Replace with actual video path
+      video: begBACK.assistedpullup, 
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids", "Upper Back"],
       instructions: [
         "Set the assisted machine to your desired weight support",
@@ -34,7 +34,7 @@ const BackBeginner = () => {
     {
       id: 2,
       name: "Lat Pulldown Machine",
-      video: begBACK.latspulldown, // Replace with actual video path
+      video: begBACK.latspulldown, 
       muscles: ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
       instructions: [
         "Adjust thigh pad to secure legs",

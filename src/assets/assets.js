@@ -11,6 +11,7 @@ export const interCHEST = {
 };
 
 import calf_raises from "./GYMVIDEO/INTERMEDIATE/LEGS/calf-raise.mp4";
+import seatedcalf from "./GYMVIDEO/INTERMEDIATE/LEGS/seated-calf-raise.mp4"
 import leg_extension from "./GYMVIDEO/INTERMEDIATE/LEGS/leg-extension.mp4";
 import squats from "./GYMVIDEO/INTERMEDIATE/LEGS/squat.mp4";
 import leg_press from "./GYMVIDEO/INTERMEDIATE/LEGS/LEG-PRESS.mp4";
@@ -21,7 +22,8 @@ export const interLEGS = {
   leg_extension,
   squats,
   leg_press,
-  RDL
+  RDL,
+  seatedcalf
 };
 
 import CABLE from "./GYMVIDEO/INTERMEDIATE/SHOULDERS/CABLE-UPRIGHT-ROW.mp4";
@@ -60,6 +62,7 @@ import preacher from "./GYMVIDEO/INTERMEDIATE/ARMS/preacher-curl.mp4";
 import reversecurl from "./GYMVIDEO/INTERMEDIATE/ARMS/reverse-curl.mp4";
 import rope from "./GYMVIDEO/INTERMEDIATE/ARMS/rope-pushdown.mp4";
 import tricep from "./GYMVIDEO/INTERMEDIATE/ARMS/tricep-overhead-extension.mp4";
+
 export const interARMS = {
   inclinedumbellbicep,
   preacher,
@@ -73,13 +76,16 @@ import concentration from "./GYMVIDEO/ADVANCE/ARMS/concentration-curl.mp4";
 import inclinedb from "./GYMVIDEO/ADVANCE/ARMS/incline-db-curl.mp4";
 import reversecurls from "./GYMVIDEO/ADVANCE/ARMS/reverse-curls.mp4";
 import tricepkick from "./GYMVIDEO/ADVANCE/ARMS/tricep-kickback.mp4";
+import tricepskull from "./GYMVIDEO/ADVANCE/ARMS/tricep-skullcrusher.mp4";
 
 export const advARMS = {
   cablelateral,
   concentration,
   inclinedb,
   reversecurls,
-  tricepkick
+  tricepkick,
+  tricepskull
+
 };
 
 import chestbarbell from "./GYMVIDEO/ADVANCE/BACK/chest-supported-barbell-rowing.mp4";
@@ -89,13 +95,16 @@ import UPRIGHTCABLE from "./GYMVIDEO/ADVANCE/BACK/UPRIGHT-CABLE-ROW.mp4";
 import widegrip from "./GYMVIDEO/ADVANCE/BACK/wide-grip-seated-rowing.mp4";
 import widegriplat from "./GYMVIDEO/ADVANCE/BACK/wide-grip-lat-pulldown.mp4";
 
+
 export const advBACK = {
   chestbarbell,
   dbrowing,
   DEADLIFT,
   UPRIGHTCABLE,
   widegrip,
-  widegriplat
+  widegriplat,
+ 
+
 };
 
 import bench_press from "./GYMVIDEO/ADVANCE/CHEST/bench-press.mp4";
@@ -137,36 +146,46 @@ import  frontraise from "./GYMVIDEO/ADVANCE/SHOULDERS/front-raise.mp4";
 import reversefly from "./GYMVIDEO/ADVANCE/SHOULDERS/reverse-fly.mp4";
 import ropefacepull from "./GYMVIDEO/ADVANCE/SHOULDERS/rope-face-pull.mp4";
 import ropepushdown from "./GYMVIDEO/ADVANCE/SHOULDERS/rope-pushdown.mp4";
+import arnoldpress from "./GYMVIDEO/ADVANCE/SHOULDERS/arnold-press.mp4";
+import cable from "./GYMVIDEO/ADVANCE/SHOULDERS/cable-lateral-raise.mp4"
 
 export const advSHOULDERS = {
   frontraise,
   reversefly,
   ropefacepull,
-  ropepushdown
+  ropepushdown,
+  arnoldpress,
+  cable
 };
 
 import frontraises from "./GYMVIDEO/BIGGNERS/SHOLDERS/front-raises.mp4";
 import lateralraises from "./GYMVIDEO/BIGGNERS/SHOLDERS/lateral-raise.mp4";
 import machinesholder from "./GYMVIDEO/BIGGNERS/SHOLDERS/machine-shoulder-press.mp4";
 import reardelt from "./GYMVIDEO/BIGGNERS/SHOLDERS/rear-delt-fly.mp4";
+import shrugs from "./GYMVIDEO/BIGGNERS/SHOLDERS/shrugs.mp4";
 
 export const begSHOULDERS = {
   frontraises,
   lateralraises,
   machinesholder,
-  reardelt
+  reardelt,
+  shrugs
 };
 
 import bicep from "./GYMVIDEO/BIGGNERS/ARMS/bicep-curl.mp4";
 import cableoverhead from "./GYMVIDEO/BIGGNERS/ARMS/cable-overhead-extension.mp4";
 import hammercurl from "./GYMVIDEO/BIGGNERS/ARMS/hammer-curl.mp4";
 import inclinecurl from "./GYMVIDEO/BIGGNERS/ARMS/incline-curl.mp4";
+import tricep1 from "./GYMVIDEO/BIGGNERS/ARMS/tricep-overhead-extension.mp4";
+import pushdownBIG from "./GYMVIDEO/BIGGNERS/ARMS/tricep-overhead-extension.mp4";
 
 export const begARMS = {
   bicep,
   cableoverhead,
   hammercurl,
-  inclinecurl
+  inclinecurl,
+  tricep1,
+  pushdownBIG
 };
 
 import assistedpullup from "./GYMVIDEO/BIGGNERS/BACK/assisted-pullups-1.mp4";
@@ -198,9 +217,15 @@ export const begCHEST = {
 import barbellsqt from "./GYMVIDEO/BIGGNERS/LEGS/BARBELL-SQUATS.mp4";
 import legscurl from "./GYMVIDEO/BIGGNERS/LEGS/leg-curl.mp4";
 import sumosqt from "./GYMVIDEO/BIGGNERS/LEGS/sumo-squat.mp4";
+import legext from "./GYMVIDEO/BIGGNERS/LEGS/leg-extension.mp4";
+import squat from "./GYMVIDEO/BIGGNERS/LEGS/squat.mp4";
+import calf from "./GYMVIDEO/BIGGNERS/LEGS/calf-raise.mp4";
 
 export const begLEGS = {
   barbellsqt,
   legscurl,
-  sumosqt
+  sumosqt,
+  legext,
+  squat,
+  calf
 };

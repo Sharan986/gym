@@ -37,7 +37,7 @@ const ChestAdvanced = () => {
     },
     {
       id: 2,
-      name: "Flat Barbell Bench Press",
+      name: "Flat Bench Press",
       muscles: ["Pectoralis Major", "Triceps", "Anterior Deltoids"],
       video: advCHEST.bench_press,
       instructions: [
@@ -145,7 +145,7 @@ const ChestAdvanced = () => {
     },
     {
       id: 6,
-      name: "Pec Deck Fly Machine",
+      name: "Pec Dec Fly Machine",
       muscles: ["Pectoralis Major", "Anterior Deltoids"],
       video: advCHEST.pecdec,
       instructions: [

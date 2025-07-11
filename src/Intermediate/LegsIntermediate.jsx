@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { begLEGS } from '../assets/assets';
 
 import { interLEGS } from '../assets/assets';
 
@@ -10,7 +11,7 @@ const LegsIntermediate = () => {
       id: 1,
       name: "Barbell Back Squats",
       muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core", "Calves"],
-      video: interLEGS.squats,
+      video: begLEGS.barbellsqt,
       instructions: [
         "Position barbell on upper back (not neck) with hands slightly wider than shoulder-width",
         "Stand with feet shoulder-width apart, toes slightly out",
@@ -121,7 +122,7 @@ const LegsIntermediate = () => {
       id: 5,
       name: "Standing & Seated Calf Raises",
       muscles: ["Gastrocnemius (standing)", "Soleus (seated)"],
-      video: interLEGS.calf_raises,
+      video: interLEGS.seatedcalf,
       instructions: [
         "Standing: Use machine or step with weights",
         "Stand on balls of feet, lower heels below step",

@@ -7,9 +7,9 @@ const LegsBeginner = () => {
   const exercises = [
     {
       id: 1,
-      name: "Barbell Back Squats",
+      name: "Squats",
       muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core"],
-      video: begLEGS.barbellsqt,
+      video: begLEGS.squat,
       instructions: [
         "Position barbell on upper back (not neck)",
         "Feet shoulder-width apart, toes slightly out",
@@ -108,7 +108,7 @@ const LegsBeginner = () => {
       id: 5,
       name: "Standing Calf Raises",
       muscles: ["Gastrocnemius", "Soleus"],
-      video: begLEGS.weiged_calf,
+      video: begLEGS.calf,
       instructions: [
         "Stand on edge of step or calf raise machine",
         "Raise onto toes as high as possible",

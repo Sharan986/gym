@@ -1,5 +1,4 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+
 import HeaderImg from "../assets/Header.jpg";
 import Button from "../components/Button";
 import Wbutton from "../components/Wbutton";
@@ -19,7 +18,6 @@ const Header = () => {
     <>
   
       <Nav />
-  
    
       <div className="relative overflow-hidden mb-4">
             

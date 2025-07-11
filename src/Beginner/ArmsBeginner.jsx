@@ -7,7 +7,7 @@ const ArmsBeginner = () => {
   const exercises = [
     {
       id: 1,
-      name: "Standing Barbell Bicep Curls",
+      name: "Standing  Bicep Curls",
       muscles: ["Biceps Brachii", "Brachialis", "Forearms"],
       video: begARMS.bicep,
       instructions: [
@@ -35,7 +35,7 @@ const ArmsBeginner = () => {
       id: 2,
       name: "Dumbbell Overhead Tricep Extensions",
       muscles: ["Triceps Brachii (All Three Heads)", "Anconeus"],
-      video: begARMS.cableoverhead,
+      video: begARMS.tricep1,
       instructions: [
         "Stand or sit holding one dumbbell with both hands",
         "Press the weight overhead until arms are fully extended",
@@ -85,9 +85,9 @@ const ArmsBeginner = () => {
     },
     {
       id: 4,
-      name: "Tricep Rope Pushdown",
+      name: "Tricep Pushdown",
       muscles: ["Triceps Brachii (Especially Lateral Head)", "Anconeus"],
-      video: begARMS.inclinecurl,
+      video: begARMS.pushdownBIG,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -109,32 +109,7 @@ const ArmsBeginner = () => {
         "Try single-arm variations for imbalances"
       ]
     },
-    {
-      id: 5,
-      name: "EZ Bar Preacher Curls",
-      muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
-      video: begARMS.inclinecurl,
-      instructions: [
-        "Set preacher bench to support underarms comfortably",
-        "Grip EZ bar with shoulder-width underhand grip",
-        "Curl weight up until forearms are vertical",
-        "Squeeze biceps hard at top position",
-        "Lower slowly with control (3-4 second count)"
-      ],
-      benefits: [
-        "Isolates biceps by eliminating body English",
-        "Reduces shoulder and wrist strain",
-        "Allows strict form and heavy weights",
-        "Enhances bicep peak development"
-      ],
-      tips: [
-        "Don't fully extend elbows at bottom (maintain tension)",
-        "Keep back flat against pad throughout",
-        "Use full range of motion without hyperextending",
-        "Try different grip widths to target various angles",
-        "Control the negative portion of the lift"
-      ]
-    }
+   
   ];
 
   return (

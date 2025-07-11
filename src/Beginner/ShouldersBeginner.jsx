@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { begSHOULDERS } from '../assets/assets';
+import { interSHOULDERS } from '../assets/assets';
 
 const ShouldersBeginner = () => {
   const exercises = [
@@ -58,7 +59,7 @@ const ShouldersBeginner = () => {
     {
       id: 3,
       name: "Reverse Dumbbell Flys",
-      video: begSHOULDERS.reardelt,
+      video: interSHOULDERS.reverse,
       muscles: ["Rear Deltoids", "Rhomboids", "Trapezius"],
       instructions: [
         "Bend forward at hips about 45 degrees",
@@ -107,8 +108,8 @@ const ShouldersBeginner = () => {
     },
     {
       id: 5,
-      name: "Dumbbell Shrugs",
-      video: begSHOULDERS.machinesholder,
+      name: "Shrugs",
+      video: begSHOULDERS.shrugs,
       muscles: ["Trapezius", "Levator Scapulae"],
       instructions: [
         "Stand with dumbbells at sides",

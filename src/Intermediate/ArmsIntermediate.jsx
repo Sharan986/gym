@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-
+import {begARMS} from "../assets/assets"
 import { interARMS } from '../assets/assets';
+import { advSHOULDERS } from '../assets/assets';
 
 const ArmsIntermediate = () => {
   const exercises = [
     {
       id: 1,
-      name: "EZ Bar Overhead Tricep Extensions",
+      name: " Tricep Overhead Extensions",
       muscles: ["Triceps (Long Head)", "Anconeus"],
-      video: interARMS.tricep,
+      video: begARMS.cableoverhead,
       instructions: [
         "Sit on bench with back support, hold EZ bar with narrow overhand grip",
         "Press weight overhead until arms are fully extended",
@@ -34,7 +35,7 @@ const ArmsIntermediate = () => {
     },
     {
       id: 2,
-      name: "EZ Bar Preacher Curls",
+      name: " Preacher Curls",
       muscles: ["Biceps Brachii (Short Head)", "Brachialis"],
       video: interARMS.preacher,
       instructions: [
@@ -62,7 +63,7 @@ const ArmsIntermediate = () => {
       id: 3,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps (All Heads)", "Anconeus"],
-      video: interARMS.rope,
+      video: advSHOULDERS.ropepushdown ,
       instructions: [
         "Attach rope to high pulley cable machine",
         "Stand with slight forward lean, elbows pinned to sides",
@@ -88,7 +89,7 @@ const ArmsIntermediate = () => {
       id: 4,
       name: "Incline Dumbbell Curls",
       muscles: ["Biceps Brachii (Long Head)", "Brachialis"],
-      video: interARMS.inclinedumbellbicep,
+      video: begARMS.inclinecurl,
       instructions: [
         "Set incline bench to 45-60 degree angle",
         "Let arms hang straight down with dumbbells",
@@ -112,7 +113,7 @@ const ArmsIntermediate = () => {
     },
     {
       id: 5,
-      name: "Reverse Cable Curls",
+      name: "Reverse Curls",
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
       video: interARMS.reversecurl,
       instructions: [

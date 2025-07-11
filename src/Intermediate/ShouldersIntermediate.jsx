@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-
+import { begSHOULDERS } from '../assets/assets';
 import { interSHOULDERS } from '../assets/assets';
 
 const ShouldersIntermediate = () => {
@@ -10,7 +10,7 @@ const ShouldersIntermediate = () => {
       id: 1,
       name: "Reverse Fly Machine",
       muscles: ["Rear Deltoids", "Trapezius", "Rhomboids"],
-      video: interSHOULDERS.reverse,
+      video: begSHOULDERS.reardelt,
       instructions: [
         "Adjust seat height so handles are at shoulder level",
         "Sit with chest against pad and grip handles",
@@ -114,7 +114,7 @@ const ShouldersIntermediate = () => {
     },
     {
       id: 5,
-      name: "Face Pulls (Cable)",
+      name: "Face Pulls (Rope)",
       muscles: ["Rear Deltoids", "Rotator Cuff", "Trapezius"],
       video: interSHOULDERS.ROPE,
       instructions: [

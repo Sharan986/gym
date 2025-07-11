@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-
 import { advBACK } from '../assets/assets';
+import { interBACK } from '../assets/assets';
 
 const BackAdvanced = () => {
   const exercises = [
@@ -36,7 +36,7 @@ const BackAdvanced = () => {
     {
       id: 2,
       name: "Underhand Bent-Over Rows",
-      video: advBACK.dbrowing,
+      video: interBACK.bentover,
       muscles: ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Delts"],
       instructions: [
         "Stand with feet shoulder-width apart, knees slightly bent",
@@ -62,7 +62,7 @@ const BackAdvanced = () => {
     {
       id: 3,
       name: "Single-Arm Dumbbell Rows",
-      video: advBACK.chestbarbell,
+      video: advBACK.dbrowing,
       muscles: ["Latissimus Dorsi", "Rear Delts", "Rotator Cuff", "Core"],
       instructions: [
         "Place knee and hand on bench, other foot on floor",
@@ -87,7 +87,7 @@ const BackAdvanced = () => {
     },
     {
       id: 4,
-      name: "Chest-Supported Dumbbell Rows",
+      name: "Chest-Supported Rows",
       video: advBACK.chestbarbell,
       muscles: ["Middle Back", "Rear Delts", "Rhomboids"],
       instructions: [

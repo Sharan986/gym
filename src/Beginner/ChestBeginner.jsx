@@ -63,7 +63,7 @@ const exercises = [
   },
   {
     id: 3,
-    name: "Flat Chest Press Machine",
+    name: "Flat Chest Press ",
     muscles: ["Chest", "Shoulders", "Triceps"],
     video: begCHEST.benchpress,
     instructions: [
@@ -90,7 +90,7 @@ const exercises = [
   },
   {
     id: 4,
-    name: "Pec Deck Fly",
+    name: "Pec Dec Fly",
     muscles: ["Chest", "Shoulders"],
     video: begCHEST.pecde,
     instructions: [
@@ -123,7 +123,7 @@ const exercises = [
         <img
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
           alt="Chest Workout Banner"
-          className="w-screen h-60 object-cover object-center scale-125"
+          className="w-screen h-60 lg:h-[24rem] object-cover object-center scale-125"
           loading="lazy"
         />
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
