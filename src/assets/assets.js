@@ -1,57 +1,3 @@
-import vid4 from "./GYMVIDEO/band-chest-fly.mp4";
-import vid2 from "./GYMVIDEO/pec-dec-fly.mp4";
-import vid3 from "./GYMVIDEO/incline-chest-press-machine.mp4";
-import vid1 from "./GYMVIDEO/dumbell-chest-press.mp4";
-import vid5 from "./GYMVIDEO/push-ups.mp4";
-import vid6 from "./GYMVIDEO/machine-rowing.mp4";
-import vid7 from "./GYMVIDEO/band-rowing.mp4";
-import vid8 from "./GYMVIDEO/lats-pulldown.mp4";
-import vid9 from "./GYMVIDEO/dumbbell rowing.mp4";
-import vid10 from "./GYMVIDEO/hypertension.mp4";
-import vid11 from "./GYMVIDEO/lateral-raises.mp4";
-import vid12 from "./GYMVIDEO/front-raises.mp4";
-import vid13 from "./GYMVIDEO/shoulder press.mp4";
-import vid14 from "./GYMVIDEO/shrugs.mp4";
-import vid15 from "./GYMVIDEO/glute-kickbacks.mp4";
-import vid16 from "./GYMVIDEO/dumbbell-calf-raises.mp4";
-import vid17 from "./GYMVIDEO/leg-extension.mp4";
-import vid18 from "./GYMVIDEO/dumbbell-squats.mp4";
-import vid19 from "./GYMVIDEO/45°-leg-press.mp4";
-import vid20 from "./GYMVIDEO/bicep-curl.mp4";
-import vid21 from "./GYMVIDEO/incline-bicep-curl.mp4";
-import vid22 from "./GYMVIDEO/tricep-pushdown.mp4";
-import vid23 from "./GYMVIDEO/dumbbell-overhead-tricep-extensiom.mp4";
-import vid24 from "./GYMVIDEO/hammer-curl.mp4";
-import vid25 from "./GYMVIDEO/chin-ups.mp4";
-
-
-export const Videos = {
-  vid1,
-  vid2,
-  vid3,
-  vid4,
-  vid5,
-  vid6,
-  vid7,
-  vid8,
-  vid9,
-  vid10,
-  vid11,
-  vid12,
-  vid13,
-  vid14,
-  vid15,
-  vid16,
-  vid17,
-  vid18,
-  vid19,
-  vid20,
-  vid21,
-  vid22,
-  vid23,
-  vid24,
-  vid25
-};
 
 
 import inclinedumbell from "./GYMVIDEO/INTERMEDIATE/CHEST/incline-dumbbell-fly.mp4";
@@ -68,7 +14,7 @@ import calf_raises from "./GYMVIDEO/INTERMEDIATE/LEGS/calf-raise.mp4";
 import leg_extension from "./GYMVIDEO/INTERMEDIATE/LEGS/leg-extension.mp4";
 import squats from "./GYMVIDEO/INTERMEDIATE/LEGS/squat.mp4";
 import leg_press from ".//GYMVIDEO/INTERMEDIATE/LEGS/LEG-PRESS.mp4";
-import RDL from "./GYMVIDEO/INTERMEDIATE/LEGS/Romanian-deadlift-RDL.mp4";
+import RDL from "./GYMVIDEO/INTERMEDIATE/LEGS/ROMANIAN-DEADLIFT-RDL.mp4";
 
 export const interLEGS = {
   calf_raises,
