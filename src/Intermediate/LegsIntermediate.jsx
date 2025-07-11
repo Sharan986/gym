@@ -66,7 +66,7 @@ const LegsIntermediate = () => {
       id: 3,
       name: "Romanian Deadlifts (RDL)",
       muscles: ["Hamstrings", "Glutes", "Erector Spinae"],
-      video: interLEGS.Romanian,
+      video: interLEGS.RDL,
       instructions: [
         "Stand with feet hip-width apart holding barbell or dumbbells",
         "Keep slight bend in knees, push hips back",
