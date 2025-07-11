@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Link } from "react-router-dom";
 import { begCHEST } from '../assets/assets';
+import Footer  from "../components/Footer";
 
 const ChestBeginner = () => {
   
