@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import s3 from "../assets/S3.jpeg";
-import s2 from "../assets/s2.jpeg";
 import sv4 from "../assets/sv4.jpeg";
 import Icon from '../components/Icon';
 
@@ -17,7 +16,7 @@ const Services = () => {
     },
     {
       id: 2,
-      img: s2,
+      img: s3,
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss",
     },
