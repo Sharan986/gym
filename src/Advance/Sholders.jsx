@@ -8,27 +8,27 @@ const ShouldersAdvanced = () => {
   const exercises = [
     {
       id: 1,
-      name:  "Face Pulls (ROPE)",
+      name: "Face Pulls (Rope)",
       video: advSHOULDERS.ropefacepull,
-      muscles: ["Anterior Deltoids", "Lateral Deltoids", "Triceps", "Core"],
+      muscles: ["Posterior Deltoids", "Trapezius", "Rhomboids"],
       instructions: [
-        "Stand with feet shoulder-width apart, holding a barbell at shoulder height.",
-        "Press the barbell overhead until your arms are fully extended.",
-        "Lower the barbell back to shoulder height with control.",
-        "Keep your core engaged throughout the movement."
+        "Attach a rope to a cable machine at chest height.",
+        "Grab the rope with both hands and step back to create tension.",
+        "Pull the rope towards your forehead, separating your hands as you pull.",
+        "Return to the starting position with control."
       ],
       benefits: [
-        "Builds significant shoulder strength and size",
-        "Engages core for stability",
-        "Improves overall upper body power"
+        "Strengthens the rear deltoids and upper back",
+        "Improves posture and shoulder health",
+        "Enhances shoulder stability"
       ],
       tips: [
-        "Keep your head slightly forward to maintain balance.",
-        "Avoid arching your back excessively.",
-        "Use a controlled motion for both lifting and lowering."
+        "Keep your elbows high and squeeze your shoulder blades together.",
+        "Avoid using momentum; focus on controlled movements.",
+        "Use a light to moderate weight to maintain proper form."
       ]
     },
-      {
+    {
       id: 2,
       name: "Cable Lateral Raises",
       video: advSHOULDERS.cable,
@@ -50,8 +50,6 @@ const ShouldersAdvanced = () => {
         "Control the weight on both the lift and descent."
       ]
     },
-   
-    
     {
       id: 4,
       name: "Arnold Press",
@@ -147,35 +145,32 @@ const ShouldersAdvanced = () => {
       <div className="relative overflow-hidden">
         <img
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-          alt="Chest Workout Banner"
+          alt="Shoulder Workout Banner"
           className="w-screen h-60 object-cover object-center scale-125"
           loading="lazy"
         />
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">shoulder</h1>
+          <h1 className="text-5xl font-One z-10">Shoulder</h1>
           <h1 className="font-One text-2xl mt-6">
-            <Link to="/"> HOME </Link>
+            <Link to="/">HOME</Link>
             <span className="text-yellow-300">/shoulder</span>
           </h1>
         </div>
       </div>
-     
+
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
-
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
             <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -184,7 +179,6 @@ const ShouldersAdvanced = () => {
               ))}
             </ul>
           </div>
-
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -193,7 +187,6 @@ const ShouldersAdvanced = () => {
               ))}
             </ul>
           </div>
-
           <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>

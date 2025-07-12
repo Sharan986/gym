@@ -2,24 +2,27 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import s1 from "../assets/S1.jpeg";
+import s2 from "../assets/S2.jpeg";
+import s3 from "../assets/S3.jpeg";
 
 const Services = () => {
   const services = [
     {
       id: 1,
-      img: "https://framerusercontent.com/images/T7EIUAZkFOhzzTjVuUeUIISwL0.jpg?scale-down-to=2048",
+      img: s1,
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
     },
     {
       id: 2,
-      img: "https://framerusercontent.com/images/HUu49A9LHorraj7mMJcKONJ5r9A.jpg?scale-down-to=2048",
+      img: s2,
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss",
     },
     {
       id: 3,
-      img: "https://framerusercontent.com/images/IMhfAb34rENtjyBiaMvR2TSis.jpg?scale-down-to=2048",
+      img: s3,
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Group Fitness",
     },
@@ -38,59 +41,61 @@ const Services = () => {
 
   return (
     <div className="text-white text-xl pt-16 mx-7 font-One">
-      <header className="text-2xl lg:text-center  text-[#48D3A3] italic ">Our Services</header>
-      <p className="text-4xl lg:text-center sm:text-6xl mt-4  uppercase">
+      <header className="text-2xl lg:text-center text-[#48D3A3] italic">Our Services</header>
+      <p className="text-4xl lg:text-center sm:text-6xl mt-4 uppercase">
         What We Can Do Best For Our Clients
       </p>
+
       <div className="mt-12 mx-3">
         {/* Desktop View (lg and up) */}
         <div className="hidden lg:flex lg:flex-wrap lg:-mx-3">
           {services.map((service) => (
             <div key={service.id} className="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
-              <div className="border-2 border-gray-600 overflow-hidden font-One h-full">
-                <div className="h-64 md:h-96 overflow-hidden">
+              <div className="border-2 border-gray-600 overflow-hidden font-One h-[32rem] flex flex-col">
+                <div className="h-2/3 overflow-hidden">
                   <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
                 </div>
-                <div className="p-4 text-center">
-                  <div className="flex justify-center">
-                    <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
-                  </div>
-                  <h1 className="text-3xl py-3">{service.title}</h1>
+                <div className="p-4 text-center flex flex-col items-center justify-center h-1/3">
+                  <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
+                  <h1 className="text-3xl py-2">{service.title}</h1>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-{/* Tablet View (md only) */}
-<div className="hidden md:block lg:hidden">
-  <Slider {...settings}>
-    {services.map((service) => (
-      <div key={service.id} className="px-4">
-        <div className="max-w-[700px] mx-auto flex flex-col items-center border-2 border-gray-600 font-One h-full">
-          <img src={service.logo} alt={service.title} className="w-24 h-24 p-2" /> {/* Bigger logo */}
-          <h1 className="text-3xl py-3">{service.title}</h1>
-          <img
-            src={service.img}
-            alt={service.title}
-            className="w-full h-[22rem] object-cover pt-4 rounded"  />
+        {/* Tablet View (md only) */}
+        <div className="hidden md:block lg:hidden">
+          <Slider {...settings}>
+            {services.map((service) => (
+              <div key={service.id} className="px-4">
+                <div className="max-w-[700px] mx-auto border-2 border-gray-600 font-One h-[32rem] flex flex-col justify-between items-center">
+                  <img src={service.logo} alt={service.title} className="w-24 h-24 p-2" />
+                  <h1 className="text-3xl py-2">{service.title}</h1>
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full h-[22rem] object-cover pt-2 rounded"
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-      </div>
-    ))}
-  </Slider>
-</div>
-
-
 
         {/* Mobile View (sm only) */}
         <div className="md:hidden">
           <Slider {...settings}>
             {services.map((service) => (
               <div key={service.id} className="">
-                <div className="flex flex-col items-center border-2 border-gray-600 font-One h-full">
+                <div className="border-2 border-gray-600 font-One h-[24rem] flex flex-col justify-between items-center">
                   <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
-                  <h1 className="text-3xl py-3">{service.title}</h1>
-                  <img src={service.img} alt={service.title} className="w-full object-cover pt-4 rounded" />
+                  <h1 className="text-3xl py-2">{service.title}</h1>
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full h-[18rem] object-cover pt-2 rounded"
+                  />
                 </div>
               </div>
             ))}

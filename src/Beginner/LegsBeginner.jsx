@@ -11,24 +11,24 @@ const LegsBeginner = () => {
       muscles: ["Quadriceps", "Hamstrings", "Glutes", "Core"],
       video: begLEGS.squat,
       instructions: [
-        "Position barbell on upper back (not neck)",
-        "Feet shoulder-width apart, toes slightly out",
-        "Lower hips back and down like sitting in a chair",
-        "Descend until thighs parallel to floor",
-        "Drive through heels to return to standing"
+        "Position the barbell on your upper back, not on your neck.",
+        "Place your feet shoulder-width apart with your toes slightly out.",
+        "Lower your hips back and down as if sitting in a chair.",
+        "Descend until your thighs are parallel to the floor.",
+        "Drive through your heels to return to standing."
       ],
       benefits: [
-        "Builds overall leg strength and size",
-        "Enhances core stability",
-        "Boosts testosterone and growth hormone",
-        "Improves functional movement patterns"
+        "Builds overall leg strength and size.",
+        "Enhances core stability.",
+        "Boosts testosterone and growth hormone.",
+        "Improves functional movement patterns."
       ],
       tips: [
-        "Keep chest up and back straight",
-        "Knees should track over toes",
-        "Start with just the bar to learn form",
-        "Use squat rack with safety bars",
-        "Brace core before descending"
+        "Keep your chest up and your back straight.",
+        "Ensure your knees track over your toes.",
+        "Start with just the bar to learn the form.",
+        "Use a squat rack with safety bars.",
+        "Brace your core before descending."
       ]
     },
     {
@@ -37,23 +37,23 @@ const LegsBeginner = () => {
       muscles: ["Inner Thighs", "Glutes", "Quadriceps"],
       video: begLEGS.sumosqt,
       instructions: [
-        "Stand with feet wider than shoulder-width, toes at 45°",
-        "Hold dumbbell/kettlebell at chest or between legs",
-        "Lower until thighs parallel to floor",
-        "Drive through heels to return up",
-        "Squeeze glutes at top position"
+        "Stand with your feet wider than shoulder-width and your toes at a 45° angle.",
+        "Hold a dumbbell or kettlebell at your chest or between your legs.",
+        "Lower your body until your thighs are parallel to the floor.",
+        "Drive through your heels to return to the starting position.",
+        "Squeeze your glutes at the top position."
       ],
       benefits: [
-        "Targets inner thighs more than regular squats",
-        "Reduces stress on knees",
-        "Improves hip mobility",
-        "Great for glute development"
+        "Targets inner thighs more than regular squats.",
+        "Reduces stress on the knees.",
+        "Improves hip mobility.",
+        "Great for glute development."
       ],
       tips: [
-        "Keep knees aligned with toes",
-        "Maintain upright torso position",
-        "Go deeper than parallel for maximum glute activation",
-        "Use lighter weight to focus on form"
+        "Keep your knees aligned with your toes.",
+        "Maintain an upright torso position.",
+        "Go deeper than parallel for maximum glute activation.",
+        "Use lighter weight to focus on form."
       ]
     },
     {
@@ -62,22 +62,22 @@ const LegsBeginner = () => {
       muscles: ["Quadriceps"],
       video: begLEGS.legext,
       instructions: [
-        "Adjust machine so knees align with rotation point",
-        "Place ankles behind pad, legs at 90°",
-        "Extend legs fully without locking knees",
-        "Slowly lower back to starting position"
+        "Adjust the machine so your knees align with the rotation point.",
+        "Place your ankles behind the pad with your legs at a 90° angle.",
+        "Extend your legs fully without locking your knees.",
+        "Slowly lower back to the starting position."
       ],
       benefits: [
-        "Isolates quadriceps muscles",
-        "Improves knee joint stability",
-        "Helps develop teardrop quad shape",
-        "Good for rehab after knee injuries"
+        "Isolates the quadriceps muscles.",
+        "Improves knee joint stability.",
+        "Helps develop teardrop quad shape.",
+        "Good for rehab after knee injuries."
       ],
       tips: [
-        "Avoid swinging or using momentum",
-        "Pause at top for peak contraction",
-        "Don't use excessive weight that compromises form",
-        "Keep back flat against pad"
+        "Avoid swinging or using momentum.",
+        "Pause at the top for peak contraction.",
+        "Don't use excessive weight that compromises form.",
+        "Keep your back flat against the pad."
       ]
     },
     {
@@ -86,22 +86,22 @@ const LegsBeginner = () => {
       muscles: ["Hamstrings"],
       video: begLEGS.legscurl,
       instructions: [
-        "Lie face down on machine, knees just off bench",
-        "Position roller pad just above ankles",
-        "Curl legs up until pad touches glutes",
-        "Slowly lower back to starting position"
+        "Lie face down on the machine with your knees just off the bench.",
+        "Position the roller pad just above your ankles.",
+        "Curl your legs up until the pad touches your glutes.",
+        "Slowly lower back to the starting position."
       ],
       benefits: [
-        "Isolates hamstring development",
-        "Improves knee flexion strength",
-        "Balances quad-dominant training",
-        "Reduces risk of hamstring injuries"
+        "Isolates hamstring development.",
+        "Improves knee flexion strength.",
+        "Balances quad-dominant training.",
+        "Reduces the risk of hamstring injuries."
       ],
       tips: [
-        "Keep hips pressed into bench",
-        "Control the eccentric (lowering) phase",
-        "Squeeze hamstrings at top of movement",
-        "Don't arch back to complete reps"
+        "Keep your hips pressed into the bench.",
+        "Control the eccentric (lowering) phase.",
+        "Squeeze your hamstrings at the top of the movement.",
+        "Don't arch your back to complete reps."
       ]
     },
     {
@@ -110,22 +110,22 @@ const LegsBeginner = () => {
       muscles: ["Gastrocnemius", "Soleus"],
       video: begLEGS.calf,
       instructions: [
-        "Stand on edge of step or calf raise machine",
-        "Raise onto toes as high as possible",
-        "Pause at top for 1-2 seconds",
-        "Lower heels below step level for full stretch"
+        "Stand on the edge of a step or calf raise machine.",
+        "Raise onto your toes as high as possible.",
+        "Pause at the top for 1-2 seconds.",
+        "Lower your heels below the step level for a full stretch."
       ],
       benefits: [
-        "Develops calf size and definition",
-        "Improves ankle stability",
-        "Enhances jumping ability",
-        "Helps prevent shin splints"
+        "Develops calf size and definition.",
+        "Improves ankle stability.",
+        "Enhances jumping ability.",
+        "Helps prevent shin splints."
       ],
       tips: [
-        "Use full range of motion",
-        "Control the lowering phase",
-        "Try single-leg variations for imbalance correction",
-        "Perform higher reps (15-20) for calves"
+        "Use the full range of motion.",
+        "Control the lowering phase.",
+        "Try single-leg variations for imbalance correction.",
+        "Perform higher reps (15-20) for calves."
       ]
     }
   ];
@@ -139,32 +139,28 @@ const LegsBeginner = () => {
           className="w-screen h-60 object-cover object-center scale-125"
         />
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">LEGS</h1>
+          <h1 className="text-5xl font-One z-10">Legs</h1>
           <h1 className="font-One text-2xl mt-6">
-            <Link to="/"> HOME </Link>
-            <span className="text-yellow-300">/LEGS</span>
+            <Link to="/">Home</Link>
+            <span className="text-yellow-300">/Legs</span>
           </h1>
         </div>
       </div>
-
       {exercises.map((exercise) => (
         <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
-          
-          {/* Muscle Targets */}
+
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
-
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          
-          {/* Instructions */}
+
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -173,8 +169,7 @@ const LegsBeginner = () => {
               ))}
             </ul>
           </div>
-          
-          {/* Benefits */}
+
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -183,8 +178,7 @@ const LegsBeginner = () => {
               ))}
             </ul>
           </div>
-          
-          {/* Pro Tips */}
+
           <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>
@@ -195,10 +189,9 @@ const LegsBeginner = () => {
           </div>
         </div>
       ))}
-
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default LegsBeginner;
