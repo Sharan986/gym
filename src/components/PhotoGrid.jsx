@@ -13,7 +13,7 @@ const PhotoGrid = () => {
 
   return (
     <div className="mx-2">
-      <h1 className='text-2xl italic font-One text-[#48D3A3] mb-4'>
+      <h1 className='text-2xl  font-One text-[#48D3A3] mb-4'>
         Our Gallery
       </h1>
       <h2 className='text-4xl font-One text-white mb-6'>

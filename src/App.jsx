@@ -31,13 +31,17 @@ import ArmsIntermediate from './Intermediate/ArmsIntermediate'
 import LegsIntermediate from './Intermediate/LegsIntermediate'
 import Membership from './pages/Membership'
 import Protein from './Supplements/Protein'
+import Muesli from './Supplements/Muesli'
 import PreWorkout from './Supplements/PreWorkout'
+import BCAA from './Supplements/BCAA'
 import Vitamins from "./Supplements/Vitamins"
+import Fishoil from './Supplements/Fishoil'
+import Oats from './Supplements/Oats'
 import WeightGainers from './Supplements/WeightGainer'
 import Gallery from './Gallery/Gallery'
 import One from './Gallery/One'
 import Fitness from './Gallery/Fitness'
-
+import Creatine from './Supplements/Creatine'
 import GYM from './Gallery/GYM'
 import Running from './Gallery/Running'
 import Armsadvance from './Advance/Arms'
@@ -85,10 +89,19 @@ const App = () => {
       <Route path="/WorkoutGuide/Advance/Legs" element={<LegsAdvanced />} />
 
       <Route path="/Membership" element={<Membership />} />
+
+
       <Route path="/Supplement/Protein" element={<Protein />} />
       <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
       <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
       <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
+      <Route path="/Supplement/Creatine" element={<Creatine />} />
+      
+      <Route path="/Supplement/BCAA" element={<BCAA />} />
+      <Route path="/Supplement/Fishoil" element={<Fishoil />} />
+      <Route path="/Supplement/Oats" element={<Oats />} />
+      <Route path="/Supplement/Muesli" element={<Muesli />} />
+
       <Route path="/Gallery" element={<Gallery />} />
       <Route path="/item/:Yoga" element={<One />} />
       <Route path="/item/:Fitness" element={<Fitness />} />

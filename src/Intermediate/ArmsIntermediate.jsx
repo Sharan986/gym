@@ -142,6 +142,7 @@ const ArmsIntermediate = () => {
 
   return (
     <>
+    <div className='lg:mx-8'>
       <div className="relative overflow-hidden">
         <img
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
@@ -166,14 +167,14 @@ const ArmsIntermediate = () => {
             {exercise.muscles.join(", ")}
           </div>
 
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop loading="lazy">
+          <div className='flex justify-center my-4 bg-gray-800 h-48 lg:h-[40rem] items-center rounded-lg'>
+            <video className='w-full h-full lg:h-[40rem] object-cover' controls={false} autoPlay muted loop loading="lazy">
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
-          <div className='text-white mt-4'>
+          <div className='text-white mt-4 font-DM lg:text-2xl'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
@@ -182,7 +183,7 @@ const ArmsIntermediate = () => {
             </ul>
           </div>
 
-          <div className='text-white mt-4'>
+          <div className='text-white mt-4 font-DM lg:text-2xl md:text-2xl'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.benefits.map((benefit, i) => (
@@ -191,7 +192,7 @@ const ArmsIntermediate = () => {
             </ul>
           </div>
 
-          <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
+          <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg font-DM lg:text-xl'>
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.tips.map((tip, i) => (
@@ -201,7 +202,7 @@ const ArmsIntermediate = () => {
           </div>
         </div>
       ))}
-
+  </div>   
       <Footer />
     </>
   );

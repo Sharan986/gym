@@ -21,7 +21,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Logo"
-          className="w-28 pl-5 md:w-48 hover:scale-105 transition-transform duration-200 cursor-pointer"
+          className="w-28  pl-5 md:w-36 hover:scale-105 transition-transform duration-200 cursor-pointer"
         />
       </Link>
 

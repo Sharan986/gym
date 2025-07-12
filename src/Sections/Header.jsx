@@ -12,6 +12,7 @@ import Testimonials from "../pages/Testimonials";
 import Num from "./Num";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import Icon from "../components/Icon"; 
 
 const Header = () => {
   return (
@@ -24,24 +25,25 @@ const Header = () => {
         <img
           src={HeaderImg}
           alt=""
-          className=" h-fit lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
+          className=" h-fit md:h-[90vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />
              
       
 
         <div className="absolute top-0 left-0  h-20 w-24 sm:w-full mx-6  font-One uppercase  ">
          
-          <div className="text-white w-screen text-xl  mt-10 md:mt-10">
-            <header className="text-2xl  w-screen text-[#48D3A3] italic md:text-4xl ">FITNESS & GYM</header>
-            <p className=" text-5xl w-80 md:w-full md:text-7xl">
-              Discover 
-              <div className="pt-38">
-
-              </div>
+          <div className="text-white w-screen text-xl  mt-6 md:mt-6">
+            <div className="flex justify-center items-center gap-2 ">
+          <Icon className="" />
+            <header className="text-xl  w-screen text-[#48D3A3] pl ">FITNESS & GYM</header>
+            </div>
+           
+            <p className=" text-4xl  w-80 md:w-160 md:text-6xl">
+              Transform. Perform. Dominate.
             
             </p>
           </div>
-          <div className="mt-14 sm:flex sm:items-center font-One  sm:gap-7  ">
+          <div className="mt-54 md:mt-96 sm:flex sm:items-center font-One  sm:gap-7  ">
            <Link to="JoinUs"><Button text="JOIN US TODAY" className="text-xl mb-4 sm:mb-0 md:text-3xl" /></Link>
            <Link to="/about"><Wbutton text="ABOUT US" className="text-xl md:text-3xl " /></Link> 
         </div>

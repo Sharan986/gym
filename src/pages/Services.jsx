@@ -2,15 +2,16 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import s1 from "../assets/S1.jpeg";
-import s2 from "../assets/S2.jpeg";
 import s3 from "../assets/S3.jpeg";
+import s2 from "../assets/s2.jpeg";
+import sv4 from "../assets/sv4.jpeg";
+import Icon from '../components/Icon';
 
 const Services = () => {
-  const services = [
+  const services = [ 
     {
       id: 1,
-      img: s1,
+      img: s3,
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
     },
@@ -22,9 +23,9 @@ const Services = () => {
     },
     {
       id: 3,
-      img: s3,
+      img: sv4,
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
-      title: "Group Fitness",
+      title: "Strength Training",
     },
   ];
 
@@ -41,7 +42,11 @@ const Services = () => {
 
   return (
     <div className="text-white text-xl pt-16 mx-7 font-One">
-      <header className="text-2xl lg:text-center text-[#48D3A3] italic">Our Services</header>
+      <div className="flex justfy-center items-center gap-2">
+        <Icon/>
+        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Services</header>
+
+      </div>
       <p className="text-4xl lg:text-center sm:text-6xl mt-4 uppercase">
         What We Can Do Best For Our Clients
       </p>
@@ -56,7 +61,7 @@ const Services = () => {
                   <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-4 text-center flex flex-col items-center justify-center h-1/3">
-                  <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
+                  <img src={service.logo} alt={service.title} className="w-full h-20 p-2" />
                   <h1 className="text-3xl py-2">{service.title}</h1>
                 </div>
               </div>
@@ -88,13 +93,13 @@ const Services = () => {
           <Slider {...settings}>
             {services.map((service) => (
               <div key={service.id} className="">
-                <div className="border-2 border-gray-600 font-One h-[24rem] flex flex-col justify-between items-center">
+                <div className="border-2 border-gray-600 font-One h-[30rem] flex flex-col justify-between items-center">
                   <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
                   <h1 className="text-3xl py-2">{service.title}</h1>
                   <img
                     src={service.img}
                     alt={service.title}
-                    className="w-full h-[18rem] object-cover pt-2 rounded"
+                    className="w-full h-[29rem] object-cover pt-2"
                   />
                 </div>
               </div>

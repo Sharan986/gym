@@ -4,73 +4,99 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="py-10  mx-8 font-sans text-lg text-gray-800 ">
+    <div className="py-10 mx-8 font-sans text-lg text-gray-800">
       {/* Logo and Description */}
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />
-        <p className="text-lg font-DM text-gray-400 font-semibold max-w-xl mx-auto">
+        <p className="text-lg md:text-xl font-DM text-gray-400 font-semibold max-w-xl mx-auto">
           A Wonderful Serenity Has Taken Possession Of My Entire Soul, Like These.
         </p>
       </div>
 
-      {/* Grid Sections */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-400 font-M">
+      {/* Grid Container */}
+      <div className="grid gap-10 md:gap-10 text-gray-400 font-M">
+        {/* COMPANY and CONTACT US side by side on md */}
+        <div className="md:flex md:space-x-10">
+          {/* COMPANY */}
+          <div className="w-full md:w-1/2 mb-10 md:mb-0">
+            <h2 className="text-2xl mb-6 text-[#53f0b8] font-One md:text-4xl">COMPANY</h2>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
+              <li>
+                <Link to="/About" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/ServicesDetail" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/Supplement" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  Supplement
+                </Link>
+              </li>
+              <li>
+                <Link to="/Gallery" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/JoinUs" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/WorkoutGuide" className="text-base font-semibold hover:text-white transition md:text-xl">
+                  Workout Guide
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-  {/* COMPANY */}
-  <div>
-    <h2 className="text-2xl mb-6 text-[#53f0b8] font-One">COMPANY</h2>
-    <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
-      <li><Link to="/About" className="text-base font-semibold hover:text-white transition">About Us</Link></li>
-      <li><Link to="/ServicesDetail" className="text-base font-semibold hover:text-white transition">Service</Link></li>
-      <li><Link to="/Supplement" className="text-base font-semibold hover:text-white transition">Supplement</Link></li>
-      <li><Link to="/Gallery" className="text-base font-semibold hover:text-white transition">Gallery</Link></li>
-      <li><Link to="/JoinUs" className="text-base font-semibold hover:text-white transition">Contact Us</Link></li>
-      <li><Link to="/WorkoutGuide" className="text-base font-semibold hover:text-white transition">WorkoutGuide</Link></li>
-      
-     
-    </ul>
-  </div>
+          {/* CONTACT US */}
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl mb-6 text-[#53f0b8] font-One md:text-4xl">CONTACT US</h2>
+            <ul className="space-y-4">
+              <li className="text-base font-semibold flex gap-3 items-start">
+                <img src="https://framerusercontent.com/images/3Gjs31lJXDq4ZvzvREIv8CQ0H08.svg" alt="phone" className="mt-1 w-5" />
+                <span className="md:text-xl">+91 9204057290</span>
+              </li>
+              <li className="text-base font-semibold flex gap-3 items-start">
+                <img src="https://framerusercontent.com/images/h6wGZ0hxbQPDpnwFJ25d2ZMHicQ.svg" alt="email" className="mt-1 w-5" />
+                <span className="md:text-xl">onerepmaaxgym@gmail.com</span>
+              </li>
+              <li className="text-base font-semibold flex gap-3 items-start">
+                <img src="https://framerusercontent.com/images/RmsksdVnRfJJKfOFy4VJv85AXLo.svg" alt="address" className="mt-1 w-5" />
+                <span className="md:text-xl">
+                  Dimna Road, Mango Jamshedpur, Jharkhand India
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-  {/* CONTACT US */}
-  <div>
-    <h2 className="text-2xl mb-6 text-[#53f0b8] font-One">CONTACT US</h2>
-    <ul className="space-y-4">
-      <li className="text-base font-semibold flex gap-3 items-start">
-        <img src="https://framerusercontent.com/images/3Gjs31lJXDq4ZvzvREIv8CQ0H08.svg" alt="phone" className="mt-1 w-5" />
-        <span>+91 9229556207</span>
-      </li>
-      <li className="text-base font-semibold flex gap-3 items-start">
-        <img src="https://framerusercontent.com/images/h6wGZ0hxbQPDpnwFJ25d2ZMHicQ.svg" alt="email" className="mt-1 w-5" />
-        <span>info@onerepmaax.com</span>
-      </li>
-      <li className="text-base font-semibold flex gap-3 items-start">
-        <img src="https://framerusercontent.com/images/RmsksdVnRfJJKfOFy4VJv85AXLo.svg" alt="address" className="mt-1 w-5" />
-        <span>Dimna Road, Mango Jamshedpur, Jharkhand India</span>
-      </li>
-    </ul>
-  </div>
+        {/* OPERATIONAL HOUR */}
+        <div>
+          <h2 className="text-2xl mb-6 text-[#53f0b8] font-One md:text-4xl">OPERATIONAL HOUR</h2>
+          <ul className="space-y-4">
+            <li>
+              <p className="font-semibold md:text-xl ">
+                <span className="text-yellow-400  w-24">Mon - Sat :</span> 05:00 AM - 11:00 PM
+              </p>
 
-  {/* OPERATIONAL HOUR */}
-  <div>
-    <h2 className="text-2xl mb-6 text-[#53f0b8] font-One">OPERATIONAL HOUR</h2>
-    <ul className="space-y-4">
-      <li>
-        <p className="font-semibold"><span className="text-yellow-400 inline-block w-24">Mon - Fri :</span> 08:00 AM - 10:00 PM</p>
-        <div className="border-t border-gray-300 my-2" />
-      </li>
-      <li>
-        <p className="font-bold"><span className="text-yellow-400 inline-block w-24">Sat :</span> 09:00 AM - 09:00 PM</p>
-        <div className="border-t border-gray-300 my-2" />
-      </li>
-      <li>
-        <p className="font-bold"><span className="text-yellow-400 inline-block w-24">Sun :</span> Closed</p>
-        <div className="border-t border-gray-300 my-2" />
-      </li>
-    </ul>
-  </div>
-
-</div>
-
+              
+              <div className="border-t border-gray-300 my-2" />
+            </li>
+            <li>
+              <p className="font-bold md:text-xl">
+                <span className="text-yellow-400 inline-block  w-24">Sun :</span>   08:00 AM - 06:00 PM
+              </p>
+              <div className="border-t border-gray-300 my-2" />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

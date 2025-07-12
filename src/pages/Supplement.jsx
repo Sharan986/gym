@@ -9,56 +9,82 @@ const supplementData = [
       "https://imgs.search.brave.com/3UXd1tfSYqRNjvYMCHRwtyS5g1uj__MH2en0FMCHiRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vUWtOb0c5/ODlOQXE3OFA5LWhw/M3c0T0RUOGU0SlJh/YVJaUkVKM0hYdnpC/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/QXgvTmpjeU9ESXdM/M0JvYjNSdi9MMjFo/YmkxcGJpMTBhR1V0/L1ozbHRMV1J5YVc1/cmFXNW4vTFhCeWIz/UmxhVzR0YzJoaC9h/MlV0WkhKcGJtc3Vh/bkJuL1AzTTlOakV5/ZURZeE1pWjMvUFRB/bWF6MHlNQ1pqUFhR/NC9hVkpLVG10elZs/OWljWFpCL1UzRjFO/Mk5mUm1jNUxUUmgv/TlVrM1VWaFZaRjkw/VkhsSC9TSGwwVFZr/OQ",
   },
   {
-    title: "PreWorkout",
+    title: "Creatine",
     imageUrl:
       "https://images.unsplash.com/photo-1704650311981-419f841421cc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    title: "Preworkout",
+    imageUrl:
+      "https://images.unsplash.com/photo-1704650311981-419f841421cc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+   {
     title: "Vitamins",
     imageUrl:
       "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
+   {
+    title: "BCAA",
+    imageUrl:
+      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+   {
+    title: "Fishoil",
+    imageUrl:
+      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+   {
+    title: "Oats",
+    imageUrl:
+      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+    {
+    title: "Muesli",
+    imageUrl:
+      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
 ];
 
 const Supplement = () => {
   return (
     <>
-         <div className="relative overflow-hidden">
-      <img
-        src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-        alt="About Us Banner"
-        className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
-      />
-      <div className="absolute bottom-8 left-8 text-white">
-        <h1 className="text-5xl font-One lg:text-7xl z-10">SUPPLEMENT</h1>
-        <h1 className="font-One text-2xl mt-4 lg:text-5xl">
-          <Link to='/'>HOME</Link>
-          <span className="text-yellow-300 lg:text-5xl">/SUPPLEMENT</span>
-        </h1>
-      </div>
-    </div>
+       <div className="relative overflow-hidden">
+  <img
+    src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+    alt="About Us Banner"
+    className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+  />
+  <div className="absolute bottom-8 left-8 text-white">
+    <h1 className="text-4xl font-One lg:text-6xl z-10">SUPPLEMENT</h1>
+    <h1 className="font-One text-xl mt-4 lg:text-3xl">
+      <Link to='/'>HOME</Link>
+      <span className="text-yellow-300 lg:text-3xl">/SUPPLEMENT</span>
+    </h1>
+  </div>
+</div>
+
    
-<div className="flex flex-col lg:flex-row justify-center gap-5 font-One mx-4 lg:mx-8 mb-6">
-  <div className="text-white text-center lg:text-left mt-8 lg:mt-16">
-    <header className="text-2xl lg:text-3xl text-[#48D3A3] italic">Supplements</header>
-    <p className="text-3xl lg:text-6xl mt-2 uppercase">
+<div className="flex flex-col mb-6 font-One mx-7">
+  <div className="text-white text-left mt-8">
+    <header className="text-2xl text-[#48D3A3] italic">Supplements</header>
+  </div>
+  <div className="text-white text-left mt-4">
+    <p className="text-3xl mt-2 uppercase">
       Boost strength, endurance, muscle growth.
     </p>
-    <p className="text-gray-400 text-lg lg:text-2xl font-DM mt-4 lg:mt-6 mb-4">
+    
+  </div>
+</div>
+
+    <p className="text-gray-400 text-lg font-DM mt-4 mb-4 mx-7">
       Supplements support muscle growth, enhance performance, boost recovery, fill nutritional gaps,
       help achieve fitness goals efficiently, increase endurance, aid fat loss, improve strength,
       and promote overall physical well-being.
     </p>
-  </div>
-  <div className="flex justify-center lg:justify-start mt-4 lg:mt-5">
-    <img
-      src="https://images.unsplash.com/photo-1683394275459-ea44637a4e57?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Supplements"
-      className="w-full max-w-xs lg:max-w-md"
-    />
-  </div>
-</div>
+  
+
+
+
 
 
 

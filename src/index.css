@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darumadrop+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liter&family=Monomakh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oldenburg&family=Ole&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+DE+VA+Guides&family=Playwrite+SK+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Shadows+Into+Light&family=Sigmar&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
 @import "tailwindcss";
 
 
 @theme {
-    --font-One: "Bebas Neue", sans-serif;
-    --font-Two: "Oswald", sans-serif;
-    --font-M: "Montserrat", sans-serif;
-    --font-DM: "DM Sans", sans-serif;
-    --font-B:"Bayon", sans-serif;
+    --font-One: "Bayon", sans-serif;
+    --font-M: "Urbanist", sans-serif;
+    --font-DM: "Urbanist", sans-serif;
+    --font-B: sans-serif;
     
 }
    /* Custom dot styling */

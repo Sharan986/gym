@@ -7,7 +7,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="overflow-hidden whitespace-nowrap bg-[#3CFCC5] py-1 font-Two">
+    <div className="overflow-hidden whitespace-nowrap bg-[#3CFCC5] py-1 font-One">
       <div
         className="inline-block whitespace-nowrap"
         style={{
@@ -17,7 +17,7 @@ const Marquee = () => {
         {texts.concat(texts).map((text, index) => (
           <span key={index} className="text-lg md:text-3xl ">
             ✦
-            <span className="mx-6 font-semibold text-black text-lg md:text-3xl ">
+            <span className="mx-6  text-black text-lg md:text-3xl ">
               {text}
             </span>
           </span>

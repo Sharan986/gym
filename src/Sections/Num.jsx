@@ -59,10 +59,10 @@ const Num = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-15 md:gap-32 md:mx-7">
         {NumData.map((item) => (
           <div key={item.id} className="relative text-center">
-            <div className="text-7xl md:text-7xl lg:text-9xl text-[#9d9ea3] font-bold font-Two">
+            <div className="text-7xl md:text-8xl lg:text-9xl text-[#9d9ea3] font-bold font-One">
               {formatNumber(item.id, counts[item.id])}
             </div>
-            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-1 text-[#FCDE3B] text-lg md:text-lg lg:text-2xl font-bold font-Two bg-gray-950 px-2">
+            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-1 text-[#FCDE3B] text-lg md:text-lg lg:text-2xl font-bold font-M bg-gray-950 px-2">
               {item.text}
             </h2>
           </div>

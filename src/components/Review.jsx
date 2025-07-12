@@ -2,46 +2,49 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import img2 from "../assets/Testimonials/GS.jpg"
+import img1 from "../assets/Testimonials/JSS.jpeg";
 
 const Review = () => {
   const reviews = [
     {
       id: 1,
-      quote: "JOINING THIS GYM WAS THE BEST DECISION I'VE EVER MADE! THE TRAINERS ARE INCREDIBLY SUPPORTIVE, AND THE WORKOUT PLANS ARE TAILORED TO MY NEEDS.",
+      quote: "My fitness journey started with OneRepMaax, and it’s still going strong. With certified, knowledgeable trainers and a motivating environment, I’m truly glad to be part of this amazing fitness community!",
       rating: "★★★★★",
-      name: "MICHAEL BROWN",
+      name: "Jasbir Singh",
       role: "Fitness Consultant",
-      image: "https://randomuser.me/api/portraits/men/32.jpg"
+      image: img1
     },
     {
       id: 2,
-      quote: "THE FACILITIES ARE TOP-NOTCH AND THE COMMUNITY IS SO WELCOMING. I'VE NEVER FELT MORE MOTIVATED TO WORK OUT THAN I DO HERE!",
+      quote: "One of the best gyms around. Clean space, top-quality equipment, and trainers who actually care. Highly recommend!",
       rating: "★★★★★",
-      name: "SARAH JOHNSON",
+      name: "Gurnake Singh",
       role: "Yoga Instructor",
-      image: "https://randomuser.me/api/portraits/women/44.jpg"
+      image: img2
     },
     {
       id: 3,
-      quote: "AS A BEGINNER, I WAS NERVOUS ABOUT JOINING A GYM, BUT THE STAFF MADE ME FEEL COMFORTABLE RIGHT AWAY. NOW I LOOK FORWARD TO EVERY WORKOUT!",
-      rating: "★★★★☆",
-      name: "DAVID WILSON",
+      quote: "It's Fabulous!",
+      // rating: "★★★★☆",
+      rating: "★★★★★",
+      name: "AMARJEET ",
       role: "Marketing Executive",
       image: "https://randomuser.me/api/portraits/men/67.jpg"
     },
     {
       id: 4,
-      quote: "THE PERSONAL TRAINING SESSIONS HAVE COMPLETELY TRANSFORMED MY FITNESS JOURNEY. WORTH EVERY PENNY!",
+      quote: "Well-equipped gym with good trainers and a really nice environment. Great place to work on your fitness!",
       rating: "★★★★★",
-      name: "EMMA DAVIS",
+      name: "Sagar kumar",
       role: "Graphic Designer",
       image: "https://randomuser.me/api/portraits/women/28.jpg"
     },
     {
       id: 5,
-      quote: "I LOVE THE VARIETY OF CLASSES OFFERED. THERE'S ALWAYS SOMETHING NEW TO TRY, WHICH KEEPS ME COMING BACK!",
+      quote: "I can proudly say that my friends and I were among the first to join OneRepMaax. I still feel nostalgic about those early morning sessions with Respected Aditya Sir — back when the gym hadn't even officially opened. I’ve learned so much about fitness, discipline, and training here. Truly grateful to Sir for starting such an amazing gym in the Dimna area!",
       rating: "★★★★★",
-      name: "JAMES MILLER",
+      name: "Sahil kumar",
       role: "Software Engineer",
       image: "https://randomuser.me/api/portraits/men/75.jpg"
     }
@@ -62,7 +65,7 @@ const Review = () => {
     <div className=" mt-9 ">
       <div >
         <div className="  mb-12">
-          <h2 className="text-2xl  text-[#48D3A3] italic ">Our Testimonials</h2>
+          <h2 className="text-2xl  text-[#48D3A3] ">Our Testimonials</h2>
           <h1 className="text-4xl  md:text-5xl  text-white uppercase mb-5">
             What Our Members Are Saying OneRepMaax
           </h1>
@@ -83,7 +86,7 @@ const Review = () => {
             />
           </div>
 
-          <div className="text-white font-M text-sm  ">
+          <div className="text-white font-M text-sm ">
             "{review.quote}"
           </div>
         </div>

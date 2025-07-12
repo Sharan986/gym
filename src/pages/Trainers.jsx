@@ -8,9 +8,17 @@ import Three from "../assets/Trainers/THREE.jpg";
 import FOUR from "../assets/Trainers/FOUR.jpg";
 import FIVE from "../assets/Trainers/FIVE.jpg";
 import SIX from "../assets/Trainers/SIX.jpg";
+import Icon from '../components/Icon';
 
 const Trainers = () => {
   const trainers = [
+       {
+      id: 4,
+      img: FOUR,
+      name: "ADITYA SINGH",
+      title: "OWNER",
+    },
+
     {
       id: 1,
       img: One,
@@ -29,12 +37,7 @@ const Trainers = () => {
       name: "RAJ KUMAR",
       title: "TRAINER",
     },
-    {
-      id: 4,
-      img: FOUR,
-      name: "ADITYA SINGH",
-      title: "K11 CERTIFIED TRAINER",
-    },
+ 
     {
       id: 5,
       img: FIVE,
@@ -63,9 +66,12 @@ const Trainers = () => {
   return (
     <>
       <div className="text-white text-xl pt-16 mx-7  font-One">
-        <header className="text-2xl sm:text-3xl text-[#48D3A3] italic">
-          Our Trainers
-        </header>
+        <div className="flex items-center gap-2">
+        <Icon/>
+        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Trainers</header>
+
+      </div>
+        
         <p className="text-4xl  w-full mt-4 font-One uppercase">
           Fitness team supporting goals
         </p>
@@ -79,7 +85,7 @@ const Trainers = () => {
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[18rem] object-cover object-top"
+                    className="w-full h-[25rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
                     <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>

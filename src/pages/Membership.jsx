@@ -1,10 +1,12 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Icon from "../components/Icon"; 
 
 // Import the image
-const tickImageUrl = 'https://framerusercontent.com/images/9xXwvl2NRjYTbf3p3zXQldvvrU.svg';
+const tickImageUrl =
+  "https://framerusercontent.com/images/9xXwvl2NRjYTbf3p3zXQldvvrU.svg";
 
 const MembershipSection = () => {
   const sliderSettings = {
@@ -22,26 +24,26 @@ const MembershipSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const slidesData = [
     {
-      title: 'Membership',
-      durations: ['1 Month', '3 Months', '6 Months', '9 Months', '12 Months'],
-      prices: ['Rs1200', 'Rs2700', 'Rs5100', 'Rs6800', 'Rs7500'],
+      title: "Membership",
+      durations: ["1 Month", "3 Months", "6 Months", "9 Months", "12 Months"],
+      prices: ["Rs 1,200", "Rs 2,700", "Rs 5,100", "Rs 6,800", "Rs 7,500"],
     },
     {
-      title: 'Locker Facility',
-      durations: ['1 Month', '3 Months', '6 Months', '9 Months', '12 Months'],
-      prices: ['Rs1200', 'Rs2700', 'Rs5100', 'Rs6800', 'Rs7500'],
+      title: "Locker Facility",
+      durations: ["1 Month", "3 Months", "6 Months", "9 Months", "12 Months"],
+      prices: ["Rs 1,200", "Rs 2,700", "Rs 5,100", "Rs 6,800", "Rs 7,500"],
     },
     {
-      title: 'Personal Training',
-      durations: ['1 Month', '3 Months'],
-      prices: ['Rs 5000', 'Rs 1000'],
+      title: "Personal Training",
+      durations: ["1 Month", "3 Months"],
+      prices: ["Rs 5,000", "Rs 10,000"],
     },
   ];
 
@@ -53,14 +55,18 @@ const MembershipSection = () => {
     "Free Wifi, COFFEE",
     "CHANGING ROOMS AND MANY MORE",
     "SEPARATE CHANGING ROOMS AND MANY MORE",
-
   ];
 
   return (
     <div className="bg-[#070915] text-white mb-6">
       <div className="flex flex-col md:flex-col">
         <div className="mx-7 pt-5 mb-2">
-          <h2 className="text-[#48D3A3] text-2xl mb-4 font-One italic">OUR MEMBERSHIP</h2>
+          <div className="flex items-center gap-2">
+            <Icon />
+            <h2 className="text-[#48D3A3] text-2xl font-One">
+              OUR MEMBERSHIP
+            </h2>
+          </div>
           <p className="mb-8 text-white font-One text-3xl">
             Fight School has specialized in martial arts
           </p>
@@ -87,14 +93,21 @@ const MembershipSection = () => {
             </style>
             <Slider {...sliderSettings}>
               {slidesData.map((slide, idx) => (
-                <div key={idx} className="p-5 border-2 border-[#48D3A3] font-DM transition-transform transform">
-                  <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-2xl italic">{slide.title}</h2>
+                <div
+                  key={idx}
+                  className="p-5 border-2 border-[#48D3A3] font-DM transition-transform transform"
+                >
+                  <h2 className="text-[#48D3A3] font-bold mb-2 font-One text-2xl">
+                    {slide.title}
+                  </h2>
                   <div className="flex justify-between mb-4">
                     <div>
                       <ol className="font-One text-2xl space-y-2">
                         <li className="text-3xl">Duration</li>
                         {slide.durations.map((duration, i) => (
-                          <li key={i} className="text-gray-300">{duration}</li>
+                          <li key={i} className="text-gray-300">
+                            {duration}
+                          </li>
                         ))}
                       </ol>
                     </div>
@@ -102,11 +115,14 @@ const MembershipSection = () => {
                       <ol className="font-One text-2xl space-y-2">
                         <li className="text-3xl">Price</li>
                         {slide.prices.map((price, i) => (
-                          <li key={i} className="text-yellow-400">{price}</li>
+                          <li key={i} className="text-yellow-400">
+                            {price}
+                          </li>
                         ))}
-                        {slide.title === 'Personal Training' && slide.prices.length < 5 && (
-                          <div className="pt-28"></div>
-                        )}
+                        {slide.title === "Personal Training" &&
+                          slide.prices.length < 5 && (
+                            <div className="pt-28"></div>
+                          )}
                       </ol>
                     </div>
                   </div>

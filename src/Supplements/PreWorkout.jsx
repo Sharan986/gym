@@ -1,47 +1,83 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const preWorkoutProducts = [
-  { id: 3, name: 'Pre-Workout A', photo: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80' },
-  { id: 5, name: 'Pre-Workout B', photo: 'https://images.unsplash.com/photo-1571019614242-c055f5a6a293?auto=format&fit=crop&w=500&q=80' },
-  { id: 8, name: 'Pre-Workout C', photo: 'https://images.unsplash.com/photo-1571019614242-c055f5a6a293?auto=format&fit=crop&w=500&q=80' },
-  { id: 9, name: 'Pre-Workout D', photo: 'https://images.unsplash.com/photo-1571019614242-c055f5a6a293?auto=format&fit=crop&w=500&q=80' },
+  {
+    id: 3,
+    name: "MuscleBlaze Pre Workout WrathX, 340 g (0.75 lb)",
+    Price: "₹1,399",
+    photo:
+      "https://img8.hkrtcdn.com/38823/prd_3882277-MuscleBlaze-Pre-Workout-WrathX-0.74-lb-Mango-Mayhem_o.jpg",
+  },
+  {
+    id: 5,
+    name: "MuscleBlaze Pre Workout 200 Xtreme (Fruit Punch, 15 Servings, 100g)",
+    Price: "₹499",
+    photo:
+      "https://m.media-amazon.com/images/I/7144k02s2FL._SY450_.jpg",
+  },
+  {
+    id: 8,
+    name: "Nakpro Pre Workout Supplement Powder",
+    Price: "₹349",
+    photo:
+      "https://nakpro.com/cdn/shop/products/01_8ff935e3-cb6c-4657-ae7c-eb0153770826.png?v=1746927037&width=900",
+  },
+  {
+    id: 9,
+    name: "GNC Creatine Monohydrate With Black Shaker (750ml) Creatine  (100 g, Blueberry)Fuel One Dead-Lift Pre Workout",
+    Price: "₹449",
+    photo:
+      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSmpHekjlJ__OViZoGulY9oFPYpqnhMYrqnTufqjBusft2P2gF1fseTp0o9IplCRCvcnngvtDFmwUYua5TbhWVudWn9Raun-s827TqviYUW",
+  },
 ];
 
 const PreWorkout = () => {
   const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/+918877152285`, 'HII MY SELF SUMIT');
+    window.open(`https://wa.me/+918877152285`, "HII MY SELF SUMIT");
   };
 
   return (
     <>
       <div className="relative overflow-hidden">
         <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
+          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
           alt="About Us Banner"
-          className="w-screen h-60 object-cover object-center scale-125"
+          className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
         />
-        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">About Us</h1>
-          <h1 className="font-One text-2xl mt-6">
-            <Link to="/"> HOME </Link>
-            <span className="text-yellow-300">/Supplement</span>
+        <div className="absolute bottom-8 left-8 text-white">
+          <h1 className="text-4xl font-One lg:text-6xl z-10">SUPPLEMENT</h1>
+          <h1 className="font-One text-xl mt-4 lg:text-3xl">
+           <Link to="/Supplement">SUPPLEMENT</Link>
+          <span className="text-yellow-300 lg:text-3xl">/PreWorkout</span>
           </h1>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8 font-One">
-        <h1 className="text-4xl text-center text-white font-bold mb-8">Pre-Workout Products</h1>
+        <h1 className="text-4xl text-center text-white font-bold mb-8">
+          Preworkout Products
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {preWorkoutProducts.map((product) => (
-            <div key={product.id} className="bg-white shadow-md overflow-hidden">
-              <img src={product.photo} alt={product.name} className="w-full h-48 object-cover" />
+            <div
+              key={product.id}
+              className="bg-white shadow-md overflow-hidden"
+            >
+              <img
+                src={product.photo}
+                alt={product.name}
+                className="w-full h-[24rem] object-contain"
+              />
               <div className="p-4">
-                <h2 className="text-xl font-semibold">{product.name}</h2>
+                <h2 className="text-2xl">{product.name}</h2>
+                <br />
+                <h2 className="text-2xl">{product.Price}</h2>
+
                 <button
                   onClick={handleWhatsAppClick}
-                  className="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                  className="mt-4 bg-green-500 hover:bg-green-700  text-xl py-2 px-4 rounded w-full"
                 >
                   Contact on WhatsApp
                 </button>

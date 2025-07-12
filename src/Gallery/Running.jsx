@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 const Running = () => {
-  // Array of gym facility objects
+
   const gymFacilities = [
     {
       id: 1,

@@ -5,11 +5,11 @@ const Join = () => {
   return (
     <div className="bg-[#FCDE3B] flex flex-col md:flex-row justify-between items-center font-One mt-2 mx-10">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-3 pt-5 text-center md:text-left">
-          Join Our Gym and Start
+        <p className="text-4xl md:text-4xl lg:text-6xl xl:text-7xl pt-5 text-center md:text-left">
+        Join Our Gym and Start
         </p>
-        <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-3 text-center md:text-left">
-          Your Fitness Journey Today
+        <p className="text-4xl md:text-4xl lg:text-6xl xl:text-7xl mx-3 text-center md:text-left">
+        Your Fitness Journey Today
         </p>
       </div>
       <div className="flex justify-center w-full md:w-1/2 p-4">
