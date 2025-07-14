@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Wbutton from "../components/Wbutton";
+import { w3 } from "../assets/w3/w3";
 
 const About = () => {
   const Values = [
@@ -48,10 +49,13 @@ const About = () => {
      </div>
    </div>
       <div className="bg-[#070915] font-One mx-3">
-    <div className="flex flex-col md:flex-row  text-white p-4 md:p-8">
+        
+          <p className="text-4xl text-gray-200 mt-2 uppercase pb-1 mx-7">Sweat Now, Thank Us Later.</p>
+
+    <div className="flex flex-col md:flex-row  text-white md:p-8">
       <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
         <img
-          src="https://framerusercontent.com/images/DtDqTbYboEmXHzSbpGaNQgZUdXA.png?scale-down-to=1024"
+          src={w3.i7}
           alt="Fitness"
           className="w-full max-w-md"
         />
@@ -61,49 +65,49 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           OUR MISSION IS TO DEVELOP YOUR FITNESS
         </h1>
-        <p className="mb-8">
+        <p className="mb-8 text-lg">
           We are the un-corporation, dedicated to giving you the tools for your fitness goals in a vibrant gym. Unlike other clubs, you'll stay because we care!
         </p>
         <ul className="list-none p-0">
           <li className="mb-2 flex items-center">
             <span className="text-[#48D3A3] text-2xl mr-2">01.</span>
-            <span className="text-xl ">HEALTHY & EFFECTIVE</span>
+            <span className="text-2xl ">HEALTHY & EFFECTIVE</span>
           </li>
           <li className="flex items-center text-2xl">
             <span className="text-[#48D3A3] mr-2">02.</span>
-            <span className="text-xl">INDIVIDUAL APPROACH</span>
+            <span className="text-2xl">INDIVIDUAL APPROACH</span>
           </li>
         </ul>
       </div>
     </div>
 
-     <div className="flex flex-col md:flex-row  text-white p-4 md:p-8">
+     <div className="flex flex-col md:flex-row  text-white  md:p-8">
       <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
         <div className="text-[#48D3A3] text-3xl  font-semibold mb-4">100% PREMIUM QUALITY</div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           WE WILL GIVE YOU STRENGTH AND HEALTH
         </h1>
-        <p className="mb-8">
+        <p className="mb-8 text-xl ">
           Our gym is dedicated to helping individuals of all fitness levels achieve their health and wellness goals.
         </p>
         <ul className="list-none p-0">
           <li className="mb-2 flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2">→</span>
+            <span className="text-[#48D3A3] mr-2">01.</span>
             <span>ENHANCING JOINT BLOOD FLOW</span>
           </li>
           <li className="mb-2 flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2">→</span>
+            <span className="text-[#48D3A3] mr-2">02.</span>
             <span>HELP REDUCE INFLAMMATION</span>
           </li>
           <li className="flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2 ">→</span>
+            <span className="text-[#48D3A3] mr-2 ">03.</span>
             <span>HELPS YOU STICK TO YOUR DIET</span>
           </li>
         </ul>
       </div>
       <div className="w-full md:w-1/2 p-4 flex justify-center items-center relative">
         <img
-          src="https://framerusercontent.com/images/qISsB3ElwghTDVU84HVxbjQpD2o.jpg?scale-down-to=1024"
+          src={w3.i11}
           alt="Fitness"
           className="w-full max-w-md"
         />
@@ -112,27 +116,27 @@ const About = () => {
     </div>
     </div>
 
-      <div className="text-white text-xl pt-16 px-4 md:px-8">
-        <header className="text-xl font-One text-[#48D3A3] italic sm:text-3xl text-center">
+      <div className="text-white text-xl pt-5 md:px-8 mx-7 ">
+        <header className="text-xl font-One text-[#48D3A3] ">
           Our Values
         </header>
-        <p className="text-3xl sm:text-5xl w-full mt-4 font-One uppercase text-center">
+        <p className="text-4xl sm:text-5xl w-full mt-4 font-One uppercase ">
           Strength. Discipline. Growth. Consistency.
         </p>
-        <p className="text-gray-400 font-M text-base md:text-lg mt-6 mb-4 text-center">
+        <p className="text-gray-300 font-M text-xl md:text-lg mt-6 mb-3 ">
           Our mission has always been to create a welcoming and supportive environment where everyone, regardless of their fitness level, can thrive.
         </p>
 
         <div className="flex  flex-col gap-10 sm:flex-row sm:flex-wrap sm:justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
           {Values.map((value) => (
-            <div key={value.id} className="font-One mb-4 sm:mb-0 border-2 border-[#48D3A3]  sm:w-1/2 md:w-1/3 p-4">
+            <div key={value.id} className="font-One mb-4 sm:mb-0 m:w-1/2 md:w-1/3 ">
               <img
                 src={value.imageUrl}
                 alt={value.title}
-                className="h-16 w-16 object-cover mb-2 mx-auto"
+                className="h-16 w-16 object-cover mb-2"
               />
-              <h1 className="text-2xl md:text-3xl text-center">{value.title}</h1>
-              <p className="text-base md:text-lg font-DM text-gray-400 text-center">
+              <h1 className="text-3xl md:text-3xl pb-3 pt-3">{value.title}</h1>
+              <p className="text-lg md:text-lg font-DM text-gray-300">
                 {value.description}
               </p>
             </div>

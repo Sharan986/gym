@@ -65,18 +65,18 @@ const Supplement = () => {
 
    
 <div className="flex flex-col mb-6 font-One mx-7">
-  <div className="text-white text-left mt-8">
-    <header className="text-2xl text-[#48D3A3] italic">Supplements</header>
+  <div className="text-white text-left mt-3">
+    
   </div>
-  <div className="text-white text-left mt-4">
-    <p className="text-3xl mt-2 uppercase">
+  <div className="text-white text-left mt-2">
+    <p className="text-4xl mt-1 uppercase">
       Boost strength, endurance, muscle growth.
     </p>
     
   </div>
 </div>
 
-    <p className="text-gray-400 text-lg font-DM mt-4 mb-4 mx-7">
+    <p className="text-gray-300 text-lg font-DM mt-2 mb-7 mx-7">
       Supplements support muscle growth, enhance performance, boost recovery, fill nutritional gaps,
       help achieve fitness goals efficiently, increase endurance, aid fat loss, improve strength,
       and promote overall physical well-being.

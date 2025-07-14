@@ -167,7 +167,7 @@ const BackAdvanced = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
         <img
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
           alt="Back Workout Banner"
@@ -183,14 +183,14 @@ const BackAdvanced = () => {
         </div>
       </div>
       {exercises.map((exercise) => (
-        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
+        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4 font-DM'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
+            <video className='w-full h-full object-cover' controls={false} preload="none" autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

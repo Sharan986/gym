@@ -81,27 +81,21 @@ const App = () => {
       <Route path="/WorkoutGuide/Intermediate/Shoulders" element={<ShouldersIntermediate />} /> 
       <Route path="/WorkoutGuide/Intermediate/Arms" element={<ArmsIntermediate />} />
       <Route path="/WorkoutGuide/Intermediate/Legs" element={<LegsIntermediate />} />
-
       <Route path="/WorkoutGuide/Advance/Chest" element={<ChestAdvanced />} />
       <Route path="/WorkoutGuide/Advance/Back" element={<BackAdvanced />} />
       <Route path="/WorkoutGuide/Advance/Shoulders" element={<ShouldersAdvanced />} />
       <Route path="/WorkoutGuide/Advance/Arms" element={<Armsadvance />} />
       <Route path="/WorkoutGuide/Advance/Legs" element={<LegsAdvanced />} />
-
       <Route path="/Membership" element={<Membership />} />
-
-
       <Route path="/Supplement/Protein" element={<Protein />} />
       <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
       <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
       <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
       <Route path="/Supplement/Creatine" element={<Creatine />} />
-      
       <Route path="/Supplement/BCAA" element={<BCAA />} />
       <Route path="/Supplement/Fishoil" element={<Fishoil />} />
       <Route path="/Supplement/Oats" element={<Oats />} />
       <Route path="/Supplement/Muesli" element={<Muesli />} />
-
       <Route path="/Gallery" element={<Gallery />} />
       <Route path="/item/:Yoga" element={<One />} />
       <Route path="/item/:Fitness" element={<Fitness />} />

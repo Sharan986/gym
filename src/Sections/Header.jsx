@@ -20,12 +20,12 @@ const Header = () => {
   
       <Nav />
    
-      <div className="relative overflow-hidden mb-4">
+      <div className="relative overflow-hidden">
             
         <img
           src={HeaderImg}
           alt=""
-          className=" h-fit md:h-[90vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
+          className=" h-[140vw] md:h-[90vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />
              
       
@@ -43,14 +43,15 @@ const Header = () => {
             
             </p>
           </div>
-          <div className="mt-54 md:mt-96 sm:flex sm:items-center font-One  sm:gap-7  ">
-           <Link to="JoinUs"><Button text="JOIN US TODAY" className="text-xl mb-4 sm:mb-0 md:text-3xl" /></Link>
-           <Link to="/about"><Wbutton text="ABOUT US" className="text-xl md:text-3xl " /></Link> 
+          <div className="mt-50 md:mt-96 sm:flex sm:items-center font-One  sm:gap-7  ">
+           <Link to="JoinUs"><Button text="JOIN US TODAY" className="text-2xl mb-4 sm:mb-0 md:text-3xl" /></Link>
+           <Link to="/about"><Wbutton text="ABOUT US" className="text-2xl md:text-3xl " /></Link> 
         </div>
         </div>
 
         
       </div>
+      
       <Marquee />
       <Num />
       <Services />

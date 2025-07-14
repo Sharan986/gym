@@ -81,15 +81,15 @@ const Trainers = () => {
           <Slider {...settings}>
             {trainers.map((trainer) => (
               <div key={trainer.id} className="p-2">
-                <div className="border-2 border-gray-600 overflow-hidden max-w-md mx-auto">
+                <div className="border-2 border-gray-600 overflow-hidden ">
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[25rem] object-cover object-top"
+                    className="w-full h-[22rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
-                    <h1 className="text-xl sm:text-2xl">{trainer.name}</h1>
-                    <p className="text-base sm:text-lg text-gray-400">{trainer.title}</p>
+                    <h1 className="text-2xl ">{trainer.name}</h1>
+                    <p className="text-xl sm:text-lg text-gray-400">{trainer.title}</p>
                   </div>
                 </div>
               </div>

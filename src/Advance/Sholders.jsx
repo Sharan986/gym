@@ -159,14 +159,14 @@ const ShouldersAdvanced = () => {
       </div>
 
       {exercises.map((exercise) => (
-        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4'>
+        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4 font-DM'>
           <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
           <div className='text-blue-300 mb-4 text-center'>
             <span className='font-bold'>Targets: </span>
             {exercise.muscles.join(", ")}
           </div>
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
+            <video className='w-full h-full object-cover' controls={false} preload="none" autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

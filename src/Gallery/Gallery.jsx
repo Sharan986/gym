@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Join from "../components/Join";
 import Membership from "../pages/Membership";
 import { gallery } from "../assets/Gallery/gallery.js";
-import * as reviewImages from "../assets/Review/review.js";
+import {w3} from "../assets/w3/w3.js"
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("Facility");
@@ -45,23 +45,23 @@ const Gallery = () => {
   ];
 
   const MaaxedItems = [
-    { id: 1, title: "Amarjeet", img: reviewImages.Amarjeet },
-    { id: 6, title: "Amarjeet 6", img: reviewImages.Amarjeet6 },
-    { id: 11, title: "Gurnake Singh", img: reviewImages.GurnakeSingh },
-    { id: 5, title: "Amarjeet 5", img: reviewImages.Amarjeet5 },
-    { id: 12, title: "Jasprit Singh", img: reviewImages.JaspritSingh },
-    { id: 2, title: "Amarjeet 2", img: reviewImages.Amarjeet2 },
-    { id: 13, title: "Jasprit Singh 2", img: reviewImages.JaspritSingh2 },
-    { id: 7, title: "Amarjeet Singh", img: reviewImages.AmarjeetSingh },
-    { id: 9, title: "Amarjeet Singh 3", img: reviewImages.AmarjeetSingh3 },
-    { id: 10, title: "Amarjeet Singh 4", img: reviewImages.AmarjeetSingh4 },
-    { id: 18, title: "Sagar Kumar", img: reviewImages.SagarKumar },
-    { id: 2, title: "Amarjeet 2", img: reviewImages.Amarjeet2 },
-    { id: 19, title: "Sahil Kumar", img: reviewImages.SahilKumar },
-    { id: 3, title: "Amarjeet 3", img: reviewImages.Amarjeet3 },
-    { id: 2, title: "Amarjeet 2", img: reviewImages.Amarjeet2 },
-    { id: 20, title: "Sourav Kumar", img: reviewImages.SouravKumar },
-    { id: 8, title: "Amarjeet Singh 2", img: reviewImages.AmarjeetSingh2 },
+    { id: 1, title: "Amarjeet", img: w3.i1 },
+    { id: 6, title: "Amarjeet 6", img: w3.i6 },
+    { id: 11, title: "Gurnake Singh", img: w3.i11 },
+    { id: 5, title: "Amarjeet 5", img: w3.i5 },
+    { id: 12, title: "Jasprit Singh", img: w3.i12 },
+    { id: 2, title: "Amarjeet 2", img: w3.i2 },
+    { id: 13, title: "Jasprit Singh 2", img: w3.i13 },
+    { id: 7, title: "Amarjeet Singh", img: w3.i7 },
+    { id: 9, title: "Amarjeet Singh 3", img: w3.i9 },
+    { id: 10, title: "Amarjeet Singh 4", img: w3.i10 },
+    { id: 18, title: "Sagar Kumar", img: w3.i18 },
+    { id: 2, title: "Amarjeet 2", img: w3.i2 },
+    { id: 19, title: "Sahil Kumar", img: w3.i19 },
+    { id: 3, title: "Amarjeet 3", img: w3.i3 },
+    { id: 2, title: "Amarjeet 2", img: w3.i2 },
+    { id: 20, title: "Sourav Kumar", img: w3.i20 },
+    { id: 8, title: "Amarjeet Singh 2", img: w3.i8 },
   ];
 
   const getItems = () => {
@@ -128,11 +128,13 @@ const Gallery = () => {
               className="bg-white hover:bg-gray-100 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
             >
               <div className="overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
-                />
+               <img
+              src={item.img}
+              alt={item.title}
+              loading="lazy"
+             className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
+/>
+
               </div>
             </div>
           ))}

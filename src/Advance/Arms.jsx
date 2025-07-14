@@ -167,7 +167,7 @@ const ArmsAdvanced = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
         <img
           src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6ODA0/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
           alt="Advanced Arms Workout Banner"
@@ -190,16 +190,16 @@ const ArmsAdvanced = () => {
             {exercise.muscles.join(", ")}
           </div>
           <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} autoPlay muted loop>
+            <video className='w-full h-full object-cover' controls={false} preload="none" autoPlay muted loop>
               <source src={exercise.video} type="video/mp4" />
-              Your browser does not support the video tag.
+              Your browser does not support the video 
             </video>
           </div>
           <div className='text-white mt-4'>
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.instructions.map((step, i) => (
-                <li key={i}>{step}</li>
+                <li key={i} className='font-DM'>{step}</li>
               ))}
             </ul>
           </div>
@@ -207,7 +207,7 @@ const ArmsAdvanced = () => {
             <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.benefits.map((benefit, i) => (
-                <li key={i}>{benefit}</li>
+                <li key={i} className='font-DM'>{benefit}</li>
               ))}
             </ul>
           </div>
@@ -215,7 +215,7 @@ const ArmsAdvanced = () => {
             <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
             <ul className='list-disc pl-5 space-y-1'>
               {exercise.tips.map((tip, i) => (
-                <li key={i}>{tip}</li>
+                <li key={i} className='font-DM'>{tip}</li>
               ))}
             </ul>
           </div>

@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img2 from "../assets/Testimonials/GS.jpg"
 import img1 from "../assets/Testimonials/JSS.jpeg";
+import Icon from '../components/Icon';
 
 const Review = () => {
   const reviews = [
@@ -42,7 +43,7 @@ const Review = () => {
     },
     {
       id: 5,
-      quote: "I can proudly say that my friends and I were among the first to join OneRepMaax. I still feel nostalgic about those early morning sessions with Respected Aditya Sir — back when the gym hadn't even officially opened. I’ve learned so much about fitness, discipline, and training here. Truly grateful to Sir for starting such an amazing gym in the Dimna area!",
+      quote: "I can proudly say that my friends and I were among the first to join OneRepMaax. I still feel nostalgic about those early morning sessions with Respected Aditya Sir — back when the gym hadn't even officially opened.",
       rating: "★★★★★",
       name: "Sahil kumar",
       role: "Software Engineer",
@@ -65,7 +66,11 @@ const Review = () => {
     <div className=" mt-9 ">
       <div >
         <div className="  mb-12">
-          <h2 className="text-2xl  text-[#48D3A3] ">Our Testimonials</h2>
+          <div className="flex justfy-center items-center gap-2">
+        <Icon/>
+        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Review</header>
+
+      </div>
           <h1 className="text-4xl  md:text-5xl  text-white uppercase mb-5">
             What Our Members Are Saying OneRepMaax
           </h1>
@@ -75,8 +80,8 @@ const Review = () => {
         </div>
 <Slider {...settings}>
   {reviews.map((review) => (
-    <div key={review.id} className="p-1">
-      <div className="p-2 border-2 border-[#53f0b8]shadow-2xl text-center h-[46vh] md:h-96 flex flex-col justify-between">
+    <div key={review.id} className="p-1 h-full">
+      <div className="p-2 border-2 border-[#53f0b8] shadow-2xl text-center flex flex-col justify-between h-full min-h-[24rem] md:min-h-96">
         <div>
           <div className="flex justify-center mb-3">
             <img
@@ -86,7 +91,7 @@ const Review = () => {
             />
           </div>
 
-          <div className="text-white font-M text-sm ">
+          <div className="text-white font-M text-sm">
             "{review.quote}"
           </div>
         </div>
@@ -100,6 +105,7 @@ const Review = () => {
     </div>
   ))}
 </Slider>
+
 
       </div>
     </div>

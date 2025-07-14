@@ -73,15 +73,12 @@ const ServicesDetail = () => {
   </div>
 </div>
 
-      <div className="flex justify-center flex-col items-start font-One">
+      <div className="flex justify-center flex-col items-start font-One mx-3">
         <div className="text-white pt-16 ml-6 mr-6">
-          <header className="text-xl w-full text-[#48D3A3] italic">
-            Our Services
-          </header>
-          <p className="text-5xl mt-2 uppercase">
+          <p className="text-5xl pt-1 uppercase">
             Our mission is to develop your fitness
           </p>
-          <p className="max-w-screen text-gray-400 font-DM text-lg mt-6 mb-4">
+          <p className="max-w-screen text-gray-400 font-DM text-lg mt-2 mb-4">
             We are the un-corporation, dedicated to giving you the tools for your fitness goals in a vibrant gym. Unlike other clubs, you’ll stay because we care.
           </p>
         </div>

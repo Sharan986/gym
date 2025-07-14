@@ -21,7 +21,8 @@ const WorkoutGuide = () => {
        </div>
      </div>
         <div className="px-4 md:px-8 py-8">
-          <p className="text-gray-300 font-DM text-lg  mx-auto max-w-6xl">
+          <p className="text-4xl text-gray-200 mt-2 uppercase pb-5">Your Fitness Journey Starts Here!</p>
+          <p className="text-gray-300 font-DM text-xl  ">
             Regular workouts offer numerous benefits for both body and mind. They strengthen muscles, improve cardiovascular health, and boost endurance, enhancing overall physical fitness. Exercise helps maintain a healthy weight by burning calories and increasing metabolism. It reduces stress and anxiety by releasing endorphins, promoting mental well-being.
           </p>
         </div>

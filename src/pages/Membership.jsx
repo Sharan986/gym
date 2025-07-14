@@ -9,25 +9,27 @@ const tickImageUrl =
   "https://framerusercontent.com/images/9xXwvl2NRjYTbf3p3zXQldvvrU.svg";
 
 const MembershipSection = () => {
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 2, // default for large screens
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 640, // match Tailwind sm breakpoint
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
-    ],
-  };
+    },
+  ],
+};
+
 
   const slidesData = [
     {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { gallery } from '../assets/Gallery/gallery';
+import Icon from '../components/Icon';
 
 const PhotoGrid = () => {
   const photos = [
@@ -13,9 +14,11 @@ const PhotoGrid = () => {
 
   return (
     <div className="mx-2">
-      <h1 className='text-2xl  font-One text-[#48D3A3] mb-4'>
-        Our Gallery
-      </h1>
+     <div className="flex justfy-center items-center gap-2">
+        <Icon/>
+        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Gallery</header>
+
+      </div>
       <h2 className='text-4xl font-One text-white mb-6'>
         No Weakness Allowed
       </h2>

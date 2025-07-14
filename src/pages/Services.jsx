@@ -92,7 +92,7 @@ const Services = () => {
           <Slider {...settings}>
             {services.map((service) => (
               <div key={service.id} className="">
-                <div className="border-2 border-gray-600 font-One h-[30rem] flex flex-col justify-between items-center">
+                <div className="border-2 border-gray-600 font-One h-[29rem] flex flex-col justify-between items-center">
                   <img src={service.logo} alt={service.title} className="w-20 h-20 p-2" />
                   <h1 className="text-3xl py-2">{service.title}</h1>
                   <img

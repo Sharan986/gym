@@ -14,10 +14,10 @@ const WkGuid = () => {
           <h2 className='text-4xl md:text-5xl font-One text-white text-left mb-6'>
             Stronger Faster Healthier Happier Fitter
           </h2>
-         <p className='text-lg sm:text-lg font-DM text-gray-400 text-left mb-6 sm:mb-8'>
+         <p className='text-lg sm:text-lg font-DM text-gray-300 text-left mb-6 sm:mb-8'>
   Our workout guide is designed for all levels, offering step-by-step instructions and modifications for safe and effective training.
 </p>
-<p className='text-lg sm:text-lg font-DM text-gray-400 text-left mb-6 sm:mb-8'>
+<p className='text-lg sm:text-lg font-DM text-gray-300 text-left mb-6 sm:mb-8'>
   Beginners should start with 2-3 weekly sessions, focusing on technique.
 </p>
 
