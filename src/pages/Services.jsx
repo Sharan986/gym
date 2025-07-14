@@ -40,13 +40,13 @@ const Services = () => {
   };
 
   return (
-    <div className="text-white text-xl pt-16 mx-7 font-One">
-      <div className="flex justfy-center items-center gap-2">
+    <div className="text-white text-xl pt-9 mx-4 font-One">
+      <div className="flex pl-5 justfy-center items-center gap-2">
         <Icon/>
         <header className="text-2xl lg:text-center text-[#48D3A3]">Our Services</header>
 
       </div>
-      <p className="text-4xl lg:text-center sm:text-6xl mt-4 uppercase">
+      <p className="text-4xl pl-5 lg:text-center sm:text-6xl mt-4 uppercase">
         What We Can Do Best For Our Clients
       </p>
 

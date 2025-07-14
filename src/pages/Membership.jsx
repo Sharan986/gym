@@ -4,10 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from "../components/Icon"; 
 
-// Import the image
-const tickImageUrl =
-  "https://framerusercontent.com/images/9xXwvl2NRjYTbf3p3zXQldvvrU.svg";
-
 const MembershipSection = () => {
 
 const sliderSettings = {
@@ -62,7 +58,7 @@ const sliderSettings = {
   return (
     <div className="bg-[#070915] text-white mb-6">
       <div className="flex flex-col md:flex-col">
-        <div className="mx-7 pt-5 mb-2">
+        <div className="mx-4 pt-5 mb-2">
           <div className="flex items-center gap-2">
             <Icon />
             <h2 className="text-[#48D3A3] text-2xl font-One">
@@ -74,8 +70,19 @@ const sliderSettings = {
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-DM text-lg">
             {membershipBenefits.map((item, idx) => (
-              <li key={idx} className="flex">
-                <img src={tickImageUrl} alt="Tick" className="mr-2 w-4 h-4" />
+              <li key={idx} className="flex ">
+               
+               
+               <svg
+  xmlns="http://www.w3.org/2000/svg"
+  className="w-7 h-9 text-[#48D3A3]"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+  strokeWidth={2}
+>
+  <path strokeLinecap="round"  d="M9 5l7 7-7 7" />
+</svg>
                 <span className="text-gray-300">{item}</span>
               </li>
             ))}

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="py-10 mx-8 font-sans text-lg text-gray-800">
-      {/* Logo and Description */}
+      
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />
         <p className="text-lg md:text-xl font-DM text-gray-400 font-semibold max-w-xl mx-auto">
@@ -13,9 +13,8 @@ const Footer = () => {
         </p>
       </div>
 
-      {/* Grid Container */}
       <div className="grid gap-10 md:gap-10 text-gray-400 font-M">
-        {/* COMPANY and CONTACT US side by side on md */}
+       
         <div className="md:flex md:space-x-10">
           {/* COMPANY */}
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -54,7 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* CONTACT US */}
+          
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl mb-6 text-[#53f0b8] font-One md:text-4xl">CONTACT US</h2>
             <ul className="space-y-4">

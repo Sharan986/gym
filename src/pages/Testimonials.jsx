@@ -12,11 +12,11 @@ const Testimonials = () => {
    
     <div className='font-One text-white mt-10 '>
       {/* Container for centering content */}
-      <div className='mx-9 '>
+      <div className='mx-7 '>
        <PhotoGrid />
 
         {/* Photo Grid Component */}
-          <div className="flex justify-center mx-2 mt-5">
+          <div className="flex justify-center mt-5">
         <img
           src={Boss2}
           alt="Boss"

@@ -1,5 +1,4 @@
 
-import HeaderImg from "../assets/Header.jpg";
 import Button from "../components/Button";
 import Wbutton from "../components/Wbutton";
 import Marquee from "../components/Marquee";
@@ -14,6 +13,7 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Icon from "../components/Icon"; 
 
+
 const Header = () => {
   return (
     <>
@@ -23,7 +23,7 @@ const Header = () => {
       <div className="relative overflow-hidden">
             
         <img
-          src={HeaderImg}
+          src="/allPhotos/Header.webp"
           alt=""
           className=" h-[140vw] md:h-[90vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />

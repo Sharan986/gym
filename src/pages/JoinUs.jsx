@@ -151,22 +151,15 @@ const JoinUs = () => {
           </button>
         </form>
 
-        <div className="flex justify-center">
-          <img
-            src="https://framerusercontent.com/images/MbZjXFrQdQAPAjnUICYWrTLq6w.jpg"
-            alt="Gym"
-            className="w-full max-w-md h-auto"
-          />
-        </div>
         <div>
-          <iframe
+          <iframe className="md:w-[300px] w-[320px] "
             title="GYM LOCATION"
             width="350"
             height="400"
             style={{ border: 2, borderColor: "#48D3A3" }}
             loading="lazy"
             allowFullScreen
-            src="https://www.google.com/maps?q=22.830673040065964, 86.2256818265552&output=embed"
+            src="https://www.google.com/maps?q=One+Rep+Maax+Gym,+Dimna+Road,+Jamshedpur&output=embed"
           />
         </div>
       </div>

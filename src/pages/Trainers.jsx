@@ -65,22 +65,22 @@ const Trainers = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-16 mx-7  font-One">
-        <div className="flex items-center gap-2">
+      <div className="text-white text-xl pt-16 mx-6 font-One">
+        <div className="flex items-center gap-2 ">
         <Icon/>
         <header className="text-2xl lg:text-center text-[#48D3A3]">Our Trainers</header>
 
       </div>
         
-        <p className="text-4xl  w-full mt-4 font-One uppercase">
+        <p className="text-4xl mt-4 font-One uppercase">
           Fitness team supporting goals
         </p>
 
         {/* ✅ Mobile Slider */}
-        <div className="block md:hidden mt-10">
+        <div className=" md:hidden mt-10">
           <Slider {...settings}>
             {trainers.map((trainer) => (
-              <div key={trainer.id} className="p-2">
+              <div key={trainer.id} className="">
                 <div className="border-2 border-gray-600 overflow-hidden ">
                   <img
                     src={trainer.img}

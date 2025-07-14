@@ -13,7 +13,7 @@ const PhotoGrid = () => {
   ];
 
   return (
-    <div className="mx-2">
+    <div className="w-full">
      <div className="flex justfy-center items-center gap-2">
         <Icon/>
         <header className="text-2xl lg:text-center text-[#48D3A3]">Our Gallery</header>

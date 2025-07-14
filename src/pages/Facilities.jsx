@@ -42,7 +42,7 @@ const Facilities = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-16 lg:mx-15 mx-8 mb-3">
+      <div className="text-white text-xl pt-16 lg:mx-15 mx-6 mb-3">
         <div className="flex items-center gap-2">
           <Icon />
           <header className="text-2xl font-One w-full text-[#48D3A3]   ">
@@ -52,13 +52,13 @@ const Facilities = () => {
         <p className="text-4xl sm:text-6xl w-full mt-4 font-One uppercase ">
           We Help To Get Fitness Goal
         </p>
-        <p className="w-full text-gray-300 font-DM text-xl lg:text-xl mt-6 mb-4 ">
+        <p className="w-full text-gray-300 font-DM text-xl lg:text-xl mt-3 mb-4 ">
           Our mission has always been to create a welcoming and supportive
           environment where everyone, regardless of their fitness level.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center mt-8">
           {FacilitiesData.map((facility) => (
-            <div key={facility.id} className="font-One mb-4 p-2 flex flex-col">
+            <div key={facility.id} className="font-One mb-4 p-1 flex flex-col">
               <img
                 src={facility.imageUrl}
                 alt={facility.title}
