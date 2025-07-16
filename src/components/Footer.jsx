@@ -91,7 +91,7 @@ const Footer = () => {
               <p className="font-bold md:text-xl">
                 <span className="text-yellow-400 inline-block text-lg w-24">Sun :</span>   08:00 AM - 06:00 PM
               </p>
-              <div className="border-t border-gray-300 mb-16" />
+              <div className="border-t border-gray-300 mb-16v " />
             </li>
           </ul>
         </div>
