@@ -81,7 +81,7 @@ const JoinUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 mx-8">
+      <div className="flex flex-col w-[80vw] gap-4 mx-8">
         {JoinData.map((join) => (
           <div
             key={join.id}
@@ -152,7 +152,7 @@ const JoinUs = () => {
         </form>
 
         <div>
-          <iframe className="md:w-[300px] w-[320px] "
+          <iframe className="md:w-[700px] w-[320px] "
             title="GYM LOCATION"
             width="350"
             height="400"

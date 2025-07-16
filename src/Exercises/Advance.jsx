@@ -41,13 +41,13 @@ const Advance = () => {
         alt="About Us Banner"
         className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
       />
-      <div className="absolute bottom-8 left-8 text-white">
-        <h1 className="text-5xl font-One lg:text-7xl z-10">SERVICES</h1>
-        <h1 className="font-One text-2xl mt-4 lg:text-5xl">
-          <Link to='/'>HOME</Link>
-          <span className="text-yellow-300 lg:text-5xl">/Services</span>
-        </h1>
-      </div>
+         <div className="absolute bottom-8 left-8 text-white">
+       <h1 className="text-5xl font-One lg:text-7xl z-10">ADVANCE</h1>
+       <h1 className="font-One text-2xl mt-4 lg:text-5xl">
+         <Link to='/WorkoutGuide'>GUIDE</Link>
+         <span className="text-yellow-300 lg:text-5xl">/WORKOUT</span>
+       </h1>
+     </div>
     </div>
 
          {exercises.map((Heading)=>{

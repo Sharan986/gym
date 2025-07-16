@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Join = () => {
   return (
-    <div className="bg-[#FCDE3B] flex flex-col md:flex-row justify-between items-center font-One mt-2 mx-8">
+    <div className="bg-[#FCDE3B] flex flex-col md:flex-row justify-between items-center font-One mt-15 mx-7">
       <div className="flex flex-col justify-center items-center">
-        <p className="text-4xl md:text-4xl lg:text-6xl xl:text-7xl pt-5 text-center md:text-left">
+        <p className="text-4xl md:text-5xl lg:text-6xl px-5 py-5 text-center md:text-left">
           Ready to Transform Your Workout Routine?
         </p>
        

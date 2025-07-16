@@ -42,14 +42,14 @@ const Facilities = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-16 lg:mx-15 mx-6 mb-3">
+      <div className="text-white text-xl pt-32 lg:mx-15 mx-6 mb-3">
         <div className="flex items-center gap-2">
           <Icon />
-          <header className="text-2xl font-One w-full text-[#48D3A3]   ">
+          <header className="text-2xl md:text-3xl font-One w-full text-[#48D3A3]   ">
             OUR FACILITIES
           </header>
         </div>
-        <p className="text-4xl sm:text-6xl w-full mt-4 font-One uppercase ">
+        <p className="text-4xl md:text-6xl w-full mt-4 font-One uppercase ">
           We Help To Get Fitness Goal
         </p>
         <p className="w-full text-gray-300 font-DM text-xl lg:text-xl mt-3 mb-4 ">
@@ -65,8 +65,8 @@ const Facilities = () => {
                 className="h-16 w-16 object-cover mb-2 "
               />
               <div className="">
-                <h1 className="text-2xl ">{facility.title}</h1>
-                <p className="text-xl lg:text-2xl md:text-lg lg:w-160 font-DM text-gray-300 ">
+                <h1 className="text-2xl md:text-3xl md:mb-5 ">{facility.title}</h1>
+                <p className="text-lg lg:text-2xl md:text-xl lg:w-160  font-DM text-gray-300 ">
                   {facility.description}
                 </p>
               </div>

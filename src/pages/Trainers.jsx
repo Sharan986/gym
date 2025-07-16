@@ -65,14 +65,14 @@ const Trainers = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-16 mx-6 font-One">
+      <div className="text-white text-xl pt-32 mx-6 font-One">
         <div className="flex items-center gap-2 ">
         <Icon/>
-        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Trainers</header>
+        <header className="text-2xl md:text-3xl lg:text-center text-[#48D3A3]">Our Trainers</header>
 
       </div>
         
-        <p className="text-4xl mt-4 font-One uppercase">
+        <p className="text-4xl md:text-6xl mt-4 font-One uppercase">
           Fitness team supporting goals
         </p>
 
@@ -85,7 +85,7 @@ const Trainers = () => {
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[22rem] object-cover object-top"
+                    className="w-full h-[28rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
                     <h1 className="text-2xl ">{trainer.name}</h1>
@@ -102,11 +102,11 @@ const Trainers = () => {
           <Slider {...settings}>
             {trainers.map((trainer) => (
               <div key={trainer.id} className="p-2">
-                <div className="border-2 border-gray-600 overflow-hidden max-w-2xl mx-auto">
+                <div className="border-2 border-gray-600 overflow-hidden">
                   <img
                     src={trainer.img}
                     alt={trainer.name}
-                    className="w-full h-[28rem] object-cover object-top"
+                    className="w-full h-[45rem] object-cover object-top"
                   />
                   <div className="p-4 text-center">
                     <h1 className="text-3xl">{trainer.name}</h1>

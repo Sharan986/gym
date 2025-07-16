@@ -20,7 +20,7 @@ const WorkoutGuide = () => {
          </h1>
        </div>
      </div>
-        <div className="px-4 md:px-8 py-8">
+        <div className="mx-7 pb-16">
           <p className="text-4xl text-gray-200 mt-2 uppercase pb-5">Your Fitness Journey Starts Here!</p>
           <p className="text-gray-300 font-DM text-xl  ">
             Regular workouts offer numerous benefits for both body and mind. They strengthen muscles, improve cardiovascular health, and boost endurance, enhancing overall physical fitness. Exercise helps maintain a healthy weight by burning calories and increasing metabolism. It reduces stress and anxiety by releasing endorphins, promoting mental well-being.
@@ -28,8 +28,8 @@ const WorkoutGuide = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center min-h-screen py-12 bg-[#070915] font-One">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 max-w-7xl w-full">
+      <div className="flex justify-center items-center bg-[#070915] font-One mx-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8   w-full">
           {/* Beginner Box */}
           <Link to="/WorkoutGuide/Beginner" className="no-underline">
             <div className="relative border-2 border-white overflow-hidden shadow-xl  transition-transform duration-300 h-96 bg-gradient-to-r ">
@@ -66,7 +66,7 @@ const WorkoutGuide = () => {
 
           {/* Advanced Box */}
           <Link to="/WorkoutGuide/Advance" className="no-underline">
-            <div className="relative  border-2 border-white overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 h-96 bg-gradient-to-r from-gray-800 to-gray-900">
+            <div className="relative   border-2 border-white overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300 h-96 bg-gradient-to-r from-gray-800 to-gray-900">
               <img
                 src="https://images.unsplash.com/photo-1604335788369-94f349ae5243?q=80&w=870&auto=format&fit=crop"
                 alt="Advanced workout"

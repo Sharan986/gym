@@ -15,13 +15,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#010101] text-white px-4 flex justify-between items-center relative">
+    <nav className="bg-[#010101] text-white px-3 flex justify-between items-center relative">
       {/* Logo */}
       <Link to="/" className="z-50">
         <img
           src={logo}
           alt="Logo"
-          className="w-28  pl-2 md:w-36 hover:scale-105 transition-transform duration-200 cursor-pointer"
+          className="w-28  pl-2 md:w-28 hover:scale-105 transition-transform duration-200 cursor-pointer"
         />
       </Link>
 

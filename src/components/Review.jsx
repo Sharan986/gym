@@ -70,18 +70,18 @@ const Review = () => {
   };
 
   return (
-    <div className=" mt-9 ">
+    <div className=" pt-24 ">
       <div >
         <div className="  mb-12">
-          <div className="flex justfy-center items-center gap-2">
+          <div className="flex items-center gap-2">
         <Icon/>
-        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Review</header>
+        <header className="text-2xl md:text-3xl lg:text-center text-[#48D3A3]">Our Review</header>
 
       </div>
-          <h1 className="text-4xl  md:text-5xl  text-white uppercase mb-5">
+          <h1 className="text-4xl   md:text-6xl text-white uppercase mb-5">
             What Our Members Are Saying OneRepMaax
           </h1>
-          <p className="text-xl text-gray-400 font-DM">
+          <p className="text-xl md:text-2xl text-gray-400 font-DM">
             Discover how our gym transformed our members' lives.
           </p>
         </div>
@@ -98,7 +98,7 @@ const Review = () => {
         />
       </div>
 
-      <div className="text-white font-M text-sm px-4 flex items-center justify-center">
+      <div className="text-white font-One text-sm md:text-2xl px-4 flex items-center justify-center">
         “{review.quote}”
       </div>
     </div>

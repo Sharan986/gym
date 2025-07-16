@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import s3 from "../assets/S3.jpeg";
+import S2 from "../assets/S2.jpeg";
 import sv4 from "../assets/sv4.jpeg";
 import Icon from '../components/Icon';
 
@@ -16,7 +17,7 @@ const Services = () => {
     },
     {
       id: 2,
-      img: s3,
+      img: S2,
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss",
     },
@@ -40,13 +41,13 @@ const Services = () => {
   };
 
   return (
-    <div className="text-white text-xl pt-9 mx-4 font-One">
+    <div className="text-white text-xl pt-15 mx-4 font-One">
       <div className="flex pl-5 justfy-center items-center gap-2">
         <Icon/>
-        <header className="text-2xl lg:text-center text-[#48D3A3]">Our Services</header>
+        <header className="text-2xl md:text-3xl lg:text-center text-[#48D3A3]">Our Services</header>
 
       </div>
-      <p className="text-4xl pl-5 lg:text-center sm:text-6xl mt-4 uppercase">
+      <p className="text-4xl md:text-6xl pl-5 lg:text-center sm:text-6xl mt-4 uppercase">
         What We Can Do Best For Our Clients
       </p>
 
@@ -73,13 +74,13 @@ const Services = () => {
           <Slider {...settings}>
             {services.map((service) => (
               <div key={service.id} className="px-4">
-                <div className="max-w-[700px] mx-auto border-2 border-gray-600 font-One h-[32rem] flex flex-col justify-between items-center">
+                <div className="  border-2 border-gray-600 font-One  flex flex-col justify-between items-center">
                   <img src={service.logo} alt={service.title} className="w-24 h-24 p-2" />
                   <h1 className="text-3xl py-2">{service.title}</h1>
                   <img
                     src={service.img}
                     alt={service.title}
-                    className="w-full h-[22rem] object-cover pt-2 rounded"
+                    className="w-full h-[28rem] object-cover pt-2 rounded"
                   />
                 </div>
               </div>

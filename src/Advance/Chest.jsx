@@ -183,7 +183,7 @@ const ChestAdvanced = () => {
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
           <h1 className="text-5xl font-One z-10">Chest</h1>
           <h1 className="font-One text-2xl mt-6">
-            <Link to="/">Home</Link>
+           <Link to='/WorkoutGuide'>GUIDE</Link>
             <span className="text-yellow-300">/Chest</span>
           </h1>
         </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="py-10 mx-8 font-sans text-lg text-gray-800">
+    <div className=" pt-24 mx-8 font-sans text-lg text-gray-800">
       
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />
@@ -91,7 +91,7 @@ const Footer = () => {
               <p className="font-bold md:text-xl">
                 <span className="text-yellow-400 inline-block text-lg w-24">Sun :</span>   08:00 AM - 06:00 PM
               </p>
-              <div className="border-t border-gray-300 my-2" />
+              <div className="border-t border-gray-300 mb-16" />
             </li>
           </ul>
         </div>

@@ -30,6 +30,14 @@ const About = () => {
       imageUrl:
         "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
     },
+     {
+      id: 3,
+      title: "Personalization",
+      description:
+        "We recognize that everyone's fitness journey is unique. Our approach is tailored to your goals, preferences, and needs.",
+      imageUrl:
+        "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
+    },
   ];
 
   return (
@@ -127,21 +135,22 @@ const About = () => {
           Our mission has always been to create a welcoming and supportive environment where everyone, regardless of their fitness level, can thrive.
         </p>
 
-        <div className="flex  flex-col gap-10 sm:flex-row sm:flex-wrap sm:justify-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
-          {Values.map((value) => (
-            <div key={value.id} className="font-One mb-4 sm:mb-0 m:w-1/2 md:w-1/3 ">
-              <img
-                src={value.imageUrl}
-                alt={value.title}
-                className="h-16 w-16 object-cover mb-2"
-              />
-              <h1 className="text-3xl md:text-3xl pb-3 pt-3">{value.title}</h1>
-              <p className="text-lg md:text-lg font-DM text-gray-300">
-                {value.description}
-              </p>
-            </div>
-          ))}
-        </div>
+       <div className="flex gap-10 flex-row md:w-[80vw] flex-wrap justify-center mt-8">
+  {Values.map((value) => (
+    <div 
+      key={value.id} >
+      <img
+        src={value.imageUrl}
+        alt={value.title}
+        className="h-16 w-16 object-cover mb-2" 
+      />
+      <h1 className="text-3xl md:text-3xl pb-3 pt-3 font-One ">{value.title}</h1>
+      <p className="text-lg md:text-lg font-DM text-gray-300 fot-DM">
+        {value.description}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
 
       <Footer />

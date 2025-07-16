@@ -56,19 +56,19 @@ const sliderSettings = {
   ];
 
   return (
-    <div className="bg-[#070915] text-white mb-6">
+    <div className="bg-[#070915] text-white mb-6 pt-14">
       <div className="flex flex-col md:flex-col">
         <div className="mx-4 pt-5 mb-2">
           <div className="flex items-center gap-2">
             <Icon />
-            <h2 className="text-[#48D3A3] text-2xl font-One">
+            <h2 className="text-[#48D3A3] text-2xl md:text-3xl font-One">
               OUR MEMBERSHIP
             </h2>
           </div>
-          <p className="mb-8 text-white font-One text-3xl">
+          <p className="mb-8 md:text-6xl text-white font-One text-3xl">
             Fight School has specialized in martial arts
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-DM text-lg">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-One text-2xl md:text-3xl">
             {membershipBenefits.map((item, idx) => (
               <li key={idx} className="flex ">
                
@@ -88,8 +88,8 @@ const sliderSettings = {
             ))}
           </ul>
         </div>
-        <div className="w-full p-2 mt-6">
-          <div className="px-4 sm:px-8">
+        <div className="w-full  mt-6">
+          <div className=" px-4">
             <style>
               {`
                 .slick-slide > div {
