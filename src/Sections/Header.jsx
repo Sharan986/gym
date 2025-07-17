@@ -37,7 +37,7 @@ const Header = () => {
             <header className="text-xl  w-screen text-[#48D3A3] pl ">FITNESS & GYM</header>
             </div>
            
-            <p className=" text-4xl  w-80 md:w-160 md:text-[64px]">
+            <p className=" text-4xl  w-80 md:w-160 md:text-[64px] lg:text-[80px] lg:w-full">
               Transform. Perform. Dominate.
             
             </p>

@@ -41,16 +41,16 @@ const JoinUs = () => {
   const onSubmit = (data) => {
     const phoneNumber = "919204057290";
     const message = `Hello! I want to get in touch with One Rep Maax Gym. Here are my details:\n
-    First Name: ${data.firstName}
-    Last Name: ${data.lastName}
-    Email: ${data.email}
-    Message: ${data.message || ""}`;
+First Name: ${data.firstName}
+Last Name: ${data.lastName}
+Email: ${data.email}
+Interest: ${data.interest}
+Message: ${data.message || ""}`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     window.open(whatsappURL, "_blank");
-
     reset();
   };
 
@@ -71,8 +71,8 @@ const JoinUs = () => {
         </div>
       </div>
 
-      <div className="flex  flex-col font-One mx-8">
-        <div className="text-white  max-w-2xl mt-5">
+      <div className="flex flex-col font-One mx-8">
+        <div className="text-white max-w-2xl mt-5">
           <p className="text-4xl mt-2 uppercase">Get in touch with us</p>
           <p className="text-gray-300 font-DM text-xl mt-6 mb-4">
             Have questions? We're here to help. Reach out to our team through
@@ -101,7 +101,7 @@ const JoinUs = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mx-8 pt-3">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="space-y-4 font-One text-2xl text-white w-full "
+          className="space-y-4 font-One text-2xl text-white w-full"
         >
           <input
             placeholder="First Name"
@@ -137,6 +137,22 @@ const JoinUs = () => {
             <p className="text-red-500">{errors.email.message}</p>
           )}
 
+        
+          <select
+            {...register("interested", { required: "Please select an option" })}
+            className="w-full border-gray-200 border-2 p-2  text-gray-500"
+            defaultValue="Membership">
+            <option value="Locker Facilities">Locker Facilities</option>
+            <option value="Membership">Membership</option>
+            <option value="Personal Training">Personal Training</option>
+            <option value="Group Classes">Group Classes</option>
+            <option value="Zumba/Yoga">Zumba/Yoga</option>
+          
+          </select>
+          {errors.interested && (
+            <p className="text-red-500">{errors.interested.message}</p>
+          )}
+
           <textarea
             placeholder="Message"
             {...register("message")}
@@ -152,7 +168,8 @@ const JoinUs = () => {
         </form>
 
         <div>
-          <iframe className="md:w-[700px] w-[320px] "
+          <iframe
+            className="md:w-[700px] w-[320px]"
             title="GYM LOCATION"
             width="350"
             height="400"

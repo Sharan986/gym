@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Num = () => {
   const [counts, setCounts] = useState({
@@ -8,40 +9,46 @@ const Num = () => {
     4: 0,
   });
 
+  const [hasAnimated, setHasAnimated] = useState(false);
+
   const NumData = [
-    { id: 1, target: 250, num: "250+", text: "Members" },
-    { id: 2, target: 50, num: "50+", text: "Transformations" },
-    { id: 3, target: 5, num: "05+", text: "Trainers" },
-    { id: 4, target: 5000, num: "5K+", text: "SQ.FEET" },
+    { id: 1, target: 250, text: "Members" },
+    { id: 2, target: 50, text: "Transformations" },
+    { id: 3, target: 5, text: "Trainers" },
+    { id: 4, target: 5000, text: "SQ.FEET" },
   ];
 
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
   useEffect(() => {
-    const duration = 4000;
-    const startTime = performance.now();
+    if (inView && !hasAnimated) {
+      const duration = 4000;
+      const startTime = performance.now();
 
-    const animateCounts = (currentTime) => {
-      const elapsedTime = currentTime - startTime;
-      const progress = Math.min(elapsedTime / duration, 1);
+      const animateCounts = (currentTime) => {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
 
-      setCounts((prevCounts) => {
-        const newCounts = { ...prevCounts };
-        NumData.forEach((item) => {
-          newCounts[item.id] = Math.floor(progress * item.target);
+        setCounts((prevCounts) => {
+          const newCounts = { ...prevCounts };
+          NumData.forEach((item) => {
+            newCounts[item.id] = Math.floor(progress * item.target);
+          });
+          return newCounts;
         });
-        return newCounts;
-      });
 
-      if (progress < 1) {
-        requestAnimationFrame(animateCounts);
-      }
-    };
+        if (progress < 1) {
+          requestAnimationFrame(animateCounts);
+        }
+      };
 
-    const animationFrameId = requestAnimationFrame(animateCounts);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
+      requestAnimationFrame(animateCounts);
+      setHasAnimated(true);
+    }
+  }, [inView, hasAnimated]);
 
   const formatNumber = (id, value) => {
     const item = NumData.find((i) => i.id === id);
@@ -55,8 +62,8 @@ const Num = () => {
   };
 
   return (
-    <div className="flex justify-center mx-4 bg-[#070915] py-5 mt-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-20  md:gap-15 md:mx-7">
+    <div ref={ref} className="flex justify-center mx-4 bg-[#070915] py-5 mt-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-15 md:mx-7">
         {NumData.map((item) => (
           <div key={item.id} className="relative text-center">
             <div className="text-7xl md:text-7xl lg:text-9xl text-[#9d9ea3] font-bold font-One">

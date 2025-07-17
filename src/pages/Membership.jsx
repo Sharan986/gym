@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from "../components/Icon"; 
+import { Link } from "react-router-dom";
 
 const MembershipSection = () => {
 
@@ -135,9 +136,11 @@ const sliderSettings = {
                       </ol>
                     </div>
                   </div>
-                  <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
-                    BOOK NOW
-                  </button>
+                  <Link to="/JoinUs">
+                    <button className="bg-yellow-400 text-black font-bold py-2 px-4 w-full hover:bg-yellow-500 transition-colors">
+                      BOOK NOW
+                    </button>
+                  </Link>
                 </div>
               ))}
             </Slider>
