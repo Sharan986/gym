@@ -13,7 +13,7 @@ const Review = () => {
       rating: "★★★★★",
       name: "Gurnake Singh",
       role: "Fitness Enthusiast",
-      image: IMAGES.gurnakeSingh
+      image: IMAGES.gurnakeSingh2
     },
     {
       id: 3,
@@ -98,7 +98,7 @@ const Review = () => {
         />
       </div>
 
-      <div className="text-white font-One text-sm md:text-2xl px-4 flex items-center justify-center">
+      <div className="text-white font-M text-sm md:text-2xl px-10 flex items-center justify-center">
         “{review.quote}”
       </div>
     </div>
