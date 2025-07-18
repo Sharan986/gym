@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const WorkoutGuide = () => {
   return (
     <>
-      <div className="bg-[#070915] overflow-hidden font-One">
+      <div className="bg-[#070915] overflow-hidden font-One ">
           <div className="relative overflow-hidden">
        <img
          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
@@ -20,7 +20,7 @@ const WorkoutGuide = () => {
          </h1>
        </div>
      </div>
-        <div className="mx-7 pb-16">
+        <div className="mx-7 pb-16 lg:mx-24">
           <p className="text-4xl text-gray-200 mt-2 uppercase pb-5">Your Fitness Journey Starts Here!</p>
           <p className="text-gray-300 font-DM text-xl  ">
             Regular workouts offer numerous benefits for both body and mind. They strengthen muscles, improve cardiovascular health, and boost endurance, enhancing overall physical fitness. Exercise helps maintain a healthy weight by burning calories and increasing metabolism. It reduces stress and anxiety by releasing endorphins, promoting mental well-being.
@@ -28,7 +28,7 @@ const WorkoutGuide = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#070915] font-One mx-7">
+      <div className="flex justify-center items-center bg-[#070915] font-One mx-7 lg:mx-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8   w-full">
           {/* Beginner Box */}
           <Link to="/WorkoutGuide/Beginner" className="no-underline">

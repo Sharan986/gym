@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" pt-24 mx-8 mb-16 font-sans text-lg text-gray-800">
+    <div className=" pt-24 mx-8 lg:mx-24 mb-16 font-sans text-lg text-gray-800">
       
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
 
       <div className="grid gap-10 md:gap-10 text-gray-400 font-M">
-       
+
         <div className="md:flex md:space-x-10">
           {/* COMPANY */}
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -53,7 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          
+
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl mb-6 text-[#53f0b8] font-One md:text-4xl lg:text-5xl">CONTACT US</h2>
             <ul className="space-y-4">
@@ -77,14 +77,14 @@ const Footer = () => {
 
         {/* OPERATIONAL HOUR */}
         <div>
-          <h2 className="text-3xl mb-6 text-[#53f0b8] font-One md:text-4xl lg:text-5xl">OPERATIONAL HOUR</h2>
+          <h2 className="text-3xl mb-6 text-[#53f0b8] font-One md:text-4xl">OPERATIONAL HOUR</h2>
           <ul className="space-y-4">
             <li>
               <p className="font-semibold md:text-xl ">
                 <span className="text-yellow-400 text-lg w-24 lg:text-2xl">Mon - Sat :</span> <span className=" pl-10 lg:text-2xl">05:00 AM - 11:00 PM</span>
               </p>
 
-              
+
               <div className="border-t border-gray-300 my-2" />
             </li>
             <li>
@@ -95,6 +95,18 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+
+        <iframe className="md:w-[700px] mb-8 lg:w-full lg:h-96"
+          title="GYM LOCATION"
+          width="100%"
+          height="250"
+          style={{ border: 2, borderColor: "#48D3A3" }}
+          loading="lazy"
+          allowFullScreen
+          src="https://www.google.com/maps?q=One+Rep+Maax+Gym,+Dimna+Road,+Jamshedpur&output=embed"
+        />
+
       </div>
     </div>
   );

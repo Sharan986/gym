@@ -65,7 +65,7 @@ const Trainers = () => {
 
   return (
     <>
-      <div className="text-white text-xl pt-32 mx-6 font-One">
+      <div className="text-white text-xl pt-32 mx-6 font-One lg:mx-24">
         <div className="flex items-center gap-2 ">
         <Icon/>
         <header className="text-2xl md:text-3xl lg:text-center text-[#48D3A3]">Our Trainers</header>

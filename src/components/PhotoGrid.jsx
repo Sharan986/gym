@@ -16,10 +16,10 @@ const PhotoGrid = () => {
     <div className="w-full pt-15">
      <div className="flex justfy-center items-center gap-1">
         <Icon/>
-        <header className="text-2xl md:text-2xl lg:text-center  text-[#48D3A3]">Our Gallery</header>
+        <header className="text-2xl md:text-2xl lg:text-4xl lg:text-center  text-[#48D3A3]">Our Gallery</header>
 
       </div>
-      <h2 className='text-4xl md:text-5xl font-One text-white mb-6'>
+      <h2 className='text-4xl md:text-5xl lg:text-7xl font-One text-white mb-6'>
         No Weakness Allowed
       </h2>
 

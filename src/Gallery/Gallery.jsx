@@ -98,7 +98,7 @@ const Gallery = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-center my-10 px-4 mx-4">
+      <div className="flex justify-center my-10 px-4 mx-4 ">
         <div className="inline-flex justify-center  bg-gray-200 p-1 w-full max-w-4xl lg:flex-nowrap overflow-hidden rounded-lg">
           {tabs.map((tab) => (
             <button
@@ -121,11 +121,11 @@ const Gallery = () => {
       {activeTab === "Members" ? (
         <Membership />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:mx-24">
           {getItems().map((item) => (
             <div
               key={item.id}
-              className="bg-white hover:bg-gray-100 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
+              className="bg-white  hover:bg-gray-100 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
             >
               <div className="overflow-hidden">
                <img

@@ -63,7 +63,7 @@ const Num = () => {
 
   return (
     <div ref={ref} className="flex justify-center mx-4 bg-[#070915] py-5 mt-16">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-15 md:mx-7">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-20 lg:gap-32 md:gap-15 md:mx-7 lg:mx-24">
         {NumData.map((item) => (
           <div key={item.id} className="relative text-center">
             <div className="text-7xl md:text-7xl lg:text-9xl text-[#9d9ea3] font-bold font-One">

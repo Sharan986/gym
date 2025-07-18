@@ -63,7 +63,7 @@ const Supplement = () => {
   </div>
 </div>
 
-   
+   <div className="lg:mx-18 ">
 <div className="flex flex-col mb-6 font-One mx-7">
   <div className="text-white text-left mt-3">
     
@@ -98,7 +98,7 @@ const Supplement = () => {
           </Link>
         ))}
       </div>
-
+</div>
       <Footer />
     </>
   );

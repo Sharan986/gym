@@ -73,7 +73,7 @@ const ServicesDetail = () => {
   </div>
 </div>
 
-      <div className="flex justify-center flex-col items-start font-One mx-7 ">
+      <div className="flex justify-center flex-col items-start font-One mx-7 lg:mx-24">
         <div className="text-white pt-16 ml-6 mr-6">
           <p className="text-5xl pt-1 uppercase">
             Our mission is to develop your fitness
@@ -86,7 +86,7 @@ const ServicesDetail = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 mb-12 ">
         {servicesData.map((data) => (
-          <div key={data.id} className="flex flex-col items-center border-2 border-gray-600 font-One mx-7">
+          <div key={data.id} className="flex flex-col items-center border-2 lg:mx-24 border-gray-600 font-One ">
             <img src={data.logo} alt={data.title} className="w-20 h-20" />
             <h1 className="text-3xl py-3 text-white text-center">{data.title}</h1>
             <img src={data.img} alt={data.title} className="w-full h-52 object-cover object-center " />

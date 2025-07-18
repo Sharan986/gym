@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const WkGuid = () => {
   return (
     <>
-      <div className='flex flex-col lg:flex-row justify-between items-center mx-7 md:py-16 gap-10'>
+      <div className='flex flex-col lg:flex-row justify-between items-center mx-7 md:py-16 gap-10 '>
         {/* Text Content */}
         <div className='w-full lg:w-1/2 flex flex-col items-start order-2 lg:order-1'>
           <h1 className='text-3xl italic font-One text-[#48D3A3] text-left mb-4'>

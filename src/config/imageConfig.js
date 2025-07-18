@@ -95,7 +95,7 @@ export const IMAGES = {
   
   // Trainers
   amarjeetSingh: "/allPhotos/Amarjeet Singh.webp",
-  amarjeetSingh2: "/allPhotos/Amarjeet Singh2.webp",
+  amarjeetSingh2: "/allPhotos/Amarjeet Singh2_98x131.webp",
   amarjeetSingh3: "/allPhotos/Amarjeet Singh3.webp",
   amarjeetSingh4: "/allPhotos/Amarjeet Singh4.webp",
   amarjeetSingh5: "/allPhotos/Amarjeet Singh5.webp",
@@ -105,15 +105,16 @@ export const IMAGES = {
   amarjeetSinghAlt3: "/allPhotos/AmarjeetSingh3.webp",
   amarjeetSinghAlt4: "/allPhotos/AmarjeetSingh4.webp",
   jasbirSingh: "/allPhotos/JASBIR SINGH.webp",
-  jasbirSingh2: "/allPhotos/JASBIR SINGH2.webp",
+  jasbirSingh2: "/allPhotos/JASBIR SINGH2_96x127.webp",
   jasbirSingh3: "/allPhotos/JASBIR SINGH3.webp",
   jaspritSingh: "/allPhotos/Jasprit Singh.webp",
-  jaspritSingh2: "/allPhotos/Jasprit Singh2.webp",
+  jaspritSingh2: "/allPhotos/Jasprit Singh2_96x128.webp",
   ranjanaMishra: "/allPhotos/Ranjana Mishra.webp",
-  sagarKumar: "/allPhotos/SagarKumar.webp",
-  sahilKumar: "/allPhotos/SahilKumar.webp",
+  sagarKumar: "/allPhotos/SagarKumar_96x213.webp",
+  sahilKumar: "/allPhotos/SahilKumar_96x213.webp",
   souravKumar: "/allPhotos/SouravKumar.webp",
   gurnakeSingh: "/allPhotos/GurnakeSingh.webp",
+  gurnakeSingh2: "/allPhotos/GurnakeSingh_96x128.webp",
   
   // Gallery/Exercise
   exercise1: "/allPhotos/e1.webp",

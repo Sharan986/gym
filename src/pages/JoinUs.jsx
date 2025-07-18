@@ -167,18 +167,17 @@ Message: ${data.message || ""}`;
           </button>
         </form>
 
-        <div>
-          <iframe
-            className="md:w-[700px] w-[320px]"
-            title="GYM LOCATION"
-            width="350"
-            height="400"
-            style={{ border: 2, borderColor: "#48D3A3" }}
-            loading="lazy"
-            allowFullScreen
-            src="https://www.google.com/maps?q=One+Rep+Maax+Gym,+Dimna+Road,+Jamshedpur&output=embed"
-          />
-        </div>
+
+        <iframe className="md:w-[700px] "
+          title="GYM LOCATION"
+          width="100%"
+          height="400"
+          style={{ border: 2, borderColor: "#48D3A3" }}
+          loading="lazy"
+          allowFullScreen
+          src="https://www.google.com/maps?q=One+Rep+Maax+Gym,+Dimna+Road,+Jamshedpur&output=embed"
+        />
+
       </div>
 
       <Footer />
