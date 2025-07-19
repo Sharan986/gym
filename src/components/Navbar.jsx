@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation - Top-right */}
-      <div className="hidden md:flex absolute top-4 right-4 z-50 items-center gap-6 bg-[#070915]/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+      <div className="hidden md:flex absolute top-4 right-4 z-50 items-center gap-6 bg-[#070915]/90 backdrop-blur-sm px-6 py-3 shadow-lg">
         {navLinks.map((link, index) => (
           <a
             key={index}
@@ -74,7 +74,7 @@ const Navbar = () => {
                   key={index}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-3 text-white text-3xl hover:bg-[#48D3A3]/10 hover:text-[#48D3A3] rounded-md transition-colors"
+                  className="px-4 py-3 text-white text-3xl hover:bg-[#48D3A3]/10 hover:text-[#48D3A3] transition-colors"
                 >
                   {link.name}
                 </a>

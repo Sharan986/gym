@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" pt-24 mx-8 lg:mx-24 mb-16 font-sans text-lg text-gray-800">
+    <div className=" pt-24 mx-8 lg:mx-24 mb-16 font-DM text-lg text-gray-800">
       
       <div className="mb-10 text-center">
         <img src={logo} alt="Logo" className="w-24 mb-4 mx-auto" />
@@ -13,7 +13,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="grid gap-10 md:gap-10 text-gray-400 font-M">
+      <div className="grid gap-10 md:gap-10 text-gray-400 font-DM">
 
         <div className="md:flex md:space-x-10">
           {/* COMPANY */}
