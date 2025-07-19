@@ -405,7 +405,7 @@ const MembershipSection = () => {
         </h2>
         <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4" itemProp="description">
           Join OneRepMaax Gym with flexible membership plans, pause facility for long-term memberships, 
-          and comprehensive fitness amenities. Serving Jamshedpur with 4.9★ rated fitness services since 2020.
+          and comprehensive fitness amenities. Serving Jamshedpur with 4.9★ rated fitness services since 2025.
         </p>
         
         <div itemScope itemType="https://schema.org/ItemList" aria-label="Gym Membership Benefits">
