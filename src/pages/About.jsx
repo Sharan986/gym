@@ -3,38 +3,31 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Wbutton from "../components/Wbutton";
 import { w3 } from "../assets/w3/w3";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const Values = [
     {
       id: 1,
-      title: "Community",
+      title: "Premium Gym Facilities",
       description:
-        "We believe in the power of community to motivate, support, and inspire. At OneRepMaax, you're never alone on your fitness journey.",
+        "Cardio & strength equipment, group fitness studios, personal training areas, locker rooms, free WiFi, coffee, and ample parking - everything you need for fitness success in Jamshedpur.",
       imageUrl:
         "https://framerusercontent.com/images/yDmqlROJtzeBLq417Av3RsaCh8g.svg",
     },
     {
       id: 2,
-      title: "Quality",
+      title: "Specialized Fitness Programs",
       description:
-        "From our equipment to our trainers, we invest in quality. We're committed to providing the best possible resources for your fitness journey.",
+        "Expert-led Yoga classes, high-energy Zumba sessions, and functional training programs in Mango, Dimna designed to keep you motivated and engaged in your fitness journey.",
       imageUrl:
         "https://framerusercontent.com/images/QIxFE5MhwuZBc8t01is4cWpqU.svg",
     },
     {
       id: 3,
-      title: "Personalization",
+      title: "Open 7 Days a Week",
       description:
-        "We recognize that everyone's fitness journey is unique. Our approach is tailored to your goals, preferences, and needs.",
-      imageUrl:
-        "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
-    },
-     {
-      id: 3,
-      title: "Personalization",
-      description:
-        "We recognize that everyone's fitness journey is unique. Our approach is tailored to your goals, preferences, and needs.",
+        "We're here when you need us! Open 7 days a week with separate changing rooms, showers, posing room, and certified personal trainers ready to support your fitness goals.",
       imageUrl:
         "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
     },
@@ -42,116 +35,135 @@ const About = () => {
 
   return (
     <>
-        <div className="relative overflow-hidden">
-     <img
-       src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-       alt="About Us Banner"
-       className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
-     />
-     <div className="absolute bottom-8 left-8 text-white">
-       <h1 className="text-5xl font-One lg:text-7xl z-10">ABOUT US</h1>
-       <h1 className="font-One text-2xl mt-4 lg:text-5xl">
-         <Link to='/'>HOME</Link>
-         <span className="text-yellow-300 lg:text-5xl">/About Us</span>
-       </h1>
-     </div>
-   </div>
-      <div className="bg-[#070915] font-One mx-3">
-        
-          <p className="text-4xl text-gray-200 mt-2 uppercase pb-1 mx-7">Sweat Now, Thank Us Later.</p>
-
-    <div className="flex flex-col md:flex-row  text-white md:p-8">
-      <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
-        <img
-          src={w3.i7}
-          alt="Fitness"
-          className="w-full max-w-md"
+      <Helmet>
+        <title>About OneRepMaax Gym - Best Fitness Center in Jamshedpur, Mango, Dimna</title>
+        <meta 
+          name="description" 
+          content="OneRepMaax Gym in Jamshedpur offers state-of-the-art fitness facilities in Dimna, Mango, Sankosai. Age-inclusive gym with yoga, Zumba, personal training, certified trainers. Open 7 days with free WiFi & coffee." 
         />
-      </div>
-      <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
-        <div className="text-[#48D3A3]  text-3xl font-semibold mb-4">WHAT WE DO</div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          OUR MISSION IS TO DEVELOP YOUR FITNESS
-        </h1>
-        <p className="mb-8 text-lg">
-          We are the un-corporation, dedicated to giving you the tools for your fitness goals in a vibrant gym. Unlike other clubs, you'll stay because we care!
-        </p>
-        <ul className="list-none p-0">
-          <li className="mb-2 flex items-center">
-            <span className="text-[#48D3A3] text-2xl mr-2">01.</span>
-            <span className="text-2xl ">HEALTHY & EFFECTIVE</span>
-          </li>
-          <li className="flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2">02.</span>
-            <span className="text-2xl">INDIVIDUAL APPROACH</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-     <div className="flex flex-col md:flex-row  text-white  md:p-8">
-      <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
-        <div className="text-[#48D3A3] text-3xl  font-semibold mb-4">100% PREMIUM QUALITY</div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          WE WILL GIVE YOU STRENGTH AND HEALTH
-        </h1>
-        <p className="mb-8 text-xl ">
-          Our gym is dedicated to helping individuals of all fitness levels achieve their health and wellness goals.
-        </p>
-        <ul className="list-none p-0">
-          <li className="mb-2 flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2">01.</span>
-            <span>ENHANCING JOINT BLOOD FLOW</span>
-          </li>
-          <li className="mb-2 flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2">02.</span>
-            <span>HELP REDUCE INFLAMMATION</span>
-          </li>
-          <li className="flex items-center text-2xl">
-            <span className="text-[#48D3A3] mr-2 ">03.</span>
-            <span>HELPS YOU STICK TO YOUR DIET</span>
-          </li>
-        </ul>
-      </div>
-      <div className="w-full md:w-1/2 p-4 flex justify-center items-center relative">
-        <img
-          src={w3.i11}
-          alt="Fitness"
-          className="w-full max-w-md"
+        <meta 
+          name="keywords" 
+          content="gym Jamshedpur, fitness center Mango, gym Dimna, personal trainer Jamshedpur, yoga classes Mango, Zumba Dimna, functional training Jamshedpur, certified trainers Mango, weight training Jamshedpur, gym Sankosai" 
         />
-       
-      </div>
-    </div>
-    </div>
-
-      <div className="text-white text-xl pt-5 md:px-8 mx-7 ">
-        <header className="text-xl font-One text-[#48D3A3] ">
-          Our Values
+        <meta name="author" content="OneRepMaax Gym" />
+        <meta property="og:title" content="About OneRepMaax Gym - Best Fitness Center in Jamshedpur" />
+        <meta property="og:description" content="Age-inclusive gym in Jamshedpur with customized workout plans, yoga, Zumba, and state-of-the-art facilities. Open 7 days with certified trainers." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://onerepmaax.com/about" />
+      </Helmet>
+      
+      <article>
+        <header className="relative overflow-hidden">
+          <img
+            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            alt="OneRepMaax Gym - Premium Fitness Center in Jamshedpur, Mango, Dimna"
+            className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+          />
+          <div className="absolute bottom-8 left-8 text-white">
+            <h1 className="text-5xl font-One lg:text-7xl z-10">ABOUT US</h1>
+            <nav className="font-One text-2xl mt-4 lg:text-5xl">
+              <Link to='/'>HOME</Link>
+              <span className="text-yellow-300 lg:text-5xl">/About Us</span>
+            </nav>
+          </div>
         </header>
-        <p className="text-4xl sm:text-5xl w-full mt-4 font-One uppercase ">
-          Strength. Discipline. Growth. Consistency.
-        </p>
-        <p className="text-gray-300 font-M text-xl md:text-lg mt-6 mb-3 ">
-          Our mission has always been to create a welcoming and supportive environment where everyone, regardless of their fitness level, can thrive.
-        </p>
+        
+        <main className="bg-[#070915] font-One mx-3">
+          <div className="text-4xl text-gray-200 mt-2 uppercase pb-1 mx-7">
+            <p>Sweat Now, Thank Us Later.</p>
+          </div>
 
-       <div className="flex gap-10 flex-row md:w-[80vw] flex-wrap justify-center mt-8">
-  {Values.map((value) => (
-    <div 
-      key={value.id} >
-      <img
-        src={value.imageUrl}
-        alt={value.title}
-        className="h-16 w-16 object-cover mb-2" 
-      />
-      <h1 className="text-3xl md:text-3xl pb-3 pt-3 font-One ">{value.title}</h1>
-      <p className="text-lg md:text-lg font-DM text-gray-300 fot-DM">
-        {value.description}
-      </p>
-    </div>
-  ))}
-</div>
-      </div>
+          <section className="flex flex-col md:flex-row text-white md:p-8">
+            <div className="w-full md:w-1/2 p-4 flex justify-center items-center">
+              <img
+                src={w3.i7}
+                alt="OneRepMaax Gym member training with certified trainer in Jamshedpur"
+                className="w-full max-w-md"
+              />
+            </div>
+            <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
+              <header className="text-[#48D3A3] text-3xl font-semibold mb-4">OUR MISSION</header>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                EMPOWERING YOUR FITNESS JOURNEY IN JAMSHEDPUR
+              </h2>
+              <p className="mb-8 text-lg">
+                Empowering individuals across Jamshedpur, Mango, Dimna, and Sankosai to achieve their fitness goals with fun, support, and motivation. We welcome all ages and fitness levels with customized workout plans and certified personal trainers!
+              </p>
+              <ul className="list-none p-0">
+                <li className="mb-2 flex items-center">
+                  <span className="text-[#48D3A3] text-2xl mr-2">01.</span>
+                  <span className="text-2xl">AGE-INCLUSIVE MEMBERSHIP</span>
+                </li>
+                <li className="flex items-center text-2xl">
+                  <span className="text-[#48D3A3] mr-2">02.</span>
+                  <span className="text-2xl">CUSTOMIZED WORKOUT PLANS</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="flex flex-col md:flex-row text-white md:p-8">
+            <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
+              <header className="text-[#48D3A3] text-3xl font-semibold mb-4">OUR VISION</header>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                STATE-OF-THE-ART FITNESS CENTER FOR EVERYONE
+              </h2>
+              <p className="mb-8 text-xl">
+                To make fitness accessible to everyone in Jamshedpur by providing state-of-the-art facilities and services that cater to diverse needs and goals, empowering individuals to achieve their full potential.
+              </p>
+              <ul className="list-none p-0">
+                <li className="mb-2 flex items-center text-2xl">
+                  <span className="text-[#48D3A3] mr-2">01.</span>
+                  <span>YOGA & ZUMBA STUDIOS</span>
+                </li>
+                <li className="mb-2 flex items-center text-2xl">
+                  <span className="text-[#48D3A3] mr-2">02.</span>
+                  <span>CERTIFIED TRAINERS</span>
+                </li>
+                <li className="flex items-center text-2xl">
+                  <span className="text-[#48D3A3] mr-2">03.</span>
+                  <span>FUNCTIONAL TRAINING AREAS</span>
+                </li>
+              </ul>
+            </div>
+            <div className="w-full md:w-1/2 p-4 flex justify-center items-center relative">
+              <img
+                src={w3.i11}
+                alt="Modern gym equipment and facilities at OneRepMaax Fitness Center in Mango, Jamshedpur"
+                className="w-full max-w-md"
+              />
+            </div>
+          </section>
+        </main>
+
+        <section className="text-white text-xl pt-5 md:px-8 mx-7">
+          <header className="text-xl font-One text-[#48D3A3]">
+            What We Offer at OneRepMaax Gym Jamshedpur
+          </header>
+          <h2 className="text-4xl sm:text-5xl w-full mt-4 font-One uppercase">
+            Strength. Support. Success. Community.
+          </h2>
+          <p className="text-gray-300 font-M text-xl md:text-lg mt-6 mb-3">
+            From beginners to advanced fitness enthusiasts in Jamshedpur, Mango, Dimna, and Sankosai, we provide everything you need to succeed. Our welcoming environment caters to all ages and fitness levels with personalized support.
+          </p>
+
+          <div className="flex gap-10 flex-row md:w-[80vw] flex-wrap justify-center mt-8">
+            {Values.map((value) => (
+              <div key={value.id}>
+                <img
+                  src={value.imageUrl}
+                  alt={`${value.title} - OneRepMaax Gym facilities in Jamshedpur`}
+                  className="h-16 w-16 object-cover mb-2" 
+                />
+                <h3 className="text-3xl md:text-3xl pb-3 pt-3 font-One">{value.title}</h3>
+                <p className="text-lg md:text-lg font-DM text-gray-300 fot-DM">
+                  {value.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </article>
 
       <Footer />
     </>

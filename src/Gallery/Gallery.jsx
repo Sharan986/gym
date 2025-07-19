@@ -4,12 +4,25 @@ import Footer from "../components/Footer";
 import Join from "../components/Join";
 import Membership from "../pages/Membership";
 import { gallery } from "../assets/Gallery/gallery.js";
-import {w3} from "../assets/w3/w3.js"
+import { w3 } from "../assets/w3/w3.js";
+import { IMAGES } from "../config/imageConfig.js";
+
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("Facility");
+  const [loading, setLoading] = useState(false);
 
   const tabs = ["Facility", "Classes", "Events", "Maaxed"];
+
+  const handleTabChange = (tab) => {
+    if (tab !== activeTab) {
+      setLoading(true);
+      setTimeout(() => {
+        setActiveTab(tab);
+        setLoading(false);
+      }, 300); // Short delay to show loading state
+    }
+  };
 
   const facilityItems = [
     { id: 1, title: "Strength Training Area", img: gallery.f1 },
@@ -42,26 +55,42 @@ const Gallery = () => {
     { id: 2, title: "Annual Competition", img: gallery.e2 },
     { id: 3, title: "Community Meetup", img: gallery.e3 },
     { id: 4, title: "Wellness Workshop", img: gallery.e4 },
+    { id: 5, title: "Strength Training Area", img: gallery.f1 },
+    { id: 6, title: "Cardio Equipment", img: gallery.f2 },
+    { id: 7, title: "Yoga Studio", img: gallery.f3 },
+    { id: 8, title: "Locker Rooms", img: gallery.f4 },
+    { id: 9, title: "Supplement Store", img: gallery.e5 },
+    { id: 10, title: "Reception Area", img: gallery.e6 },
+    { id: 11, title: "Free Weights Zone", img: gallery.e7 },
   ];
 
   const MaaxedItems = [
-    { id: 1, title: "Amarjeet", img: w3.i1 },
-    { id: 6, title: "Amarjeet 6", img: w3.i6 },
-    { id: 11, title: "Gurnake Singh", img: w3.i11 },
-    { id: 5, title: "Amarjeet 5", img: w3.i5 },
-    { id: 12, title: "Jasprit Singh", img: w3.i12 },
+    { id: 1, title: "Amarjeet Singh", img: IMAGES.amarjeetSingh },
     { id: 2, title: "Amarjeet 2", img: w3.i2 },
-    { id: 13, title: "Jasprit Singh 2", img: w3.i13 },
-    { id: 7, title: "Amarjeet Singh", img: w3.i7 },
-    { id: 9, title: "Amarjeet Singh 3", img: w3.i9 },
-    { id: 10, title: "Amarjeet Singh 4", img: w3.i10 },
-    { id: 18, title: "Sagar Kumar", img: w3.i18 },
-    { id: 2, title: "Amarjeet 2", img: w3.i2 },
-    { id: 19, title: "Sahil Kumar", img: w3.i19 },
-    { id: 3, title: "Amarjeet 3", img: w3.i3 },
-    { id: 2, title: "Amarjeet 2", img: w3.i2 },
-    { id: 20, title: "Sourav Kumar", img: w3.i20 },
-    { id: 8, title: "Amarjeet Singh 2", img: w3.i8 },
+    { id: 3, title: "Gurnake Singh", img: w3.i11 },
+    { id: 4, title: "Amarjeet Singh 4", img: IMAGES.amarjeetSingh4 },
+    { id: 5, title: "Jasprit Singh", img: w3.i12 },
+    { id: 6, title: "Sourav Kumar", img: IMAGES.souravKumar },
+    { id: 7, title: "Amarjeet Singh 2", img: w3.i8 },
+    { id: 8, title: "Sahil Kumar", img: IMAGES.sahilKumar },
+    { id: 9, title: "Amarjeet 3", img: w3.i3 },
+    { id: 10, title: "Amarjeet Singh 3", img: w3.i9 },
+    { id: 11, title: "Gurnake Singh 2", img: IMAGES.gurnakeSingh },
+    { id: 12, title: "Amarjeet", img: w3.i18 },
+    { id: 13, title: "Amarjeet Singh 2", img: IMAGES.amarjeetSingh7 },
+    { id: 14, title: "Jasprit Singh 2", img: w3.i13 },
+    { id: 15, title: "Amarjeet Singh 6", img: IMAGES.amarjeetSingh6 },
+    { id: 16, title: "Amarjeet Singh", img: w3.i7 },
+    { id: 17, title: "Sagar Kumar", img: IMAGES.sagarKumar },
+    { id: 18, title: "Amarjeet 6", img: w3.i6 },
+    { id: 19, title: "Amarjeet Singh 4", img: w3.i10 },
+    { id: 20, title: "Amarjeet Singh 3", img: IMAGES.amarjeetSingh3 },
+    { id: 21, title: "Sagar Kumar", img: w3.i1 },
+    { id: 22, title: "Jasprit Singh", img: IMAGES.jaspritSingh },
+    { id: 23, title: "Amarjeet Singh 5", img: IMAGES.amarjeetSingh5 },
+    { id: 24, title: "Gurnake Singh", img: IMAGES.gurnakeSingh },
+    { id: 25, title: "Jasbir Singh 3", img: IMAGES.jasbirSingh3 },
+    { id: 26, title: "Jasprit Singh 2", img: IMAGES.jaspritSingh3 },
   ];
 
   const getItems = () => {
@@ -103,12 +132,11 @@ const Gallery = () => {
           {tabs.map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => handleTabChange(tab)}
               className={`lg:px-8 px-4 text-sm cursor-pointer md:text-3xl py-4 lg:text-4xl font-One transition-all duration-200
-                ${
-                  activeTab === tab
-                    ? "bg-white text-[#070915] font-bold"
-                    : "text-gray-700 hover:bg-white"
+                ${activeTab === tab
+                  ? "bg-white text-[#070915] font-bold"
+                  : "text-gray-700 hover:bg-white"
                 }`}
             >
               {tab}
@@ -120,20 +148,32 @@ const Gallery = () => {
       {/* Content */}
       {activeTab === "Members" ? (
         <Membership />
+      ) : loading ? (
+        // Skeleton Loading
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:mx-24">
+          {[...Array(6)].map((_, index) => (
+            <div
+              key={`skeleton-${index}`}
+              className="bg-white shadow-lg overflow-hidden flex flex-col h-full animate-pulse"
+            >
+              <div className="bg-gray-300 w-full h-92 lg:h-80"></div>
+            </div>
+          ))}
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:mx-24">
           {getItems().map((item) => (
             <div
-              key={item.id}
+              key={`${activeTab}-${item.id}`}
               className="bg-white  hover:bg-gray-100 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
             >
               <div className="overflow-hidden">
-               <img
-              src={item.img}
-              alt={item.title}
-              loading="lazy"
-             className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
-/>
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  loading="lazy"
+                  className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
+                />
 
               </div>
             </div>

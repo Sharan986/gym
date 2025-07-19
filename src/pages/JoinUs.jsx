@@ -44,7 +44,7 @@ const JoinUs = () => {
 First Name: ${data.firstName}
 Last Name: ${data.lastName}
 Email: ${data.email}
-Interest: ${data.interest}
+Interest: ${data.interested}
 Message: ${data.message || ""}`;
 
     const encodedMessage = encodeURIComponent(message);
