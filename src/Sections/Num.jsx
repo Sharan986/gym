@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const Num = () => {
-<<<<<<< HEAD
+
   const NumData = [
     { id: 1, start: 100, target: 250, text: "Members" },
     { id: 2, start: 30, target: 50, text: "Transformations" },
@@ -16,13 +16,6 @@ const Num = () => {
       initialCounts[item.id] = item.start;
     });
     return initialCounts;
-=======
-  const [counts, setCounts] = useState({
-    1: 200,
-    2: 35,
-    3: 1,
-    4: 0,
->>>>>>> refs/remotes/origin/main
   });
 
   const [hasAnimated, setHasAnimated] = useState(false);
