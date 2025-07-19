@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from '../components/Icon';
 import { Helmet } from 'react-helmet';
-import {Facilities} from '../config/imageConfig';
+import {FITNESS_IMAGES, FACILITY_IMAGES} from '../config/imageConfig';
 
 const Services = () => {
   const mobileSliderRef = useRef(null);
@@ -84,7 +84,7 @@ const Services = () => {
   const services = [ 
     {
       id: 1,
-      img: Facilities[0],
+      img: FITNESS_IMAGES[0], // Personal training image
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
       description: "K11 certified personal trainers in Jamshedpur with proven weight loss transformations",
@@ -93,7 +93,7 @@ const Services = () => {
     },
     {
       id: 2,
-      img: Facilities[1],
+      img: FITNESS_IMAGES[1], // Weight loss/cardio image
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss Programs",
       description: "Proven weight loss transformations with nutrition consultation and certified guidance",
@@ -102,7 +102,7 @@ const Services = () => {
     },
     {
       id: 3,
-      img: Facilities[2],
+      img: FACILITY_IMAGES[7], // Strength training equipment image
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Strength Training",
       description: "Build muscle and strength with state-of-the-art equipment and expert guidance",
