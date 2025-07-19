@@ -49,7 +49,7 @@ const About = () => {
         <meta property="og:title" content="About OneRepMaax Gym - Best Fitness Center in Jamshedpur" />
         <meta property="og:description" content="Age-inclusive gym in Jamshedpur with customized workout plans, yoga, Zumba, and state-of-the-art facilities. Open 7 days with certified trainers." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://onerepmaax.com/about" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/about" />
       </Helmet>
       
       <article>

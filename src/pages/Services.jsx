@@ -200,16 +200,16 @@ const Services = () => {
         <meta property="og:title" content="Best Fitness Services Jamshedpur | Personal Training ₹5000" />
         <meta property="og:description" content="Top fitness services: K11 certified personal training, weight loss programs, yoga, Zumba & nutrition consultation. Starting ₹5,000/month. 4.9★ rated!" />
         <meta property="og:type" content="service" />
-        <meta property="og:url" content="https://onerepmaax.com/services" />
+        <meta property="og:url" content="https://onerepmaaxgym.in/services" />
         <meta property="og:site_name" content="OneRepMaax Gym Jamshedpur" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:author" content="OneRepMaax Gym" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Fitness Services Jamshedpur | Personal Training ₹5000" />
         <meta name="twitter:description" content="K11 certified personal training, weight loss programs, yoga & nutrition consultation starting ₹5,000/month in Jamshedpur." />
-        <link rel="canonical" href="https://onerepmaax.com/services" />
-        <link rel="alternate" hreflang="en-IN" href="https://onerepmaax.com/services" />
-        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaax.com/hi/services" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/services" />
+        <link rel="alternate" hreflang="en-IN" href="https://onerepmaaxgym.in/services" />
+        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaaxgym.in/hi/services" />
         
         <script type="application/ld+json">
           {`

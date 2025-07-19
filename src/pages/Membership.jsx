@@ -175,24 +175,28 @@ const MembershipSection = () => {
         <meta property="og:title" content="Cheapest Gym Membership Jamshedpur ₹1200 | OneRepMaax Plans 2025" />
         <meta property="og:description" content="Jamshedpur's most affordable gym membership! Starting ₹1,200/month. Personal training, yoga, Zumba included. Flexible payments & pause facility. 4.9★ rated!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://onerepmaax.com/membership" />
+        <meta property="og:url" content="https://onerepmaaxgym.in/membership" />
         <meta property="og:site_name" content="OneRepMaax Gym Jamshedpur" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:author" content="OneRepMaax Gym" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cheapest Gym Membership Jamshedpur ₹1200" />
         <meta name="twitter:description" content="Most affordable gym membership in Jamshedpur starting ₹1,200/month. Flexible plans with pause facility. 4.9★ rated!" />
-        <link rel="canonical" href="https://onerepmaax.com/membership" />
-        <link rel="alternate" hreflang="en-IN" href="https://onerepmaax.com/membership" />
-        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaax.com/hi/membership" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/membership" />
+        <link rel="alternate" hreflang="en-IN" href="https://onerepmaaxgym.in/membership" />
+        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaaxgym.in/hi/membership" />
         
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "MembershipOrganization",
-              "name": "OneRepMaax Gym Membership",
-              "description": "Affordable fitness membership plans with flexible payment options and pause facility",
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Gym Membership",
+            "name": "OneRepMaax Gym Membership Plans",
+            "description": "Affordable fitness membership plans with flexible payment options and pause facility at OneRepMaax Gym Jamshedpur",
+            "provider": {
+              "@type": "Organization",
+              "name": "OneRepMaax Gym",
+              "url": "https://onerepmaaxgym.in",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Dimna Rd, Shankoshai",
@@ -200,196 +204,203 @@ const MembershipSection = () => {
                 "addressRegion": "Jharkhand",
                 "postalCode": "831018",
                 "addressCountry": "India"
+              }
+            },
+            "areaServed": {
+              "@type": "Place",
+              "name": "Jamshedpur, Jharkhand"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "61",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Monthly Gym Membership",
+                "description": "1 month gym membership with all facilities",
+                "price": "1200.00",
+                "priceCurrency": "INR",
+                "category": "Gym Membership",
+                "validFrom": "2025-01-01",
+                "availability": "https://schema.org/InStock",
+                "url": "https://onerepmaaxgym.in/membership"
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "61"
+              {
+                "@type": "Offer",
+                "name": "Annual Gym Membership",
+                "description": "12 month gym membership with pause facility",
+                "price": "7500.00",
+                "priceCurrency": "INR",
+                "category": "Gym Membership",
+                "validFrom": "2025-01-01",
+                "availability": "https://schema.org/InStock",
+                "url": "https://onerepmaaxgym.in/membership"
               },
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Monthly Gym Membership",
-                  "description": "1 month gym membership with all facilities",
-                  "price": "1200",
-                  "priceCurrency": "INR",
-                  "category": "Gym Membership",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Annual Gym Membership",
-                  "description": "12 month gym membership with pause facility",
-                  "price": "7500",
-                  "priceCurrency": "INR",
-                  "category": "Gym Membership",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Personal Training",
-                  "description": "One-on-one personal training with K11 certified trainers",
-                  "price": "5000",
-                  "priceCurrency": "INR",
-                  "category": "Personal Training",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Group Personal Training",
-                  "description": "Small group personal training sessions",
-                  "price": "3500",
-                  "priceCurrency": "INR",
-                  "category": "Group Training",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                }
-              ],
-              "amenityFeature": [
-                "Personal Training Available",
-                "Zumba & Fitness Classes", 
-                "Yoga Sessions",
-                "Nutrition Consultation",
-                "Free WiFi & Coffee",
-                "Separate Changing Rooms",
-                "Locker Facility & Parking"
-              ]
-            }
-          `}
+              {
+                "@type": "Offer",
+                "name": "Personal Training",
+                "description": "One-on-one personal training with K11 certified trainers",
+                "price": "5000.00",
+                "priceCurrency": "INR",
+                "category": "Personal Training",
+                "validFrom": "2025-01-01",
+                "availability": "https://schema.org/InStock",
+                "url": "https://onerepmaaxgym.in/membership"
+              },
+              {
+                "@type": "Offer",
+                "name": "Group Personal Training",
+                "description": "Small group personal training sessions",
+                "price": "3500.00",
+                "priceCurrency": "INR",
+                "category": "Group Training",
+                "validFrom": "2025-01-01",
+                "availability": "https://schema.org/InStock",
+                "url": "https://onerepmaaxgym.in/membership"
+              }
+            ]
+          })}
         </script>
         
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What are the gym membership fees at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym membership starts at ₹1,200 for 1 month, ₹2,700 for 3 months, ₹5,100 for 6 months, and ₹7,500 for 12 months. We offer flexible payment plans and competitive rates in Jamshedpur."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you offer flexible payment plans for gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym offers flexible payment plans for all membership durations. We also provide membership pause facility for 9-month and 12-month memberships for your convenience."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is included in OneRepMaax gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our gym membership includes access to all equipment, Zumba & yoga classes, free WiFi & coffee, separate changing rooms, and parking. Personal training and nutrition consultation available at additional cost."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I pause my gym membership at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym offers membership pause facility for 9-month and 12-month memberships. This flexible option allows you to temporarily suspend your membership when needed."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How much does personal training cost at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Personal training at OneRepMaax costs ₹5,000 for 1 month or ₹10,000 for 3 months. Group personal training is available at ₹3,500 per person. All sessions are conducted by K11 certified trainers."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes OneRepMaax gym membership affordable in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax offers the most competitive gym membership rates in Jamshedpur with transparent pricing, no hidden charges, flexible payment plans, and membership pause facility for long-term plans."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What facilities are included in OneRepMaax gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax gym membership includes personal training availability, Zumba & fitness classes, yoga sessions, free WiFi & coffee, separate changing rooms for men and women, locker facility, and parking."
-                  }
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are the gym membership fees at OneRepMaax?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym membership starts at ₹1,200 for 1 month, ₹2,700 for 3 months, ₹5,100 for 6 months, and ₹7,500 for 12 months. We offer flexible payment plans and competitive rates in Jamshedpur."
                 }
-              ]
-            }
-          `}
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer flexible payment plans for gym membership?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, OneRepMaax Gym offers flexible payment plans for all membership durations. We also provide membership pause facility for 9-month and 12-month memberships for your convenience."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is included in OneRepMaax gym membership?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our gym membership includes access to all equipment, Zumba & yoga classes, free WiFi & coffee, separate changing rooms, and parking. Personal training and nutrition consultation available at additional cost."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I pause my gym membership at OneRepMaax?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, OneRepMaax Gym offers membership pause facility for 9-month and 12-month memberships. This flexible option allows you to temporarily suspend your membership when needed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does personal training cost at OneRepMaax?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Personal training at OneRepMaax costs ₹5,000 for 1 month or ₹10,000 for 3 months. Group personal training is available at ₹3,500 per person. All sessions are conducted by K11 certified trainers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes OneRepMaax gym membership affordable in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax offers the most competitive gym membership rates in Jamshedpur with transparent pricing, no hidden charges, flexible payment plans, and membership pause facility for long-term plans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What facilities are included in OneRepMaax gym membership?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax gym membership includes personal training availability, Zumba & fitness classes, yoga sessions, free WiFi & coffee, separate changing rooms for men and women, locker facility, and parking."
+                }
+              }
+            ]
+          })}
         </script>
         
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "PriceSpecification",
-              "name": "OneRepMaax Gym Membership Pricing",
-              "description": "Comprehensive gym membership pricing for all durations",
-              "priceCurrency": "INR",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "1 Month Gym Membership",
-                  "price": "1200",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Monthly gym access with all basic facilities"
-                },
-                {
-                  "@type": "Offer", 
-                  "name": "3 Month Gym Membership",
-                  "price": "2700",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Quarterly gym membership with cost savings"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "6 Month Gym Membership", 
-                  "price": "5100",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Half-yearly membership with significant savings"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "9 Month Gym Membership",
-                  "price": "6800", 
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "9-month membership with pause facility"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "12 Month Gym Membership",
-                  "price": "7500",
-                  "priceCurrency": "INR", 
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Annual membership with maximum savings and pause facility"
-                }
-              ]
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "OneRepMaax Gym Membership Plans",
+            "description": "Complete list of gym membership pricing options at OneRepMaax Gym Jamshedpur",
+            "numberOfItems": 5,
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "position": 1,
+                "name": "1 Month Gym Membership",
+                "price": "1200.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2025-01-01",
+                "category": "Fitness Membership",
+                "description": "Monthly gym access with all basic facilities",
+                "url": "https://onerepmaaxgym.in/membership"
+              },
+              {
+                "@type": "Offer",
+                "position": 2,
+                "name": "3 Month Gym Membership",
+                "price": "2700.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2025-01-01",
+                "category": "Fitness Membership",
+                "description": "Quarterly gym membership with cost savings",
+                "url": "https://onerepmaaxgym.in/membership"
+              },
+              {
+                "@type": "Offer",
+                "position": 3,
+                "name": "6 Month Gym Membership",
+                "price": "5100.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2025-01-01",
+                "category": "Fitness Membership",
+                "description": "Half-yearly membership with significant savings",
+                "url": "https://onerepmaaxgym.in/membership"
+              },
+              {
+                "@type": "Offer",
+                "position": 4,
+                "name": "9 Month Gym Membership",
+                "price": "6800.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2025-01-01",
+                "category": "Fitness Membership",
+                "description": "9-month membership with pause facility",
+                "url": "https://onerepmaaxgym.in/membership"
+              },
+              {
+                "@type": "Offer",
+                "position": 5,
+                "name": "12 Month Gym Membership",
+                "price": "7500.00",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2025-01-01",
+                "category": "Fitness Membership",
+                "description": "Annual membership with maximum savings and pause facility",
+                "url": "https://onerepmaaxgym.in/membership"
+              }
+            ]
+          })}
         </script>
       </Helmet>
       

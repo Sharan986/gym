@@ -84,18 +84,18 @@ const Facilities = () => {
         <meta property="og:title" content="Premium Gym Facilities - OneRepMaax Jamshedpur | 5000+ Sq Ft Space" />
         <meta property="og:description" content="Experience premium gym facilities with professional cardio equipment, Jaguar strength training, triple weight sets (2.5-40kg), K11 certified trainers, and 5000+ sq ft air-conditioned space in Jamshedpur." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://onerepmaax.com/#facilities" />
-        <meta property="og:image" content="https://onerepmaax.com/allPhotos/Header.webp" />
+        <meta property="og:url" content="https://onerepmaaxgym.in/#facilities" />
+        <meta property="og:image" content="https://onerepmaaxgym.in/allPhotos/Header.webp" />
         <meta property="og:site_name" content="OneRepMaax Gym" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Premium Gym Facilities - OneRepMaax Jamshedpur | 5000+ Sq Ft Space" />
         <meta name="twitter:description" content="Experience premium gym facilities with professional cardio equipment, Jaguar strength training, triple weight sets (2.5-40kg), K11 certified trainers in Jamshedpur." />
-        <meta name="twitter:image" content="https://onerepmaax.com/allPhotos/Header.webp" />
+        <meta name="twitter:image" content="https://onerepmaaxgym.in/allPhotos/Header.webp" />
         <meta name="apple-mobile-web-app-title" content="OneRepMaax Facilities" />
         <meta name="application-name" content="OneRepMaax Gym Facilities" />
         <meta name="theme-color" content="#48D3A3" />
-        <link rel="canonical" href="https://onerepmaax.com/#facilities" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/#facilities" />
 
         <script type="application/ld+json">
           {`
@@ -253,13 +253,13 @@ const Facilities = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://onerepmaax.com"
+                  "item": "https://onerepmaaxgym.in"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Facilities",
-                  "item": "https://onerepmaax.com/#facilities"
+                  "item": "https://onerepmaaxgym.in/#facilities"
                 }
               ]
             }

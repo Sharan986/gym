@@ -85,7 +85,7 @@ const Join = () => {
               "description": "Transform your fitness routine with expert workout guidance at OneRepMaax Gym Jamshedpur",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://onerepmaax.com/workout-guide",
+                "urlTemplate": "https://onerepmaaxgym.in/workout-guide",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
                   "http://schema.org/MobileWebPlatform"

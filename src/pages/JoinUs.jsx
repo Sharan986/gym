@@ -25,7 +25,7 @@ const JoinUs = () => {
       id: 3,
       title: "Live Support",
       description:
-        "Stuck on choosing a plan or class? Chat live with us or drop an email at info@onerepmaax.com, and we’ll personalize your fitness journey. Start strong!",
+        "Stuck on choosing a plan or class? Chat live with us or drop an email at info@onerepmaaxgym.in, and we’ll personalize your fitness journey. Start strong!",
       imageUrl:
         "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
     },

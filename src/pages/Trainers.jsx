@@ -211,16 +211,16 @@ const Trainers = () => {
         <meta property="og:title" content="Best Personal Trainers Jamshedpur | K11 Certified Fitness Experts" />
         <meta property="og:description" content="Meet Jamshedpur's top fitness team led by K11 certified founder Aditya Singh. Expert trainers specializing in weight loss, strength training, women's fitness & personalized programs. 4.9★ rated!" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://onerepmaax.com/#trainers" />
+        <meta property="og:url" content="https://onerepmaaxgym.in/#trainers" />
         <meta property="og:site_name" content="OneRepMaax Gym Jamshedpur" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:author" content="OneRepMaax Gym" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Personal Trainers Jamshedpur | K11 Certified Fitness Experts" />
         <meta name="twitter:description" content="Meet Jamshedpur's top fitness trainers. K11 certified, REPS India members with proven results in weight loss & strength training." />
-        <link rel="canonical" href="https://onerepmaax.com/trainers" />
-        <link rel="alternate" hreflang="en-IN" href="https://onerepmaax.com/trainers" />
-        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaax.com/hi/trainers" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/trainers" />
+        <link rel="alternate" hreflang="en-IN" href="https://onerepmaaxgym.in/trainers" />
+        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaaxgym.in/hi/trainers" />
         
         <script type="application/ld+json">
           {`

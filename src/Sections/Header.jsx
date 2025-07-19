@@ -39,14 +39,14 @@ const Header = () => {
         <meta name="ICBM" content="22.8046, 86.2029" />
         <meta name="revisit-after" content="1 days" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://onerepmaax.com" />
+        <link rel="dns-prefetch" href="https://onerepmaaxgym.in" />
         <meta property="business:contact_data:street_address" content="Dimna Rd, Shankoshai" />
         <meta property="business:contact_data:locality" content="Mango" />
         <meta property="business:contact_data:region" content="Jamshedpur" />
         <meta property="business:contact_data:postal_code" content="831018" />
         <meta property="business:contact_data:country_name" content="India" />
         <meta property="business:contact_data:phone_number" content="+91-9204057290" />
-        <meta property="business:contact_data:website" content="https://onerepmaax.com" />
+        <meta property="business:contact_data:website" content="https://onerepmaaxgym.in" />
         <meta name="apple-mobile-web-app-title" content="OneRepMaax Gym" />
         <meta name="application-name" content="OneRepMaax Gym Jamshedpur" />
         <meta name="msapplication-TileColor" content="#48D3A3" />
@@ -54,12 +54,12 @@ const Header = () => {
         <meta property="og:title" content="OneRepMaax Gym - Best Fitness Center in Jamshedpur" />
         <meta property="og:description" content="OneRepMaax Gym at Dimna Rd, Jamshedpur with K11 certified trainers. Memberships from Rs 1,200/month. Personal training, yoga, Zumba & state-of-the-art equipment. Founded by Aditya Singh." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://onerepmaax.com" />
-        <meta property="og:image" content="https://onerepmaax.com/allPhotos/Header.webp" />
+        <meta property="og:url" content="https://onerepmaaxgym.in" />
+        <meta property="og:image" content="https://onerepmaaxgym.in/allPhotos/Header.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="OneRepMaax Gym - Best Fitness Center in Jamshedpur" />
         <meta name="twitter:description" content="Premium fitness center at Dimna Rd with K11 certified trainers. Memberships from Rs 1,200/month. Personal training, yoga, Zumba available." />
-        <link rel="canonical" href="https://onerepmaax.com" />
+        <link rel="canonical" href="https://onerepmaaxgym.in" />
         <script type="application/ld+json">
           {`
             {
@@ -67,7 +67,7 @@ const Header = () => {
               "@type": "Gym",
               "name": "OneRepMaax Gym",
               "description": "Premier fitness center in Jamshedpur offering personal training, yoga, Zumba, and state-of-the-art equipment with certified trainers",
-              "url": "https://onerepmaax.com",
+              "url": "https://onerepmaaxgym.in",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Dimna Rd, Shankoshai",

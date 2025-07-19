@@ -192,60 +192,56 @@ const Review = () => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="OneRepMaax Gym Reviews - Member Testimonials Since 2025" />
         <meta name="twitter:description" content="4.9★ rated gym with authentic member reviews and testimonials from Jamshedpur's premier fitness center since January 2025." />
-        <link rel="canonical" href="https://onerepmaax.com/reviews" />
+        <link rel="canonical" href="https://onerepmaaxgym.in/reviews" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="OneRepMaax Gym" />
         <meta name="publisher" content="OneRepMaax Gym" />
         <meta property="article:published_time" content="2025-01-07T00:00:00+05:30" />
         <meta property="article:modified_time" content="2025-07-19T00:00:00+05:30" />
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "OneRepMaax Gym Member Reviews",
-              "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
-              "numberOfItems": ${reviews.length},
-              "itemListElement": [
-                ${reviews.map((review, index) => `
-                  {
-                    "@type": "Review",
-                    "position": ${index + 1},
-                    "reviewBody": "${review.quote}",
-                    "reviewRating": {
-                      "@type": "Rating",
-                      "ratingValue": ${review.rating},
-                      "bestRating": 5,
-                      "worstRating": 1
-                    },
-                    "datePublished": "${review.date}",
-                    "author": {
-                      "@type": "Person",
-                      "name": "${review.name}"
-                    },
-                    "itemReviewed": {
-                      "@type": "Gym",
-                      "name": "OneRepMaax Gym",
-                      "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Dimna Rd, Shankoshai",
-                        "addressLocality": "Mango, Jamshedpur",
-                        "addressRegion": "Jharkhand",
-                        "postalCode": "831018",
-                        "addressCountry": "India"
-                      }
-                    }
-                  }`).join(',')}
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "60",
-                "bestRating": "5",
-                "worstRating": "1"
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "OneRepMaax Gym Member Reviews",
+            "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
+            "numberOfItems": reviews.length,
+            "itemListElement": reviews.map((review, index) => ({
+              "@type": "Review",
+              "position": index + 1,
+              "reviewBody": review.quote,
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": review.rating,
+                "bestRating": 5,
+                "worstRating": 1
+              },
+              "datePublished": review.date,
+              "author": {
+                "@type": "Person",
+                "name": review.name
+              },
+              "itemReviewed": {
+                "@type": "Gym",
+                "name": "OneRepMaax Gym",
+                "url": "https://onerepmaaxgym.in",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Dimna Rd, Shankoshai",
+                  "addressLocality": "Mango, Jamshedpur",
+                  "addressRegion": "Jharkhand",
+                  "postalCode": "831018",
+                  "addressCountry": "India"
+                }
               }
+            })),
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": reviews.length.toString(),
+              "bestRating": "5",
+              "worstRating": "1"
             }
-          `}
+          })}
         </script>
       </Helmet>
 

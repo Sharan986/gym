@@ -28,7 +28,7 @@ const PhotoGrid = () => {
         <meta property="og:title" content="OneRepMaax Gym Gallery - Premium Fitness Facility Photos | Jamshedpur" />
         <meta property="og:description" content="Take a visual tour of OneRepMaax Gym's 5000+ sq ft facility with premium equipment, professional training environment, and vibrant fitness community at Dimna Road, Jamshedpur." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://onerepmaax.com/allPhotos/ft-8.webp" />
+        <meta property="og:image" content="https://onerepmaaxgym.in/allPhotos/ft-8.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="OneRepMaax Gym Gallery - Premium Fitness Center Photos" />
         <meta name="twitter:description" content="Explore our modern 5000+ sq ft fitness facility with premium Jaguar equipment and professional training environment." />
@@ -39,7 +39,7 @@ const PhotoGrid = () => {
               "@type": "ImageGallery",
               "name": "OneRepMaax Gym Photo Gallery",
               "description": "Photo gallery showcasing OneRepMaax Gym's premium fitness facility, equipment, and training environment in Jamshedpur",
-              "url": "https://onerepmaax.com/gallery",
+              "url": "https://onerepmaaxgym.in/gallery",
               "about": {
                 "@type": "Gym",
                 "name": "OneRepMaax Gym",
@@ -55,17 +55,17 @@ const PhotoGrid = () => {
               "image": [
                 {
                   "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/allPhotos/f1.webp",
+                  "url": "https://onerepmaaxgym.in/allPhotos/f1.webp",
                   "description": "OneRepMaax Gym training session with professional fitness equipment"
                 },
                 {
                   "@type": "ImageObject", 
-                  "url": "https://onerepmaax.com/allPhotos/e4.webp",
+                  "url": "https://onerepmaaxgym.in/allPhotos/e4.webp",
                   "description": "State-of-the-art gym equipment at OneRepMaax Jamshedpur"
                 },
                 {
                   "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/allPhotos/ft-8.webp", 
+                  "url": "https://onerepmaaxgym.in/allPhotos/ft-8.webp", 
                   "description": "Modern fitness facility with premium Jaguar equipment"
                 }
               ],
@@ -74,7 +74,7 @@ const PhotoGrid = () => {
                 "name": "OneRepMaax Gym",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/logo.png"
+                  "url": "https://onerepmaaxgym.in/logo.png"
                 }
               }
             }

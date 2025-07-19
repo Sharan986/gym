@@ -17,9 +17,9 @@ const Footer = () => {
               "@type": "Gym",
               "name": "OneRepMaax Gym",
               "description": "Premier fitness center in Jamshedpur offering professional training, modern equipment, and comprehensive fitness solutions since 2025.",
-              "url": "https://onerepmaax.com",
-              "logo": "https://onerepmaax.com/logo.png",
-              "image": "https://onerepmaax.com/gym-image.jpg",
+              "url": "https://onerepmaaxgym.in",
+              "logo": "https://onerepmaaxgym.in/logo.png",
+              "image": "https://onerepmaaxgym.in/gym-image.jpg",
               "foundingDate": "2025-01-07",
               "address": {
                 "@type": "PostalAddress",
