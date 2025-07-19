@@ -2,21 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const Num = () => {
-  const [counts, setCounts] = useState({
-    1: 0,
-    2: 0,
-    3: 0,
-    4: 0,
+  const NumData = [
+    { id: 1, start: 100, target: 250, text: "Members" },
+    { id: 2, start: 30, target: 50, text: "Transformations" },
+    { id: 3, start: 1, target: 5, text: "Trainers" },
+    { id: 4, start: 3000, target: 5000, text: "SQ.FEET" },
+  ];
+
+  const [counts, setCounts] = useState(() => {
+    const initialCounts = {};
+    NumData.forEach((item) => {
+      initialCounts[item.id] = item.start;
+    });
+    return initialCounts;
   });
 
   const [hasAnimated, setHasAnimated] = useState(false);
-
-  const NumData = [
-    { id: 1, target: 250, text: "Members" },
-    { id: 2, target: 50, text: "Transformations" },
-    { id: 3, target: 5, text: "Trainers" },
-    { id: 4, target: 5000, text: "SQ.FEET" },
-  ];
 
   const { ref, inView } = useInView({
     threshold: 0.3,
@@ -32,13 +33,12 @@ const Num = () => {
         const elapsedTime = currentTime - startTime;
         const progress = Math.min(elapsedTime / duration, 1);
 
-        setCounts((prevCounts) => {
-          const newCounts = { ...prevCounts };
-          NumData.forEach((item) => {
-            newCounts[item.id] = Math.floor(progress * item.target);
-          });
-          return newCounts;
+        const newCounts = {};
+        NumData.forEach((item) => {
+          const value = item.start + (item.target - item.start) * progress;
+          newCounts[item.id] = Math.floor(value);
         });
+        setCounts(newCounts);
 
         if (progress < 1) {
           requestAnimationFrame(animateCounts);

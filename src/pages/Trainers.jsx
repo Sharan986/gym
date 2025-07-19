@@ -10,12 +10,13 @@ import FIVE from "../assets/Trainers/FIVE.jpg";
 import SIX from "../assets/Trainers/SIX.jpg";
 import Icon from '../components/Icon';
 import { Helmet } from 'react-helmet';
+import { TRAINER} from '../config/imageConfig';
 
 const Trainers = () => {
   const trainers = [
        {
       id: 4,
-      img: FOUR,
+      img: TRAINER[2],
       name: "ADITYA SINGH",
       title: "FOUNDER & K11 CERTIFIED TRAINER",
       description: "K11 certified trainer, REPS India member, and certified nutritionist with proven weight loss transformations",
@@ -26,7 +27,7 @@ const Trainers = () => {
 
     {
       id: 1,
-      img: One,
+      img: TRAINER[3],
       name: "SMRITI ROY",
       title: "CO-FOUNDER & TRAINER",
       description: "Co-founder and experienced trainer specializing in women's fitness and functional training",
@@ -36,7 +37,7 @@ const Trainers = () => {
     },
     {
       id: 2,
-      img: Two,
+      img: TRAINER[1],
       name: "FAZAL RAHMAAN",
       title: "TRAINER",
       description: "Experienced trainer focused on strength training and muscle building programs",
@@ -46,7 +47,7 @@ const Trainers = () => {
     },
     {
       id: 3,
-      img: Three,
+      img: TRAINER[0],
       name: "RAJ KUMAR",
       title: "TRAINER",
       description: "Professional trainer specializing in cardio workouts and endurance training",
@@ -57,7 +58,7 @@ const Trainers = () => {
  
     {
       id: 5,
-      img: FIVE,
+      img: TRAINER[4],
       name: "ABHISHEK KUMAR",
       title: "TRAINER",
       description: "Dedicated trainer with expertise in rehabilitation and injury prevention",
@@ -67,7 +68,7 @@ const Trainers = () => {
     },
     {
       id: 6,
-      img: SIX,
+      img: TRAINER[5],
       name: "ZAIN IBRAHIM",
       title: "TRAINER",
       description: "Dynamic trainer specializing in youth fitness and sports conditioning",

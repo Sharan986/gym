@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Join from "../components/Join";
 import Membership from "../pages/Membership";
-import { gallery } from "../assets/Gallery/gallery.js";
 import { w3 } from "../assets/w3/w3.js";
 import { IMAGES } from "../config/imageConfig.js";
 
@@ -25,43 +24,40 @@ const Gallery = () => {
   };
 
   const facilityItems = [
-    { id: 1, title: "Strength Training Area", img: gallery.f1 },
-    { id: 2, title: "Cardio Equipment", img: gallery.f2 },
-    { id: 3, title: "Yoga Studio", img: gallery.f3 },
-    { id: 4, title: "Locker Rooms", img: gallery.f4 },
-    { id: 5, title: "Supplement Store", img: gallery.e5 },
-    { id: 6, title: "Reception Area", img: gallery.e6 },
-    { id: 7, title: "Free Weights Zone", img: gallery.e7 },
+    { id: 1, title: "Strength Training Area", img: IMAGES.f1 },
+    { id: 2, title: "Cardio Equipment", img: IMAGES.f2 },
+    { id: 3, title: "Yoga Studio", img: IMAGES.f3 },
+    { id: 4, title: "Locker Rooms", img: IMAGES.f4 },
+    { id: 5, title: "Supplement Store", img: IMAGES.e5 },
+    { id: 6, title: "Reception Area", img: IMAGES.e6 },
+    { id: 7, title: "Free Weights Zone", img: IMAGES.e7 },
   ];
 
   const classesItems = [
-    { id: 1, title: "Boxing Class", img: gallery.ft1 },
-    { id: 2, title: "Yoga Session", img: gallery.ft2 },
-    { id: 3, title: "HIIT Workout", img: gallery.ft3 },
-    { id: 4, title: "Martial Arts", img: gallery.ft4 },
-    { id: 5, title: "Spin Class", img: gallery.ft5 },
-    { id: 6, title: "Zumba Class", img: gallery.ft6 },
-    { id: 7, title: "Pilates Class", img: gallery.ft7 },
-    { id: 8, title: "Dance Fitness", img: gallery.ft8 },
-    { id: 9, title: "Strength Training", img: gallery.ft9 },
-    { id: 10, title: "Functional Training", img: gallery.ft10 },
-    { id: 11, title: "Aqua Aerobics", img: gallery.ft11 },
-    { id: 12, title: "Meditation Class", img: gallery.ft12 },
-    { id: 13, title: "Core Strengthening", img: gallery.ft13 },
+    { id: 1, title: "Boxing Class", img: IMAGES.ft1 },
+    { id: 2, title: "Yoga Session", img: IMAGES.ft2 },
+    { id: 3, title: "HIIT Workout", img: IMAGES.ft3 },
+    { id: 4, title: "Martial Arts", img: IMAGES.ft4 },
+    { id: 5, title: "Spin Class", img: IMAGES.ft5 },
+    { id: 6, title: "Zumba Class", img: IMAGES.ft6 },
+    { id: 7, title: "Pilates Class", img: IMAGES.ft7 },
+    { id: 8, title: "Dance Fitness", img: IMAGES.ft8 },
+    { id: 9, title: "Strength Training", img: IMAGES.ft9 },
+    { id: 10, title: "Functional Training", img: IMAGES.ft10 },
+    { id: 11, title: "Aqua Aerobics", img: IMAGES.ft11 },
+    { id: 12, title: "Meditation Class", img: IMAGES.ft12 },
+    { id: 13, title: "Core Strengthening", img: IMAGES.ft13 },
   ];
 
   const eventsItems = [
-    { id: 1, title: "Fitness Challenge", img: gallery.e1 },
-    { id: 2, title: "Annual Competition", img: gallery.e2 },
-    { id: 3, title: "Community Meetup", img: gallery.e3 },
-    { id: 4, title: "Wellness Workshop", img: gallery.e4 },
-    { id: 5, title: "Strength Training Area", img: gallery.f1 },
-    { id: 6, title: "Cardio Equipment", img: gallery.f2 },
-    { id: 7, title: "Yoga Studio", img: gallery.f3 },
-    { id: 8, title: "Locker Rooms", img: gallery.f4 },
-    { id: 9, title: "Supplement Store", img: gallery.e5 },
-    { id: 10, title: "Reception Area", img: gallery.e6 },
-    { id: 11, title: "Free Weights Zone", img: gallery.e7 },
+    { id: 1, title: "Fitness Challenge", img: IMAGES.e1},
+    { id: 2, title: "Annual Competition", img: IMAGES.e2 },
+    { id: 3, title: "Community Meetup", img: IMAGES.e3 },
+    { id: 4, title: "Wellness Workshop", img: IMAGES.e4 },
+    { id: 5, title: "Strength Training Area", img: IMAGES.e5 },
+    { id: 6, title: "Cardio Equipment", img: IMAGES.e6},
+    { id: 7, title: "Yoga Studio", img: IMAGES.e7},
+
   ];
 
   const MaaxedItems = [
@@ -165,7 +161,7 @@ const Gallery = () => {
           {getItems().map((item) => (
             <div
               key={`${activeTab}-${item.id}`}
-              className="bg-white  hover:bg-gray-100 hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
+              className="bg-white  hover:bg-gray-100 hover:scale-105 mx-7 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
             >
               <div className="overflow-hidden">
                 <img

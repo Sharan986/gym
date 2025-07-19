@@ -2,17 +2,15 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import s3 from "../assets/S3.jpeg";
-import S2 from "../assets/S2.jpeg";
-import sv4 from "../assets/sv4.jpeg";
 import Icon from '../components/Icon';
 import { Helmet } from 'react-helmet';
+import {Facilities} from '../config/imageConfig';
 
 const Services = () => {
   const services = [ 
     {
       id: 1,
-      img: s3,
+      img: Facilities[0],
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
       description: "K11 certified personal trainers in Jamshedpur with proven weight loss transformations",
@@ -21,7 +19,7 @@ const Services = () => {
     },
     {
       id: 2,
-      img: S2,
+      img: Facilities[1],
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss Programs",
       description: "Proven weight loss transformations with nutrition consultation and certified guidance",
@@ -30,40 +28,14 @@ const Services = () => {
     },
     {
       id: 3,
-      img: sv4,
+      img: Facilities[2],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Strength Training",
       description: "Build muscle and strength with state-of-the-art equipment and expert guidance",
       keywords: "strength training Jamshedpur, muscle building, powerlifting",
       price: "Included in membership"
     },
-    {
-      id: 4,
-      img: s3,
-      logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
-      title: "Yoga Classes",
-      description: "Improve flexibility and mindfulness with professional yoga instruction",
-      keywords: "yoga classes Jamshedpur, flexibility training, mindfulness",
-      price: "Included in membership"
-    },
-    {
-      id: 5,
-      img: S2,
-      logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
-      title: "Zumba Fitness",
-      description: "Fun cardio workout with energetic Zumba sessions in Mango, Jamshedpur",
-      keywords: "Zumba classes Jamshedpur, cardio workout, dance fitness",
-      price: "Included in membership"
-    },
-    {
-      id: 6,
-      img: sv4,
-      logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
-      title: "Nutrition Consultation",
-      description: "Professional nutrition guidance by certified nutritionist Aditya Singh",
-      keywords: "nutrition consultation Jamshedpur, diet planning, nutritionist",
-      price: "Free with personal training"
-    },
+
   ];
 
   const settings = {

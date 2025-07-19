@@ -36,6 +36,39 @@ export const GALLERY_IMAGES = [
   "/allPhotos/e7.webp",
 ];
 
+// Gallery/Exercise Images
+export const TRAINER = [
+  "/allPhotos/trainer hindu.webp",
+  "/allPhotos/FAZAL.jpeg.webp",
+  "/allPhotos/owner.webp",
+  "/allPhotos/co-founder.webp",
+  "/allPhotos/FIVE.webp",
+  "/allPhotos/SIX.webp",
+ 
+];
+// Gallery/Exercise Images
+export const Facilities = [
+  "/allPhotos/sv1.webp",
+  "/allPhotos/sv2.webp",
+  "/allPhotos/sv4.webp",
+];
+
+export const FacDetails = [
+  "/allPhotos/ft1.webp",
+  "/allPhotos/ft2.webp",
+  "/allPhotos/ft3.webp",
+  "/allPhotos/ft4.webp",
+  "/allPhotos/ft-5.webp",
+  "/allPhotos/ft-6.webp",
+  "/allPhotos/ft-7.webp",
+  "/allPhotos/ft-8.webp",
+  "/allPhotos/ft-9.webp",
+  "/allPhotos/ft-10.webp",
+  "/allPhotos/ft-11.webp",
+  "/allPhotos/ft-12.webp",
+  "/allPhotos/ft-13.webp",
+];
+
 // Fitness Images
 export const FITNESS_IMAGES = [
   "/allPhotos/f1.webp",
@@ -70,7 +103,7 @@ export const OTHER_IMAGES = [
   "/allPhotos/sv2.webp",
 ];
 
-// Combined arrays for easy access
+// Comebined arrays for easy accss
 export const ALL_IMAGES = [
   ...TRAINER_IMAGES,
   ...GALLERY_IMAGES,
@@ -121,34 +154,34 @@ export const IMAGES = {
   gurnakeSingh2: "/allPhotos/GurnakeSingh_96x128.webp",
   
   // Gallery/Exercise
-  exercise1: "/allPhotos/e1.webp",
-  exercise2: "/allPhotos/e2.webp",
-  exercise3: "/allPhotos/e3.webp",
-  exercise4: "/allPhotos/e4.webp",
-  exercise5: "/allPhotos/e5.webp",
-  exercise6: "/allPhotos/e6.webp",
-  exercise7: "/allPhotos/e7.webp",
+  e1: "/allPhotos/e1.webp",
+  e2: "/allPhotos/e2.webp",
+  e3: "/allPhotos/e3.webp",
+  e4: "/allPhotos/e4.webp",
+  e5: "/allPhotos/e5.webp",
+  e6: "/allPhotos/e6.webp",
+  e7: "/allPhotos/e7.webp",
   
   // Fitness
-  fitness1: "/allPhotos/f1.webp",
-  fitness2: "/allPhotos/f2.webp",
-  fitness3: "/allPhotos/f3.webp",
-  fitness4: "/allPhotos/f4.webp",
+  f1: "/allPhotos/f1.webp",
+  f2: "/allPhotos/f2.webp",
+  f3: "/allPhotos/f3.webp",
+  f4: "/allPhotos/f4.webp",
   
   // Facilities
-  facility1: "/allPhotos/ft1.webp",
-  facility2: "/allPhotos/ft2.webp",
-  facility3: "/allPhotos/ft3.webp",
-  facility4: "/allPhotos/ft4.webp",
-  facility5: "/allPhotos/ft-5.webp",
-  facility6: "/allPhotos/ft-6.webp",
-  facility7: "/allPhotos/ft-7.webp",
-  facility8: "/allPhotos/ft-8.webp",
-  facility9: "/allPhotos/ft-9.webp",
-  facility10: "/allPhotos/ft-10.webp",
-  facility11: "/allPhotos/ft-11.webp",
-  facility12: "/allPhotos/ft-12.webp",
-  facility13: "/allPhotos/ft-13.webp",
+  ft1: "/allPhotos/ft1.webp",
+  ft2: "/allPhotos/ft2.webp",
+  ft3: "/allPhotos/ft3.webp",
+  ft4: "/allPhotos/ft4.webp",
+  ft5: "/allPhotos/ft-5.webp",
+  ft6: "/allPhotos/ft-6.webp",
+  ft7: "/allPhotos/ft-7.webp",
+  ft8: "/allPhotos/ft-8.webp",
+  ft9: "/allPhotos/ft-9.webp",
+  ft10: "/allPhotos/ft-10.webp",
+  ft11: "/allPhotos/ft-11.webp",
+  ft12: "/allPhotos/ft-12.webp",
+  ft13: "/allPhotos/ft-13.webp",
   
   // Other
   a: "/allPhotos/a.webp",
