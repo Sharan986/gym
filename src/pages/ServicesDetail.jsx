@@ -2,55 +2,55 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Join from '../components/Join';
-import { gallery } from '../assets/Gallery/gallery';
+import { FacDetails } from "../config/imageConfig";
 
 const ServicesDetail = () => {
   const servicesData = [
     {
       id: 1,
-      img: gallery.ft4,
+      img: FacDetails[0],
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
     },
     {
       id: 2,
-      img: gallery.ft5,
+      img: FacDetails[1],
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss",
     },
     {
       id: 3,
-     img: gallery.ft6,
+     img: FacDetails[2],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Group Fitness",
     },
     {
       id: 4,
-     img: gallery.ft7,
+     img: FacDetails[3],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Strength Training",
     },
     {
       id: 5,
-      img: gallery.ft8,
+      img: FacDetails[4],
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Yoga Classes",
     },
     {
       id: 6,
-      img: gallery.ft9,
+      img: FacDetails[5],
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Cardio Training",
     },
     {
       id: 7,
-     img: gallery.ft10,
+      img: FacDetails[6],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "CrossFit",
     },
     {
       id: 8,
-      img: gallery.ft11,
+      img: FacDetails[7],
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Nutrition Coaching",
     }
@@ -73,7 +73,7 @@ const ServicesDetail = () => {
   </div>
 </div>
 
-      <div className="flex justify-center flex-col items-start font-One mx-7 lg:mx-24">
+      <div className="flex justify-center flex-col items-start font-One lg:mx-24">
         <div className="text-white pt-16 ml-6 mr-6">
           <p className="text-5xl pt-1 uppercase">
             Our mission is to develop your fitness
@@ -84,12 +84,12 @@ const ServicesDetail = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 mb-12 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-10 mt-12 mb-12 ">
         {servicesData.map((data) => (
-          <div key={data.id} className="flex flex-col items-center border-2 lg:mx-24 border-gray-600 font-One ">
+          <div key={data.id} className="flex flex-col items-center border-2 mx-7 lg:mx-24 border-gray-600 font-One ">
             <img src={data.logo} alt={data.title} className="w-20 h-20" />
             <h1 className="text-3xl py-3 text-white text-center">{data.title}</h1>
-            <img src={data.img} alt={data.title} className="w-full h-52 object-cover object-center " />
+            <img src={data.img} alt={data.title} className="w-full h-64 object-cover object-center " />
           </div>
         ))}
       </div>
