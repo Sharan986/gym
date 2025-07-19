@@ -82,14 +82,14 @@ const About = () => {
               />
             </div>
             <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
-              <header className="text-[#48D3A3] text-3xl font-semibold mb-4">OUR MISSION</header>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <header className="text-[#48D3A3] text-3xl font-One mb-4">OUR MISSION</header>
+              <h2 className="text-4xl md:text-5xl font-One mb-4">
                 EMPOWERING YOUR FITNESS JOURNEY IN JAMSHEDPUR
               </h2>
-              <p className="mb-8 text-lg">
+              <p className="mb-8 text-lg font-DM">
                 Empowering individuals across Jamshedpur, Mango, Dimna, and Sankosai to achieve their fitness goals with fun, support, and motivation. We welcome all ages and fitness levels with customized workout plans and certified personal trainers!
               </p>
-              <ul className="list-none p-0">
+              <ul className="list-none p-0 font-One">
                 <li className="mb-2 flex items-center">
                   <span className="text-[#48D3A3] text-2xl mr-2">01.</span>
                   <span className="text-2xl">AGE-INCLUSIVE MEMBERSHIP</span>
@@ -104,14 +104,14 @@ const About = () => {
 
           <section className="flex flex-col md:flex-row text-white md:p-8">
             <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
-              <header className="text-[#48D3A3] text-3xl font-semibold mb-4">OUR VISION</header>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <header className="text-[#48D3A3] text-3xl font-One mb-4">OUR VISION</header>
+              <h2 className="text-4xl md:text-5xl font-One mb-4">
                 STATE-OF-THE-ART FITNESS CENTER FOR EVERYONE
               </h2>
-              <p className="mb-8 text-xl">
+              <p className="mb-8 text-xl font-DM">
                 To make fitness accessible to everyone in Jamshedpur by providing state-of-the-art facilities and services that cater to diverse needs and goals, empowering individuals to achieve their full potential.
               </p>
-              <ul className="list-none p-0">
+              <ul className="list-none p-0 font-One">
                 <li className="mb-2 flex items-center text-2xl">
                   <span className="text-[#48D3A3] mr-2">01.</span>
                   <span>YOGA & ZUMBA STUDIOS</span>
@@ -143,7 +143,7 @@ const About = () => {
           <h2 className="text-4xl sm:text-5xl w-full mt-4 font-One uppercase">
             Strength. Support. Success. Community.
           </h2>
-          <p className="text-gray-300 font-M text-xl md:text-lg mt-6 mb-3">
+          <p className="text-gray-300 font-DM text-xl md:text-lg mt-6 mb-3">
             From beginners to advanced fitness enthusiasts in Jamshedpur, Mango, Dimna, and Sankosai, we provide everything you need to succeed. Our welcoming environment caters to all ages and fitness levels with personalized support.
           </p>
 

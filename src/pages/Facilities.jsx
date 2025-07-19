@@ -68,13 +68,13 @@ const Facilities = () => {
     <>
       <Helmet>
         <title>Premium Gym Facilities - OneRepMaax Jamshedpur | Jaguar Equipment, 5000+ Sq Ft</title>
-        <meta 
-          name="description" 
-          content="Premium gym facilities at OneRepMaax Jamshedpur: 5000+ sq ft air-conditioned space with professional cardio equipment, Jaguar strength training, triple weight sets (2.5-40kg), K11 certified trainers, yoga classes, free WiFi, sanitized environment." 
+        <meta
+          name="description"
+          content="Premium gym facilities at OneRepMaax Jamshedpur: 5000+ sq ft air-conditioned space with professional cardio equipment, Jaguar strength training, triple weight sets (2.5-40kg), K11 certified trainers, yoga classes, free WiFi, sanitized environment. 61 Google reviews - 4.9★!"
         />
-        <meta 
-          name="keywords" 
-          content="gym facilities Jamshedpur, professional gym equipment, 5000 sq feet gym, air conditioned gym Mango, premium gym facilities, sanitized gym equipment, beginner friendly gym, K11 certified trainers, yoga classes Jamshedpur, free WiFi gym, locker facility, triple weight sets, gym near Sunrise Tiles, gym near Hero Showroom, better than Bodylyn gym, alternative to Iron Paradise gym" 
+        <meta
+          name="keywords"
+          content="gym facilities Jamshedpur, professional gym equipment, 5000 sq feet gym, air conditioned gym Mango, premium gym facilities, sanitized gym equipment, beginner friendly gym, K11 certified trainers, yoga classes Jamshedpur, free WiFi gym, locker facility, triple weight sets, gym near Sunrise Tiles, gym near Hero Showroom, better than Bodylyn gym, alternative to Iron Paradise gym, 61 google reviews gym, 4.9 star rated gym Jamshedpur"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="OneRepMaax Gym" />
@@ -97,7 +97,7 @@ const Facilities = () => {
         <meta name="application-name" content="OneRepMaax Gym Facilities" />
         <meta name="theme-color" content="#48D3A3" />
         <link rel="canonical" href="https://onerepmaax.com/#facilities" />
-        
+
         <script type="application/ld+json">
           {`
             {
@@ -112,6 +112,13 @@ const Facilities = () => {
                 "addressRegion": "Jharkhand",
                 "postalCode": "831018",
                 "addressCountry": "India"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "61",
+                "bestRating": "5",
+                "worstRating": "1"
               },
               "amenityFeature": [
                 {
@@ -169,7 +176,7 @@ const Facilities = () => {
             }
           `}
         </script>
-        
+
         <script type="application/ld+json">
           {`
             {
@@ -223,12 +230,20 @@ const Facilities = () => {
                     "@type": "Answer",
                     "text": "OneRepMaax Gym prioritizes safety with first aid availability, regular equipment sanitization, clean environment maintenance, proper ventilation, and trained staff to assist members with equipment usage."
                   }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What do Google reviews say about OneRepMaax gym?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OneRepMaax Gym has an outstanding 4.9-star rating from 61 Google reviews. Members consistently praise our professional trainers, clean facilities, modern equipment, supportive environment, and effective fitness programs."
+                  }
                 }
               ]
             }
           `}
         </script>
-        
+
         <script type="application/ld+json">
           {`
             {
@@ -252,7 +267,7 @@ const Facilities = () => {
           `}
         </script>
       </Helmet>
-      
+
       <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="facilities" aria-labelledby="facilities-heading">
         <div className="flex items-center gap-2">
           <Icon />
@@ -264,16 +279,30 @@ const Facilities = () => {
           Premium 5000+ Sq Ft Fitness Center in Jamshedpur
         </h2>
         <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4">
-          Experience our state-of-the-art Jaguar equipment in a spacious, air-conditioned environment. 
-          Our mission has always been to create a welcoming and supportive space where everyone, 
+          Experience our state-of-the-art Jaguar equipment in a spacious, air-conditioned environment.
+          Our mission has always been to create a welcoming and supportive space where everyone,
           regardless of their fitness level, can achieve their goals.
         </p>
-        
+
+        <div className="mb-4 p-4 bg-gray-900/50 border border-gray-700">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="flex items-center">
+              <span className="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</span>
+              <span className="text-white font-semibold ml-2">4.9/5</span>
+            </div>
+            <span className="text-gray-300">•</span>
+            <span className="text-gray-300">60+ Google Reviews</span>
+          </div>
+          <p className="text-sm text-gray-400">
+            Join our community of satisfied members who've achieved their fitness goals at OneRepMaax!
+          </p>
+        </div>
+
         <div className="mb-6">
           <p className="text-lg text-gray-300 mb-2">
             📋 Need workout guidance? Check out our comprehensive{" "}
-            <Link 
-              to="/WorkoutGuide" 
+            <Link
+              to="/WorkoutGuide"
               className="text-[#48D3A3] hover:text-[#48D3A3]/80 underline font-semibold transition-colors"
               aria-label="Access workout guide section"
             >
@@ -285,7 +314,7 @@ const Facilities = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mt-8">
           {FacilitiesData.map((facility) => (
-            <article key={facility.id} className="font-One mb-6 p-4 flex flex-col border border-gray-700 rounded-lg hover:border-[#48D3A3]/50 transition-colors">
+            <article key={facility.id} className="font-One mb-6 p-4 flex flex-col border-2 border-gray-700 hover:border-[#48D3A3]/50 transition-colors">
               <img
                 src={facility.imageUrl}
                 alt={`${facility.title} at OneRepMaax Gym Jamshedpur`}
@@ -300,11 +329,21 @@ const Facilities = () => {
                   {facility.description}
                 </p>
                 <div className="mt-auto">
-                  <h4 className="text-sm font-semibold text-white mb-2">Key Features:</h4>
-                  <ul className="grid grid-cols-2 gap-1 text-xs md:text-sm text-gray-400">
+                  <h4 className="text-sm font-One text-white mb-2">Key Features:</h4>
+                  <ul className="grid grid-cols-2 gap-1 text-xs md:text-sm text-gray-400 font-DM">
                     {facility.features.map((feature, index) => (
                       <li key={index} className="flex items-center">
-                        <span className="text-[#48D3A3] mr-1">✓</span>
+                        <span className="text-[#48D3A3] mr-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-3 h-7 text-[#48D3A3]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path strokeLinecap="round" d="M9 5l7 7-7 7" />
+                          </svg> </span>
                         {feature}
                       </li>
                     ))}

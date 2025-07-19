@@ -11,11 +11,11 @@ const Testimonials = () => {
     
    
     <div className='font-One text-white mt-10 '>
-      {/* Container for centering content */}
-      <div className='mx-7 lg:mx-24'>
+      {/* Photo Grid Component */}
        <PhotoGrid />
 
-        {/* Photo Grid Component */}
+        {/* Container for centering content */}
+      <div className='mx-7 lg:mx-24'>
           <div className="flex justify-center mt-5">
         <img
           src={Boss2}
