@@ -94,11 +94,11 @@ const Trainers = () => {
         <title>Professional Trainers - OneRepMaax Gym Jamshedpur | K11 Certified Personal Trainers</title>
         <meta 
           name="description" 
-          content="Meet our professional fitness trainers at OneRepMaax Gym Jamshedpur. Led by K11 certified founder Aditya Singh, REPS India member & certified nutritionist. Expert trainers for weight loss, strength training & specialized fitness programs." 
+          content="Meet our professional fitness trainers at OneRepMaax Gym Jamshedpur. Led by K11 certified founder Aditya Singh, REPS India member & certified nutritionist. Expert trainers for weight loss, strength training & specialized fitness programs. 61 Google reviews - 4.9★!" 
         />
         <meta 
           name="keywords" 
-          content="personal trainers Jamshedpur, K11 certified trainer, fitness trainers Mango, certified nutritionist, REPS India member, women's fitness trainer, strength training coach, OneRepMaax trainers, professional gym trainers Dimna Road" 
+          content="personal trainers Jamshedpur, K11 certified trainer, fitness trainers Mango, certified nutritionist, REPS India member, women's fitness trainer, strength training coach, OneRepMaax trainers, professional gym trainers Dimna Road, 61 google reviews, 4.9 star rated trainers" 
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Professional Fitness Trainers - OneRepMaax Gym Jamshedpur" />

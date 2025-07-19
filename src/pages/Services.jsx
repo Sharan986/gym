@@ -83,11 +83,11 @@ const Services = () => {
         <title>Fitness Services - OneRepMaax Gym Jamshedpur | Personal Training, Weight Loss, Yoga</title>
         <meta 
           name="description" 
-          content="Professional fitness services at OneRepMaax Gym Jamshedpur: K11 certified personal training (₹5,000/month), weight loss programs, strength training, yoga, Zumba, nutrition consultation by certified nutritionist Aditya Singh." 
+          content="Professional fitness services at OneRepMaax Gym Jamshedpur: K11 certified personal training (₹5,000/month), weight loss programs, strength training, yoga, Zumba, nutrition consultation by certified nutritionist Aditya Singh. 61 Google reviews - 4.9★!" 
         />
         <meta 
           name="keywords" 
-          content="personal training Jamshedpur, weight loss programs, strength training, yoga classes Jamshedpur, Zumba fitness, nutrition consultation, K11 certified trainer, gym services Mango, fitness center Dimna Road, OneRepMaax services" 
+          content="personal training Jamshedpur, weight loss programs, strength training, yoga classes Jamshedpur, Zumba fitness, nutrition consultation, K11 certified trainer, gym services Mango, fitness center Dimna Road, OneRepMaax services, 61 google reviews, 4.9 star rated gym services" 
         />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Professional Fitness Services - OneRepMaax Gym Jamshedpur" />

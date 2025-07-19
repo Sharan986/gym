@@ -3,9 +3,9 @@ import { useInView } from 'react-intersection-observer';
 
 const Num = () => {
   const [counts, setCounts] = useState({
-    1: 0,
-    2: 0,
-    3: 0,
+    1: 200,
+    2: 35,
+    3: 1,
     4: 0,
   });
 
