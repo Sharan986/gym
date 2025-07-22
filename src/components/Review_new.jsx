@@ -193,53 +193,48 @@ const Review = () => {
         <meta name="twitter:title" content="OneRepMaax Gym Reviews - Member Testimonials" />
         <meta name="twitter:description" content="4.9★ rated gym with authentic member reviews and testimonials from Jamshedpur's premier fitness center." />
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "OneRepMaax Gym Member Reviews",
-              "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
-              "numberOfItems": ${reviews.length},
-              "itemListElement": [
-                ${reviews.map((review, index) => `
-                  {
-                    "@type": "Review",
-                    "position": ${index + 1},
-                    "reviewBody": "${review.quote}",
-                    "reviewRating": {
-                      "@type": "Rating",
-                      "ratingValue": ${review.rating},
-                      "bestRating": 5,
-                      "worstRating": 1
-                    },
-                    "datePublished": "${review.date}",
-                    "author": {
-                      "@type": "Person",
-                      "name": "${review.name}"
-                    },
-                    "itemReviewed": {
-                      "@type": "Gym",
-                      "name": "OneRepMaax Gym",
-                      "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Dimna Rd, Shankoshai",
-                        "addressLocality": "Mango, Jamshedpur",
-                        "addressRegion": "Jharkhand",
-                        "postalCode": "831018",
-                        "addressCountry": "India"
-                      }
-                    }
-                  }`).join(',')}
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "60",
-                "bestRating": "5",
-                "worstRating": "1"
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "OneRepMaax Gym Member Reviews",
+            "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
+            "numberOfItems": reviews.length,
+            "itemListElement": reviews.map((review, index) => ({
+              "@type": "Review",
+              "position": index + 1,
+              "reviewBody": review.quote,
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": review.rating,
+                "bestRating": 5,
+                "worstRating": 1
+              },
+              "datePublished": review.date,
+              "author": {
+                "@type": "Person",
+                "name": review.name
+              },
+              "itemReviewed": {
+                "@type": "Gym",
+                "name": "OneRepMaax Gym",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Dimna Rd, Shankoshai",
+                  "addressLocality": "Mango, Jamshedpur",
+                  "addressRegion": "Jharkhand",
+                  "postalCode": "831018",
+                  "addressCountry": "India"
+                }
               }
+            })),
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "60",
+              "bestRating": "5",
+              "worstRating": "1"
             }
-          `}
+          })}
         </script>
       </Helmet>
 
