@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Wbutton from "../components/Wbutton";
 import { w3 } from "../assets/w3/w3";
-import { Helmet } from "react-helmet";
 
 const About = () => {
   const Values = [
@@ -35,22 +34,6 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>About OneRepMaax Gym - Best Fitness Center in Jamshedpur, Mango, Dimna</title>
-        <meta 
-          name="description" 
-          content="OneRepMaax Gym in Jamshedpur offers state-of-the-art fitness facilities in Dimna, Mango, Sankosai. Age-inclusive gym with yoga, Zumba, personal training, certified trainers. Open 7 days with free WiFi & coffee." 
-        />
-        <meta 
-          name="keywords" 
-          content="gym Jamshedpur, fitness center Mango, gym Dimna, personal trainer Jamshedpur, yoga classes Mango, Zumba Dimna, functional training Jamshedpur, certified trainers Mango, weight training Jamshedpur, gym Sankosai" 
-        />
-        <meta name="author" content="OneRepMaax Gym" />
-        <meta property="og:title" content="About OneRepMaax Gym - Best Fitness Center in Jamshedpur" />
-        <meta property="og:description" content="Age-inclusive gym in Jamshedpur with customized workout plans, yoga, Zumba, and state-of-the-art facilities. Open 7 days with certified trainers." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://onerepmaaxgym.in/about" />
-      </Helmet>
       
       <article>
         <header className="relative overflow-hidden">

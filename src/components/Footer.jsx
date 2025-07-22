@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,76 +8,6 @@ const Footer = () => {
 
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Gym",
-              "name": "OneRepMaax Gym",
-              "description": "Premier fitness center in Jamshedpur offering professional training, modern equipment, and comprehensive fitness solutions since 2025.",
-              "url": "https://onerepmaaxgym.in",
-              "logo": "https://onerepmaaxgym.in/logo.png",
-              "image": "https://onerepmaaxgym.in/gym-image.jpg",
-              "foundingDate": "2025-01-07",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Dimna Rd, Shankoshai",
-                "addressLocality": "Mango, Jamshedpur",
-                "addressRegion": "Jharkhand",
-                "postalCode": "831018",
-                "addressCountry": "India"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "22.7868",
-                "longitude": "86.2029"
-              },
-              "telephone": "+91 9204057290",
-              "email": "onerepmaaxgym@gmail.com",
-              "openingHours": [
-                "Mo-Sa 05:00-23:00",
-                "Su 08:00-18:00"
-              ],
-              "priceRange": "₹₹",
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "60",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "amenityFeature": [
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Personal Training",
-                  "value": true
-                },
-                {
-                  "@type": "LocationFeatureSpecification", 
-                  "name": "Group Classes",
-                  "value": true
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Modern Equipment",
-                  "value": true
-                },
-                {
-                  "@type": "LocationFeatureSpecification",
-                  "name": "Supplement Store",
-                  "value": true
-                }
-              ],
-              "sameAs": [
-                "https://www.google.com/maps/place/OneRepMaax+Gym",
-                "https://www.facebook.com/onerepmaax",
-                "https://www.instagram.com/onerepmaax"
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
 
       <footer 
         className="pt-16 sm:pt-20 md:pt-24 lg:pt-28 lg:mx-32 mx-8 mb-16 font-DM text-lg text-gray-800"

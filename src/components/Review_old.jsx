@@ -1,12 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { IMAGES } from '../config/imageConfig';
-import Icon from '../components/Icon';
-import { Helmet } from 'react-helmet';
+import { FaStar } from 'react-icons/fa';
+import Icon from './Icon';
 
-const Review = () => {
+const Review_old = () => {
   const sliderRef = useRef(null);
   const pauseTimeoutRef = useRef(null);
   const holdTimeoutRef = useRef(null);
@@ -167,67 +166,6 @@ const Review = () => {
 
   return (
     <>
-      <Helmet>
-        <title>OneRepMaax Gym Reviews - Member Testimonials Jamshedpur | 4.9★ Rated</title>
-        <meta 
-          name="description" 
-          content="Read authentic reviews from OneRepMaax Gym members in Jamshedpur. 4.9★ rated fitness center with 60+ Google reviews. Discover why our members love training with K11 certified trainers at Dimna Road." 
-        />
-        <meta 
-          name="keywords" 
-          content="OneRepMaax gym reviews, gym testimonials Jamshedpur, fitness center reviews Mango, gym member feedback, best gym reviews Dimna Road, OneRepMaax member experiences, certified trainer reviews, gym ratings Jamshedpur" 
-        />
-        <meta property="og:title" content="OneRepMaax Gym Reviews - 4.9★ Member Testimonials | Jamshedpur" />
-        <meta property="og:description" content="Discover why OneRepMaax Gym members love our certified trainers and premium facilities. Read authentic reviews from our fitness community." />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="OneRepMaax Gym Reviews - Member Testimonials" />
-        <meta name="twitter:description" content="4.9★ rated gym with authentic member reviews and testimonials from Jamshedpur's premier fitness center." />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "OneRepMaax Gym Member Reviews",
-            "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
-            "numberOfItems": reviews.length,
-            "itemListElement": reviews.map((review, index) => ({
-              "@type": "Review",
-              "position": index + 1,
-              "reviewBody": review.quote,
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": review.rating,
-                "bestRating": 5,
-                "worstRating": 1
-              },
-              "datePublished": review.date,
-              "author": {
-                "@type": "Person",
-                "name": review.name
-              },
-              "itemReviewed": {
-                "@type": "Gym",
-                "name": "OneRepMaax Gym",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Dimna Rd, Shankoshai",
-                  "addressLocality": "Mango, Jamshedpur",
-                  "addressRegion": "Jharkhand",
-                  "postalCode": "831018",
-                  "addressCountry": "India"
-                }
-              }
-            })),
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "60",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
-          })}
-        </script>
-      </Helmet>
 
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-16" 
@@ -292,7 +230,7 @@ const Review = () => {
                 </div>
 
                 <div className="mt-4">
-                  <div className="text-yellow-400 text-2xl mb-2">{review.rating}</div>
+                  <div className="text-yellow-400 text-2xl mb-2">{review.ratingStars}</div>
                   <p className="text-white text-2xl">{review.name}</p>
                   <p className="text-[#48D3A3] text-xl">{review.role}</p>
                 </div>
@@ -301,10 +239,9 @@ const Review = () => {
 
           ))}
         </Slider>
-
-
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   );
 };
 

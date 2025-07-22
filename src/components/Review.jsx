@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { IMAGES } from '../config/imageConfig';
 import Icon from '../components/Icon';
-import { Helmet } from 'react-helmet';
 
 const Review = () => {
   const sliderRef = useRef(null);
@@ -176,74 +175,6 @@ const Review = () => {
 
   return (
     <>
-      <Helmet>
-        <title>OneRepMaax Gym Reviews - Member Testimonials Jamshedpur | 4.9★ Rated Since 2025</title>
-        <meta 
-          name="description" 
-          content="Read authentic reviews from OneRepMaax Gym members in Jamshedpur since inauguration in January 2025. 4.9★ rated fitness center with 60+ Google reviews. Discover why our members love training with K11 certified trainers at Dimna Road." 
-        />
-        <meta 
-          name="keywords" 
-          content="OneRepMaax gym reviews 2025, gym testimonials Jamshedpur, fitness center reviews Mango, gym member feedback, best gym reviews Dimna Road, OneRepMaax member experiences, certified trainer reviews, gym ratings Jamshedpur, new gym 2025" 
-        />
-        <meta property="og:title" content="OneRepMaax Gym Reviews - 4.9★ Member Testimonials Since 2025 | Jamshedpur" />
-        <meta property="og:description" content="Discover why OneRepMaax Gym members love our certified trainers and premium facilities since our 2025 inauguration. Read authentic reviews from our fitness community." />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="OneRepMaax Gym Reviews - Member Testimonials Since 2025" />
-        <meta name="twitter:description" content="4.9★ rated gym with authentic member reviews and testimonials from Jamshedpur's premier fitness center since January 2025." />
-        <link rel="canonical" href="https://onerepmaaxgym.in/reviews" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="author" content="OneRepMaax Gym" />
-        <meta name="publisher" content="OneRepMaax Gym" />
-        <meta property="article:published_time" content="2025-01-07T00:00:00+05:30" />
-        <meta property="article:modified_time" content="2025-07-19T00:00:00+05:30" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "OneRepMaax Gym Member Reviews",
-            "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
-            "numberOfItems": reviews.length,
-            "itemListElement": reviews.map((review, index) => ({
-              "@type": "Review",
-              "position": index + 1,
-              "reviewBody": review.quote,
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": review.rating,
-                "bestRating": 5,
-                "worstRating": 1
-              },
-              "datePublished": review.date,
-              "author": {
-                "@type": "Person",
-                "name": review.name
-              },
-              "itemReviewed": {
-                "@type": "Gym",
-                "name": "OneRepMaax Gym",
-                "url": "https://onerepmaaxgym.in",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Dimna Rd, Shankoshai",
-                  "addressLocality": "Mango, Jamshedpur",
-                  "addressRegion": "Jharkhand",
-                  "postalCode": "831018",
-                  "addressCountry": "India"
-                }
-              }
-            })),
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": reviews.length.toString(),
-              "bestRating": "5",
-              "worstRating": "1"
-            }
-          })}
-        </script>
-      </Helmet>
 
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 mb-16" 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { gallery } from '../assets/Gallery/gallery';
 import Icon from '../components/Icon';
-import { Helmet } from 'react-helmet';
 
 const PhotoGrid = () => {
   const photos = [
@@ -15,72 +14,6 @@ const PhotoGrid = () => {
 
   return (
     <>
-      <Helmet>
-        <title>OneRepMaax Gym Gallery - Premium Fitness Center Photos Jamshedpur | 5000+ Sq Ft</title>
-        <meta 
-          name="description" 
-          content="Explore OneRepMaax Gym photo gallery showcasing our 5000+ sq ft fitness center with premium Jaguar equipment, K11 certified trainers, and modern facilities at Dimna Road, Jamshedpur. See our vibrant fitness community in action!" 
-        />
-        <meta 
-          name="keywords" 
-          content="OneRepMaax gym photos, gym gallery Jamshedpur, fitness center images, premium gym equipment photos, Jaguar gym equipment, gym facility tour, modern gym interior, fitness center Dimna Road, gym photos Mango Jamshedpur, state-of-the-art gym equipment, professional gym environment, spacious gym facility, OneRepMaax photo gallery" 
-        />
-        <meta property="og:title" content="OneRepMaax Gym Gallery - Premium Fitness Facility Photos | Jamshedpur" />
-        <meta property="og:description" content="Take a visual tour of OneRepMaax Gym's 5000+ sq ft facility with premium equipment, professional training environment, and vibrant fitness community at Dimna Road, Jamshedpur." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://onerepmaaxgym.in/allPhotos/ft-8.webp" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="OneRepMaax Gym Gallery - Premium Fitness Center Photos" />
-        <meta name="twitter:description" content="Explore our modern 5000+ sq ft fitness facility with premium Jaguar equipment and professional training environment." />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ImageGallery",
-              "name": "OneRepMaax Gym Photo Gallery",
-              "description": "Photo gallery showcasing OneRepMaax Gym's premium fitness facility, equipment, and training environment in Jamshedpur",
-              "url": "https://onerepmaaxgym.in/gallery",
-              "about": {
-                "@type": "Gym",
-                "name": "OneRepMaax Gym",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Dimna Rd, Shankoshai",
-                  "addressLocality": "Mango, Jamshedpur",
-                  "addressRegion": "Jharkhand",
-                  "postalCode": "831018",
-                  "addressCountry": "India"
-                }
-              },
-              "image": [
-                {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaaxgym.in/allPhotos/f1.webp",
-                  "description": "OneRepMaax Gym training session with professional fitness equipment"
-                },
-                {
-                  "@type": "ImageObject", 
-                  "url": "https://onerepmaaxgym.in/allPhotos/e4.webp",
-                  "description": "State-of-the-art gym equipment at OneRepMaax Jamshedpur"
-                },
-                {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaaxgym.in/allPhotos/ft-8.webp", 
-                  "description": "Modern fitness facility with premium Jaguar equipment"
-                }
-              ],
-              "publisher": {
-                "@type": "Organization",
-                "name": "OneRepMaax Gym",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaaxgym.in/logo.png"
-                }
-              }
-            }
-          `}
-        </script>
-      </Helmet>
       
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-3" 
