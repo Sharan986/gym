@@ -61,181 +61,152 @@ const Header = () => {
         <meta name="twitter:description" content="Premium fitness center at Dimna Rd with K11 certified trainers. Memberships from Rs 1,200/month. Personal training, yoga, Zumba available." />
         <link rel="canonical" href="https://onerepmaaxgym.in" />
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Gym",
-              "name": "OneRepMaax Gym",
-              "description": "Premier fitness center in Jamshedpur offering personal training, yoga, Zumba, and state-of-the-art equipment with certified trainers",
-              "url": "https://onerepmaaxgym.in",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Dimna Rd, Shankoshai",
-                "addressLocality": "Mango, Jamshedpur",
-                "addressRegion": "Jharkhand",
-                "postalCode": "831018",
-                "addressCountry": "India"
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Gym",
+            "name": "OneRepMaax Gym",
+            "description": "Premier fitness center in Jamshedpur offering personal training, yoga, Zumba, and state-of-the-art equipment with certified trainers",
+            "url": "https://onerepmaaxgym.in",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Dimna Rd, Shankoshai",
+              "addressLocality": "Mango, Jamshedpur",
+              "addressRegion": "Jharkhand",
+              "postalCode": "831018",
+              "addressCountry": "India"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.7868",
+              "longitude": "86.2029"
+            },
+            "openingHours": ["Mo-Sa 05:00-23:00", "Su 08:00-18:00"],
+            "telephone": "+91-9204057290",
+            "email": "onerepmaaxgym@gmail.com",
+            "priceRange": "₹₹",
+            "founder": {
+              "@type": "Person",
+              "name": "Aditya Singh",
+              "jobTitle": "Owner & Founder",
+              "hasCredential": ["K11 Certified Trainer", "CPR & AED Certified", "REPS India Member", "Certified Nutritionist"]
+            },
+            "amenityFeature": [
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Personal Training",
+                "value": true
               },
-              "openingHours": ["Mo-Sa 05:00-23:00", "Su 08:00-18:00"],
-              "telephone": "+91-9204057290",
-              "priceRange": "Rs 1,200 - Rs 12,000",
-              "founder": {
-                "@type": "Person",
-                "name": "Aditya Singh",
-                "jobTitle": "Owner & Founder",
-                "hasCredential": ["K11 Certified Trainer", "CPR & AED Certified", "REPS India Member", "Certified Nutritionist"]
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Group Classes",
+                "value": true
               },
-              "amenityFeature": [
-                "Cardio Equipment",
-                "Strength Training Equipment",
-                "Personal Training",
-                "Group Personal Training",
-                "Yoga Classes",
-                "Zumba Classes",
-                "Functional Training",
-                "Locker Facility",
-                "Free WiFi",
-                "Free Coffee",
-                "Ample Parking",
-                "Separate Changing Rooms",
-                "Posing Room"
-              ],
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Monthly Membership",
-                  "price": "1200",
-                  "priceCurrency": "INR",
-                  "category": "Membership"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Annual Membership",
-                  "price": "7500",
-                  "priceCurrency": "INR",
-                  "category": "Membership"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Personal Training",
-                  "price": "5000",
-                  "priceCurrency": "INR",
-                  "category": "Personal Training"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Group Personal Training",
-                  "price": "9000",
-                  "priceCurrency": "INR",
-                  "category": "Group Training"
-                }
-              ],
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "22.8046",
-                "longitude": "86.2029"
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Modern Equipment",
+                "value": true
               },
-              "areaServed": [
-                "Jamshedpur",
-                "Mango",
-                "Dimna",
-                "Sankosai",
-                "Shankoshai"
-              ],
-              "nearbyLandmarks": [
-                "Sunrise Tiles",
-                "Dimna Road No.4", 
-                "Aastha Space Town",
-                "Hero Showroom"
-              ],
-              "event": [
-                {
-                  "@type": "Event",
-                  "name": "Decathlon Event",
-                  "description": "Community fitness event organized by OneRepMaax Gym"
-                },
-                {
-                  "@type": "Event", 
-                  "name": "Blood Donation Camp",
-                  "description": "Community blood donation camp organized by OneRepMaax Gym"
-                }
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Fitness Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "name": "Weight Loss Transformation Program",
-                    "description": "Proven weight loss transformations with certified nutritionist guidance"
-                  },
-                  {
-                    "@type": "Offer",
-                    "name": "Nutrition Consultation",
-                    "description": "Professional nutrition guidance by certified nutritionist Aditya Singh"
-                  }
-                ]
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Locker Facility",
+                "value": true
               }
-            }
-          `}
+            ],
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Monthly Membership",
+                "price": "1200.00",
+                "priceCurrency": "INR",
+                "category": "Membership",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Annual Membership",
+                "price": "7500.00",
+                "priceCurrency": "INR",
+                "category": "Membership",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "name": "Personal Training",
+                "price": "5000.00",
+                "priceCurrency": "INR",
+                "category": "Personal Training",
+                "availability": "https://schema.org/InStock"
+              }
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "61",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "sameAs": [
+              "https://www.instagram.com/onerepmaaxgym/",
+              "https://www.facebook.com/onerepmaaxgym",
+              "https://www.youtube.com/@onerepmaaxgym"
+            ]
+          })}
         </script>
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What are OneRepMaax Gym membership prices?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym offers flexible membership plans: 1 Month Rs 1,200, 3 Months Rs 2,700, 6 Months Rs 5,100, 9 Months Rs 6,800, and 12 Months Rs 7,500. We also offer personal training and group training options."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What are OneRepMaax Gym opening hours?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym is open Monday to Saturday from 5:00 AM to 11:00 PM, and Sunday from 8:00 AM to 6:00 PM. We're located at Dimna Rd, Shankoshai, Mango, Jamshedpur."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you offer personal training in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym offers personal training with K11 certified trainers including CPR & AED certified professionals. Personal training rates start from Rs 5,000 per month."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What facilities does OneRepMaax Gym provide?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym provides cardio equipment, strength training, yoga, Zumba, functional training, locker facility, free WiFi, free coffee, ample parking, separate changing rooms, and posing room. We also offer nutrition consultation and weight loss transformation programs."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Where is OneRepMaax Gym located in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym is located at Dimna Rd, Shankoshai, Mango, Jamshedpur 831018. We are near Sunrise Tiles, Hero Showroom, Aastha Space Town, and Dimna Road No.4."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes OneRepMaax Gym different from other gyms in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym stands out with our founder Aditya Singh being a K11 certified trainer, REPS India member, and certified nutritionist. We offer proven weight loss transformations, nutrition consultation, and community involvement through events like Decathlon and blood donation camps."
-                  }
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are OneRepMaax Gym membership prices?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym offers flexible membership plans: 1 Month Rs 1,200, 3 Months Rs 2,700, 6 Months Rs 5,100, 9 Months Rs 6,800, and 12 Months Rs 7,500. We also offer personal training and group training options."
                 }
-              ]
-            }
-          `}
+              },
+              {
+                "@type": "Question",
+                "name": "What are OneRepMaax Gym opening hours?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym is open Monday to Saturday from 5:00 AM to 11:00 PM, and Sunday from 8:00 AM to 6:00 PM. We're located at Dimna Rd, Shankoshai, Mango, Jamshedpur."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer personal training in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, OneRepMaax Gym offers personal training with K11 certified trainers including CPR & AED certified professionals. Personal training rates start from Rs 5,000 per month."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What facilities does OneRepMaax Gym provide?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym provides cardio equipment, strength training, yoga, Zumba, functional training, locker facility, free WiFi, free coffee, ample parking, separate changing rooms, and posing room. We also offer nutrition consultation and weight loss transformation programs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is OneRepMaax Gym located in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym is located at Dimna Rd, Shankoshai, Mango, Jamshedpur 831018. We are near Sunrise Tiles, Hero Showroom, Aastha Space Town, and Dimna Road No.4."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes OneRepMaax Gym different from other gyms in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym stands out with our founder Aditya Singh being a K11 certified trainer, REPS India member, and certified nutritionist. We offer proven weight loss transformations, nutrition consultation, and community involvement through events like Decathlon and blood donation camps."
+                }
+              }
+            ]
+          })}
         </script>
       </Helmet>
   
