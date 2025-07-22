@@ -13,8 +13,6 @@ const Footer = () => {
         className="pt-16 sm:pt-20 md:pt-24 lg:pt-28 lg:mx-32 mx-8 mb-16 font-DM text-lg text-gray-800"
         role="contentinfo"
         aria-label="Footer navigation and contact information"
-        itemScope
-        itemType="https://schema.org/Gym"
       >
         
         <div className="mb-10 text-center">
@@ -22,10 +20,9 @@ const Footer = () => {
             src={logo} 
             alt="OneRepMaax Gym Logo - Premier Fitness Center Jamshedpur" 
             className="w-24 sm:w-24 md:w-28 mb-4 mx-auto"
-            itemProp="logo"
             loading="lazy"
           />
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-DM text-gray-300 font-semibold max-w-2xl mx-auto leading-relaxed" itemProp="description">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-DM text-gray-300 font-semibold max-w-2xl mx-auto leading-relaxed">
             Transform your fitness journey at Jamshedpur's premier gym. Professional training, modern equipment, and a supportive community since 2025.
           </p>
         </div>
@@ -35,67 +32,61 @@ const Footer = () => {
           <div className="md:flex md:space-x-10 lg:space-x-16">
             {/* COMPANY */}
             <div className="w-full md:w-1/2 mb-10 md:mb-0">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 text-[#48D3A3] font-One uppercase" itemProp="name">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 text-[#48D3A3] font-One uppercase">
                 Company
               </h2>
               <nav aria-label="Company navigation">
-                <ul className="grid grid-cols-2 gap-x-6 gap-y-4" itemScope itemType="https://schema.org/SiteNavigationElement">
-                  <li itemProp="name">
+                <ul className="grid grid-cols-2 gap-x-6 gap-y-4">
+                  <li>
                     <Link 
                       to="/About" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Learn about OneRepMaax Gym"
-                      itemProp="url"
                     >
                       About Us
                     </Link>
                   </li>
-                  <li itemProp="name">
+                  <li>
                     <Link 
                       to="/ServicesDetail" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Our fitness services and programs"
-                      itemProp="url"
                     >
                       Services
                     </Link>
                   </li>
-                  <li itemProp="name">
+                  <li>
                     <Link 
                       to="/Supplement" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Fitness supplements and nutrition"
-                      itemProp="url"
                     >
                       Supplements
                     </Link>
                   </li>
-                  <li itemProp="name">
+                  <li>
                     <Link 
                       to="/Gallery" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Gym photos and facility gallery"
-                      itemProp="url"
                     >
                       Gallery
                     </Link>
                   </li>
-                  <li itemProp="name">
+                  <li>
                     <Link 
                       to="/JoinUs" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Contact OneRepMaax Gym"
-                      itemProp="url"
                     >
                       Contact Us
                     </Link>
                   </li>
-                  <li itemProp="name">
+                  <li>
                     <Link 
                       to="/WorkoutGuide" 
                       className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Workout guides and fitness tips"
-                      itemProp="url"
                     >
                       Workout Guide
                     </Link>
@@ -105,7 +96,7 @@ const Footer = () => {
             </div>
 
             {/* CONTACT US */}
-            <div className="w-full md:w-1/2" itemScope itemType="https://schema.org/ContactPoint">
+            <div className="w-full md:w-1/2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 text-[#48D3A3] font-One uppercase">
                 Contact Us
               </h2>
@@ -122,7 +113,6 @@ const Footer = () => {
                       href="tel:+919204057290" 
                       className="hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Call OneRepMaax Gym"
-                      itemProp="telephone"
                     >
                       +91 9204057290
                     </a>
@@ -138,7 +128,6 @@ const Footer = () => {
                       href="mailto:onerepmaaxgym@gmail.com" 
                       className="hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Email OneRepMaax Gym"
-                      itemProp="email"
                     >
                       onerepmaaxgym@gmail.com
                     </a>
@@ -150,12 +139,12 @@ const Footer = () => {
                       className="mt-1 w-5 h-5 flex-shrink-0" 
                       loading="lazy"
                     />
-                    <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                      <span itemProp="streetAddress">One Rep Maax Gym, Dimna Rd, Shankoshai</span>, 
-                      <span itemProp="addressLocality"> Mango</span>, 
-                      <span itemProp="addressLocality"> Jamshedpur</span>, 
-                      <span itemProp="addressRegion"> Jharkhand</span> 
-                      <span itemProp="postalCode">831018</span>
+                    <span>
+                      One Rep Maax Gym, Dimna Rd, Shankoshai, 
+                      Mango, 
+                      Jamshedpur, 
+                      Jharkhand 
+                      831018
                     </span>
                   </li>
                 </ul>
@@ -164,7 +153,7 @@ const Footer = () => {
           </div>
 
           {/* OPERATIONAL HOURS */}
-          <div itemScope itemType="https://schema.org/OpeningHoursSpecification">
+          <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6 text-[#48D3A3] font-One uppercase">
               Operating Hours
             </h2>
@@ -174,8 +163,8 @@ const Footer = () => {
                   <span className="text-yellow-400 text-lg sm:text-xl lg:text-2xl font-One font-bold min-w-[120px]">
                     Mon - Sat:
                   </span>
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-300" itemProp="opens" content="05:00">
-                    05:00 AM - <span itemProp="closes" content="23:00">11:00 PM</span>
+                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-300">
+                    05:00 AM - <span>11:00 PM</span>
                   </span>
                 </div>
                 <div className="border-t border-gray-600 mt-4" />
@@ -185,8 +174,8 @@ const Footer = () => {
                   <span className="text-yellow-400 text-lg sm:text-xl lg:text-2xl font-One font-bold min-w-[120px]">
                     Sunday:
                   </span>
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-300" itemProp="opens" content="08:00">
-                    08:00 AM - <span itemProp="closes" content="18:00">06:00 PM</span>
+                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-300">
+                    08:00 AM - <span>06:00 PM</span>
                   </span>
                 </div>
                 <div className="border-t border-gray-600 mt-4" />

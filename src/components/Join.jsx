@@ -7,8 +7,6 @@ const Join = () => {
       
       <section 
         className="bg-gradient-to-br from-[#FCDE3B] via-[#F5D632] to-[#E8C547] flex flex-col lg:flex-row justify-between items-center font-One mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 shadow-lg sm:shadow-xl md:shadow-2xl relative overflow-hidden min-h-[300px] sm:min-h-[350px] md:min-h-[400px] lg:min-h-[450px]" 
-        itemScope 
-        itemType="https://schema.org/Action"
         aria-labelledby="join-heading"
         role="banner"
       >
@@ -21,14 +19,12 @@ const Join = () => {
           <h2 
             id="join-heading" 
             className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl px-1 sm:px-2 py-2 sm:py-4 text-center lg:text-left font-One font-bold text-[#070915] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight drop-shadow-sm"
-            itemProp="name"
           >
             Ready to Transform Your 
             <span className="block text-[#2D5016] font-One font-extrabold animate-pulse mt-1 sm:mt-2">Workout Routine?</span>
           </h2>
           <p 
             className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#070915]/80 text-center lg:text-left mt-2 sm:mt-3 md:mt-4 font-M font-medium leading-relaxed max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl"
-            itemProp="description"
           >
             Join Jamshedpur's premier fitness community with expert-designed workout programs
           </p>
@@ -46,13 +42,11 @@ const Join = () => {
           <Link 
             to="/WorkoutGuide" 
             className="w-full sm:w-auto lg:w-full xl:w-auto group max-w-md sm:max-w-lg md:max-w-xl lg:max-w-md xl:max-w-lg"
-            itemProp="target"
             aria-label="Access workout guide and training programs at OneRepMaax Gym"
           >
             <button 
               className="relative border-2 sm:border-3 md:border-4 border-[#070915] text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl bg-[#070915] text-[#FCDE3B] p-3 xs:p-4 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10 w-full font-One font-bold uppercase tracking-wider transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2 hover:shadow-xl sm:hover:shadow-2xl overflow-hidden"
               type="button"
-              itemProp="instrument"
             >
               {/* Button gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-[#070915] via-[#1a1a2e] to-[#070915] group-hover:from-[#2D5016] group-hover:via-[#3a6b1f] group-hover:to-[#2D5016] transition-all duration-500" aria-hidden="true"></div>

@@ -18,27 +18,25 @@ const PhotoGrid = () => {
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-3" 
         aria-labelledby="gallery-heading"
-        itemScope 
-        itemType="https://schema.org/ImageGallery"
       >
         <div className="flex items-center gap-2 mb-3 sm:mb-4">
           <Icon/>
-          <header id="gallery-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]" itemProp="name">
+          <header id="gallery-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]">
             Our Gallery
           </header>
         </div>
         
-        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight' itemProp="headline">
+        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight'>
           No Weakness Allowed
         </h2>
         
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-M mb-6 sm:mb-8 max-w-full sm:max-w-2xl md:max-w-3xl leading-relaxed" itemProp="description">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-M mb-6 sm:mb-8 max-w-full sm:max-w-2xl md:max-w-3xl leading-relaxed">
           Experience the energy and dedication at OneRepMaax Gym through our photo gallery showcasing 
           state-of-the-art equipment, training sessions, and our vibrant fitness community.
         </p>
 
         <div className="grid grid-cols-3 grid-rows-2 gap-1 xs:gap-2 sm:gap-3 md:gap-4 lg:gap-5
-                        h-[30vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[75vh]" itemProp="image">
+                        h-[30vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[75vh]">
           {/* Left stacked images */}
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
@@ -46,7 +44,6 @@ const PhotoGrid = () => {
               alt={photos[0].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
             />
           </div>
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
@@ -55,7 +52,7 @@ const PhotoGrid = () => {
               alt={photos[1].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
 
@@ -66,7 +63,7 @@ const PhotoGrid = () => {
               alt={photos[2].alt} 
               className="w-full h-full object-cover object-center transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
@@ -78,7 +75,7 @@ const PhotoGrid = () => {
               alt={photos[3].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
           <div className="col-start-3 row-start-2 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
@@ -87,7 +84,7 @@ const PhotoGrid = () => {
               alt={photos[4].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
         </div>
@@ -97,7 +94,7 @@ const PhotoGrid = () => {
             to="/Gallery"
             className="group block w-full"
             aria-label="View complete gallery of OneRepMaax Gym photos and facility tour"
-            itemProp="url"
+           
           >
             <button className="w-full h-12 sm:h-16 md:h-18 lg:h-20 bg-gradient-to-r from-[#FCDE3B] via-[#F5D632] to-[#FCDE3B] text-[#070915] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-M font-bold uppercase tracking-wider transition-all duration-300 transform group-hover:scale-[1.02] sm:group-hover:scale-105 group-hover:shadow-xl sm:group-hover:shadow-2xl relative overflow-hidden">
               <span className="relative z-10 flex items-center justify-center gap-2 sm:gap-3">

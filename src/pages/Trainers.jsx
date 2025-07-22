@@ -193,17 +193,17 @@ const Trainers = () => {
   return (
     <>
       
-      <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="trainers" aria-labelledby="trainers-heading" itemScope itemType="https://schema.org/ItemList">
+      <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="trainers" aria-labelledby="trainers-heading">
         <div className="flex items-center gap-2">
           <Icon />
           <header id="trainers-heading" className="text-2xl md:text-3xl lg:text-4xl font-One w-full text-[#48D3A3]">
-            <h1 itemProp="name">OUR TRAINERS</h1>
+            <h1>OUR TRAINERS</h1>
           </header>
         </div>
-        <h2 className="text-3xl md:text-5xl lg:text-6xl w-full mt-4 font-One uppercase" itemProp="description">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl w-full mt-4 font-One uppercase">
           Expert Fitness Team in Jamshedpur
         </h2>
-        <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4" itemProp="description">
+        <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4">
           Meet Jamshedpur's most qualified fitness professionals at OneRepMaax Gym. Our team includes K11 certified trainers, 
           REPS India members, and certified nutritionists with proven track records in weight loss, strength training, and specialized fitness programs.
         </p>

@@ -179,18 +179,16 @@ const Review = () => {
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 mb-16" 
         aria-labelledby="reviews-heading"
-        itemScope 
-        itemType="https://schema.org/ItemList"
       >
         <div className="lg:mx-1 mx-1">
           <div className="flex items-center gap-2 mb-3 sm:mb-4">
             <Icon />
-            <header id="reviews-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]" itemProp="name">
+            <header id="reviews-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]">
               Our Reviews
             </header>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight" itemProp="description">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight">
             What Our Members Are Saying
           </h2>
           
@@ -214,7 +212,7 @@ const Review = () => {
           </div>
         </div>
 
-        <div className="review-slider" itemProp="itemListElement">
+        <div className="review-slider">
           <Slider {...settings} ref={sliderRef}>
             {reviews.map((review, index) => (
               <div key={review.id} className="px-2 sm:px-3 h-full">
@@ -225,9 +223,6 @@ const Review = () => {
                   onMouseDown={handleCardHoldStart}
                   onMouseUp={handleCardHoldEnd}
                   onMouseLeave={handleCardHoldEnd}
-                  itemScope
-                  itemType="https://schema.org/Review"
-                  itemProp="review"
                 >
                   {/* Background gradient effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -241,7 +236,6 @@ const Review = () => {
                           alt={`${review.name} - OneRepMaax Gym member`}
                           className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-cover border-3 border-[#48D3A3] shadow-lg group-hover:scale-105 transition-transform duration-300 rounded-full"
                           loading="lazy"
-                          itemProp="image"
                         />
                         <div className="absolute -bottom-2 -right-2 bg-[#48D3A3] text-black text-xs sm:text-sm font-One font-bold px-2 py-1 shadow-lg rounded-lg">
                           ★{review.rating}
@@ -250,7 +244,7 @@ const Review = () => {
                     </div>
 
                     {/* Review Quote */}
-                    <blockquote className="text-white font-DM text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-4 sm:mb-5 px-3 sm:px-4 flex items-center justify-center min-h-[4rem] sm:min-h-[5rem] md:min-h-[6rem] relative" itemProp="reviewBody">
+                    <blockquote className="text-white font-DM text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-4 sm:mb-5 px-3 sm:px-4 flex items-center justify-center min-h-[4rem] sm:min-h-[5rem] md:min-h-[6rem] relative">
                       <div className="relative text-center">
                         <span className="relative z-10">
                           {review.quote}
@@ -261,20 +255,20 @@ const Review = () => {
 
                   {/* Rating and Member Info */}
                   <div className="relative z-10 mt-auto">
-                    <div className="text-yellow-400 text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                      <span itemProp="ratingValue" className="sr-only">{review.rating}</span>
-                      <span itemProp="bestRating" className="sr-only">5</span>
+                    <div className="text-yellow-400 text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3">
+                      <span className="sr-only">{review.rating}</span>
+                      <span className="sr-only">5</span>
                       {review.ratingStars}
                     </div>
-                    <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                      <h3 className="text-white text-lg sm:text-xl md:text-2xl font-One font-bold mb-1" itemProp="name">
+                    <div>
+                      <h3 className="text-white text-lg sm:text-xl md:text-2xl font-One font-bold mb-1">
                         {review.name}
                       </h3>
-                      <p className="text-[#48D3A3] text-sm sm:text-base md:text-lg font-DM font-medium" itemProp="jobTitle">
+                      <p className="text-[#48D3A3] text-sm sm:text-base md:text-lg font-DM font-medium">
                         {review.role}
                       </p>
                     </div>
-                    <time className="text-xs sm:text-sm text-gray-500 font-DM mt-2 block" itemProp="datePublished" dateTime={review.date}>
+                    <time className="text-xs sm:text-sm text-gray-500 font-DM mt-2 block" dateTime={review.date}>
                       {new Date(review.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 

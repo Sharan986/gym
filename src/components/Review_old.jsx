@@ -170,17 +170,15 @@ const Review_old = () => {
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-16" 
         aria-labelledby="reviews-heading"
-        itemScope 
-        itemType="https://schema.org/ItemList"
       >
         <div className="flex items-center gap-2 mb-3 sm:mb-4">
           <Icon />
-          <header id="reviews-heading" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]" itemProp="name">
+          <header id="reviews-heading" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]">
             Our Reviews
           </header>
         </div>
         
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight" itemProp="description">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight">
           What Our Members Are Saying
         </h2>
         
@@ -203,7 +201,7 @@ const Review_old = () => {
           </div>
         </div>
 
-        <div className="review-slider" itemProp="itemListElement">
+        <div className="review-slider">
         <Slider {...settings} ref={sliderRef}>
           {reviews.map((review) => (
             <div key={review.id} className="p-1 h-full">
