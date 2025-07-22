@@ -377,54 +377,52 @@ const Trainers = () => {
         </script>
         
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Who are the best personal trainers in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym has Jamshedpur's best trainers led by founder Aditya Singh (K11 certified, REPS India member, certified nutritionist), plus expert trainers specializing in women's fitness, strength training, cardio, rehabilitation, and youth fitness."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What certifications do OneRepMaax trainers have?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our trainers hold prestigious certifications including K11 Certification, REPS India membership, Certified Nutritionist, CPR & AED Certified, Strength & Conditioning Specialist, Yoga Instructor, and specialized certifications in corrective exercise and youth fitness."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is there a female trainer available at OneRepMaax Gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Smriti Roy is our co-founder and experienced female trainer specializing in women's fitness, functional training, yoga, and group classes with 8+ years of experience."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What specializations do OneRepMaax trainers offer?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our trainers specialize in personal training, weight loss, nutrition consultation, strength training, women's fitness, functional training, powerlifting, cardio training, rehabilitation, injury prevention, youth fitness, and sports conditioning."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How experienced are the trainers at OneRepMaax Gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our trainers have 3-10+ years of experience, with founder Aditya Singh having 10+ years as a K11 certified trainer and REPS India member, ensuring expert guidance for all fitness goals."
-                  }
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who are the best personal trainers in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym has Jamshedpur's best trainers led by founder Aditya Singh (K11 certified, REPS India member, certified nutritionist), plus expert trainers specializing in women's fitness, strength training, cardio, rehabilitation, and youth fitness."
                 }
-              ]
-            }
-          `}
+              },
+              {
+                "@type": "Question",
+                "name": "What certifications do OneRepMaax trainers have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our trainers hold prestigious certifications including K11 Certification, REPS India membership, Certified Nutritionist, CPR & AED Certified, Strength & Conditioning Specialist, Yoga Instructor, and specialized certifications in corrective exercise and youth fitness."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a female trainer available at OneRepMaax Gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Smriti Roy is our co-founder and experienced female trainer specializing in women's fitness, functional training, yoga, and group classes with 8+ years of experience."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What specializations do OneRepMaax trainers offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our trainers specialize in personal training, weight loss, nutrition consultation, strength training, women's fitness, functional training, powerlifting, cardio training, rehabilitation, injury prevention, youth fitness, and sports conditioning."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How experienced are the trainers at OneRepMaax Gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our trainers have 3-10+ years of experience, with founder Aditya Singh having 10+ years as a K11 certified trainer and REPS India member, ensuring expert guidance for all fitness goals."
+                }
+              }
+            ]
+          })}
         </script>
       </Helmet>
       

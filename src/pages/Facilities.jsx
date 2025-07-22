@@ -178,93 +178,89 @@ const Facilities = () => {
         </script>
 
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What gym equipment does OneRepMaax have?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym features professional treadmills, stationary bikes, Jaguar strength training equipment with 3 complete sets of every weight from 2.5kg to 40kg, resistance machines, and functional training tools in our 5000+ sq ft facility."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is OneRepMaax gym air conditioned?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym is fully air-conditioned across our entire 5000+ square feet facility. We maintain a comfortable temperature year-round with proper ventilation for optimal workout conditions."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What amenities are available at OneRepMaax gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym offers locker facilities, free WiFi, complimentary coffee, ample parking, separate changing rooms for men and women, posing room, first aid facilities, and sanitized equipment in a clean environment."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you have certified trainers at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax has K11 certified trainers and REPS India members including certified nutritionist Aditya Singh. Our trainers provide personal training, nutrition consultation, and conduct group classes including yoga and Zumba."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is OneRepMaax gym beginner friendly?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolutely! OneRepMaax Gym is designed to be beginner-friendly with dedicated workout guides available on our website, supportive trainers, and equipment suitable for all fitness levels from 2.5kg to 40kg weights."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What safety measures does OneRepMaax gym have?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym prioritizes safety with first aid availability, regular equipment sanitization, clean environment maintenance, proper ventilation, and trained staff to assist members with equipment usage."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What do Google reviews say about OneRepMaax gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym has an outstanding 4.9-star rating from 61 Google reviews. Members consistently praise our professional trainers, clean facilities, modern equipment, supportive environment, and effective fitness programs."
-                  }
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What gym equipment does OneRepMaax have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym features professional treadmills, stationary bikes, Jaguar strength training equipment with 3 complete sets of every weight from 2.5kg to 40kg, resistance machines, and functional training tools in our 5000+ sq ft facility."
                 }
-              ]
-            }
-          `}
+              },
+              {
+                "@type": "Question",
+                "name": "Is OneRepMaax gym air conditioned?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, OneRepMaax Gym is fully air-conditioned across our entire 5000+ square feet facility. We maintain a comfortable temperature year-round with proper ventilation for optimal workout conditions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What amenities are available at OneRepMaax gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym offers locker facilities, free WiFi, complimentary coffee, ample parking, separate changing rooms for men and women, posing room, first aid facilities, and sanitized equipment in a clean environment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you have certified trainers at OneRepMaax?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, OneRepMaax has K11 certified trainers and REPS India members including certified nutritionist Aditya Singh. Our trainers provide personal training, nutrition consultation, and conduct group classes including yoga and Zumba."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is OneRepMaax gym beginner friendly?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! OneRepMaax Gym is designed to be beginner-friendly with dedicated workout guides available on our website, supportive trainers, and equipment suitable for all fitness levels from 2.5kg to 40kg weights."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What safety measures does OneRepMaax gym have?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym prioritizes safety with first aid availability, regular equipment sanitization, clean environment maintenance, proper ventilation, and trained staff to assist members with equipment usage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do Google reviews say about OneRepMaax gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym has an outstanding 4.9-star rating from 61 Google reviews. Members consistently praise our professional trainers, clean facilities, modern equipment, supportive environment, and effective fitness programs."
+                }
+              }
+            ]
+          })}
         </script>
 
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://onerepmaaxgym.in"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Facilities",
-                  "item": "https://onerepmaaxgym.in/#facilities"
-                }
-              ]
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://onerepmaaxgym.in"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Facilities",
+                "item": "https://onerepmaaxgym.in/#facilities"
+              }
+            ]
+          })}
         </script>
       </Helmet>
 

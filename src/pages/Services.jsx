@@ -294,54 +294,52 @@ const Services = () => {
         </script>
         
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What fitness services are available at OneRepMaax Gym Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym offers comprehensive fitness services including K11 certified personal training (₹5,000/month), proven weight loss programs, strength training, yoga classes, Zumba fitness, and nutrition consultation by certified nutritionist Aditya Singh."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How much does personal training cost at OneRepMaax Gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Personal training at OneRepMaax Gym costs ₹5,000 per month. Our trainers are K11 certified with proven track records in weight loss transformations and strength training programs."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Are yoga and Zumba classes included in gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, yoga classes and Zumba fitness sessions are included with your OneRepMaax Gym membership. We offer professional instruction for flexibility, mindfulness, and cardio workouts."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Who provides nutrition consultation at OneRepMaax Gym?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nutrition consultation is provided by Aditya Singh, our founder who is a certified nutritionist, K11 certified trainer, and REPS India member with expertise in weight loss and fitness nutrition."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes OneRepMaax fitness services different in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax offers K11 certified trainers, proven weight loss transformations, comprehensive services under one roof, certified nutrition consultation, and 4.9★ rating with 61 Google reviews - making us Jamshedpur's top-rated fitness center."
-                  }
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What fitness services are available at OneRepMaax Gym Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax Gym offers comprehensive fitness services including K11 certified personal training (₹5,000/month), proven weight loss programs, strength training, yoga classes, Zumba fitness, and nutrition consultation by certified nutritionist Aditya Singh."
                 }
-              ]
-            }
-          `}
+              },
+              {
+                "@type": "Question",
+                "name": "How much does personal training cost at OneRepMaax Gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Personal training at OneRepMaax Gym costs ₹5,000 per month. Our trainers are K11 certified with proven track records in weight loss transformations and strength training programs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are yoga and Zumba classes included in gym membership?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, yoga classes and Zumba fitness sessions are included with your OneRepMaax Gym membership. We offer professional instruction for flexibility, mindfulness, and cardio workouts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who provides nutrition consultation at OneRepMaax Gym?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nutrition consultation is provided by Aditya Singh, our founder who is a certified nutritionist, K11 certified trainer, and REPS India member with expertise in weight loss and fitness nutrition."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes OneRepMaax fitness services different in Jamshedpur?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "OneRepMaax offers K11 certified trainers, proven weight loss transformations, comprehensive services under one roof, certified nutrition consultation, and 4.9★ rating with 61 Google reviews - making us Jamshedpur's top-rated fitness center."
+                }
+              }
+            ]
+          })}
         </script>
       </Helmet>
       
