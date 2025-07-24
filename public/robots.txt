@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Crawl-delay: 1
 
 # Prioritize homepage indexing
 Allow: /index.html
@@ -10,12 +9,11 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 Allow: /index.html
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
 Allow: /index.html
-Crawl-delay: 1
+
 
 # Explicitly allow important pages
 Allow: /about
