@@ -7,6 +7,9 @@ import {FITNESS_IMAGES, FACILITY_IMAGES} from '../config/imageConfig';
 import{ DSC06200, DSC06244 } from "../Imgs/Imgs"; 
 import {DSC06168} from '../Imgs/Imgs'; // Importing the specific image
 import {DSC06120} from '../Imgs/Imgs'; // Importing the specific image
+import {z1} from "../FT/ft.js"; // Importing the specific image
+import {oow} from "../FT/ft.js"; // Importing the specific image
+
 
 
 const Services = () => {
@@ -69,7 +72,7 @@ const Services = () => {
   const services = [ 
     {
       id: 1,
-      img: DSC06168, // Personal training image
+      img: z1, // Personal training image
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
       description: "K11 certified personal trainers in Jamshedpur with proven weight loss transformations",
@@ -85,21 +88,13 @@ const Services = () => {
       keywords: "weight loss Jamshedpur, fat loss program, nutrition consultation",
       price: "Customized plans available"
     },
-    {
-      id: 3,
-      img: DSC06200, // Strength training equipment image
-      logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
-      title: "Strength Training",
-      description: "Build muscle and strength with state-of-the-art equipment and expert guidance",
-      keywords: "strength training Jamshedpur, muscle building, powerlifting",
-      price: "Included in membership"
-    },
+
     {
       id: 4,
-      img: DSC06244, // Group fitness classes image
+      img: oow, // Group fitness classes image
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
-      title: "Group Fitness Classes",
-      description: "Engaging group classes including Zumba, yoga, and more for all fitness levels",
+      title: "Strength Training",
+      description:   "Build muscle and strength with state-of-the-art equipment and expert guidance",
       keywords: "group fitness Jamshedpur, Zumba classes, yoga classes",
       price: "Included in membership"
     },

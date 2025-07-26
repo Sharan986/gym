@@ -24,6 +24,8 @@ import i23 from "../w3/i23.webp";
 import i24 from "../w3/i24.webp";
 import i25 from "../w3/i25.webp";
 import i26 from "../w3/i26.webp";
+import ow from "../w3/ow.webp";
+import ow2 from "../w3/ow2.webp";
 
 export const w3 = {
     i1,
@@ -51,5 +53,7 @@ export const w3 = {
     i23,
     i24,
     i25,
-    i26
+    i26,
+    ow,
+    ow2
 }

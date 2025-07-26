@@ -5,7 +5,8 @@ import Join from "../components/Join";
 import Membership from "../pages/Membership";
 import { w3 } from "../assets/w3/w3.js";
 import { IMAGES } from "../config/imageConfig.js";
-
+import { FTCollection } from "../FT/ft.js";
+import {ImgsCollection } from "../Imgs/Imgs.js";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("Facility");
@@ -23,70 +24,119 @@ const Gallery = () => {
     }
   };
 
-  const facilityItems = [
-    { id: 1, title: "Strength Training Area", img: IMAGES.f1 },
-    { id: 2, title: "Cardio Equipment", img: IMAGES.f2 },
-    { id: 3, title: "Yoga Studio", img: IMAGES.f3 },
-    { id: 4, title: "Locker Rooms", img: IMAGES.f4 },
-    { id: 5, title: "Supplement Store", img: IMAGES.e5 },
-    { id: 6, title: "Reception Area", img: IMAGES.e6 },
-    { id: 7, title: "Free Weights Zone", img: IMAGES.e7 },
+  const classesItems = [
+    { id: 1, title: "Boxing Class", img: FTCollection.z20 },
+    { id: 2, title: "Yoga Session", img: FTCollection.z21 },
+    { id: 3, title: "Boxing Class", img: FTCollection.z22 },
+    { id: 4, title: "Boxing Class", img: FTCollection.z23 },
+    { id: 5, title: "Boxing Class", img: FTCollection.z24 },
+    { id: 6, title: "Boxing Class", img: FTCollection.z25 },
+    { id: 7, title: "Boxing Class", img: FTCollection.z26 },
+
+    
   ];
 
-  const classesItems = [
-    { id: 1, title: "Boxing Class", img: IMAGES.ft1 },
-    { id: 2, title: "Yoga Session", img: IMAGES.ft2 },
-    { id: 3, title: "HIIT Workout", img: IMAGES.ft3 },
-    { id: 4, title: "Martial Arts", img: IMAGES.ft4 },
-    { id: 5, title: "Spin Class", img: IMAGES.ft5 },
-    { id: 6, title: "Zumba Class", img: IMAGES.ft6 },
-    { id: 7, title: "Pilates Class", img: IMAGES.ft7 },
-    { id: 8, title: "Dance Fitness", img: IMAGES.ft8 },
-    { id: 9, title: "Strength Training", img: IMAGES.ft9 },
-    { id: 10, title: "Functional Training", img: IMAGES.ft10 },
-    { id: 11, title: "Aqua Aerobics", img: IMAGES.ft11 },
-    { id: 12, title: "Meditation Class", img: IMAGES.ft12 },
-    { id: 13, title: "Core Strengthening", img: IMAGES.ft13 },
+  const facilityItems = [
+   
+    { id: 2, title: "Yoga Session", img: FTCollection.z2 },
+    { id: 3, title: "HIIT Workout", img: FTCollection.z3 },
+    { id: 4, title: "Martial Arts", img: FTCollection.z4 },
+    { id: 5, title: "Spin Class", img: FTCollection.z5 },
+    { id: 30, title: "Dance Fitness", img: FTCollection.cc2 },
+    { id: 6, title: "Zumba Class", img: FTCollection.z6 },
+    { id: 7, title: "Pilates Class", img: FTCollection.z7 },
+    { id: 8, title: "Dance Fitness", img: FTCollection.z8 },
+    { id: 9, title: "Strength Training", img: FTCollection.z9 },
+    { id: 10, title: "Functional Training", img: FTCollection.z10 },
+    { id: 11, title: "Aqua Aerobics", img: FTCollection.z11 },
+    { id: 12, title: "Meditation Class", img: FTCollection.z12 },
+    { id: 13, title: "Core Strengthening", img: FTCollection.z13 },
+    { id: 14, title: "Flexibility Training", img: FTCollection.z14 },
+    { id: 15, title: "Balance and Stability", img: FTCollection.z15 },
+    { id: 16, title: "Senior Fitness", img: FTCollection.z16 },
+    { id: 17, title: "Kids Fitness", img: FTCollection.z17 },
+    { id: 18, title: "Bootcamp Training", img: FTCollection.z18 },
+    { id: 19, title: "Circuit Training", img: FTCollection.z19 },
+    { id: 20, title: "Circuit Training", img: FTCollection.z27 },
+    { id: 21, title: "Circuit Training", img: FTCollection.z28 },
+    { id: 22, title: "Circuit Training", img: FTCollection.z29 },
+    { id: 23, title: "Circuit Training", img: FTCollection.z30 },
+    
   ];
 
   const eventsItems = [
-    { id: 1, title: "Fitness Challenge", img: IMAGES.e1},
+    { id: 1, title: "Fitness Challenge", img: IMAGES.e1 },
     { id: 2, title: "Annual Competition", img: IMAGES.e2 },
     { id: 3, title: "Community Meetup", img: IMAGES.e3 },
     { id: 4, title: "Wellness Workshop", img: IMAGES.e4 },
     { id: 5, title: "Strength Training Area", img: IMAGES.e5 },
-    { id: 6, title: "Cardio Equipment", img: IMAGES.e6},
-    { id: 7, title: "Yoga Studio", img: IMAGES.e7},
+    { id: 6, title: "Cardio Equipment", img: IMAGES.e6 },
+    { id: 7, title: "Yoga Studio", img: IMAGES.e7 },
+    { id: 8, title: "Strength Training Area", img: IMAGES.f1 },
+    { id: 9, title: "Cardio Equipment", img: IMAGES.f2 },
+    { id: 10, title: "Yoga Studio", img: IMAGES.f3 },
+    { id: 11, title: "Locker Rooms", img: IMAGES.f4 },
+    { id: 12, title: "Supplement Store", img: IMAGES.e5 },
+    { id: 13, title: "Reception Area", img: IMAGES.e6 },
+    { id: 14, title: "Free Weights Zone", img: IMAGES.e7 },
+    { id: 24, title: "Yoga Session", img: FTCollection.c2 },
+    { id: 25, title: "HIIT Workout", img: FTCollection.c3 },
+    { id: 26, title: "Martial Arts", img: FTCollection.c4 },
+    { id: 27, title: "Spin Class", img: FTCollection.c5 },
+    { id: 28, title: "Zumba Class", img: FTCollection.c6 },
+    { id: 29, title: "Pilates Class", img: FTCollection.cc1 },
 
+    { id: 31, title: "Boxing Class", img: FTCollection.c1 },
   ];
 
   const MaaxedItems = [
+    { id: 44, title: "Gym Member 21", img: ImgsCollection.DSC06199 },
+    { id: 30, title: "Gym Member 8", img: ImgsCollection.DSC06143 },
+    { id: 25, title: "Gym Member 6", img: ImgsCollection.DSC06126 },
+    { id: 41, title: "Gym Member 18", img: ImgsCollection.DSC06178 },
     { id: 1, title: "Amarjeet Singh", img: IMAGES.amarjeetSingh },
-    { id: 2, title: "Amarjeet 2", img: w3.i2 },
-    { id: 3, title: "Gurnake Singh", img: w3.i11 },
-    { id: 4, title: "Amarjeet Singh 4", img: IMAGES.amarjeetSingh4 },
-    { id: 5, title: "Jasprit Singh", img: w3.i12 },
-    { id: 6, title: "Sourav Kumar", img: IMAGES.souravKumar },
-    { id: 7, title: "Amarjeet Singh 2", img: w3.i8 },
-    { id: 8, title: "Sahil Kumar", img: IMAGES.sahilKumar },
-    { id: 9, title: "Amarjeet 3", img: w3.i3 },
-    { id: 10, title: "Amarjeet Singh 3", img: w3.i9 },
-    { id: 11, title: "Gurnake Singh 2", img: IMAGES.gurnakeSingh },
-    { id: 12, title: "Amarjeet", img: w3.i18 },
-    { id: 13, title: "Amarjeet Singh 2", img: IMAGES.amarjeetSingh7 },
-    { id: 14, title: "Jasprit Singh 2", img: w3.i13 },
-    { id: 15, title: "Amarjeet Singh 6", img: IMAGES.amarjeetSingh6 },
-    { id: 16, title: "Amarjeet Singh", img: w3.i7 },
-    { id: 17, title: "Sagar Kumar", img: IMAGES.sagarKumar },
+    { id: 43, title: "Gym Member 20", img: ImgsCollection.DSC06193 },
     { id: 18, title: "Amarjeet 6", img: w3.i6 },
-    { id: 19, title: "Amarjeet Singh 4", img: w3.i10 },
-    { id: 20, title: "Amarjeet Singh 3", img: IMAGES.amarjeetSingh3 },
-    { id: 21, title: "Sagar Kumar", img: w3.i1 },
-    { id: 22, title: "Jasprit Singh", img: IMAGES.jaspritSingh },
-    { id: 23, title: "Amarjeet Singh 5", img: IMAGES.amarjeetSingh5 },
-    { id: 24, title: "Gurnake Singh", img: IMAGES.gurnakeSingh },
-    { id: 25, title: "Jasbir Singh 3", img: IMAGES.jasbirSingh3 },
+    { id: 42, title: "Gym Member 19", img: ImgsCollection.DSC06181 },
     { id: 26, title: "Jasprit Singh 2", img: IMAGES.jaspritSingh3 },
+    { id: 13, title: "Amarjeet Singh 2", img: IMAGES.amarjeetSingh7 },
+    { id: 17, title: "Gym Member 4", img: ImgsCollection.DSC06116 },
+    { id: 3, title: "Gurnake Singh", img: w3.i11 },
+    { id: 31, title: "Gym Member 9", img: ImgsCollection.DSC06146 },
+    { id: 24, title: "Gurnake Singh", img: IMAGES.gurnakeSingh },
+    { id: 33, title: "Gym Member 11", img: ImgsCollection.DSC06154 },
+    { id: 16, title: "Amarjeet Singh", img: w3.i7 },
+    { id: 32, title: "Gym Member 10", img: ImgsCollection.DSC06150 },
+    { id: 2, title: "Amarjeet 2", img: w3.i2 },
+    { id: 12, title: "Amarjeet", img: w3.i18 },
+    { id: 46, title: "Gym Member 23", img: ImgsCollection.DSC06204 },
+    { id: 15, title: "Amarjeet Singh 6", img: IMAGES.amarjeetSingh6 },
+    { id: 20, title: "Amarjeet Singh 3", img: IMAGES.amarjeetSingh3 },
+    { id: 6, title: "Gym Member 1", img: ImgsCollection.DSC06105 },
+    { id: 21, title: "Sagar Kumar", img: w3.i1 },
+    { id: 5, title: "Jasprit Singh", img: w3.i12 },
+    { id: 14, title: "Jasprit Singh 2", img: w3.i13 },
+    { id: 10, title: "Amarjeet Singh 3", img: w3.i9 },
+    { id: 9, title: "Amarjeet 3", img: w3.i3 },
+    { id: 4, title: "Amarjeet Singh 4", img: IMAGES.amarjeetSingh4 },
+    { id: 7, title: "Amarjeet Singh 2", img: w3.i8 },
+    { id: 35, title: "Gym Member 13", img: ImgsCollection.DSC06168 },
+    { id: 8, title: "Gym Member 2", img: ImgsCollection.DSC06109 },
+    { id: 19, title: "Amarjeet Singh 4", img: w3.i10 },
+    { id: 29, title: "Gym Member 7", img: ImgsCollection.DSC06141 },
+    { id: 23, title: "Gym Member 5", img: ImgsCollection.DSC06120 },
+    { id: 22, title: "Jasprit Singh", img: IMAGES.jaspritSingh },
+    { id: 36, title: "Gym Member 14", img: ImgsCollection.DSC06170 },
+    { id: 37, title: "Gym Member 15", img: ImgsCollection.DSC06172 },
+    { id: 38, title: "Gym Member 16", img: ImgsCollection.DSC06176 },
+    { id: 39, title: "Gym Member 17", img: ImgsCollection.DSC06177 },
+    { id: 40, title: "Sagar Kumar", img: w3.ow2 },
+    { id: 11, title: "Gym Member 3", img: ImgsCollection.DSC06113 },
+    { id: 58, title: "Gym Member 35", img: ImgsCollection.DSC06236 },
+    { id: 59, title: "Gym Member 36", img: ImgsCollection.DSC06244_1 },
+    { id: 34, title: "Gym Member 12", img: ImgsCollection.DSC06166 },
+    { id: 45, title: "Gym Member 22", img: ImgsCollection.DSC06200 },
+    { id: 88, title: "Sagar Kumar", img: w3.ow },
   ];
 
   const getItems = () => {
@@ -130,9 +180,10 @@ const Gallery = () => {
               key={tab}
               onClick={() => handleTabChange(tab)}
               className={`lg:px-8 px-4 text-sm cursor-pointer md:text-3xl py-4 lg:text-4xl font-One transition-all duration-200
-                ${activeTab === tab
-                  ? "bg-white text-[#070915] font-bold"
-                  : "text-gray-700 hover:bg-white"
+                ${
+                  activeTab === tab
+                    ? "bg-white text-[#070915] font-bold"
+                    : "text-gray-700 hover:bg-white"
                 }`}
             >
               {tab}
@@ -168,7 +219,6 @@ const Gallery = () => {
                   loading="lazy"
                   className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
                 />
-
               </div>
             </div>
           ))}
