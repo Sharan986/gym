@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { gallery } from '../assets/Gallery/gallery';
 import Icon from '../components/Icon';
-import { Helmet } from 'react-helmet';
 
 const PhotoGrid = () => {
   const photos = [
@@ -15,97 +14,29 @@ const PhotoGrid = () => {
 
   return (
     <>
-      <Helmet>
-        <title>OneRepMaax Gym Gallery - Premium Fitness Center Photos Jamshedpur | 5000+ Sq Ft</title>
-        <meta 
-          name="description" 
-          content="Explore OneRepMaax Gym photo gallery showcasing our 5000+ sq ft fitness center with premium Jaguar equipment, K11 certified trainers, and modern facilities at Dimna Road, Jamshedpur. See our vibrant fitness community in action!" 
-        />
-        <meta 
-          name="keywords" 
-          content="OneRepMaax gym photos, gym gallery Jamshedpur, fitness center images, premium gym equipment photos, Jaguar gym equipment, gym facility tour, modern gym interior, fitness center Dimna Road, gym photos Mango Jamshedpur, state-of-the-art gym equipment, professional gym environment, spacious gym facility, OneRepMaax photo gallery" 
-        />
-        <meta property="og:title" content="OneRepMaax Gym Gallery - Premium Fitness Facility Photos | Jamshedpur" />
-        <meta property="og:description" content="Take a visual tour of OneRepMaax Gym's 5000+ sq ft facility with premium equipment, professional training environment, and vibrant fitness community at Dimna Road, Jamshedpur." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://onerepmaax.com/allPhotos/ft-8.webp" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="OneRepMaax Gym Gallery - Premium Fitness Center Photos" />
-        <meta name="twitter:description" content="Explore our modern 5000+ sq ft fitness facility with premium Jaguar equipment and professional training environment." />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ImageGallery",
-              "name": "OneRepMaax Gym Photo Gallery",
-              "description": "Photo gallery showcasing OneRepMaax Gym's premium fitness facility, equipment, and training environment in Jamshedpur",
-              "url": "https://onerepmaax.com/gallery",
-              "about": {
-                "@type": "Gym",
-                "name": "OneRepMaax Gym",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Dimna Rd, Shankoshai",
-                  "addressLocality": "Mango, Jamshedpur",
-                  "addressRegion": "Jharkhand",
-                  "postalCode": "831018",
-                  "addressCountry": "India"
-                }
-              },
-              "image": [
-                {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/allPhotos/f1.webp",
-                  "description": "OneRepMaax Gym training session with professional fitness equipment"
-                },
-                {
-                  "@type": "ImageObject", 
-                  "url": "https://onerepmaax.com/allPhotos/e4.webp",
-                  "description": "State-of-the-art gym equipment at OneRepMaax Jamshedpur"
-                },
-                {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/allPhotos/ft-8.webp", 
-                  "description": "Modern fitness facility with premium Jaguar equipment"
-                }
-              ],
-              "publisher": {
-                "@type": "Organization",
-                "name": "OneRepMaax Gym",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://onerepmaax.com/logo.png"
-                }
-              }
-            }
-          `}
-        </script>
-      </Helmet>
       
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-3" 
         aria-labelledby="gallery-heading"
-        itemScope 
-        itemType="https://schema.org/ImageGallery"
       >
         <div className="flex items-center gap-2 mb-3 sm:mb-4">
           <Icon/>
-          <header id="gallery-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]" itemProp="name">
+          <header id="gallery-heading" className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]">
             Our Gallery
           </header>
         </div>
         
-        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight' itemProp="headline">
+        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight'>
           No Weakness Allowed
         </h2>
         
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-M mb-6 sm:mb-8 max-w-full sm:max-w-2xl md:max-w-3xl leading-relaxed" itemProp="description">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 font-M mb-6 sm:mb-8 max-w-full sm:max-w-2xl md:max-w-3xl leading-relaxed">
           Experience the energy and dedication at OneRepMaax Gym through our photo gallery showcasing 
           state-of-the-art equipment, training sessions, and our vibrant fitness community.
         </p>
 
         <div className="grid grid-cols-3 grid-rows-2 gap-1 xs:gap-2 sm:gap-3 md:gap-4 lg:gap-5
-                        h-[30vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[75vh]" itemProp="image">
+                        h-[30vh] xs:h-[35vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[75vh]">
           {/* Left stacked images */}
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
@@ -113,7 +44,6 @@ const PhotoGrid = () => {
               alt={photos[0].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
             />
           </div>
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
@@ -122,7 +52,7 @@ const PhotoGrid = () => {
               alt={photos[1].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
 
@@ -133,7 +63,7 @@ const PhotoGrid = () => {
               alt={photos[2].alt} 
               className="w-full h-full object-cover object-center transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
@@ -145,7 +75,7 @@ const PhotoGrid = () => {
               alt={photos[3].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
           <div className="col-start-3 row-start-2 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
@@ -154,7 +84,7 @@ const PhotoGrid = () => {
               alt={photos[4].alt} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
-              itemProp="contentUrl"
+             
             />
           </div>
         </div>
@@ -164,7 +94,7 @@ const PhotoGrid = () => {
             to="/Gallery"
             className="group block w-full"
             aria-label="View complete gallery of OneRepMaax Gym photos and facility tour"
-            itemProp="url"
+           
           >
             <button className="w-full h-12 sm:h-16 md:h-18 lg:h-20 bg-gradient-to-r from-[#FCDE3B] via-[#F5D632] to-[#FCDE3B] text-[#070915] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-M font-bold uppercase tracking-wider transition-all duration-300 transform group-hover:scale-[1.02] sm:group-hover:scale-105 group-hover:shadow-xl sm:group-hover:shadow-2xl relative overflow-hidden">
               <span className="relative z-10 flex items-center justify-center gap-2 sm:gap-3">

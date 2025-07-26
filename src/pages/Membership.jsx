@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Helmet } from 'react-helmet';
 import Icon from "../components/Icon";
 import { IoIosPerson } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -156,263 +155,27 @@ const MembershipSection = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Cheapest Gym Membership Jamshedpur ₹1200 | OneRepMaax Gym Plans 2025</title>
-        <meta 
-          name="description" 
-          content="Cheapest gym membership in Jamshedpur! OneRepMaax Gym: Monthly ₹1,200, Annual ₹7,500. Personal training ₹5,000, Group PT ₹3,500/person. Flexible payment plans, membership pause facility, locker facility. 4.9★ rated with 61 Google reviews!" 
-        />
-        <meta 
-          name="keywords" 
-          content="cheapest gym membership Jamshedpur, gym fees Jamshedpur 2025, affordable gym membership Mango, gym membership cost Dimna Road, gym membership plans Jamshedpur, best gym membership deals, flexible payment gym, gym membership near me, OneRepMaax membership, fitness membership Jamshedpur, monthly gym membership, annual gym membership" 
-        />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="author" content="OneRepMaax Gym Jamshedpur" />
-        <meta name="geo.region" content="IN-JH" />
-        <meta name="geo.placename" content="Jamshedpur" />
-        <meta name="geo.position" content="22.8046;86.2029" />
-        <meta name="ICBM" content="22.8046, 86.2029" />
-        <meta property="og:title" content="Cheapest Gym Membership Jamshedpur ₹1200 | OneRepMaax Plans 2025" />
-        <meta property="og:description" content="Jamshedpur's most affordable gym membership! Starting ₹1,200/month. Personal training, yoga, Zumba included. Flexible payments & pause facility. 4.9★ rated!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://onerepmaax.com/membership" />
-        <meta property="og:site_name" content="OneRepMaax Gym Jamshedpur" />
-        <meta property="og:locale" content="en_IN" />
-        <meta property="article:author" content="OneRepMaax Gym" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cheapest Gym Membership Jamshedpur ₹1200" />
-        <meta name="twitter:description" content="Most affordable gym membership in Jamshedpur starting ₹1,200/month. Flexible plans with pause facility. 4.9★ rated!" />
-        <link rel="canonical" href="https://onerepmaax.com/membership" />
-        <link rel="alternate" hreflang="en-IN" href="https://onerepmaax.com/membership" />
-        <link rel="alternate" hreflang="hi-IN" href="https://onerepmaax.com/hi/membership" />
-        
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "MembershipOrganization",
-              "name": "OneRepMaax Gym Membership",
-              "description": "Affordable fitness membership plans with flexible payment options and pause facility",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Dimna Rd, Shankoshai",
-                "addressLocality": "Mango, Jamshedpur",
-                "addressRegion": "Jharkhand",
-                "postalCode": "831018",
-                "addressCountry": "India"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "61"
-              },
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "Monthly Gym Membership",
-                  "description": "1 month gym membership with all facilities",
-                  "price": "1200",
-                  "priceCurrency": "INR",
-                  "category": "Gym Membership",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Annual Gym Membership",
-                  "description": "12 month gym membership with pause facility",
-                  "price": "7500",
-                  "priceCurrency": "INR",
-                  "category": "Gym Membership",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Personal Training",
-                  "description": "One-on-one personal training with K11 certified trainers",
-                  "price": "5000",
-                  "priceCurrency": "INR",
-                  "category": "Personal Training",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Group Personal Training",
-                  "description": "Small group personal training sessions",
-                  "price": "3500",
-                  "priceCurrency": "INR",
-                  "category": "Group Training",
-                  "validFrom": "2025-01-01",
-                  "availability": "InStock"
-                }
-              ],
-              "amenityFeature": [
-                "Personal Training Available",
-                "Zumba & Fitness Classes", 
-                "Yoga Sessions",
-                "Nutrition Consultation",
-                "Free WiFi & Coffee",
-                "Separate Changing Rooms",
-                "Locker Facility & Parking"
-              ]
-            }
-          `}
-        </script>
-        
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What are the gym membership fees at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax Gym membership starts at ₹1,200 for 1 month, ₹2,700 for 3 months, ₹5,100 for 6 months, and ₹7,500 for 12 months. We offer flexible payment plans and competitive rates in Jamshedpur."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Do you offer flexible payment plans for gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym offers flexible payment plans for all membership durations. We also provide membership pause facility for 9-month and 12-month memberships for your convenience."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is included in OneRepMaax gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our gym membership includes access to all equipment, Zumba & yoga classes, free WiFi & coffee, separate changing rooms, and parking. Personal training and nutrition consultation available at additional cost."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can I pause my gym membership at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, OneRepMaax Gym offers membership pause facility for 9-month and 12-month memberships. This flexible option allows you to temporarily suspend your membership when needed."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How much does personal training cost at OneRepMaax?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Personal training at OneRepMaax costs ₹5,000 for 1 month or ₹10,000 for 3 months. Group personal training is available at ₹3,500 per person. All sessions are conducted by K11 certified trainers."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What makes OneRepMaax gym membership affordable in Jamshedpur?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax offers the most competitive gym membership rates in Jamshedpur with transparent pricing, no hidden charges, flexible payment plans, and membership pause facility for long-term plans."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What facilities are included in OneRepMaax gym membership?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "OneRepMaax gym membership includes personal training availability, Zumba & fitness classes, yoga sessions, free WiFi & coffee, separate changing rooms for men and women, locker facility, and parking."
-                  }
-                }
-              ]
-            }
-          `}
-        </script>
-        
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "PriceSpecification",
-              "name": "OneRepMaax Gym Membership Pricing",
-              "description": "Comprehensive gym membership pricing for all durations",
-              "priceCurrency": "INR",
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "name": "1 Month Gym Membership",
-                  "price": "1200",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Monthly gym access with all basic facilities"
-                },
-                {
-                  "@type": "Offer", 
-                  "name": "3 Month Gym Membership",
-                  "price": "2700",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Quarterly gym membership with cost savings"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "6 Month Gym Membership", 
-                  "price": "5100",
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Half-yearly membership with significant savings"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "9 Month Gym Membership",
-                  "price": "6800", 
-                  "priceCurrency": "INR",
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "9-month membership with pause facility"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "12 Month Gym Membership",
-                  "price": "7500",
-                  "priceCurrency": "INR", 
-                  "availability": "InStock",
-                  "validFrom": "2025-01-01",
-                  "category": "Fitness Membership",
-                  "description": "Annual membership with maximum savings and pause facility"
-                }
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
       
-      <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="membership" aria-labelledby="membership-heading" itemScope itemType="https://schema.org/MembershipOrganization">
+      <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="membership" aria-labelledby="membership-heading">
         <div className="flex items-center gap-2">
           <Icon />
           <header id="membership-heading" className="text-2xl md:text-3xl lg:text-4xl font-One w-full text-[#48D3A3]">
-            <h1 itemProp="name">OUR MEMBERSHIP</h1>
+            <h1>OUR MEMBERSHIP</h1>
           </header>
         </div>
-        <h2 className="text-3xl md:text-5xl lg:text-6xl w-full mt-4 font-One uppercase" itemProp="description">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl w-full mt-4 font-One uppercase">
           Affordable Fitness Plans Starting ₹1,200/Month
         </h2>
-        <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4" itemProp="description">
+        <p className="w-full text-gray-300 lg:text-2xl font-DM text-lg mt-3 mb-4">
           Join OneRepMaax Gym with flexible membership plans, pause facility for long-term memberships, 
           and comprehensive fitness amenities. Serving Jamshedpur with 4.9★ rated fitness services since 2025.
         </p>
         
-        <div itemScope itemType="https://schema.org/ItemList" aria-label="Gym Membership Benefits">
+        <div aria-label="Gym Membership Benefits">
           <h3 className="sr-only">Membership Benefits and Facilities</h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-One text-2xl md:text-3xl" itemProp="itemListElement">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-2 font-One text-2xl md:text-3xl">
             {membershipBenefits.map((item, idx) => (
-              <li key={idx} className="flex" itemScope itemType="https://schema.org/Service" itemProp="itemListElement">
+              <li key={idx} className="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-9 text-[#48D3A3]"
@@ -424,18 +187,18 @@ const MembershipSection = () => {
                 >
                   <path strokeLinecap="round" d="M9 5l7 7-7 7" />
                 </svg>
-                <span className="text-gray-300 lg:text-4xl" itemProp="name">{item}</span>
+                <span className="text-gray-300 lg:text-4xl">{item}</span>
               </li>
             ))}
           </ul>
         </div>
           
-          <div className="mt-8 p-4 bg-gray-900/50 border border-gray-700" itemScope itemType="https://schema.org/Service">
+          <div className="mt-8 p-4 bg-gray-900/50 border border-gray-700">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-yellow-400 text-lg" aria-hidden="true">💰</span>
-              <h4 className="text-[#48D3A3] font-One text-lg" itemProp="name">Flexible Payment Options</h4>
+              <h4 className="text-[#48D3A3] font-One text-lg">Flexible Payment Options</h4>
             </div>
-            <div className="text-sm text-gray-300 space-y-1 font-DM" itemProp="description">
+            <div className="text-sm text-gray-300 space-y-1 font-DM">
               <p>✓ Flexible payment plans available for all membership durations</p>
               <p>✓ Membership pause facility for 9-month & 12-month plans</p>
               <p>✓ Most competitive rates in Jamshedpur fitness market</p>
@@ -443,7 +206,7 @@ const MembershipSection = () => {
             </div>
           </div>
 
-        <div className="w-full mt-8" itemScope itemType="https://schema.org/ItemList">
+        <div className="w-full mt-8">
           <h3 className="sr-only">Gym Membership Plans and Pricing</h3>
           <div className="px-0" role="region" aria-label="Membership plans carousel">
             <style>
@@ -604,7 +367,7 @@ const MembershipSection = () => {
             </style>
             <Slider {...sliderSettings} ref={sliderRef}>
               {slidesData.map((slide, idx) => (
-                <div key={idx} className="p-0" itemScope itemType="https://schema.org/Product" itemProp="itemListElement">
+                <div key={idx} className="p-0">
                   <article 
                     className="relative bg-gradient-to-br from-gray-900/95 via-gray-800/90 to-black/95 border border-gray-600/50 h-[480px] sm:h-[460px] md:h-[480px] lg:h-[500px] flex flex-col transition-all duration-500 hover:border-[#48D3A3]/70 hover:shadow-[0_0_40px_rgba(72,211,163,0.25)] group overflow-hidden mx-1"
                     onTouchStart={handleCardHoldStart}
@@ -632,7 +395,7 @@ const MembershipSection = () => {
                     <header className="relative bg-gradient-to-r from-[#48D3A3] via-[#48D3A3] to-[#3BC493] text-black p-5 text-center border-b border-white/10">
                       <div className="absolute inset-0 bg-white/10" aria-hidden="true"></div>
                       <div className="relative z-10">
-                        <h3 className="font-One text-xl lg:text-2xl font-bold uppercase tracking-wider drop-shadow-sm" itemProp="name">
+                        <h3 className="font-One text-xl lg:text-2xl font-bold uppercase tracking-wider drop-shadow-sm">
                           {slide.title}
                         </h3>
                         {slide.title === "Membership" && (
@@ -671,7 +434,7 @@ const MembershipSection = () => {
                     </header>
                     
                     {/* Content with enhanced styling */}
-                    <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col relative z-10" itemScope itemType="https://schema.org/Offer">
+                    <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col relative z-10">
                       <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 flex-1">
                         {/* Duration/Group Size Column */}
                         <div className="space-y-1">
@@ -702,7 +465,7 @@ const MembershipSection = () => {
                               price && (
                                 <div key={i} className="flex items-center group/price hover:scale-105 transition-transform duration-300">
                                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-gradient-to-r from-yellow-400 to-yellow-500 mr-2 sm:mr-3 flex-shrink-0 group-hover/price:animate-pulse" aria-hidden="true"></div>
-                                  <span className="font-DM text-xs sm:text-sm lg:text-base font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent group-hover/price:from-yellow-300 group-hover/price:to-yellow-400 transition-all duration-300" itemProp="price">
+                                  <span className="font-DM text-xs sm:text-sm lg:text-base font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent group-hover/price:from-yellow-300 group-hover/price:to-yellow-400 transition-all duration-300">
                                     {price}
                                   </span>
                                 </div>

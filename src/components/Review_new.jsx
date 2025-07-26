@@ -1,12 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { IMAGES } from '../config/imageConfig';
-import Icon from '../components/Icon';
-import { Helmet } from 'react-helmet';
+import { FaStar } from 'react-icons/fa';
+import Icon from './Icon';
 
-const Review = () => {
+const Review_new = () => {
   const sliderRef = useRef(null);
   const pauseTimeoutRef = useRef(null);
   const holdTimeoutRef = useRef(null);
@@ -176,87 +175,19 @@ const Review = () => {
 
   return (
     <>
-      <Helmet>
-        <title>OneRepMaax Gym Reviews - Member Testimonials Jamshedpur | 4.9★ Rated</title>
-        <meta 
-          name="description" 
-          content="Read authentic reviews from OneRepMaax Gym members in Jamshedpur. 4.9★ rated fitness center with 60+ Google reviews. Discover why our members love training with K11 certified trainers at Dimna Road." 
-        />
-        <meta 
-          name="keywords" 
-          content="OneRepMaax gym reviews, gym testimonials Jamshedpur, fitness center reviews Mango, gym member feedback, best gym reviews Dimna Road, OneRepMaax member experiences, certified trainer reviews, gym ratings Jamshedpur" 
-        />
-        <meta property="og:title" content="OneRepMaax Gym Reviews - 4.9★ Member Testimonials | Jamshedpur" />
-        <meta property="og:description" content="Discover why OneRepMaax Gym members love our certified trainers and premium facilities. Read authentic reviews from our fitness community." />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="OneRepMaax Gym Reviews - Member Testimonials" />
-        <meta name="twitter:description" content="4.9★ rated gym with authentic member reviews and testimonials from Jamshedpur's premier fitness center." />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "name": "OneRepMaax Gym Member Reviews",
-              "description": "Authentic testimonials from OneRepMaax Gym members showcasing their fitness journey experiences",
-              "numberOfItems": ${reviews.length},
-              "itemListElement": [
-                ${reviews.map((review, index) => `
-                  {
-                    "@type": "Review",
-                    "position": ${index + 1},
-                    "reviewBody": "${review.quote}",
-                    "reviewRating": {
-                      "@type": "Rating",
-                      "ratingValue": ${review.rating},
-                      "bestRating": 5,
-                      "worstRating": 1
-                    },
-                    "datePublished": "${review.date}",
-                    "author": {
-                      "@type": "Person",
-                      "name": "${review.name}"
-                    },
-                    "itemReviewed": {
-                      "@type": "Gym",
-                      "name": "OneRepMaax Gym",
-                      "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Dimna Rd, Shankoshai",
-                        "addressLocality": "Mango, Jamshedpur",
-                        "addressRegion": "Jharkhand",
-                        "postalCode": "831018",
-                        "addressCountry": "India"
-                      }
-                    }
-                  }`).join(',')}
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "60",
-                "bestRating": "5",
-                "worstRating": "1"
-              }
-            }
-          `}
-        </script>
-      </Helmet>
 
       <section 
         className="text-white text-xl mt-16 sm:mt-20 md:mt-24 lg:mx-24 mx-6 mb-16" 
         aria-labelledby="reviews-heading"
-        itemScope 
-        itemType="https://schema.org/ItemList"
       >
         <div className="flex items-center gap-2 mb-3 sm:mb-4">
           <Icon />
-          <header id="reviews-heading" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]" itemProp="name">
+          <header id="reviews-heading" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-[#48D3A3]">
             Our Reviews
           </header>
         </div>
         
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight" itemProp="description">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-One text-white mb-2 sm:mb-3 uppercase leading-tight">
           What Our Members Are Saying
         </h2>
         
@@ -279,7 +210,7 @@ const Review = () => {
           </div>
         </div>
 
-        <div className="review-slider" itemProp="itemListElement">
+        <div className="review-slider">
           <Slider {...settings} ref={sliderRef}>
             {reviews.map((review, index) => (
               <div key={review.id} className="px-2 sm:px-3 h-full">
@@ -290,9 +221,6 @@ const Review = () => {
                   onMouseDown={handleCardHoldStart}
                   onMouseUp={handleCardHoldEnd}
                   onMouseLeave={handleCardHoldEnd}
-                  itemScope
-                  itemType="https://schema.org/Review"
-                  itemProp="review"
                 >
                   {/* Background gradient effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -306,7 +234,7 @@ const Review = () => {
                           alt={`${review.name} - OneRepMaax Gym member`}
                           className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-cover border-3 border-[#48D3A3] shadow-lg group-hover:scale-105 transition-transform duration-300"
                           loading="lazy"
-                          itemProp="image"
+                         
                         />
                         <div className="absolute -bottom-2 -right-2 bg-[#48D3A3] text-black text-xs sm:text-sm font-One font-bold px-2 py-1 shadow-lg">
                           ★{review.rating}
@@ -315,7 +243,7 @@ const Review = () => {
                     </div>
 
                     {/* Review Quote */}
-                    <blockquote className="text-white font-M text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-4 sm:mb-5 px-2 flex items-center justify-center min-h-[4rem] sm:min-h-[5rem] md:min-h-[6rem]" itemProp="reviewBody">
+                    <blockquote className="text-white font-M text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-4 sm:mb-5 px-2 flex items-center justify-center min-h-[4rem] sm:min-h-[5rem] md:min-h-[6rem]">
                       <span className="relative">
                         <span className="absolute -left-3 -top-2 text-[#48D3A3] text-2xl sm:text-3xl font-One">"</span>
                         {review.quote}
@@ -326,20 +254,18 @@ const Review = () => {
 
                   {/* Rating and Member Info */}
                   <div className="relative z-10 mt-auto">
-                    <div className="text-yellow-400 text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                      <span itemProp="ratingValue" className="sr-only">{review.rating}</span>
-                      <span itemProp="bestRating" className="sr-only">5</span>
+                    <div className="text-yellow-400 text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3">
                       {review.ratingStars}
                     </div>
-                    <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                      <h3 className="text-white text-lg sm:text-xl md:text-2xl font-One font-bold mb-1" itemProp="name">
+                    <div>
+                      <h3 className="text-white text-lg sm:text-xl md:text-2xl font-One font-bold mb-1">
                         {review.name}
                       </h3>
-                      <p className="text-[#48D3A3] text-sm sm:text-base md:text-lg font-M font-medium" itemProp="jobTitle">
+                      <p className="text-[#48D3A3] text-sm sm:text-base md:text-lg font-M font-medium">
                         {review.role}
                       </p>
                     </div>
-                    <time className="text-xs sm:text-sm text-gray-500 font-M mt-2 block" itemProp="datePublished" dateTime={review.date}>
+                    <time className="text-xs sm:text-sm text-gray-500 font-M mt-2 block">
                       {new Date(review.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 
