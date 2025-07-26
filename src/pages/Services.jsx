@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from '../components/Icon';
 import {FITNESS_IMAGES, FACILITY_IMAGES} from '../config/imageConfig';
+import{ DSC06200, DSC06244 } from "../Imgs/Imgs"; 
+import {DSC06168} from '../Imgs/Imgs'; // Importing the specific image
+import {DSC06120} from '../Imgs/Imgs'; // Importing the specific image
+
 
 const Services = () => {
   const mobileSliderRef = useRef(null);
@@ -50,24 +54,6 @@ const Services = () => {
     }
   };
 
-  const handleButtonMouseEnter = () => {
-    if (mobileSliderRef.current) {
-      mobileSliderRef.current.slickPause();
-    }
-    if (tabletSliderRef.current) {
-      tabletSliderRef.current.slickPause();
-    }
-  };
-
-  const handleButtonMouseLeave = () => {
-    if (mobileSliderRef.current) {
-      mobileSliderRef.current.slickPlay();
-    }
-    if (tabletSliderRef.current) {
-      tabletSliderRef.current.slickPlay();
-    }
-  };
-
   // Cleanup timeouts on component unmount
   React.useEffect(() => {
     return () => {
@@ -83,7 +69,7 @@ const Services = () => {
   const services = [ 
     {
       id: 1,
-      img: FITNESS_IMAGES[0], // Personal training image
+      img: DSC06168, // Personal training image
       logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
       title: "Personal Training",
       description: "K11 certified personal trainers in Jamshedpur with proven weight loss transformations",
@@ -92,7 +78,7 @@ const Services = () => {
     },
     {
       id: 2,
-      img: FITNESS_IMAGES[1], // Weight loss/cardio image
+      img: DSC06120, // Weight loss/cardio image
       logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
       title: "Weight Loss Programs",
       description: "Proven weight loss transformations with nutrition consultation and certified guidance",
@@ -101,11 +87,20 @@ const Services = () => {
     },
     {
       id: 3,
-      img: FACILITY_IMAGES[7], // Strength training equipment image
+      img: DSC06200, // Strength training equipment image
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Strength Training",
       description: "Build muscle and strength with state-of-the-art equipment and expert guidance",
       keywords: "strength training Jamshedpur, muscle building, powerlifting",
+      price: "Included in membership"
+    },
+    {
+      id: 4,
+      img: DSC06244, // Group fitness classes image
+      logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
+      title: "Group Fitness Classes",
+      description: "Engaging group classes including Zumba, yoga, and more for all fitness levels",
+      keywords: "group fitness Jamshedpur, Zumba classes, yoga classes",
       price: "Included in membership"
     },
 

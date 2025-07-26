@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const Num = () => {
-
-  const NumData = [
+  const NumData = useMemo(() => [
     { id: 1, start: 100, target: 250, text: "Members" },
     { id: 2, start: 30, target: 50, text: "Transformations" },
     { id: 3, start: 1, target: 5, text: "Trainers" },
     { id: 4, start: 3000, target: 5000, text: "SQ.FEET" },
-  ];
+  ], []);
 
   const [counts, setCounts] = useState(() => {
     const initialCounts = {};
@@ -49,7 +48,7 @@ const Num = () => {
       requestAnimationFrame(animateCounts);
       setHasAnimated(true);
     }
-  }, [inView, hasAnimated]);
+  }, [inView, hasAnimated, NumData]);
 
   const formatNumber = (id, value) => {
     const item = NumData.find((i) => i.id === id);

@@ -198,7 +198,7 @@ const MembershipSection = () => {
               <span className="text-yellow-400 text-lg" aria-hidden="true">💰</span>
               <h4 className="text-[#48D3A3] font-One text-lg">Flexible Payment Options</h4>
             </div>
-            <div className="text-sm text-gray-300 space-y-1 font-DM">
+            <div className="text-lg text-gray-300 space-y-1 font-DM">
               <p>✓ Flexible payment plans available for all membership durations</p>
               <p>✓ Membership pause facility for 9-month & 12-month plans</p>
               <p>✓ Most competitive rates in Jamshedpur fitness market</p>

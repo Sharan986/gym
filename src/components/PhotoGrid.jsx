@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { gallery } from '../assets/Gallery/gallery';
 import Icon from '../components/Icon';
+import { DSC06176, DSC06244 } from '../Imgs/Imgs';
+import { DSC06205 } from '../Imgs/Imgs';
+
 
 const PhotoGrid = () => {
   const photos = [
@@ -40,16 +43,16 @@ const PhotoGrid = () => {
           {/* Left stacked images */}
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
-              src={photos[0].url} 
-              alt={photos[0].alt} 
+              src={DSC06176} 
+              alt={DSC06176} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
             />
           </div>
           <div className="row-span-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
-              src={photos[1].url} 
-              alt={photos[1].alt} 
+              src={DSC06205} 
+              alt={DSC06205} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
              
@@ -71,8 +74,8 @@ const PhotoGrid = () => {
           {/* Two bottom right images */}
           <div className="col-start-2 row-start-2 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
-              src={photos[3].url} 
-              alt={photos[3].alt} 
+              src={DSC06244} 
+              alt={DSC06244} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
              

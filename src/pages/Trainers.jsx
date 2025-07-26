@@ -271,11 +271,11 @@ const Trainers = () => {
                     <div>
                       <h3 className="text-2xl font-One mb-2">{trainer.name}</h3>
                       <p className="text-lg text-[#48D3A3] mb-2 font-DM">{trainer.title}</p>
-                      <p className="text-sm text-gray-300 mb-3 leading-relaxed line-clamp-3 font-DM">{trainer.description}</p>
+                      <p className="text-sm text-gray-300 mb-3 lg:text-xl leading-relaxed line-clamp-3 font-DM">{trainer.description}</p>
                     </div>
                     <div className="text-sm text-gray-400 mt-auto font-DM">
-                      <p className="mb-1">Experience: {trainer.experience}</p>
-                      <p className="mb-1">Specializations: {trainer.specializations.slice(0, 3).join(', ')}</p>
+                      <p className="mb-1  lg:text-2xl">Experience: {trainer.experience}</p>
+                      <p className="mb-1  lg:text-2xl">Specializations: {trainer.specializations.slice(0, 3).join(', ')}</p>
                       <p>Certifications: {trainer.certifications.slice(0, 2).join(', ')}</p>
                     </div>
                   </div>

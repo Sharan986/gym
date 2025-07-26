@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Join from '../components/Join';
 import { FacDetails } from "../config/imageConfig";
 
+
 const ServicesDetail = () => {
   const servicesData = [
     {
@@ -20,13 +21,13 @@ const ServicesDetail = () => {
     },
     {
       id: 3,
-     img: FacDetails[2],
+      img: FacDetails[2],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Group Fitness",
     },
     {
       id: 4,
-     img: FacDetails[3],
+      img: FacDetails[3],
       logo: "https://framerusercontent.com/images/iqlj4BpFHy7D5WgtVnLv4ig3SIw.svg",
       title: "Strength Training",
     },
