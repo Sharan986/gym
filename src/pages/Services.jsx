@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from '../components/Icon';
 import {FITNESS_IMAGES, FACILITY_IMAGES} from '../config/imageConfig';
-import{ DSC06200, DSC06244 } from "../Imgs/Imgs"; 
-import {DSC06168} from '../Imgs/Imgs'; // Importing the specific image
-import {DSC06120} from '../Imgs/Imgs'; // Importing the specific image
+import{ DSC06200, DSC06244 } from "../Imgs/Imgs.js"; 
+import {DSC06168} from '../Imgs/Imgs.js'; // Importing the specific image
+import {DSC06120} from '../Imgs/Imgs.js'; // Importing the specific image
 import {z1} from "../FT/ft.js"; // Importing the specific image
 import {oow} from "../FT/ft.js"; // Importing the specific image
 
@@ -176,7 +176,6 @@ const Services = () => {
                       src={service.img}
                       alt={`${service.title} at OneRepMaax Gym Jamshedpur - ${service.description}`}
                       className="w-full h-full object-cover"
-                      loading="lazy"
                     />
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-between">
@@ -185,7 +184,6 @@ const Services = () => {
                         src={service.logo} 
                         alt={`${service.title} icon`} 
                         className="w-12 h-12 mx-auto mb-2" 
-                        loading="lazy"
                       />
                       <h3 className="text-xl font-One mb-2">{service.title}</h3>
                       <p className="text-sm text-gray-300 mb-3 leading-relaxed line-clamp-3 font-DM">{service.description}</p>
@@ -218,7 +216,6 @@ const Services = () => {
                       src={service.img}
                       alt={`${service.title} at OneRepMaax Gym Jamshedpur - ${service.description}`}
                       className="w-full h-full object-cover"
-                      loading="lazy"
                     />
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-between">
@@ -227,7 +224,6 @@ const Services = () => {
                         src={service.logo} 
                         alt={`${service.title} icon`} 
                         className="w-16 h-16 mx-auto mb-2" 
-                        loading="lazy"
                       />
                       <h3 className="text-2xl font-One mb-2">{service.title}</h3>
                       <p className="text-sm text-gray-300 mb-3 leading-relaxed line-clamp-4 font-DM">{service.description}</p>
@@ -251,7 +247,6 @@ const Services = () => {
                   src={service.img}
                   alt={`${service.title} at OneRepMaax Gym Jamshedpur - ${service.description}`}
                   className="w-full h-full object-cover transition-transform hover:scale-110"
-                  loading="lazy"
                 />
               </div>
               <div className="p-4 text-center">
@@ -259,7 +254,6 @@ const Services = () => {
                   src={service.logo} 
                   alt={`${service.title} icon`} 
                   className="w-16 h-16 mx-auto mb-2" 
-                  loading="lazy"
                 />
                 <h3 className="text-xl lg:text-2xl font-One mb-2">{service.title}</h3>
                 <p className="text-sm text-gray-300 mb-3 leading-relaxed font-DM">{service.description}</p>

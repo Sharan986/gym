@@ -1,13 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import One from "../assets/Trainers/ONE.jpg";
-import Two from "../assets/Trainers/TWO.jpg";
-import Three from "../assets/Trainers/THREE.jpg";
-import FOUR from "../assets/Trainers/FOUR.jpg";
-import FIVE from "../assets/Trainers/FIVE.jpg";
-import SIX from "../assets/Trainers/SIX.jpg";
 import Icon from '../components/Icon';
 import { TRAINER} from '../config/imageConfig';
 
@@ -53,24 +47,6 @@ const Trainers = () => {
     if (holdTimeoutRef.current) {
       clearTimeout(holdTimeoutRef.current);
       holdTimeoutRef.current = null;
-    }
-  };
-
-  const handleButtonMouseEnter = () => {
-    if (mobileSliderRef.current) {
-      mobileSliderRef.current.slickPause();
-    }
-    if (tabletSliderRef.current) {
-      tabletSliderRef.current.slickPause();
-    }
-  };
-
-  const handleButtonMouseLeave = () => {
-    if (mobileSliderRef.current) {
-      mobileSliderRef.current.slickPlay();
-    }
-    if (tabletSliderRef.current) {
-      tabletSliderRef.current.slickPlay();
     }
   };
 
