@@ -44,6 +44,7 @@ const Beginner = () => {
       icon: "🔱",
       difficulty: "Easy"
     },
+    
   ];
   
   return (
@@ -64,7 +65,7 @@ const Beginner = () => {
           <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-8 lg:px-16 xl:px-24">
             <div className="max-w-4xl">
               <div className="inline-block px-4 py-2 bg-[#48D3A3]/20 backdrop-blur-sm border border-[#48D3A3]/30 text-[#48D3A3] text-sm sm:text-base font-M uppercase tracking-wider mb-4 sm:mb-6">
-                Level 1 • Beginner
+                Level 1 • Beginner 
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-One text-white leading-tight mb-4 sm:mb-6">
                 BEGINNER
@@ -80,7 +81,7 @@ const Beginner = () => {
                 <span className="text-[#FCDE3B]">BEGINNER</span>
               </div>
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 font-M max-w-3xl leading-relaxed">
-                Start your fitness journey with foundational exercises
+                Start your fitness journey with foundational exercises. Work with me to build a strong base!
               </p>
             </div>
           </div>
