@@ -103,7 +103,7 @@ const Advance = () => {
                 to={`${exercise.path}`}
                 className="group block"
               >
-                <div className="relative rounded-2xl overflow-hidden h-72 sm:h-80 group-hover:scale-[1.02] transition-all duration-300 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10">
+                <div className="relative  overflow-hidden h-72 sm:h-80 group-hover:scale-[1.02] transition-all duration-300 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10">
                   
                   {/* Orange Gradient Background */}
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-orange-500/10 opacity-60"></div>

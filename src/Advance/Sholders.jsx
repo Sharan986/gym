@@ -170,7 +170,7 @@ const ShouldersAdvanced = () => {
       {/* Exercises Grid */}
       <div className="container mx-auto px-4 py-12 space-y-8">
         {exercises.map((exercise, index) => (
-          <div key={exercise.id} className="backdrop-blur-sm bg-white/5 border border-orange-500/30 rounded-2xl p-6 shadow-2xl hover:shadow-orange-500/20 transition-all duration-300">
+          <div key={exercise.id} className="backdrop-blur-sm bg-white/5 border border-orange-500/30 p-6 shadow-2xl hover:shadow-orange-500/20 transition-all duration-300">
             {/* Exercise Header */}
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">

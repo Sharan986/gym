@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import Join from "../components/Join";
-import Membership from "../pages/Membership";
 import { w3 } from "../assets/w3/w3.js";
 import { IMAGES } from "../config/imageConfig.js";
 import { FTCollection } from "../FT/ft.js";
@@ -155,79 +153,89 @@ const Gallery = () => {
   };
 
   return (
-    <>
-      {/* Banner */}
-      <div className="relative overflow-hidden">
+    <div className=" min-h-screen">
+      {/* Modern Banner */}
+      <div className="relative overflow-hidden h-[60vh] lg:h-[70vh]">
         <img
           src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-          alt="About Us Banner"
-          className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+          alt="Gallery Banner"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute bottom-8 left-8 text-white">
-          <h1 className="text-5xl font-One lg:text-7xl z-10">GALLERY</h1>
-          <h1 className="font-One text-2xl mt-4 lg:text-5xl">
-            <Link to="/">HOME</Link>
-            <span className="text-yellow-300 lg:text-5xl">/Gallery</span>
-          </h1>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
+        
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+          <h1 className="text-5xl lg:text-7xl font-One z-10 mb-4">GALLERY</h1>
+          <div className="font-One text-2xl lg:text-5xl">
+            <Link to="/" className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+            <span className="text-[#48D3A3]">/Gallery</span>
+          </div>
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="flex justify-center my-10 px-4 mx-4 ">
-        <div className="inline-flex justify-center  bg-gray-200 p-1 w-full max-w-4xl lg:flex-nowrap overflow-hidden rounded-lg">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => handleTabChange(tab)}
-              className={`lg:px-8 px-4 text-sm cursor-pointer md:text-3xl py-4 lg:text-4xl font-One transition-all duration-200
-                ${
-                  activeTab === tab
-                    ? "bg-white text-[#070915] font-bold"
-                    : "text-gray-700 hover:bg-white"
-                }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Content */}
-      {loading ? (
-        // Skeleton Loading
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:mx-24">
-          {[...Array(6)].map((_, index) => (
-            <div
-              key={`skeleton-${index}`}
-              className="bg-white shadow-lg overflow-hidden flex flex-col h-full animate-pulse"
-            >
-              <div className="bg-gray-300 w-full h-92 lg:h-80"></div>
+      {/* Modern Tabs */}
+      <div className="py-16 px-6 md:px-12 lg:px-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-900/80 backdrop-blur-sm p-2 border border-gray-700">
+            <div className="grid grid-cols-4 lg:grid-cols-4 gap-1 md:gap-2">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => handleTabChange(tab)}
+                  className={`py-3 md:py-4 px-2 md:px-6  font-One text-xs md:text-3xl lg:text-4xl transition-all duration-300 transform hover:scale-105
+                    ${
+                      activeTab === tab
+                        ? "bg-[#48D3A3] text-black font-bold shadow-lg"
+                        : "text-white hover:bg-gray-800 hover:text-[#48D3A3]"
+                    }`}
+                >
+                  {tab}
+                </button>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:mx-24">
-          {getItems().map((item) => (
-            <div
-              key={`${activeTab}-${item.id}`}
-              className="bg-white  hover:bg-gray-100 hover:scale-105 mx-7 transition-transform duration-300 shadow-lg overflow-hidden flex flex-col h-full"
-            >
-              <div className="overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  loading="lazy"
-                  className="w-full h-92 lg:h-80 object-cover hover:scale-110 transition-transform duration-500"
-                />
+      </div>
+
+      {/* Modern Gallery Grid */}
+      <div className="px-6 md:px-12 lg:px-20 pb-20">
+        {loading ? (
+          // Modern Skeleton Loading
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[...Array(8)].map((_, index) => (
+              <div
+                key={`skeleton-${index}`}
+                className="bg-gray-800  overflow-hidden animate-pulse border border-gray-700"
+              >
+                <div className="aspect-square bg-gray-700"></div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {getItems().map((item) => (
+              <div
+                key={`${activeTab}-${item.id}`}
+                className="group bg-gray-900  overflow-hidden border border-gray-700 hover:border-[#48D3A3]/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-[#48D3A3]/10"
+              >
+                <div className="aspect-square overflow-hidden relative">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                 
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
 
-      <Join className="mx-7" />
+      
       <Footer />
-    </>
+    </div>
   );
 };
 

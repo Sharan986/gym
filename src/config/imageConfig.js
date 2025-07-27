@@ -23,6 +23,7 @@ export const TRAINER_IMAGES = [
   "/allPhotos/SahilKumar.webp",
   "/allPhotos/SouravKumar.webp",
   "/allPhotos/GurnakeSingh.webp",
+   "/allPhotos/BOSS2.webp",
 
 
 ];

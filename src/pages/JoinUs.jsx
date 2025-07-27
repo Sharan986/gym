@@ -93,9 +93,9 @@ Message: ${data.message || ""}`;
           {JoinData.map((join) => (
             <div
               key={join.id}
-              className="backdrop-blur-sm bg-white/5 border border-[#48D3A3]/30 rounded-2xl p-8 shadow-2xl hover:shadow-[#48D3A3]/20 transition-all duration-300 text-center"
+              className="backdrop-blur-sm bg-white/5 border border-[#48D3A3]/30  p-8 shadow-2xl hover:shadow-[#48D3A3]/20 transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 mx-auto mb-6 bg-[#48D3A3] rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-[#48D3A3] l flex items-center justify-center">
                 <img
                   src={join.imageUrl}
                   alt={join.title}
@@ -111,7 +111,7 @@ Message: ${data.message || ""}`;
         {/* Contact Form & Map Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
-          <div className="backdrop-blur-sm bg-white/5 border border-[#FCDE3B]/30 rounded-2xl p-8 shadow-2xl">
+          <div className="backdrop-blur-sm bg-white/5 border border-[#FCDE3B]/30  p-8 shadow-2xl">
             <h3 className="text-3xl font-One text-white mb-8 text-center">Send Us a Message</h3>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
@@ -119,7 +119,7 @@ Message: ${data.message || ""}`;
                   <input
                     placeholder="First Name"
                     {...register("firstName", { required: "First name is required" })}
-                    className="w-full bg-gray-800/50 border border-gray-600 rounded-lg p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
+                    className="w-full bg-gray-800/50 border border-gray-600 p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
                   />
                   {errors.firstName && (
                     <p className="text-red-400 text-sm mt-1">{errors.firstName.message}</p>
@@ -129,7 +129,7 @@ Message: ${data.message || ""}`;
                   <input
                     placeholder="Last Name"
                     {...register("lastName", { required: "Last name is required" })}
-                    className="w-full bg-gray-800/50 border border-gray-600 rounded-lg p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
+                    className="w-full bg-gray-800/50 border border-gray-600 p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
                   />
                   {errors.lastName && (
                     <p className="text-red-400 text-sm mt-1">{errors.lastName.message}</p>
@@ -148,7 +148,7 @@ Message: ${data.message || ""}`;
                       message: "Invalid email format",
                     },
                   })}
-                  className="w-full bg-gray-800/50 border border-gray-600 rounded-lg p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
+                  className="w-full bg-gray-800/50 border border-gray-600 p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors"
                 />
                 {errors.email && (
                   <p className="text-red-400 text-sm mt-1">{errors.email.message}</p>
@@ -158,7 +158,7 @@ Message: ${data.message || ""}`;
               <div>
                 <select
                   {...register("interested", { required: "Please select an option" })}
-                  className="w-full bg-gray-800/50 border border-gray-600 rounded-lg p-4 text-white focus:border-[#48D3A3] focus:outline-none transition-colors"
+                  className="w-full bg-gray-800/50 border border-gray-600 p-4 text-white focus:border-[#48D3A3] focus:outline-none transition-colors"
                   defaultValue=""
                 >
                   <option value="" disabled>What interests you?</option>
@@ -178,13 +178,13 @@ Message: ${data.message || ""}`;
                   placeholder="Tell us more about your fitness goals..."
                   {...register("message")}
                   rows="4"
-                  className="w-full bg-gray-800/50 border border-gray-600 rounded-lg p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors resize-none"
+                  className="w-full bg-gray-800/50 border border-gray-600 p-4 text-white placeholder-gray-400 focus:border-[#48D3A3] focus:outline-none transition-colors resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#FCDE3B] hover:bg-[#FCDE3B]/90 text-black font-One text-lg py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full bg-[#FCDE3B] hover:bg-[#FCDE3B]/90 text-black font-One text-lg py-4 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Send Message via WhatsApp
               </button>
@@ -192,7 +192,7 @@ Message: ${data.message || ""}`;
           </div>
 
           {/* Map Section */}
-          <div className="backdrop-blur-sm bg-white/5 border border-[#F97316]/30 rounded-2xl p-8 shadow-2xl">
+          <div className="backdrop-blur-sm bg-white/5 border border-[#F97316]/30  p-8 shadow-2xl">
             <h3 className="text-3xl font-One text-white mb-6 text-center">Find Us Here</h3>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <iframe

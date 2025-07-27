@@ -3,6 +3,7 @@ import Review from '../components/Review'; // Adjust the import path as necessar
 import BOSSD from '../assets/BOSSD.jpeg'; // Adjust the import path as necessary
 import PhotoGrid from '../components/PhotoGrid';
 import Boss2 from "../assets/BOSS2.jpg";
+import { FTCollection } from '../FT/ft'; // Adjust the import path as necessary
 
 
 const Testimonials = () => {
@@ -18,7 +19,7 @@ const Testimonials = () => {
       <div className='mx-7 lg:mx-24'>
           <div className="flex justify-center mt-5">
         <img
-          src={Boss2}
+          src={FTCollection.BOSS2}
           alt="Boss"
           className="lg:h-[60vw] w-full object-top object-cover"
         />

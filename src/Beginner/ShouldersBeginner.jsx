@@ -185,7 +185,7 @@ const ShouldersBeginner = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid gap-8 sm:gap-12 lg:gap-16">
               {exercises.map((exercise) => (
-                <div key={exercise.id} className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-[#48D3A3]/30 transition-all duration-300">
+                <div key={exercise.id} className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50  overflow-hidden hover:border-[#48D3A3]/30 transition-all duration-300">
                   
                   {/* Exercise Header */}
                   <div className="p-6 sm:p-8 border-b border-gray-700/50">

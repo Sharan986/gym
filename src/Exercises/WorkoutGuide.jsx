@@ -59,7 +59,7 @@ const WorkoutGuide = () => {
           
           {/* Beginner Card */}
           <Link to="/WorkoutGuide/Beginner" className="group block">
-            <div className="relative overflow-hidden rounded-2xl h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-[#48D3A3]/40">
+            <div className="relative overflow-hidden  h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-[#48D3A3]/40">
               {/* Background Image */}
               <img
                 src="https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?q=80&w=870&auto=format&fit=crop"
@@ -97,7 +97,7 @@ const WorkoutGuide = () => {
 
           {/* Intermediate Card */}
           <Link to="/WorkoutGuide/Intermediate" className="group block">
-            <div className="relative overflow-hidden rounded-2xl h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-[#FCDE3B]/40">
+            <div className="relative overflow-hidden  h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-[#FCDE3B]/40">
               {/* Background Image */}
               <img
                 src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1740&auto=format&fit=crop"
@@ -135,7 +135,7 @@ const WorkoutGuide = () => {
 
           {/* Advanced Card */}
           <Link to="/WorkoutGuide/Advance" className="group block">
-            <div className="relative overflow-hidden rounded-2xl h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-orange-500/40">
+            <div className="relative overflow-hidden  h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-orange-500/40">
               {/* Background Image */}
               <img
                 src="https://images.unsplash.com/photo-1604335788369-94f349ae5243?q=80&w=870&auto=format&fit=crop"
