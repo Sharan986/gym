@@ -129,7 +129,7 @@ const Footer = () => {
                       className="hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
                       aria-label="Email OneRepMaax Gym"
                     >
-                      onerepmaaxgym@gmail.com
+                      onerepmaax@gmail.com
                     </a>
                   </li>
                   <li className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold flex gap-4 items-start">

@@ -141,64 +141,120 @@ const ShouldersAdvanced = () => {
   ];
 
   return (
-    <>
-      <div className="relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
+      {/* Hero Section */}
+      <div className="relative h-80 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20"></div>
         <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
+          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NGpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
           alt="Shoulder Workout Banner"
-          className="w-screen h-60 object-cover object-center scale-125"
+          className="w-full h-full object-cover opacity-70"
           loading="lazy"
         />
-        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">Shoulder</h1>
-          <h1 className="font-One text-2xl mt-6">
-          <Link to='/WorkoutGuide'>GUIDE</Link>
-            <span className="text-yellow-300">/shoulder</span>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+          <h1 className="text-5xl md:text-7xl font-One text-white mb-4 drop-shadow-2xl">
+            SHOULDER MASTERY
           </h1>
+          <div className="flex items-center space-x-2 text-lg font-DM">
+            <Link to='/WorkoutGuide' className="text-orange-300 hover:text-orange-100 transition-colors">
+              GUIDE
+            </Link>
+            <span className="text-orange-400">/</span>
+            <span className="text-orange-200">ADVANCED</span>
+            <span className="text-orange-400">/</span>
+            <span className="text-white">SHOULDERS</span>
+          </div>
         </div>
       </div>
 
-      {exercises.map((exercise) => (
-        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4 font-DM'>
-          <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
-          <div className='text-blue-300 mb-4 text-center'>
-            <span className='font-bold'>Targets: </span>
-            {exercise.muscles.join(", ")}
+      {/* Exercises Grid */}
+      <div className="container mx-auto px-4 py-12 space-y-8">
+        {exercises.map((exercise, index) => (
+          <div key={exercise.id} className="backdrop-blur-sm bg-white/5 border border-orange-500/30 rounded-2xl p-6 shadow-2xl hover:shadow-orange-500/20 transition-all duration-300">
+            {/* Exercise Header */}
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                {index + 1}
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-One text-white mb-1">{exercise.name}</h2>
+                <div className="text-orange-300 font-DM">
+                  <span className="font-semibold">Targets: </span>
+                  {exercise.muscles.join(", ")}
+                </div>
+              </div>
+            </div>
+
+            {/* Video and Instructions Layout */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Video Section */}
+              <div className="space-y-4">
+                <div className="bg-gray-900/50 rounded-xl overflow-hidden shadow-lg">
+                  <video 
+                    className="w-full h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 object-cover" 
+                    controls={false} 
+                    preload="none" 
+                    autoPlay 
+                    muted 
+                    loop
+                  >
+                    <source src={exercise.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              {/* Instructions Section */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-One text-orange-300 mb-3">Exercise Instructions</h3>
+                  <ol className="space-y-2">
+                    {exercise.instructions.map((step, i) => (
+                      <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
+                        <span className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                          {i + 1}
+                        </span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+
+                {/* Benefits */}
+                <div>
+                  <h3 className="text-xl font-One text-red-400 mb-3">Key Benefits</h3>
+                  <ul className="space-y-2">
+                    {exercise.benefits.map((benefit, i) => (
+                      <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
+                        <span className="text-red-400 mt-2">•</span>
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Pro Tips */}
+            <div className="mt-8 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl p-6 border border-orange-500/20">
+              <div className="flex items-center space-x-2 mb-4">
+                <span className="text-2xl">⭐</span>
+                <h3 className="text-xl font-One text-orange-300">Elite Training Tips</h3>
+              </div>
+              <ul className="space-y-2">
+                {exercise.tips.map((tip, i) => (
+                  <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
+                    <span className="text-orange-400 mt-2">→</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} preload="none" autoPlay muted loop>
-              <source src={exercise.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Use:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.instructions.map((step, i) => (
-                <li key={i}>{step}</li>
-              ))}
-            </ul>
-          </div>
-          <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.benefits.map((benefit, i) => (
-                <li key={i}>{benefit}</li>
-              ))}
-            </ul>
-          </div>
-          <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
-            <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.tips.map((tip, i) => (
-                <li key={i}>{tip}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

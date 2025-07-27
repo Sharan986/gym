@@ -132,63 +132,154 @@ const LegsBeginner = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
-        <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-          alt="Legs Workout Banner"
-          className="w-screen h-60 object-cover object-center scale-125"
-        />
-        <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white">
-          <h1 className="text-5xl font-One z-10">Legs</h1>
-          <h1 className="font-One text-2xl mt-6">
-           <Link to='/WorkoutGuide'>GUIDE</Link>
-            <span className="text-yellow-300">/Legs</span>
-          </h1>
+      <div className="bg-[#070915] min-h-screen font-One">
+        {/* Modern Hero Section */}
+        <div className="relative">
+          <img
+            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            alt="Legs Workout Banner"
+            className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
+          />
+          
+          {/* Clean overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/60"></div>
+          
+          {/* Hero Content */}
+          <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-8 lg:px-16 xl:px-24">
+            <div className="max-w-4xl">
+              <div className="inline-block px-4 py-2 bg-[#48D3A3]/20 backdrop-blur-sm border border-[#48D3A3]/30 text-[#48D3A3] text-sm sm:text-base font-M uppercase tracking-wider mb-4">
+                Beginner • Legs Workout
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-One text-white leading-tight mb-4">
+                LEG TRAINING
+              </h1>
+              <div className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-One mb-6">
+                <Link 
+                  to='/WorkoutGuide' 
+                  className="text-white hover:text-[#48D3A3] transition-colors duration-300"
+                >
+                  GUIDE
+                </Link>
+                <span className="text-gray-400">/</span>
+                <Link 
+                  to='/Beginner' 
+                  className="text-white hover:text-[#48D3A3] transition-colors duration-300"
+                >
+                  BEGINNER
+                </Link>
+                <span className="text-gray-400">/</span>
+                <span className="text-[#48D3A3]">LEGS</span>
+              </div>
+              <p className="text-lg sm:text-xl text-gray-200 font-M max-w-3xl leading-relaxed">
+                Develop lower body power and stability with foundational leg exercises
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Exercise Cards Section */}
+        <div className="px-4 sm:px-6 lg:px-8 xl:px-12 py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid gap-8 sm:gap-12 lg:gap-16">
+              {exercises.map((exercise) => (
+                <div key={exercise.id} className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-[#48D3A3]/30 transition-all duration-300">
+                  
+                  {/* Exercise Header */}
+                  <div className="p-6 sm:p-8 border-b border-gray-700/50">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-One text-white mb-4">
+                      {exercise.name}
+                    </h2>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="text-sm text-gray-400 font-M">Targets:</span>
+                      {exercise.muscles.map((muscle, i) => (
+                        <span key={i} className="px-3 py-1 bg-[#48D3A3]/20 text-[#48D3A3] text-xs font-medium rounded-full">
+                          {muscle}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Video and Content Grid */}
+                  <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 p-6 sm:p-8">
+                    
+                    {/* Video Section */}
+                    <div className="order-2 lg:order-1">
+                      <div className="bg-black/50 rounded-xl overflow-hidden border border-gray-600/30">
+                        <video 
+                          className="w-full h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 object-cover" 
+                          controls={false} 
+                          preload="metadata" 
+                          autoPlay 
+                          muted 
+                          loop
+                          playsInline
+                        >
+                          <source src={exercise.video} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+
+                    {/* Instructions Section */}
+                    <div className="order-1 lg:order-2 space-y-6">
+                      <div>
+                        <h3 className="text-xl sm:text-2xl font-One text-[#48D3A3] mb-4">
+                          How to Perform
+                        </h3>
+                        <ol className="space-y-2">
+                          {exercise.instructions.map((step, i) => (
+                            <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base leading-relaxed">
+                              <span className="flex-shrink-0 w-6 h-6 bg-[#48D3A3] text-black text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
+                                {i + 1}
+                              </span>
+                              {step}
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Benefits and Tips Grid */}
+                  <div className="grid md:grid-cols-2 gap-6 sm:gap-8 p-6 sm:p-8 pt-0">
+                    
+                    {/* Benefits */}
+                    <div className="bg-gray-800/50 rounded-xl p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-One text-[#FCDE3B] mb-4">
+                        Key Benefits
+                      </h3>
+                      <ul className="space-y-2">
+                        {exercise.benefits.map((benefit, i) => (
+                          <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base">
+                            <span className="text-[#FCDE3B] mt-1">•</span>
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Pro Tips */}
+                    <div className="bg-gradient-to-br from-[#48D3A3]/10 to-[#48D3A3]/5 border border-[#48D3A3]/20 rounded-xl p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-One text-[#48D3A3] mb-4">
+                        Pro Tips
+                      </h3>
+                      <ul className="space-y-2">
+                        {exercise.tips.map((tip, i) => (
+                          <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base">
+                            <span className="text-[#48D3A3] mt-1">★</span>
+                            {tip}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-      {exercises.map((exercise) => (
-        <div key={exercise.id} className='border-2 border-yellow-300 mx-3 mt-4 p-4 font-DM'>
-          <h1 className='text-white font-One text-4xl text-center mb-2'>{exercise.name}</h1>
 
-          <div className='text-blue-300 mb-4 text-center'>
-            <span className='font-bold'>Targets: </span>
-            {exercise.muscles.join(", ")}
-          </div>
-          <div className='flex justify-center my-4 bg-gray-800 h-48 items-center rounded-lg'>
-            <video className='w-full h-full object-cover' controls={false} preload="none" autoPlay muted loop>
-              <source src={exercise.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>How to Perform:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.instructions.map((step, i) => (
-                <li key={i}>{step}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className='text-white mt-4'>
-            <h2 className='text-yellow-200 font-One text-2xl mb-2'>Benefits:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.benefits.map((benefit, i) => (
-                <li key={i}>{benefit}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className='text-green-300 mt-4 bg-gray-900 p-3 rounded-lg'>
-            <h2 className='font-bold text-xl mb-2'>Pro Tips:</h2>
-            <ul className='list-disc pl-5 space-y-1'>
-              {exercise.tips.map((tip, i) => (
-                <li key={i}>{tip}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
       <Footer />
     </>
   );
