@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 
+// Numbers section component for OneRepMaax Gym stats
 const Num = () => {
   const NumData = useMemo(() => [
     { id: 1, start: 100, target: 250, text: "Members" },
