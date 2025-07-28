@@ -9,7 +9,6 @@ import Join from "./components/Join"
 import Footer from './components/Footer'
 import Testimonials from './pages/Testimonials'
 import {Route, Routes} from 'react-router-dom'
-import { HelmetProvider } from 'react-helmet-async'
 import About from './pages/About'
 import Supplement from './pages/Supplement'
 import ScrollToTop from './components/ScrollToTop'
@@ -54,7 +53,6 @@ import ChestAdvanced from './Advance/Chest'
 const App = () => {
   return (
    <>
-   <HelmetProvider>
    <div className="bg-[#070915] overflow-hidden">
     <ScrollToTop />
     <Routes>
@@ -110,7 +108,6 @@ const App = () => {
 
     
    </div>
-   </HelmetProvider>
    </>
   )
 }
