@@ -8,36 +8,24 @@ const WorkoutGuide = () => {
     <>
       <div className="bg-[#070915] overflow-hidden font-One min-h-screen">
         {/* Modern Hero Section */}
-        <div className="relative">
-          <img
-            src={DSC06177}
-            alt="Workout Guide Banner"
-            className="w-full h-[50vh] sm:h-[60vh] lg:h-[60vh] object-cover object-center"
-          />
-          
-          {/* Clean overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/60"></div>
-          
-          {/* Hero Content */}
-          <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-8 lg:px-16 xl:px-24">
-            <div className="max-w-4xl">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-One text-white leading-tight mb-4 sm:mb-6">
-                WORKOUT GUIDE
-              </h1>
-              <div className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-One mb-6 sm:mb-8">
-                <Link 
-                  to='/' 
-                  className="text-white hover:text-[#48D3A3] transition-colors duration-300"
-                >
-                  HOME
-                </Link>
-                <span className="text-gray-400">/</span>
-                <span className="text-[#FCDE3B]">WORKOUT GUIDE</span>
-              </div>
-             
-            </div>
-          </div>
-        </div>
+        <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+               <img
+                 src={DSC06177}
+                 alt="WORKOUT GUIDE- OneRepMaax Gym"
+                 className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+               />
+               <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+               <div className="absolute bottom-8 left-8 text-white z-10">
+                 <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+                   WORKOUT GUIDE
+                 </h1>
+                 <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+                   <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+                   <span className="text-gray-400">/</span>
+                   <span className="text-[#FCDE3B]">WORKOUT GUIDE</span>
+                 </nav>
+               </div>
+             </div>
 
         {/* Modern Content Section */}
         <div className="px-6 sm:px-8 lg:px-16 xl:px-24 py-16 sm:py-20 lg:py-24">

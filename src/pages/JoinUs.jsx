@@ -57,27 +57,24 @@ Message: ${data.message || ""}`;
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
-      <div className="relative h-80 lg:h-[60vh] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-gray-900/50"></div>
-        <img
-          src={DSC06177}
-          loading="lazy"
-          alt="Contact Us Banner"
-          className="w-full h-full object-cover opacity-70"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center px-4">
-          <h1 className="text-6xl md:text-8xl font-One text-white mb-6 drop-shadow-2xl">
-            GET IN TOUCH
-          </h1>
-          <div className="flex space-x-3 text-xl font-DM">
-            <Link to="/" className="text-[#48D3A3] hover:text-white transition-colors">
-              HOME
-            </Link>
-            <span className="text-[#FCDE3B]">/</span>
-            <span className="text-white">CONTACT US</span>
-          </div>
-        </div>
-      </div>
+       <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+              <img
+                src={DSC06177}
+                alt="Premium Fitness Supplements - OneRepMaax Gym"
+                className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+              <div className="absolute bottom-8 left-8 text-white z-10">
+                <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+                  JOIN US
+                </h1>
+                <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+                  <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+                  <span className="text-gray-400">/</span>
+                  <span className="text-[#FCDE3B]">JOIN US </span>
+                </nav>
+              </div>
+            </div>
 
       {/* Introduction Section */}
       <div className="container mx-auto px-6 py-16">

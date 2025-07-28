@@ -19,11 +19,11 @@ const Header = () => {
     <>
   
       <Nav />
-      <main className="relative overflow-hidden md:bg-black">
+      <main className="relative  ">
         <img
           src="/allPhotos/Header.webp"
           alt="OneRepMaax Gym - Best fitness center in Jamshedpur with modern equipment and certified trainers"
-          className=" h-[140vw] md:pt-32 md:bg-black md:h-[75vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
+          className=" h-[140vw] md:h-[75vw] md:w-full lg:h-fill lg:w-screen w-fit object-cover object-center"
         />
              
       
@@ -39,12 +39,12 @@ const Header = () => {
               Transform. Perform. <br /> Dominate.
             </h1>
           </div>
-          <div className="mt-50 lg:mt-100 md:mt-70 sm:flex sm:items-center font-One  sm:gap-7   ">
+          <div className="mt-50 lg:mt-180 md:mt-70 sm:flex sm:items-center font-One  sm:gap-7   ">
             <Link to="JoinUs" aria-label="Join OneRepMaax Gym today - Best fitness center in Jamshedpur">
-              <Button text="JOIN US TODAY" className="text-2xl mb-4 sm:mb-0 md:text-3xl" />
+              <Button text="JOIN US TODAY" className="text-2xl lg:text-4xl mb-4 sm:mb-0 md:text-3xl" />
             </Link>
             <Link to="/about" aria-label="Learn more about OneRepMaax Gym facilities and services">
-              <Wbutton text="ABOUT US" className="text-2xl md:text-3xl " />
+              <Wbutton text="ABOUT US" className="text-2xl lg:text-4xl md:text-3xl " />
             </Link> 
           </div>
         </section>

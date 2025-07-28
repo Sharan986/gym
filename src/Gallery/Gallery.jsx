@@ -156,23 +156,24 @@ const Gallery = () => {
   return (
     <div className=" min-h-screen">
       {/* Modern Banner */}
-      <div className="relative overflow-hidden h-[60vh] lg:h-[60vh]">
-        <img
-          src={DSC06177}
-          loading="lazy"
-          alt="Gallery Banner"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
-        
-        <div className="absolute inset-0 flex flex-col justify-center text-white">
-          <h1 className="text-5xl lg:text-7xl font-One z-10 mb-4">GALLERY</h1>
-          <div className="font-One text-2xl lg:text-5xl">
-            <Link to="/" className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
-            <span className="text-[#48D3A3]">/Gallery</span>
-          </div>
-        </div>
-      </div>
+       <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+              <img
+                src={DSC06177}
+                alt="Premium FitnessGALLERY - OneRepMaax Gym"
+                className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+              <div className="absolute bottom-8 left-8 text-white z-10">
+                <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+                 GALLERY
+                </h1>
+                <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+                  <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+                  <span className="text-gray-400">/</span>
+                  <span className="text-[#FCDE3B]">GALLERY</span>
+                </nav>
+              </div>
+            </div>
 
       {/* Modern Tabs */}
       <div className="py-16 px-6 md:px-12 lg:px-20">

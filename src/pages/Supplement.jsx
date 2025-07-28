@@ -49,57 +49,95 @@ const supplementData = [
 const Supplement = () => {
   return (
     <>
-       <div className="relative overflow-hidden">
-  <img
-    src={DSC06177}
-    alt="About Us Banner"
-    className="w-screen h-60 lg:h-[60vh] object-cover object-center scale-125"
-  />
-  <div className="absolute bottom-8 left-8 text-white">
-    <h1 className="text-4xl font-One lg:text-6xl z-10">SUPPLEMENT</h1>
-    <h1 className="font-One text-xl mt-4 lg:text-3xl">
-      <Link to='/'>HOME</Link>
-      <span className="text-yellow-300 lg:text-3xl">/SUPPLEMENT</span>
-    </h1>
-  </div>
-</div>
-
-   <div className="lg:mx-18 ">
-<div className="flex flex-col mb-6 font-One mx-7">
-  <div className="text-white text-left mt-3">
-    
-  </div>
-  <div className="text-white text-left mt-2">
-    <p className="text-4xl mt-1 uppercase">
-      Boost strength, endurance, muscle growth.
-    </p>
-    
-  </div>
-</div>
-
-    <p className="text-gray-300 text-lg font-DM mt-2 mb-7 mx-7">
-      Supplements support muscle growth, enhance performance, boost recovery, fill nutritional gaps,
-      help achieve fitness goals efficiently, increase endurance, aid fat loss, improve strength,
-      and promote overall physical well-being.
-    </p>
-  
-
-
-
-
-
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 mx-8">
-        {supplementData.map((item, index) => (
-          <Link to={`/Supplement/${item.title}`} key={index}>
-            <div className="relative">
-              <img src={item.imageUrl} alt={item.title} className="w-full h-fit" />
-              <h2 className="absolute bottom-3 right-2 text-white text-2xl font-One">{item.title}</h2>
-            </div>
-          </Link>
-        ))}
+      {/* Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+        <img
+          src={DSC06177}
+          alt="Premium Fitness Supplements - OneRepMaax Gym"
+          className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+        <div className="absolute bottom-8 left-8 text-white z-10">
+          <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+            SUPPLEMENTS
+          </h1>
+          <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+            <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+            <span className="text-gray-400">/</span>
+            <span className="text-[#FCDE3B]">SUPPLEMENTS</span>
+          </nav>
+        </div>
       </div>
-</div>
+
+      {/* Content Section */}
+      <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 min-h-screen py-16">
+        <div className="max-w-7xl mx-auto px-8">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-One bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-6 uppercase">
+              Premium Supplements
+            </h2>
+            <p className="text-2xl md:text-3xl font-One text-white mb-8 max-w-4xl mx-auto">
+              Boost Strength, Endurance, Muscle Growth
+            </p>
+            <p className="text-lg md:text-xl font-DM text-gray-300 max-w-5xl mx-auto leading-relaxed">
+              Our premium supplement collection supports muscle growth, enhances performance, boosts recovery, 
+              fills nutritional gaps, helps achieve fitness goals efficiently, increases endurance, aids fat loss, 
+              improves strength, and promotes overall physical well-being.
+            </p>
+          </div>
+
+          {/* Supplements Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+            {supplementData.map((item, index) => (
+              <Link to={`/Supplement/${item.title}`} key={index} className="group">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm">
+                  <div className="relative overflow-hidden rounded-t-3xl">
+                    <img 
+                      src={item.imageUrl} 
+                      alt={`${item.title} supplements at OneRepMaax Gym`} 
+                      className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute bottom-4 left-6">
+                      <h3 className="text-3xl font-One text-white group-hover:text-[#48D3A3] transition-colors duration-300 drop-shadow-lg">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                  
+                  <div className="p-8">
+                    <div className="h-1 w-16 bg-gradient-to-r from-[#48D3A3] to-[#3BC493] rounded-full group-hover:w-full transition-all duration-700"></div>
+                    <p className="text-gray-400 font-DM mt-4 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      Premium quality supplement
+                    </p>
+                  </div>
+
+                  {/* Subtle hover glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-[#3BC493]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Call to Action Section */}
+          <div className="mt-20 text-center bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-12 border border-gray-700/30">
+            <h3 className="text-3xl md:text-5xl font-One bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-6">
+              Need Guidance?
+            </h3>
+            <p className="text-lg md:text-xl font-DM text-gray-300 mb-8 max-w-3xl mx-auto">
+              Our certified trainers can help you choose the right supplements for your fitness goals. 
+              Get personalized recommendations today!
+            </p>
+            <Link 
+              to="/JoinUs" 
+              className="inline-block bg-gradient-to-r from-[#48D3A3] to-[#3BC493] text-black font-One text-lg md:text-xl px-8 py-4 rounded-xl hover:from-[#3BC493] hover:to-[#48D3A3] transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-[#48D3A3]/30"
+            >
+              CONSULT OUR EXPERTS
+            </Link>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

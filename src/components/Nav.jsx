@@ -62,10 +62,10 @@ const Navbar = () => {
           <Link
             key={index}
             to={link.path}
-            className="text-xl  cursor-pointer font-One hover:text-[#48D3A3] transition-all duration-300 relative group px-4 py-2 rounded-lg hover:bg-[#48D3A3]/10"
+            className="text-xl lg:text-4xl cursor-pointer font-One hover:text-[#48D3A3] transition-all duration-300 relative group px-4 py-2 rounded-lg hover:bg-[#48D3A3]/10"
           >
             {link.name}
-            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#48D3A3] to-[#FCDE3B] transition-all duration-300 group-hover:w-full group-hover:left-0 rounded-full"></span>
+            <span className="absolute bottom-0 lg:text-4xl left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#48D3A3] to-[#FCDE3B] transition-all duration-300 group-hover:w-full group-hover:left-0 "></span>
           </Link>
         ))}
       </div>
