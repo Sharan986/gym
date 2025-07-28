@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Wbutton from "../components/Wbutton";
+import { Helmet } from "react-helmet-async";
 import { TRAINER} from '../config/imageConfig';
 import { SevenDaysIcon, PremiumIcon, ExerciseRoutineIcon } from '../config/PublicIconExports';
 import { DSC06109, DSC06116,DSC06105} from '../Imgs/Imgs';
@@ -86,6 +87,47 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>About OneRepMaax Gym Jamshedpur | Best GYM Mango Dimna | K11 Certified Trainers</title>
+        <meta name="title" content="About OneRepMaax Gym Jamshedpur | Best GYM Mango Dimna | K11 Certified Trainers" />
+        <meta name="description" content="Learn about OneRepMaax Gym - Jamshedpur's premier GYM in Mango, Dimna. Founded by K11 certified trainer Aditya Singh. Offering gym, yoga, Zumba, personal training in Sankosai area since 10+ years." />
+        <meta name="keywords" content="OneRepMaax Gym, GYM Jamshedpur, gym Mango, personal trainer Dimna, yoga classes Jamshedpur, Zumba Sankosai, K11 certified trainer, Aditya Singh gym, best gym Jamshedpur, fitness Mango Dimna" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://onerepmaaxgym.in/about" />
+        <meta property="og:title" content="About OneRepMaax Gym Jamshedpur | Best GYM Mango Dimna" />
+        <meta property="og:description" content="Discover OneRepMaax Gym - Jamshedpur's premier fitness destination in Mango, Dimna. K11 certified trainers, modern facilities, yoga, Zumba, personal training." />
+        <meta property="og:image" content="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:site_name" content="OneRepMaax Gym" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://onerepmaaxgym.in/about" />
+        <meta property="twitter:title" content="About OneRepMaax Gym Jamshedpur | Best GYM Mango Dimna" />
+        <meta property="twitter:description" content="Discover OneRepMaax Gym - Jamshedpur's premier fitness destination in Mango, Dimna. K11 certified trainers, modern facilities, yoga, Zumba, personal training." />
+        <meta property="twitter:image" content="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png" />
+        
+        {/* Additional SEO Tags */}
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="OneRepMaax Gym" />
+        <meta name="copyright" content="OneRepMaax Gym" />
+        <meta name="geo.region" content="IN-JH" />
+        <meta name="geo.placename" content="Jamshedpur, Jharkhand" />
+        <meta name="geo.position" content="22.7868;86.2029" />
+        <meta name="ICBM" content="22.7868, 86.2029" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://onerepmaaxgym.in/about" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
 
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
