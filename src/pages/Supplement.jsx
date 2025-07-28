@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import { DSC06177 } from "../Imgs/Imgs";
 
 const supplementData = [
   {
@@ -50,9 +51,9 @@ const Supplement = () => {
     <>
        <div className="relative overflow-hidden">
   <img
-    src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+    src={DSC06177}
     alt="About Us Banner"
-    className="w-screen h-60 lg:h-96 object-cover object-center scale-125"
+    className="w-screen h-60 lg:h-[60vh] object-cover object-center scale-125"
   />
   <div className="absolute bottom-8 left-8 text-white">
     <h1 className="text-4xl font-One lg:text-6xl z-10">SUPPLEMENT</h1>

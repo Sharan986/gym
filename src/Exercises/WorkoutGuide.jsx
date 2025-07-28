@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import {DSC06177} from "../Imgs/Imgs";
 
 const WorkoutGuide = () => {
   return (
@@ -9,9 +10,9 @@ const WorkoutGuide = () => {
         {/* Modern Hero Section */}
         <div className="relative">
           <img
-            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            src={DSC06177}
             alt="Workout Guide Banner"
-            className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] object-cover object-center"
+            className="w-full h-[50vh] sm:h-[60vh] lg:h-[60vh] object-cover object-center"
           />
           
           {/* Clean overlay */}
@@ -33,9 +34,7 @@ const WorkoutGuide = () => {
                 <span className="text-gray-400">/</span>
                 <span className="text-[#FCDE3B]">WORKOUT GUIDE</span>
               </div>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-200 font-M max-w-3xl leading-relaxed">
-                Transform your body, elevate your mind, and unleash your potential
-              </p>
+             
             </div>
           </div>
         </div>

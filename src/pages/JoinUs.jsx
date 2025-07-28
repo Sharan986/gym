@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useForm } from "react-hook-form";
-
+import {DSC06177} from "../Imgs/Imgs";
 const JoinUs = () => {
   const JoinData = [
     {
@@ -57,18 +57,19 @@ Message: ${data.message || ""}`;
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
-      <div className="relative h-80 lg:h-96 overflow-hidden">
+      <div className="relative h-80 lg:h-[60vh] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-gray-900/50"></div>
         <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+          src={DSC06177}
+          loading="lazy"
           alt="Contact Us Banner"
           className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+        <div className="absolute inset-0 flex flex-col justify-center px-4">
           <h1 className="text-6xl md:text-8xl font-One text-white mb-6 drop-shadow-2xl">
             GET IN TOUCH
           </h1>
-          <div className="flex items-center space-x-3 text-xl font-DM">
+          <div className="flex space-x-3 text-xl font-DM">
             <Link to="/" className="text-[#48D3A3] hover:text-white transition-colors">
               HOME
             </Link>

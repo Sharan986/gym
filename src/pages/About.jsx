@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Wbutton from "../components/Wbutton";
-import { w3 } from "../assets/w3/w3";
 import { Helmet } from "react-helmet";
 import { TRAINER} from '../config/imageConfig';
 import { SevenDaysIcon, PremiumIcon, ExerciseRoutineIcon } from '../config/PublicIconExports';
 import { DSC06109, DSC06116,DSC06105} from '../Imgs/Imgs';
+import { DSC06177 } from '../Imgs/Imgs';
 
 
 const About = () => {
@@ -134,11 +134,11 @@ const About = () => {
       <header className="relative h-64 sm:h-80 lg:h-96 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-gray-900/60"></div>
         <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+          src={DSC06177}
           alt="OneRepMaax Gym Jamshedpur - Premium GYM in Mango, Dimna with K11 certified trainers, yoga, Zumba classes"
           className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+        <div className="absolute inset-0 flex flex-col justify-center  px-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-One text-white mb-4 sm:mb-6 drop-shadow-2xl">
             ABOUT US
           </h1>

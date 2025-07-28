@@ -197,7 +197,7 @@ const ArmsAdvanced = () => {
                 </Link>
                 <span className="text-gray-400">/</span>
                 <Link 
-                  to='/Advance' 
+                  to='/WorkoutGuide/Advance' 
                   className="text-white hover:text-orange-500 transition-colors duration-300"
                 >
                   ADVANCED

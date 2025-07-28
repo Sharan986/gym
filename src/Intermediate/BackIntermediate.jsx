@@ -197,7 +197,7 @@ const BackIntermediate = () => {
                 </Link>
                 <span className="text-gray-400">/</span>
                 <Link 
-                  to='/Intermediate' 
+                  to='/WorkoutGuide/Intermediate' 
                   className="text-white hover:text-[#FCDE3B] transition-colors duration-300"
                 >
                   INTERMEDIATE

@@ -212,10 +212,10 @@ const MembershipSection = () => {
             <style>
               {`
                 .slick-slide > div {
-                  margin: 0 4px;
+                  margin: 0 12px;
                 }
                 .slick-list {
-                  margin: 0 -4px;
+                  margin: 0 -12px;
                   overflow: visible;
                   padding: 20px 0;
                 }
@@ -271,19 +271,19 @@ const MembershipSection = () => {
                 /* Enhanced Mobile optimizations */
                 @media (max-width: 1400px) {
                   .slick-slide > div {
-                    margin: 0 4px;
+                    margin: 0 10px;
                   }
                   .slick-list {
-                    margin: 0 -4px;
+                    margin: 0 -10px;
                   }
                 }
                 
                 @media (max-width: 1200px) {
                   .slick-slide > div {
-                    margin: 0 4px;
+                    margin: 0 8px;
                   }
                   .slick-list {
-                    margin: 0 -4px;
+                    margin: 0 -8px;
                   }
                 }
                 
@@ -301,10 +301,10 @@ const MembershipSection = () => {
                   }
                   .slick-list {
                     padding: 15px 0;
-                    margin: 0 -2px;
+                    margin: 0 -6px;
                   }
                   .slick-slide > div {
-                    margin: 0 2px;
+                    margin: 0 6px;
                   }
                   .slick-dots {
                     bottom: -60px;
@@ -330,12 +330,12 @@ const MembershipSection = () => {
                   }
                   .slick-list {
                     padding: 10px 0;
-                    margin: 0 -1px;
+                    margin: 0 -4px;
                     transform: translateZ(0);
                     -webkit-transform: translateZ(0);
                   }
                   .slick-slide > div {
-                    margin: 0 1px;
+                    margin: 0 4px;
                   }
                   .slick-dots {
                     bottom: -50px;
@@ -369,7 +369,7 @@ const MembershipSection = () => {
               {slidesData.map((slide, idx) => (
                 <div key={idx} className="p-0">
                   <article 
-                    className="relative bg-gradient-to-br from-gray-900/95 via-gray-800/90 to-black/95 border border-gray-600/50 h-[480px] sm:h-[460px] md:h-[480px] lg:h-[500px] flex flex-col transition-all duration-500 hover:border-[#48D3A3]/70 hover:shadow-[0_0_40px_rgba(72,211,163,0.25)] group overflow-hidden mx-1"
+                    className="relative bg-gradient-to-br from-gray-900/95 via-gray-800/90 to-black/95 border border-gray-600/50 h-[480px] sm:h-[460px] md:h-[480px] lg:h-[500px] flex flex-col transition-all duration-500 hover:border-[#48D3A3]/70 hover:shadow-[0_0_40px_rgba(72,211,163,0.25)] group overflow-hidden"
                     onTouchStart={handleCardHoldStart}
                     onTouchEnd={handleCardHoldEnd}
                     onMouseDown={handleCardHoldStart}

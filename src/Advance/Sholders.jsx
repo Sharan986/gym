@@ -141,120 +141,160 @@ const ShouldersAdvanced = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
-      {/* Hero Section */}
-      <div className="relative h-80 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20"></div>
-        <img
-          src="https://imgs.search.brave.com/V8jp-Wk9cTRojDuhoMlQpIMF5MEGiR17IfiLIcs_RvE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vazU1UGky/YUtfQWJ4T1Q3M2RC/aFRrQ2M2cVA1MVNo/ZnJkdUdtdDVxQXYt/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NGpiMjB2YVdRdk5U/RTIvTmpBek5ETXdM/M0JvYjNSdi9MM1Jo/YTJsdVp5MXpkWEJ3/L2JHVnRaVzUwY3k1/cWNHY18vY3owMk1U/SjROakV5Sm5jOS9N/Q1pyUFRJd0ptTTlS/bWRYL1QxbzBNVk50/VDFCUmVWSTQvZFdV/dExXWXRkREJDY3pC/WC9WMGhpV21KaVpI/UllhMk5zL1RHZHpS/VDA"
-          alt="Shoulder Workout Banner"
-          className="w-full h-full object-cover opacity-70"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-One text-white mb-4 drop-shadow-2xl">
-            SHOULDER MASTERY
-          </h1>
-          <div className="flex items-center space-x-2 text-lg font-DM">
-            <Link to='/WorkoutGuide' className="text-orange-300 hover:text-orange-100 transition-colors">
-              GUIDE
-            </Link>
-            <span className="text-orange-400">/</span>
-            <span className="text-orange-200">ADVANCED</span>
-            <span className="text-orange-400">/</span>
-            <span className="text-white">SHOULDERS</span>
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
+        
+        {/* Hero Section */}
+        <div className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
+          {/* Hero Background */}
+          <img
+            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            alt="Shoulders Workout Banner"
+            className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
+            loading="lazy"
+          />
+          
+          {/* Clean overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/60"></div>
+          
+          {/* Hero Content */}
+          <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-8 lg:px-16 xl:px-24">
+            <div className="max-w-4xl">
+              <div className="inline-block px-4 py-2 bg-orange-500/20 backdrop-blur-sm border border-orange-500/30 text-orange-500 text-sm sm:text-base font-M uppercase tracking-wider mb-4">
+                Advanced • Shoulders Workout
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-One text-white leading-tight mb-4">
+                SHOULDER MASTERY
+              </h1>
+              <div className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-One mb-6">
+                <Link 
+                  to='/WorkoutGuide' 
+                  className="text-white hover:text-orange-500 transition-colors duration-300"
+                >
+                  GUIDE
+                </Link>
+                <span className="text-gray-400">/</span>
+                <Link 
+                  to='/WorkoutGuide/Advance' 
+                  className="text-white hover:text-orange-500 transition-colors duration-300"
+                >
+                  ADVANCED
+                </Link>
+                <span className="text-gray-400">/</span>
+                <span className="text-orange-500">SHOULDERS</span>
+              </div>
+              <p className="text-lg sm:text-xl text-gray-200 font-M max-w-3xl leading-relaxed">
+                Elite shoulder development with maximum intensity and advanced training protocols
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Exercise Cards Section */}
+        <div className="px-4 sm:px-6 lg:px-8 xl:px-12 py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid gap-8 sm:gap-12 lg:gap-16">
+              {exercises.map((exercise) => (
+                <div key={exercise.id} className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 overflow-hidden hover:border-orange-500/30 transition-all duration-300">
+                  
+                  {/* Exercise Header */}
+                  <div className="p-6 sm:p-8 border-b border-gray-700/50">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-One text-white mb-4">
+                      {exercise.name}
+                    </h2>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="text-sm text-gray-400 font-M">Targets:</span>
+                      {exercise.muscles.map((muscle, i) => (
+                        <span key={i} className="px-3 py-1 bg-orange-500/20 text-orange-500 text-xs font-medium rounded-full">
+                          {muscle}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Video and Content Grid */}
+                  <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 p-6 sm:p-8">
+                    
+                    {/* Video Section */}
+                    <div className="order-2 lg:order-1">
+                      <div className="bg-black/50 rounded-xl overflow-hidden border border-gray-600/30">
+                        <video 
+                          className="w-full h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 object-cover" 
+                          controls={false} 
+                          preload="metadata" 
+                          autoPlay 
+                          muted 
+                          loop
+                          playsInline
+                        >
+                          <source src={exercise.video} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+
+                    {/* Instructions Section */}
+                    <div className="order-1 lg:order-2 space-y-6">
+                      <div>
+                        <h3 className="text-xl sm:text-2xl font-One text-orange-500 mb-4">
+                          How to Perform
+                        </h3>
+                        <ol className="space-y-2">
+                          {exercise.instructions.map((step, i) => (
+                            <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base leading-relaxed">
+                              <span className="flex-shrink-0 w-6 h-6 bg-orange-500 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">
+                                {i + 1}
+                              </span>
+                              {step}
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Benefits and Tips Grid */}
+                  <div className="grid md:grid-cols-2 gap-6 sm:gap-8 p-6 sm:p-8 pt-0">
+                    
+                    {/* Benefits */}
+                    <div className="bg-gray-800/50 rounded-xl p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-One text-red-400 mb-4">
+                        Key Benefits
+                      </h3>
+                      <ul className="space-y-2">
+                        {exercise.benefits.map((benefit, i) => (
+                          <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base">
+                            <span className="text-red-400 mt-1">•</span>
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Pro Tips */}
+                    <div className="bg-gradient-to-br from-orange-500/10 to-orange-500/5 border border-orange-500/20 rounded-xl p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-One text-orange-500 mb-4">
+                        Pro Tips
+                      </h3>
+                      <ul className="space-y-2">
+                        {exercise.tips.map((tip, i) => (
+                          <li key={i} className="flex items-start gap-3 text-gray-300 font-M text-sm sm:text-base">
+                            <span className="text-orange-500 mt-1">★</span>
+                            {tip}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Exercises Grid */}
-      <div className="container mx-auto px-4 py-12 space-y-8">
-        {exercises.map((exercise, index) => (
-          <div key={exercise.id} className="backdrop-blur-sm bg-white/5 border border-orange-500/30 p-6 shadow-2xl hover:shadow-orange-500/20 transition-all duration-300">
-            {/* Exercise Header */}
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                {index + 1}
-              </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-One text-white mb-1">{exercise.name}</h2>
-                <div className="text-orange-300 font-DM">
-                  <span className="font-semibold">Targets: </span>
-                  {exercise.muscles.join(", ")}
-                </div>
-              </div>
-            </div>
-
-            {/* Video and Instructions Layout */}
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Video Section */}
-              <div className="space-y-4">
-                <div className="bg-gray-900/50 rounded-xl overflow-hidden shadow-lg">
-                  <video 
-                    className="w-full h-64 sm:h-72 md:h-80 lg:h-64 xl:h-72 object-cover" 
-                    controls={false} 
-                    preload="none" 
-                    autoPlay 
-                    muted 
-                    loop
-                  >
-                    <source src={exercise.video} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-              {/* Instructions Section */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-One text-orange-300 mb-3">Exercise Instructions</h3>
-                  <ol className="space-y-2">
-                    {exercise.instructions.map((step, i) => (
-                      <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
-                        <span className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
-                          {i + 1}
-                        </span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-
-                {/* Benefits */}
-                <div>
-                  <h3 className="text-xl font-One text-red-400 mb-3">Key Benefits</h3>
-                  <ul className="space-y-2">
-                    {exercise.benefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
-                        <span className="text-red-400 mt-2">•</span>
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Pro Tips */}
-            <div className="mt-8 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-xl p-6 border border-orange-500/20">
-              <div className="flex items-center space-x-2 mb-4">
-                <span className="text-2xl">⭐</span>
-                <h3 className="text-xl font-One text-orange-300">Elite Training Tips</h3>
-              </div>
-              <ul className="space-y-2">
-                {exercise.tips.map((tip, i) => (
-                  <li key={i} className="flex items-start space-x-3 text-gray-300 font-DM">
-                    <span className="text-orange-400 mt-2">→</span>
-                    <span>{tip}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
-      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

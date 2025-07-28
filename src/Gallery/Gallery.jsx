@@ -5,6 +5,7 @@ import { w3 } from "../assets/w3/w3.js";
 import { IMAGES } from "../config/imageConfig.js";
 import { FTCollection } from "../FT/ft.js";
 import {ImgsCollection } from "../Imgs/Imgs.js";
+import {DSC06177} from "../Imgs/Imgs.js";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("Facility");
@@ -155,15 +156,16 @@ const Gallery = () => {
   return (
     <div className=" min-h-screen">
       {/* Modern Banner */}
-      <div className="relative overflow-hidden h-[60vh] lg:h-[70vh]">
+      <div className="relative overflow-hidden h-[60vh] lg:h-[60vh]">
         <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+          src={DSC06177}
+          loading="lazy"
           alt="Gallery Banner"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
         
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+        <div className="absolute inset-0 flex flex-col justify-center text-white">
           <h1 className="text-5xl lg:text-7xl font-One z-10 mb-4">GALLERY</h1>
           <div className="font-One text-2xl lg:text-5xl">
             <Link to="/" className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>

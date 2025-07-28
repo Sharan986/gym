@@ -143,12 +143,13 @@ const ArmsBeginner = () => {
                 </Link>
                 <span className="text-gray-400">/</span>
                 <Link 
-                  to='/Beginner' 
+                  to='/WorkoutGuide/Beginner' 
                   className="text-white hover:text-[#48D3A3] transition-colors duration-300"
                 >
                   BEGINNER
                 </Link>
                 <span className="text-gray-400">/</span>
+                
                 <span className="text-[#48D3A3]">ARMS</span>
               </div>
               <p className="text-lg sm:text-xl text-gray-200 font-M max-w-3xl leading-relaxed">

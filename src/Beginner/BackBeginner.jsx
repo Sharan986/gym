@@ -138,7 +138,7 @@ const BackBeginner = () => {
                 </Link>
                 <span className="text-gray-400">/</span>
                 <Link 
-                  to='/Beginner' 
+                  to='/WorkoutGuide/Beginner' 
                   className="text-white hover:text-[#48D3A3] transition-colors duration-300"
                 >
                   BEGINNER
