@@ -3,31 +3,34 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useForm } from "react-hook-form";
 import {DSC06177} from "../Imgs/Imgs";
+import { ContactIcon, GymIcon, HandShakeIcon } from "../config/PublicIconExports";
+
+
 const JoinUs = () => {
   const JoinData = [
     {
       id: 1,
       title: "Our Address",
       description:
-        "One Rep Maax Gym, Dimna Rd, Shankoshai, Mango, Jamshedpur, Jharkhand 831018",
+        "Visit One Rep Maax Gym at Dimna Road, Mango, Jamshedpur. Our modern fitness center welcomes you with top-tier equipment and certified trainers, right in the heart of Jamshedpur.",
       imageUrl:
-        "https://framerusercontent.com/images/yDmqlROJtzeBLq417Av3RsaCh8g.svg",
+        GymIcon,
     },
     {
       id: 2,
       title: "Contact Info",
       description:
-        "Got questions ? Call/WhatsApp us at +91 9204057290 ! Our team is ready to help you start your fitness journey today. Let's get moving!",
+        "Connect with One Rep Maax Gym Jamshedpur today! Call or WhatsApp us at +91 9204057290 for membership details, personal training, or any fitness queries. We are here to support your health and wellness journey.",
       imageUrl:
-        "https://framerusercontent.com/images/QIxFE5MhwuZBc8t01is4cWpqU.svg",
+       ContactIcon,
     },
     {
       id: 3,
       title: "Live Support",
       description:
-        "Stuck on choosing a plan or class? Chat live with us or drop an email at info@onerepmaaxgym.in, and we’ll personalize your fitness journey. Start strong!",
+        "Need personalized guidance? Fill out our contact form and our expert team at One Rep Maax Gym will help you with tailored workout plans, nutrition advice, and the best membership options for your goals.",
       imageUrl:
-        "https://framerusercontent.com/images/K9GUi9VRMjtgqRY8QvQI2o0q54.svg",
+        HandShakeIcon,
     },
   ];
 
