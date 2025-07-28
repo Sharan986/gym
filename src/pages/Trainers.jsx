@@ -71,7 +71,7 @@ const Trainers = () => {
       title: "FOUNDER & K11 CERTIFIED TRAINER",
       description: "K11 certified trainer, REPS India member, and certified nutritionist with proven weight loss transformations",
       specializations: ["Personal Training", "Weight Loss", "Nutrition Consultation", "Strength Training"],
-      experience: "10+ years",
+      experience: "6+ years",
       certifications: ["K11 Certified", "REPS India Member", "Certified Nutritionist", "CPR & AED Certified"]
     },
 
