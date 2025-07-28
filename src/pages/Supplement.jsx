@@ -91,8 +91,8 @@ const Supplement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
             {supplementData.map((item, index) => (
               <Link to={`/Supplement/${item.title}`} key={index} className="group">
-                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm">
-                  <div className="relative overflow-hidden rounded-t-3xl">
+                <div className="relative overflow-hidden  bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm">
+                  <div className="relative overflow-hidden xl">
                     <img 
                       src={item.imageUrl} 
                       alt={`${item.title} supplements at OneRepMaax Gym`} 
@@ -107,21 +107,21 @@ const Supplement = () => {
                   </div>
                   
                   <div className="p-8">
-                    <div className="h-1 w-16 bg-gradient-to-r from-[#48D3A3] to-[#3BC493] rounded-full group-hover:w-full transition-all duration-700"></div>
+                    <div className="h-1 w-16 bg-gradient-to-r from-[#48D3A3] to-[#3BC493] l group-hover:w-full transition-all duration-700"></div>
                     <p className="text-gray-400 font-DM mt-4 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       Premium quality supplement
                     </p>
                   </div>
 
                   {/* Subtle hover glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-[#3BC493]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-[#3BC493]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 "></div>
                 </div>
               </Link>
             ))}
           </div>
 
           {/* Call to Action Section */}
-          <div className="mt-20 text-center bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-12 border border-gray-700/30">
+          <div className="mt-20 text-center bg-gradient-to-br from-gray-800/50 to-gray-900/50  p-12 border border-gray-700/30">
             <h3 className="text-3xl md:text-5xl font-One bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-6">
               Need Guidance?
             </h3>
@@ -131,7 +131,7 @@ const Supplement = () => {
             </p>
             <Link 
               to="/JoinUs" 
-              className="inline-block bg-gradient-to-r from-[#48D3A3] to-[#3BC493] text-black font-One text-lg md:text-xl px-8 py-4 rounded-xl hover:from-[#3BC493] hover:to-[#48D3A3] transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-[#48D3A3]/30"
+              className="inline-block bg-gradient-to-r from-[#48D3A3] to-[#3BC493] text-black font-One text-lg md:text-xl px-8 py-4 hover:from-[#3BC493] hover:to-[#48D3A3] transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-[#48D3A3]/30"
             >
               CONSULT OUR EXPERTS
             </Link>

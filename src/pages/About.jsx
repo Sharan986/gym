@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { w3 } from "../assets/w3/w3";
 import { Helmet } from "react-helmet-async";
 import { TRAINER} from '../config/imageConfig';
-import {DSC06177} from "../Imgs/Imgs";
+import {DSC06105, DSC06116, DSC06177} from "../Imgs/Imgs";
 import { SevenDaysIcon, PremiumIcon, ExerciseRoutineIcon } from '../config/PublicIconExports';
 
 
@@ -151,7 +150,7 @@ const About = () => {
 
       {/* Founder's Message Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20" aria-labelledby="founder-message">
-        <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 shadow-2xl">
+        <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30   p-6 sm:p-8 md:p-12 shadow-2xl">
           <header className="text-center mb-8 sm:mb-12">
             <h2 id="founder-message" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-One text-white mb-4">
               A Message from Our Founder
@@ -177,18 +176,18 @@ const About = () => {
             </div>
             
             <footer className="mt-6 sm:mt-8 text-center">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:w-56 xl:h-40 bg-gradient-to-br from-[#48D3A3] to-[#3BC493] rounded-lg mx-auto mb-4 flex items-center justify-center shadow-lg" aria-hidden="true">
-                <img src={TRAINER[2]} alt="Owners Image" className="w-22 h-22 sm:w-30 sm:h-30 md:w-38 md:h-30 lg:w-46 lg:h-34 xl:w-54 xl:h-38 object-cover object-top rounded-lg border-[#48D3A3]  transition-all duration-300" />
+              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:w-56 xl:h-40 bg-gradient-to-br from-[#48D3A3] to-[#3BC493]  mx-auto mb-4 flex items-center justify-center shadow-lg" aria-hidden="true">
+                <img src={TRAINER[2]} alt="Owners Image" className="w-22 h-22 sm:w-30 sm:h-30 md:w-38 md:h-30 lg:w-46 lg:h-34 xl:w-54 xl:h-38 object-cover object-top  border-[#48D3A3]  transition-all duration-300" />
               </div>
               <cite className="not-italic">
                 <p className="text-[#48D3A3] font-One text-lg sm:text-xl">Aditya Singh</p>
                 <p className="text-white font-DM text-base sm:text-lg mb-2">Founder & K11 Certified Trainer</p>
               </cite>
               <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mt-4 px-2" role="list" aria-label="Founder's Certifications">
-                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">K11 Certified</span>
-                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">REPS India Member</span>
-                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">Certified Nutritionist</span>
-                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">10+ Years Experience</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">K11 Certified</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">REPS India Member</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">Certified Nutritionist</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">10+ Years Experience</span>
               </div>
             </footer>
           </div>
@@ -211,7 +210,7 @@ const About = () => {
         {/* Mission Section */}
         <article className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30  sm:l p-6 sm:p-8 shadow-2xl">
               <span className="text-[#48D3A3] text-base sm:text-lg font-One mb-3 sm:mb-4 block">OUR MISSION</span>
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-white mb-4 sm:mb-6 leading-tight">
                 EMPOWERING YOUR FITNESS JOURNEY IN JAMSHEDPUR
@@ -222,11 +221,11 @@ const About = () => {
               </p>
               <ul className="space-y-3 sm:space-y-4" role="list">
                 <li className="flex items-center" role="listitem">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#48D3A3] rounded-full flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">01</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#48D3A3] ll flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">01</div>
                   <span className="text-white font-One text-sm sm:text-base lg:text-lg">AGE-INCLUSIVE MEMBERSHIP</span>
                 </li>
                 <li className="flex items-center" role="listitem">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#48D3A3] rounded-full flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">02</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#48D3A3] ll flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">02</div>
                   <span className="text-white font-One text-sm sm:text-base lg:text-lg">CUSTOMIZED WORKOUT PLANS</span>
                 </li>
               </ul>
@@ -234,11 +233,11 @@ const About = () => {
           </div>
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md">
-              <div className="absolute inset-0 bg-[#48D3A3]/20 rounded-xl sm:rounded-2xl transform rotate-2 sm:rotate-3" aria-hidden="true"></div>
+              <div className="absolute inset-0 bg-[#48D3A3]/20  sm:l transform rotate-2 sm:rotate-3" aria-hidden="true"></div>
               <img
-                src={w3.i7}
+                src={DSC06105}
                 alt="OneRepMaax Gym member training with K11 certified trainer in Jamshedpur GYM"
-                className="relative rounded-xl sm:rounded-2xl shadow-2xl w-full"
+                className="relative  sm:l shadow-2xl w-full"
                 loading="lazy"
               />
             </div>
@@ -249,17 +248,17 @@ const About = () => {
         <article className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md">
-              <div className="absolute inset-0 bg-[#FCDE3B]/20 rounded-xl sm:rounded-2xl transform -rotate-2 sm:-rotate-3" aria-hidden="true"></div>
+              <div className="absolute inset-0 bg-[#FCDE3B]/20  sm:l transform -rotate-2 sm:-rotate-3" aria-hidden="true"></div>
               <img
-                src={w3.i11}
+                src={DSC06116}
                 alt="Modern gym equipment and facilities at OneRepMaax GYM in Mango, Jamshedpur with yoga and Zumba studios"
-                className="relative rounded-xl sm:rounded-2xl shadow-2xl w-full"
+                className="relative  sm:l shadow-2xl w-full"
                 loading="lazy"
               />
             </div>
           </div>
           <div>
-            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#FCDE3B]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#FCDE3B]/30  sm:l p-6 sm:p-8 shadow-2xl">
               <span className="text-[#FCDE3B] text-base sm:text-lg font-One mb-3 sm:mb-4 block">OUR VISION</span>
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-white mb-4 sm:mb-6 leading-tight">
                 STATE-OF-THE-ART GYM FOR EVERYONE
@@ -270,15 +269,15 @@ const About = () => {
               </p>
               <ul className="space-y-3 sm:space-y-4" role="list">
                 <li className="flex items-center" role="listitem">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] rounded-full flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">01</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] ll flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">01</div>
                   <span className="text-white font-One text-sm sm:text-base lg:text-lg">YOGA & ZUMBA STUDIOS</span>
                 </li>
                 <li className="flex items-center" role="listitem">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] rounded-full flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">02</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] ll flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">02</div>
                   <span className="text-white font-One text-sm sm:text-base lg:text-lg">K11 CERTIFIED TRAINERS</span>
                 </li>
                 <li className="flex items-center" role="listitem">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] rounded-full flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">03</div>
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[#FCDE3B] ll flex items-center justify-center text-black font-bold mr-3 sm:mr-4 text-xs sm:text-sm" aria-hidden="true">03</div>
                   <span className="text-white font-One text-sm sm:text-base lg:text-lg">FUNCTIONAL TRAINING AREAS</span>
                 </li>
               </ul>
@@ -302,8 +301,8 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
           {Values.map((value) => (
-            <article key={value.id} className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#F97316]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#F97316]/20 transition-all duration-300 text-center hover:from-gray-800/90 hover:via-black/70 hover:to-gray-700/90" role="listitem">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#F97316] to-[#ea580c] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg" aria-hidden="true">
+            <article key={value.id} className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#F97316]/30  sm:l p-6 sm:p-8 shadow-2xl hover:shadow-[#F97316]/20 transition-all duration-300 text-center hover:from-gray-800/90 hover:via-black/70 hover:to-gray-700/90" role="listitem">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#F97316] to-[#ea580c] ll flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg" aria-hidden="true">
                 <img
                   src={value.imageUrl}
                   alt=""
