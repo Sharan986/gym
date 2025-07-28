@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Icon from '../components/Icon';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { TRAINER} from '../config/imageConfig';
 
 const Trainers = () => {
@@ -198,10 +199,11 @@ const Trainers = () => {
                   onMouseLeave={handleCardHoldEnd}
                 >
                   <div className="h-[22rem] overflow-hidden">
-                    <img
+                    <ResponsiveImage
                       src={trainer.img}
                       alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                       className="w-full h-full object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       loading="lazy"
                     />
                   </div>
@@ -236,10 +238,11 @@ const Trainers = () => {
                   onMouseLeave={handleCardHoldEnd}
                 >
                   <div className="h-[32rem] overflow-hidden">
-                    <img
+                    <ResponsiveImage
                       src={trainer.img}
                       alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                       className="w-full h-full object-cover object-top"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       loading="lazy"
                     />
                   </div>
@@ -266,10 +269,11 @@ const Trainers = () => {
           {trainers.map((trainer) => (
             <article key={trainer.id} className="border-2 border-gray-600 overflow-hidden transition-transform hover:scale-105">
               <div className="h-[28rem] overflow-hidden">
-                <img
+                <ResponsiveImage
                   src={trainer.img}
                   alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                   className="w-full h-full object-cover lg:object-top object-center transition-transform hover:scale-110"
+                  sizes="(max-width: 1024px) 50vw, 33vw"
                   loading="lazy"
                 />
               </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import ResponsiveImage from "../components/ResponsiveImage";
 import { useForm } from "react-hook-form";
 import {DSC06177} from "../Imgs/Imgs";
 import { ContactIcon, GymIcon, HandShakeIcon } from "../config/PublicIconExports";
@@ -62,11 +63,12 @@ Message: ${data.message || ""}`;
       {/* Hero Section */}
       <div className="relative h-80 lg:h-[60vh] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-gray-900/50"></div>
-        <img
+        <ResponsiveImage
           src={DSC06177}
-          loading="lazy"
-          alt="Contact Us Banner"
+          alt="Contact One Rep Maax Gym Dimna Mango Jamshedpur"
           className="w-full h-full object-cover opacity-70"
+          sizes="100vw"
+          priority={true}
         />
         <div className="absolute inset-0 flex flex-col justify-center px-4">
           <h1 className="text-6xl md:text-8xl font-One text-white mb-6 drop-shadow-2xl">
