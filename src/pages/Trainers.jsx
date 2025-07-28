@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Icon from '../components/Icon';
+import ResponsiveImage from '../components/ResponsiveImage';
 import { TRAINER} from '../config/imageConfig';
 
 const Trainers = () => {
@@ -70,7 +71,7 @@ const Trainers = () => {
       title: "FOUNDER & K11 CERTIFIED TRAINER",
       description: "K11 certified trainer, REPS India member, and certified nutritionist with proven weight loss transformations",
       specializations: ["Personal Training", "Weight Loss", "Nutrition Consultation", "Strength Training"],
-      experience: "10+ years",
+      experience: "6+ years",
       certifications: ["K11 Certified", "REPS India Member", "Certified Nutritionist", "CPR & AED Certified"]
     },
 
@@ -79,30 +80,30 @@ const Trainers = () => {
       img: TRAINER[3],
       name: "SMRITI ROY",
       title: "CO-FOUNDER & TRAINER",
-      description: "Co-founder and experienced trainer specializing in women's fitness and functional training",
+      description: "B.Tech Civil Engineer turned fitness expert, co-founder specializing in women's fitness and functional training with engineering precision",
       specializations: ["Women's Fitness", "Functional Training", "Yoga", "Group Classes"],
-      experience: "8+ years",
-      certifications: ["Certified Fitness Trainer", "Yoga Instructor"]
+      experience: "3+ years",
+      certifications: ["B.Tech Civil Engineering", "Certified Fitness Trainer"]
     },
     {
       id: 2,
       img: TRAINER[1],
       name: "FAZAL RAHMAAN",
-      title: "TRAINER",
-      description: "Experienced trainer focused on strength training and muscle building programs",
+      title: "K11 CERTIFIED TRAINER",
+      description: "K11 certified fitness professional focused on strength training and muscle building programs with proven methodologies",
       specializations: ["Strength Training", "Muscle Building", "Powerlifting", "Athletic Training"],
-      experience: "6+ years",
-      certifications: ["Certified Fitness Trainer", "Strength & Conditioning"]
+      experience: "2+ years",
+      certifications: ["K11 Certified", "Strength & Conditioning"]
     },
     {
       id: 3,
       img: TRAINER[0],
       name: "RAJ KUMAR",
-      title: "TRAINER",
-      description: "Professional trainer specializing in cardio workouts and endurance training",
+      title: "GOLD'S GYM CERTIFIED TRAINER",
+      description: "Gold's Gym certified professional trainer specializing in cardio workouts and endurance training programs",
       specializations: ["Cardio Training", "Endurance", "HIIT", "Circuit Training"],
-      experience: "5+ years",
-      certifications: ["Certified Fitness Trainer", "Cardio Specialist"]
+      experience: "3+ years",
+      certifications: ["Gold's Gym Certified", "Cardio Specialist"]
     },
  
     {
@@ -120,9 +121,9 @@ const Trainers = () => {
       img: TRAINER[5],
       name: "ZAIN IBRAHIM",
       title: "TRAINER",
-      description: "Dynamic trainer specializing in youth fitness and sports conditioning",
+      description: "Dynamic and passionate trainer specializing in youth fitness and sports conditioning with dedicated approach",
       specializations: ["Youth Fitness", "Sports Conditioning", "Agility Training", "Flexibility"],
-      experience: "3+ years",
+      experience: "2+ years",
       certifications: ["Certified Fitness Trainer", "Youth Fitness Specialist"]
     },
     ];
@@ -198,10 +199,11 @@ const Trainers = () => {
                   onMouseLeave={handleCardHoldEnd}
                 >
                   <div className="h-[22rem] overflow-hidden">
-                    <img
+                    <ResponsiveImage
                       src={trainer.img}
                       alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                       className="w-full h-full object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       loading="lazy"
                     />
                   </div>
@@ -236,10 +238,11 @@ const Trainers = () => {
                   onMouseLeave={handleCardHoldEnd}
                 >
                   <div className="h-[32rem] overflow-hidden">
-                    <img
+                    <ResponsiveImage
                       src={trainer.img}
                       alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                       className="w-full h-full object-cover object-top"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       loading="lazy"
                     />
                   </div>
@@ -266,10 +269,11 @@ const Trainers = () => {
           {trainers.map((trainer) => (
             <article key={trainer.id} className="border-2 border-gray-600 overflow-hidden transition-transform hover:scale-105">
               <div className="h-[28rem] overflow-hidden">
-                <img
+                <ResponsiveImage
                   src={trainer.img}
                   alt={`${trainer.name} - ${trainer.title} at OneRepMaax Gym Jamshedpur`}
                   className="w-full h-full object-cover lg:object-top object-center transition-transform hover:scale-110"
+                  sizes="(max-width: 1024px) 50vw, 33vw"
                   loading="lazy"
                 />
               </div>

@@ -32,7 +32,7 @@ const Join = () => {
           {/* Mobile star rating - positioned above button */}
           <div className="block lg:hidden mt-4 mb-2 text-center">
             <div className="inline-flex items-center bg-[#070915]/90 text-[#FCDE3B] px-3 py-2 font-M font-medium backdrop-blur-sm border border-[#FCDE3B]/30">
-              <span className="animate-pulse mr-2 text-lg">⭐</span>
+              
               <span className="text-sm font-M font-bold">4.9★ Rated Workout Programs</span>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Join = () => {
               
               {/* Button content */}
               <span className="relative z-10 flex items-center justify-center gap-1 xs:gap-2 sm:gap-3 group-hover:text-white transition-colors duration-300">
-                <span className="animate-pulse text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl" aria-hidden="true">🏋️</span>
+                
                 <span className="whitespace-nowrap xs:whitespace-normal">Explore Workout Guide</span>
                 <span className="transform group-hover:translate-x-1 sm:group-hover:translate-x-2 transition-transform duration-300 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl" aria-hidden="true"></span>
               </span>

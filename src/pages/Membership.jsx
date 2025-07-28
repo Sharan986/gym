@@ -400,34 +400,34 @@ const MembershipSection = () => {
                         </h3>
                         {slide.title === "Membership" && (
                           <div className="text-[10px] sm:text-xs mt-1 font-DM font-semibold flex items-center justify-center gap-1 opacity-90">
-                            <span className="animate-pulse" aria-hidden="true">⭐</span> 
+                            
                             <span className="hidden sm:inline">Most Popular Choice</span>
                             <span className="sm:hidden">Popular</span>
-                            <span className="animate-pulse" aria-hidden="true">⭐</span>
+                           
                           </div>
                         )}
                         {slide.title === "Personal Training" && (
                           <div className="text-[10px] sm:text-xs mt-1 font-DM font-semibold flex items-center justify-center gap-1 opacity-90">
-                            <span className="animate-bounce" aria-hidden="true">💪</span> 
+                             
                             <span className="hidden sm:inline">Premium K11 Certified</span>
                             <span className="sm:hidden">K11 Certified</span>
-                            <span className="animate-bounce" aria-hidden="true">💪</span>
+                            
                           </div>
                         )}
                         {slide.title === "GROUP PT" && (
                           <div className="text-[10px] sm:text-xs mt-1 font-DM font-semibold flex items-center justify-center gap-1 opacity-90">
-                            <span className="animate-pulse" aria-hidden="true">👥</span> 
+                            
                             <span className="hidden sm:inline">Team Training Sessions</span>
                             <span className="sm:hidden">Team Training</span>
-                            <span className="animate-pulse" aria-hidden="true">👥</span>
+                           
                           </div>
                         )}
                         {slide.title === "Locker Facility" && (
                           <div className="text-[10px] sm:text-xs mt-1 font-DM font-semibold flex items-center justify-center gap-1 opacity-90">
-                            <span className="animate-bounce" aria-hidden="true">🔐</span> 
+                            
                             <span className="hidden sm:inline">Secure & Convenient</span>
                             <span className="sm:hidden">Secure Storage</span>
-                            <span className="animate-bounce" aria-hidden="true">🔐</span>
+                            
                           </div>
                         )}
                       </div>

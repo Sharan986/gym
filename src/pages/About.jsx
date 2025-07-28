@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { w3 } from "../assets/w3/w3";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { TRAINER} from '../config/imageConfig';
 import {DSC06177} from "../Imgs/Imgs";
 import { SevenDaysIcon, PremiumIcon, ExerciseRoutineIcon } from '../config/PublicIconExports';

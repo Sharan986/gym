@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect and Preload Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Bayon&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Bayon&display=swap">
     
-    <title>OneRepMaax Gym | Jamshedpur's Premium Fitness Studio & Training Center</title>
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/allPhotos/owner.webp" type="image/webp">
+    <link rel="preload" as="image" href="/allPhotos/co-founder.webp" type="image/webp">
+    <link rel="preload" as="image" href="/allPhotos/DSC06177.webp" type="image/webp">
     
+    <title>OneRepMaax Gym | One Rep Maax | Gym in Mango, Dimna, Jamshedpur | Premium Fitness Studio & Training Center</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.onerepmaaxgym.in" />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Transform your fitness at OneRepMaax Gym Jamshedpur. K11 certified trainers, modern equipment, weight loss programs. Flexible memberships from ₹1,200/month. Join today!" />
-    <meta name="keywords" content="OneRepMaax Gym, gym in Jamshedpur, fitness training Jamshedpur, certified trainers, weight loss programs, strength training, Dimna Road gym, premium fitness studio, K11 certified, gym membership Jamshedpur" />
+    <meta name="description" content="OneRepMaax Gym (वन रेप मैक्स जिम), Mango, Dimna, Jamshedpur – K11 certified trainers, modern equipment, weight loss, strength, and personal training. Flexible memberships from ₹1,200/month. Join today!" />
+    <meta name="keywords" content="OneRepMaax, One Rep Maax, OneRepMaax Gym, वन रेप मैक्स, वन रेप मैक्स जिम, gym in Mango, gym in Dimna, gym near me, gym in Jamshedpur, fitness training Jamshedpur, certified trainers, weight loss programs, strength training, Dimna Road gym, premium fitness studio, K11 certified, gym membership Jamshedpur, gym in mango, gym in jamshedpur, gym in dimna, gym near Dimna, gym near Mango, gym near Dimna Road, gym near me, gym jamshedpur, gym dimna, gym mango" />
     <meta name="author" content="OneRepMaax Gym" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -16,34 +29,40 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="rating" content="general" />
     <meta name="distribution" content="global" />
-    <meta name="language" content="English" />
+    <meta name="language" content="en,hi" />
     <meta name="coverage" content="Worldwide" />
     <meta name="target" content="all" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="OneRepMaax Gym | Jamshedpur's Premium Fitness Studio" />
-    <meta property="og:description" content="Transform your fitness at OneRepMaax Gym Jamshedpur. K11 certified trainers, modern equipment, weight loss programs. Memberships from ₹1,200/month." />
+    <meta property="og:title" content="OneRepMaax Gym | One Rep Maax | Gym in Mango, Dimna, Jamshedpur" />
+    <meta property="og:description" content="OneRepMaax Gym (वन रेप मैक्स जिम), Mango, Dimna, Jamshedpur – K11 certified trainers, modern equipment, weight loss, strength, and personal training. Flexible memberships from ₹1,200/month. Join today!" />
     <meta property="og:type" content="business.business" />
-    <meta property="og:url" content="https://onerepmaax.com" />
+    <meta property="og:url" content="https://www.onerepmaaxgym.in" />
     <meta property="og:site_name" content="OneRepMaax Gym" />
     <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content="https://www.onerepmaaxgym.in/allPhotos/owner.webp" />
     
     <!-- Business/Local SEO -->
     <meta name="geo.region" content="IN-JH" />
     <meta name="geo.placename" content="Jamshedpur" />
     <meta name="geo.position" content="22.8046;86.2029" />
     <meta name="ICBM" content="22.8046, 86.2029" />
+    <!-- Google Business Profile -->
+    <meta name="google-site-verification" content="vercel" />
     
     <!-- Contact Information -->
     <meta name="telephone" content="+91-9204057290" />
     <meta name="email" content="onerepmaaxgym@gmail.com" />
     <meta name="address" content="Dimna Rd, Shankoshai, Mango, Jamshedpur, Jharkhand 831018" />
+    <meta name="whatsapp" content="https://wa.me/919204057290" />
     
     <!-- Icons -->
     <link rel="icon" type="image/png" href="/src/assets/logo.png" />
     <meta name="theme-color" content="#48D3A3" />
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -51,11 +70,17 @@
       "@context": "https://schema.org",
       "@type": "HealthClub",
       "name": "OneRepMaax Gym",
-      "alternateName": "One Rep Maax Gym",
+      "alternateName": [
+        "One Rep Maax Gym",
+        "वन रेप मैक्स जिम",
+        "OneRepMaax",
+        "One Rep Maax",
+        "वन रेप मैक्स"
+      ],
       "url": "https://www.onerepmaaxgym.in",
       "logo": "https://www.onerepmaaxgym.in/src/assets/logo.png",
-      "image": "https://www.onerepmaaxgym.in/src/assets/logo.png",
-      "description": "Premium fitness studio in Jamshedpur offering K11 certified personal training, weight loss programs, and modern gym equipment.",
+      "image": "https://www.onerepmaaxgym.in/allPhotos/owner.webp",
+      "description": "OneRepMaax Gym (वन रेप मैक्स जिम), Mango, Dimna, Jamshedpur – K11 certified trainers, modern equipment, weight loss, strength, and personal training. Flexible memberships from ₹1,200/month.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Dimna Rd, Shankoshai, Mango",
@@ -71,6 +96,21 @@
       },
       "telephone": "+91-9204057290",
       "email": "onerepmaaxgym@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-9204057290",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "hi"]
+        },
+        {
+          "@type": "ContactPoint",
+          "url": "https://wa.me/919204057290",
+          "contactType": "customer support",
+          "availableLanguage": ["en", "hi"]
+        }
+      ],
       "openingHours": [
         "Mo-Sa 05:00-23:00",
         "Su 08:00-18:00"
@@ -123,8 +163,7 @@
         "ratingCount": "150"
       },
       "sameAs": [
-        "https://www.instagram.com/onerepmaaxgym",
-        "https://www.facebook.com/onerepmaaxgym"
+        "https://www.instagram.com/onerepmaax/"
       ]
     }
     </script>

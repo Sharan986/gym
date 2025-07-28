@@ -5,6 +5,38 @@
   text-align: center;
 }
 
+/* Image optimization CSS */
+.responsive-image {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px 400px;
+}
+
+.responsive-image img {
+  transition: opacity 0.3s ease;
+}
+
+.responsive-image img[loading="lazy"] {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Critical CSS for images to prevent layout shifts */
+.hero-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.trainer-image {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
