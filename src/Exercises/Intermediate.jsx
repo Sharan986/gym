@@ -103,7 +103,7 @@ const Intermediate = () => {
                 to={`${exercise.path}`}
                 className="group block"
               >
-                <div className="relative rounded-2xl overflow-hidden h-72 sm:h-80 group-hover:scale-[1.02] transition-all duration-300 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 hover:border-[#FCDE3B]/50 hover:shadow-lg hover:shadow-[#FCDE3B]/10">
+                <div className="relative overflow-hidden h-72 sm:h-80 group-hover:scale-[1.02] transition-all duration-300 bg-gray-900/40 backdrop-blur-sm border border-gray-700/50 hover:border-[#FCDE3B]/50 hover:shadow-lg hover:shadow-[#FCDE3B]/10">
                   
                   {/* Yellow Gradient Background */}
                   <div className="absolute inset-0 bg-gradient-to-br from-[#FCDE3B]/20 to-[#FCDE3B]/10 opacity-60"></div>

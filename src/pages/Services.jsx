@@ -3,12 +3,13 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Icon from '../components/Icon';
-import {FITNESS_IMAGES, FACILITY_IMAGES} from '../config/imageConfig';
-import{ DSC06200, DSC06244 } from "../Imgs/Imgs.js"; 
+import{ DSC06105,  } from "../Imgs/Imgs.js"; 
 import {DSC06168} from '../Imgs/Imgs.js'; // Importing the specific image
 import {DSC06120} from '../Imgs/Imgs.js'; // Importing the specific image
 import {z1} from "../FT/ft.js"; // Importing the specific image
-import {oow} from "../FT/ft.js"; // Importing the specific image
+
+import { LooseWeightIcon, PersonalTrainerIcon, MuscleIcon } from '../config/PublicIconExports.js';
+
 
 
 
@@ -73,7 +74,7 @@ const Services = () => {
     {
       id: 1,
       img: z1, // Personal training image
-      logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
+      logo: PersonalTrainerIcon,
       title: "Personal Training",
       description: "K11 certified personal trainers in Jamshedpur with proven weight loss transformations",
       keywords: "personal trainer Jamshedpur, one-on-one training, K11 certified",
@@ -82,7 +83,7 @@ const Services = () => {
     {
       id: 2,
       img: DSC06120, // Weight loss/cardio image
-      logo: "https://framerusercontent.com/images/KPr5TPF7GDGjQlZNZUhIj5OiPgc.svg",
+      logo: LooseWeightIcon,
       title: "Weight Loss Programs",
       description: "Proven weight loss transformations with nutrition consultation and certified guidance",
       keywords: "weight loss Jamshedpur, fat loss program, nutrition consultation",
@@ -91,8 +92,8 @@ const Services = () => {
 
     {
       id: 4,
-      img: oow, // Group fitness classes image
-      logo: "https://framerusercontent.com/images/0I5gJgQ9FmN97PDP0WbOideZ6U.svg",
+      img: DSC06105, // Group fitness classes image
+      logo: MuscleIcon,
       title: "Strength Training",
       description:   "Build muscle and strength with state-of-the-art equipment and expert guidance",
       keywords: "group fitness Jamshedpur, Zumba classes, yoga classes",
@@ -180,11 +181,13 @@ const Services = () => {
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-between">
                     <div>
-                      <img 
-                        src={service.logo} 
-                        alt={`${service.title} icon`} 
-                        className="w-12 h-12 mx-auto mb-2" 
-                      />
+                      <div className="mx-auto mb-2 w-14 h-14 flex items-center justify-center" style={{ backgroundColor: '#48D3A3' }}>
+                        <img 
+                          src={service.logo} 
+                          alt={`${service.title} icon`} 
+                          className="w-8 h-8 object-contain" 
+                        />
+                      </div>
                       <h3 className="text-xl font-One mb-2">{service.title}</h3>
                       <p className="text-sm text-gray-300 mb-3 leading-relaxed line-clamp-3 font-DM">{service.description}</p>
                     </div>
@@ -220,11 +223,13 @@ const Services = () => {
                   </div>
                   <div className="p-4 text-center flex-1 flex flex-col justify-between">
                     <div>
-                      <img 
-                        src={service.logo} 
-                        alt={`${service.title} icon`} 
-                        className="w-16 h-16 mx-auto mb-2" 
-                      />
+                      <div className="mx-auto mb-2 w-20 h-20 flex items-center justify-center" style={{ backgroundColor: '#48D3A3' }}>
+                        <img 
+                          src={service.logo} 
+                          alt={`${service.title} icon`} 
+                          className="w-12 h-12 object-contain" 
+                        />
+                      </div>
                       <h3 className="text-2xl font-One mb-2">{service.title}</h3>
                       <p className="text-sm text-gray-300 mb-3 leading-relaxed line-clamp-4 font-DM">{service.description}</p>
                     </div>
@@ -250,11 +255,13 @@ const Services = () => {
                 />
               </div>
               <div className="p-4 text-center">
-                <img 
-                  src={service.logo} 
-                  alt={`${service.title} icon`} 
-                  className="w-16 h-16 mx-auto mb-2" 
-                />
+                <div className="mx-auto mb-2 w-20 h-20 flex items-center justify-center" style={{ backgroundColor: '#48D3A3' }}>
+                  <img 
+                    src={service.logo} 
+                    alt={`${service.title} icon`} 
+                    className="w-12 h-12 object-contain" 
+                  />
+                </div>
                 <h3 className="text-xl lg:text-2xl font-One mb-2">{service.title}</h3>
                 <p className="text-sm text-gray-300 mb-3 leading-relaxed font-DM">{service.description}</p>
                 <div className="text-sm text-gray-400 font-DM">

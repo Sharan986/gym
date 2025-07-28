@@ -1,19 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { gallery } from '../assets/Gallery/gallery';
+
 import Icon from '../components/Icon';
 import { DSC06176, DSC06244 } from '../Imgs/Imgs';
 import { DSC06205 } from '../Imgs/Imgs';
+import { FTCollection } from '../FT/ft';
+
 
 
 const PhotoGrid = () => {
-  const photos = [
-    { id: 1, url: gallery.f1, alt: 'OneRepMaax Gym training session - Professional fitness equipment in action at Jamshedpur' },
-    { id: 2, url: gallery.e4, alt: 'State-of-the-art gym equipment at OneRepMaax Jamshedpur - Premium Jaguar fitness machines' },
-    { id: 3, url: gallery.ft8, alt: 'Modern fitness facility with premium Jaguar equipment - OneRepMaax Gym interior' },
-    { id: 4, url: gallery.f4, alt: 'Professional training environment at OneRepMaax Gym - Certified trainers and members' },
-    { id: 5, url: gallery.ft13, alt: 'Spacious 5000+ sq ft workout area with advanced fitness equipment - OneRepMaax Jamshedpur' },
-  ];
 
   return (
     <>
@@ -62,8 +57,8 @@ const PhotoGrid = () => {
           {/* Large featured image */}
           <div className="col-span-2 row-span-1 col-start-2 row-start-1 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300 relative">
             <img 
-              src={photos[2].url} 
-              alt={photos[2].alt} 
+              src={FTCollection.z30} 
+              alt={FTCollection.z30} 
               className="w-full h-full object-cover object-center transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
              
@@ -83,8 +78,8 @@ const PhotoGrid = () => {
           </div>
           <div className="col-start-3 row-start-2 overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02] sm:hover:scale-105 duration-300">
             <img 
-              src={photos[4].url} 
-              alt={photos[4].alt} 
+              src={FTCollection.z8} 
+              alt={FTCollection.z8} 
               className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
               loading="lazy"
              

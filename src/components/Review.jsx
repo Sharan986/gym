@@ -78,7 +78,7 @@ const Review = () => {
       rating: 5,
       ratingStars: "★★★★★",
       name: "Jasbir Singh",
-      role: "Personal Training Client",
+      role: "Daily Member",
       image: IMAGES.jasbirSingh2,
       date: "2025-07-05"
     },
@@ -108,13 +108,13 @@ const Review = () => {
       rating: 5,
       ratingStars: "★★★★★",
       name: "Jasprit Singh",
-      role: "Daily Grinder",
+      role: "Personal Training Client",
       image: IMAGES.jaspritSingh2,
       date: "2025-06-15"
     },
     {
       id: 5,
-      quote: "Been with OneRepMaax since the beginning. Amazing experience with great trainers!",
+      quote: "Been with OneRepMaax since the beginning. Amazing experience with great trainers! Truly inspiring. Highly recommended!",
       rating: 5,
       ratingStars: "★★★★★",
       name: "Sahil Kumar",
@@ -217,7 +217,7 @@ const Review = () => {
             {reviews.map((review, index) => (
               <div key={review.id} className="px-2 sm:px-3 h-full">
                 <article 
-                  className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border-2 border-gray-600 hover:border-[#48D3A3] transition-all duration-300 shadow-xl hover:shadow-2xl text-center flex flex-col justify-between h-full min-h-[20rem] sm:min-h-[22rem] md:min-h-[24rem] lg:min-h-[26rem] p-4 sm:p-5 md:p-6 relative overflow-hidden group "
+                  className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 border-2 border-gray-600 hover:border-[#48D3A3] transition-all duration-300 shadow-xl hover:shadow-2xl text-center flex flex-col justify-between h-full min-h-[20rem] sm:min-h-[22rem] md:min-h-[24rem] lg:min-h-[26rem] xl:min-h-[28rem] 2xl:min-h-[30rem] p-4 sm:p-5 md:p-6 xl:p-8 max-w-full xl:max-w-[480px] 2xl:max-w-[520px] mx-auto relative overflow-hidden group "
                   onTouchStart={handleCardHoldStart}
                   onTouchEnd={handleCardHoldEnd}
                   onMouseDown={handleCardHoldStart}

@@ -46,15 +46,7 @@ const Footer = () => {
                       About Us
                     </Link>
                   </li>
-                  <li>
-                    <Link 
-                      to="/ServicesDetail" 
-                      className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-[#48D3A3] transition-colors duration-300 focus:text-[#48D3A3] focus:outline-none"
-                      aria-label="Our fitness services and programs"
-                    >
-                      Services
-                    </Link>
-                  </li>
+        
                   <li>
                     <Link 
                       to="/Supplement" 

@@ -36,10 +36,10 @@ const Header = () => {
             </div>
            
             <h1 className=" text-4xl  w-80 md:w-160 md:text-[64px] lg:text-[80px] lg:w-full">
-              Transform. Perform. Dominate.
+              Transform. Perform. <br /> Dominate.
             </h1>
           </div>
-          <div className="mt-50 md:mt-70 sm:flex sm:items-center font-One  sm:gap-7   ">
+          <div className="mt-50 lg:mt-100 md:mt-70 sm:flex sm:items-center font-One  sm:gap-7   ">
             <Link to="JoinUs" aria-label="Join OneRepMaax Gym today - Best fitness center in Jamshedpur">
               <Button text="JOIN US TODAY" className="text-2xl mb-4 sm:mb-0 md:text-3xl" />
             </Link>
@@ -49,7 +49,7 @@ const Header = () => {
           </div>
         </section>
       </main>
-      <section className="md:pt-10">
+      <section className="md:pt-2">
         <Marquee />
         <Num />
         <Services />

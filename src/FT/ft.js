@@ -40,6 +40,7 @@ import c5 from './c5.webp';
 import c6 from './c6.webp';
 import cc1 from './cc1.webp';
 import cc2 from './cc2.webp';
+import BOSS2 from './BOSS2.webp'; // Importing the specific image for the Boss
 import oow from './oow.webp'; // Importing the specific image for other uses
 
 // FT Collection object for easy access
@@ -83,6 +84,7 @@ export const FTCollection = {
     cc1,
     cc2,
     oow,
+  BOSS2, // Adding the Boss image to the collection
     
 };
 
