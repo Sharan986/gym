@@ -4,32 +4,34 @@ import Footer from "../components/Footer";
 
 const preWorkoutProducts = [
   {
-    id: 3,
-    name: "MuscleBlaze Pre Workout WrathX, 340 g (0.75 lb)",
+    id: 1,
+    name: "Pre-Workout Energy Booster (300g) | Fruit Punch",
+    Price: "₹899",
+    photo: "/supplementImgs/pump.webp",
+  },
+  {
+    id: 2,
+    name: "MuscleBlaze Pre Workout WrathX (340g) | Mango Mayhem",
     Price: "₹1,399",
-    photo:
-      "https://img8.hkrtcdn.com/38823/prd_3882277-MuscleBlaze-Pre-Workout-WrathX-0.74-lb-Mango-Mayhem_o.jpg",
+    photo: "/supplementImgs/wrathx.webp",
+  },
+  {
+    id: 3,
+    name: "C4 Original Pre-Workout (390g) | Explosive Energy",
+    Price: "₹3,299",
+    photo: "/supplementImgs/c4.webp",
+  },
+  {
+    id: 4,
+    name: "C4 Ripped Pre-Workout (390g) | Fat Burner + Energy",
+    Price: "₹3,599",
+    photo: "/supplementImgs/shopping.webp",
   },
   {
     id: 5,
-    name: "MuscleBlaze Pre Workout 200 Xtreme (Fruit Punch, 15 Servings, 100g)",
-    Price: "₹499",
-    photo:
-      "https://m.media-amazon.com/images/I/7144k02s2FL._SY450_.jpg",
-  },
-  {
-    id: 8,
-    name: "Nakpro Pre Workout Supplement Powder",
-    Price: "₹349",
-    photo:
-      "https://nakpro.com/cdn/shop/products/01_8ff935e3-cb6c-4657-ae7c-eb0153770826.png?v=1746927037&width=900",
-  },
-  {
-    id: 9,
-    name: "GNC Creatine Monohydrate With Black Shaker (750ml) Creatine  (100 g, Blueberry)Fuel One Dead-Lift Pre Workout",
-    Price: "₹449",
-    photo:
-      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSmpHekjlJ__OViZoGulY9oFPYpqnhMYrqnTufqjBusft2P2gF1fseTp0o9IplCRCvcnngvtDFmwUYua5TbhWVudWn9Raun-s827TqviYUW",
+    name: "Karnage Pre-Workout (300g) | Extreme Energy Formula",
+    Price: "₹2,199",
+    photo: "/supplementImgs/karnage.webp",
   },
 ];
 

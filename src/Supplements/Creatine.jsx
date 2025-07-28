@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 const Creatinear = [
-  { id: 3, name: 'AS-IT-IS Nutrition Creatine Monohydrate | USA Labdoor Certified for Accuracy & Purity Creatine  (100 g, unflavored)',Price:"₹1,244" , photo: 'https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/b/h/z/creatine-creatine-monohydrate-usa-labdoor-certified-for-accuracy-original-imah7tm8dkgntguz.jpeg?q=70' },
-  { id: 5, name: 'Wellcore Micronised Creatine Monohydrate | Lab Tested | Enhanced Absorption | 100% Pure Creatine  (122 g, Fruit Fusion)',Price:"₹599" , photo: 'https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/z/h/n/creatine-micronised-creatine-monohydrate-lab-tested-enhanced-original-imahcbffa8ynchht.jpeg?q=70' },
-  { id: 8, name: 'AS-IT-IS Nutrition Creatine Monohydrate 100g - 32 Servings, Fruit Punch Creatine  (100 g, Fruit Punch)', Price:"₹₹320" ,photo: 'https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/o/o/t/creatine-creatine-monohydrate-100g-32-servings-fruit-punch-original-imahcjwnajgdjfjc.jpeg?q=70' },
-  { id: 9, name: "GNC Creatine Monohydrate With Black Shaker (750ml) Creatine  (100 g, Blueberry)",Price:"₹449" , photo: 'https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/f/i/i/-original-imahcecgkqzkghvj.jpeg?q=70' },
+  { id: 1, name: 'Wellcore Micronised Creatine Monohydrate | Lab Tested | Enhanced Absorption | 100% Pure (300g)',Price:"₹899" , photo: '/supplementImgs/wellcore.webp' },
+  { id: 2, name: 'MUSCLEBLAZE CrePro Creatine with Monohydrate & HCL | 0.5kg | Unflavored',Price:"₹1,499" , photo: '/supplementImgs/creatine-micronized-creatine-monohydrate-powder-nut9684-01-original-imahef5awuk7gcmh.webp' },
+  { id: 3, name: 'ON (Optimum Nutrition) Micronized Creatine Monohydrate Powder | 300g | Unflavored', Price:"₹2,199" ,photo: '/supplementImgs/download.webp' },
+  { id: 4, name: "ATOM Creatine Monohydrate | Micronized for Better Absorption | 300g | Unflavored",Price:"₹1,299" , photo: '/supplementImgs/atomCreatiine.webp' },
 ];
 
 const Creatine = () => {

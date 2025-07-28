@@ -1,18 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
+import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
-const products = [
-  { id: 1, name: "MUSCLEBLAZE Whey Gold (1 kg, Rich Milk Chocolate)", Price:"₹2,299", photo: "/supplementImgs/onwhey.webp" },
-  { id: 2, name: "ON Gold Standard 100% Whey Protein (1 kg, Double Rich Chocolate)", Price:"₹4,999", photo: "/supplementImgs/on.webp" },
-  { id: 3, name: "AVVATAR Whey Protein (1 kg, Chocolate)", Price:"₹1,899", photo: "/supplementImgs/avvatar.webp" },
-  { id: 4, name: "ATOM Whey Protein (1 kg, Vanilla)", Price:"₹2,199", photo: "/supplementImgs/atom.webp" },
+const peanutButterProducts = [
+  {
+    id: 1,
+    name: "Pintola All Natural Peanut Butter (Crunchy) | 1kg | No Added Sugar",
+    Price: "₹399",
+    photo: "/supplementImgs/alpino.webp",
+  },
+  {
+    id: 2,
+    name: "Alpino Natural Peanut Butter (Smooth) | 1kg | High Protein",
+    Price: "₹449",
+    photo: "/supplementImgs/alpino.webp",
+  },
+  {
+    id: 3,
+    name: "MyFitness Chocolate Peanut Butter (Smooth) | 1.25kg | Added Whey",
+    Price: "₹649",
+    photo: "/supplementImgs/my fitness.webp",
+  },
 ];
 
-const ProductList = () => {
+const PeanutButter = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = '+918877152285';
-    const message = 'Hello, I am interested in your protein products. Could you please provide more information?';
+    const message = 'Hello, I am interested in your peanut butter products. Could you please provide more information?';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -23,18 +37,18 @@ const ProductList = () => {
       <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
         <img
           src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
-          alt="Whey Protein Supplements - OneRepMaax Gym"
+          alt="Natural Peanut Butter - OneRepMaax Gym"
           className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
         <div className="absolute bottom-8 left-8 text-white z-10">
           <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
-            PROTEIN
+            PEANUT BUTTER
           </h1>
           <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
             <Link to="/Supplement" className="hover:text-[#48D3A3] transition-colors duration-300">SUPPLEMENTS</Link>
             <span className="text-gray-400">/</span>
-            <span className="text-[#FCDE3B]">PROTEIN</span>
+            <span className="text-[#FCDE3B]">PEANUT BUTTER</span>
           </nav>
         </div>
       </div>
@@ -45,20 +59,20 @@ const ProductList = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-One bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-6 uppercase">
-              Protein Products
+              Natural Peanut Butter
             </h2>
             <p className="text-xl md:text-2xl font-One text-white mb-8 max-w-4xl mx-auto">
-              Premium Whey Protein for Muscle Building & Recovery
+              High Protein Natural Nut Butters for Healthy Nutrition
             </p>
             <p className="text-lg md:text-xl font-DM text-gray-300 max-w-5xl mx-auto leading-relaxed">
-              High-quality whey protein supplements to support muscle growth, enhance recovery, and fuel your fitness journey. 
-              Choose from isolate, concentrate, and specialized blends for optimal results.
+              Premium natural peanut butter with high protein content, healthy fats, and essential nutrients. 
+              Perfect for post-workout snacks, smoothies, and maintaining a balanced diet.
             </p>
           </div>
 
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-            {products.map((product) => (
+            {peanutButterProducts.map((product) => (
               <div
                 key={product.id}
                 className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm"
@@ -103,7 +117,7 @@ const ProductList = () => {
           {/* Info Section */}
           <div className="mt-20 text-center bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-3xl p-12 border border-gray-700/30">
             <h3 className="text-3xl md:text-5xl font-One bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-6">
-              Why Choose Whey Protein?
+              Why Choose Natural Peanut Butter?
             </h3>
             <div className="grid md:grid-cols-3 gap-8 text-gray-300 font-DM">
               <div className="text-center">
@@ -112,8 +126,8 @@ const ProductList = () => {
                     <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                   </svg>
                 </div>
-                <h4 className="text-xl font-One text-white mb-2">Muscle Building</h4>
-                <p>High-quality complete protein for optimal muscle protein synthesis</p>
+                <h4 className="text-xl font-One text-white mb-2">High Protein</h4>
+                <p>Rich in plant-based protein for muscle building and recovery</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#FCDE3B] to-[#F97316] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -121,8 +135,8 @@ const ProductList = () => {
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
-                <h4 className="text-xl font-One text-white mb-2">Fast Absorption</h4>
-                <p>Rapid digestion and absorption for quick muscle recovery</p>
+                <h4 className="text-xl font-One text-white mb-2">Healthy Fats</h4>
+                <p>Essential fatty acids for optimal health and energy</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-[#F97316] to-[#FCDE3B] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -130,8 +144,8 @@ const ProductList = () => {
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                   </svg>
                 </div>
-                <h4 className="text-xl font-One text-white mb-2">Premium Quality</h4>
-                <p>Tested for purity and potency with essential amino acids</p>
+                <h4 className="text-xl font-One text-white mb-2">Natural & Pure</h4>
+                <p>No artificial additives, just pure natural goodness</p>
               </div>
             </div>
           </div>
@@ -143,4 +157,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default PeanutButter;

@@ -74,12 +74,12 @@ const Header = () => {
       </Helmet>
   
       <Nav />
-      <main className="relative overflow-hidden">
+      <main className="relative overflow-hidden bg-black">
         <img
           src="/allPhotos/Header.webp"
           alt="OneRepMaax Gym (One Rep Maax) - Premium fitness center in Mango, Dimna, Jamshedpur with K11 certified trainers, modern equipment, 5000+ sq ft area"
           
-          className=" h-[140vw] md:h-[75vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
+          className=" h-[140vw] md:pt-38 md:h-[75vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />
              
       
