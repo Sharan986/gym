@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import Wbutton from "../components/Wbutton";
+import { w3 } from "../assets/w3/w3";
 import { Helmet } from "react-helmet-async";
 import { TRAINER} from '../config/imageConfig';
+import {DSC06177} from "../Imgs/Imgs";
 import { SevenDaysIcon, PremiumIcon, ExerciseRoutineIcon } from '../config/PublicIconExports';
-import { DSC06109, DSC06116,DSC06105} from '../Imgs/Imgs';
-import { DSC06177 } from '../Imgs/Imgs';
 
 
 const About = () => {
@@ -129,37 +128,35 @@ const About = () => {
         </script>
       </Helmet>
 
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
+    <main className="min-h-screen  bg-gradient-to-br from-gray-900 via-black to-gray-900">
       {/* Hero Section */}
-      <header className="relative h-64 sm:h-80 lg:h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-gray-900/60"></div>
-        <img
-          src={DSC06177}
-          alt="OneRepMaax Gym Jamshedpur - Premium GYM in Mango, Dimna with K11 certified trainers, yoga, Zumba classes"
-          className="w-full h-full object-cover opacity-70"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center  px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-One text-white mb-4 sm:mb-6 drop-shadow-2xl">
-            ABOUT US
-          </h1>
-          <nav className="flex items-center space-x-2 sm:space-x-3 text-lg sm:text-xl font-DM" aria-label="Breadcrumb">
-            <Link to="/" className="text-[#48D3A3] hover:text-white transition-colors">
-              HOME
-            </Link>
-            <span className="text-[#FCDE3B]" aria-hidden="true">/</span>
-            <span className="text-white">ABOUT US</span>
-          </nav>
-        </div>
-      </header>
+      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+             <img
+               src={DSC06177}
+               alt=" ABOUT US - OneRepMaax Gym"
+               className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+             />
+             <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+             <div className="absolute bottom-8 left-8 text-white z-10">
+               <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+                 ABOUT US
+               </h1>
+               <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+                 <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
+                 <span className="text-gray-400">/</span>
+                 <span className="text-[#FCDE3B]">ABOUT US</span>
+               </nav>
+             </div>
+           </div>
 
       {/* Founder's Message Section */}
       <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20" aria-labelledby="founder-message">
-        <div className="backdrop-blur-sm bg-white/5 border border-[#48D3A3] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 shadow-2xl">
+        <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 shadow-2xl">
           <header className="text-center mb-8 sm:mb-12">
             <h2 id="founder-message" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-One text-white mb-4">
               A Message from Our Founder
             </h2>
-            <div className="w-16 sm:w-24 h-1 bg-[#48D3A3] mx-auto" aria-hidden="true"></div>
+            <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-[#48D3A3] to-[#3BC493] mx-auto" aria-hidden="true"></div>
           </header>
           
           <div className="max-w-4xl mx-auto">
@@ -180,18 +177,18 @@ const About = () => {
             </div>
             
             <footer className="mt-6 sm:mt-8 text-center">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 rounded-xl overflow-hidden md:h-32 lg:w-48 lg:h-36 xl:w-56 xl:h-40 border-2 border-[#48D3A3] mx-auto mb-4 flex items-center justify-center shadow-lg" aria-hidden="true">
-                <img src={TRAINER[2]} alt="Owners Image" className="w-22  h-22 sm:w-30 sm:h-30 md:w-38 md:h-30 lg:w-48 lg:h-34 xl:w-54 scale-105 xl:h-38 object-cover object-top   transition-all duration-300" />
+              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-32 lg:w-48 lg:h-36 xl:w-56 xl:h-40 bg-gradient-to-br from-[#48D3A3] to-[#3BC493] rounded-lg mx-auto mb-4 flex items-center justify-center shadow-lg" aria-hidden="true">
+                <img src={TRAINER[2]} alt="Owners Image" className="w-22 h-22 sm:w-30 sm:h-30 md:w-38 md:h-30 lg:w-46 lg:h-34 xl:w-54 xl:h-38 object-cover object-top rounded-lg border-[#48D3A3]  transition-all duration-300" />
               </div>
               <cite className="not-italic">
                 <p className="text-[#48D3A3] font-One text-lg sm:text-xl">Aditya Singh</p>
                 <p className="text-white font-DM text-base sm:text-lg mb-2">Founder & K11 Certified Trainer</p>
               </cite>
               <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mt-4 px-2" role="list" aria-label="Founder's Certifications">
-                <span className="px-2 sm:px-3 py-1 bg-[#48D3A3]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM" role="listitem">K11 Certified</span>
-                <span className="px-2 sm:px-3 py-1 bg-[#48D3A3]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM" role="listitem">REPS India Member</span>
-                <span className="px-2 sm:px-3 py-1 bg-[#48D3A3]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM" role="listitem">Certified Nutritionist</span>
-                <span className="px-2 sm:px-3 py-1 bg-[#48D3A3]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM" role="listitem">10+ Years Experience</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">K11 Certified</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">REPS India Member</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">Certified Nutritionist</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] rounded-full text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">10+ Years Experience</span>
               </div>
             </footer>
           </div>
@@ -203,7 +200,7 @@ const About = () => {
           <h2 id="gym-tagline" className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-One text-white mb-4">
             Sweat Now, Thank Us Later.
           </h2>
-          <div className="w-24 sm:w-32 h-1 bg-[#FCDE3B] mx-auto" aria-hidden="true"></div>
+          <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-[#FCDE3B] to-[#F59E0B] mx-auto" aria-hidden="true"></div>
         </header>
       </section>
 
@@ -214,7 +211,7 @@ const About = () => {
         {/* Mission Section */}
         <article className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="backdrop-blur-sm bg-white/5 border border-[#48D3A3] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#48D3A3]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
               <span className="text-[#48D3A3] text-base sm:text-lg font-One mb-3 sm:mb-4 block">OUR MISSION</span>
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-white mb-4 sm:mb-6 leading-tight">
                 EMPOWERING YOUR FITNESS JOURNEY IN JAMSHEDPUR
@@ -239,7 +236,7 @@ const About = () => {
             <div className="relative w-full max-w-sm sm:max-w-md">
               <div className="absolute inset-0 bg-[#48D3A3]/20 rounded-xl sm:rounded-2xl transform rotate-2 sm:rotate-3" aria-hidden="true"></div>
               <img
-                src={DSC06116}
+                src={w3.i7}
                 alt="OneRepMaax Gym member training with K11 certified trainer in Jamshedpur GYM"
                 className="relative rounded-xl sm:rounded-2xl shadow-2xl w-full"
                 loading="lazy"
@@ -254,7 +251,7 @@ const About = () => {
             <div className="relative w-full max-w-sm sm:max-w-md">
               <div className="absolute inset-0 bg-[#FCDE3B]/20 rounded-xl sm:rounded-2xl transform -rotate-2 sm:-rotate-3" aria-hidden="true"></div>
               <img
-                src={DSC06105}
+                src={w3.i11}
                 alt="Modern gym equipment and facilities at OneRepMaax GYM in Mango, Jamshedpur with yoga and Zumba studios"
                 className="relative rounded-xl sm:rounded-2xl shadow-2xl w-full"
                 loading="lazy"
@@ -262,7 +259,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <div className="backdrop-blur-sm bg-white/5 border border-[#FCDE3B]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#FCDE3B]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl">
               <span className="text-[#FCDE3B] text-base sm:text-lg font-One mb-3 sm:mb-4 block">OUR VISION</span>
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-One text-white mb-4 sm:mb-6 leading-tight">
                 STATE-OF-THE-ART GYM FOR EVERYONE
@@ -305,8 +302,8 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" role="list">
           {Values.map((value) => (
-            <article key={value.id} className="backdrop-blur-sm bg-white/5 border border-[#F97316]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#F97316]/20 transition-all duration-300 text-center" role="listitem">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#F97316] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6" aria-hidden="true">
+            <article key={value.id} className="bg-gradient-to-br from-gray-900/90 via-black/80 to-gray-800/90 backdrop-blur-sm border border-[#F97316]/30 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-2xl hover:shadow-[#F97316]/20 transition-all duration-300 text-center hover:from-gray-800/90 hover:via-black/70 hover:to-gray-700/90" role="listitem">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#F97316] to-[#ea580c] rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg" aria-hidden="true">
                 <img
                   src={value.imageUrl}
                   alt=""
