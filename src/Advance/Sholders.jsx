@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { advSHOULDERS } from '../assets/assets';
 import { interSHOULDERS } from '../assets/assets';
+import {  DSC06120R } from '../Imgs/Imgs';
 
 const ShouldersAdvanced = () => {
   const exercises = [
@@ -148,7 +149,7 @@ const ShouldersAdvanced = () => {
         <div className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
           {/* Hero Background */}
           <img
-            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            src={DSC06120R}
             alt="Shoulders Workout Banner"
             className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
             loading="lazy"

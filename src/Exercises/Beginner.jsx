@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import {  DSC06120R } from '../Imgs/Imgs';
+
 
 const Beginner = () => {
   const exercises = [
@@ -58,9 +60,9 @@ const Beginner = () => {
         {/* Modern Hero Section */}
         <div className="relative">
           <img
-            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            src={ DSC06120R }
             alt="Beginner Workout Banner"
-            className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] object-cover object-center"
+            className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] object-cover object-center"
           />
           
           {/* Clean overlay */}

@@ -25,7 +25,7 @@ const Gallery = () => {
   };
 
   const classesItems = [
-    { id: 1, title: "Boxing Class", img: FTCollection.z20 },
+    
     { id: 2, title: "Yoga Session", img: FTCollection.z21 },
     { id: 3, title: "Boxing Class", img: FTCollection.z22 },
     { id: 4, title: "Boxing Class", img: FTCollection.z23 },
@@ -86,10 +86,10 @@ const Gallery = () => {
   ];
 
   const MaaxedItems = [
-    { id: 101, title: "New Member 1", img: MAAXED_IMAGES.IMG_20250728_WA0005 },
+ 
     { id: 102, title: "New Member 2", img: MAAXED_IMAGES.IMG_20250728_WA0006 },
     { id: 103, title: "New Member 3", img: MAAXED_IMAGES.IMG_20250728_WA0007 },
-    { id: 104, title: "New Member 4", img: MAAXED_IMAGES.IMG_20250728_WA0008 },
+   
     { id: 44, title: "Gym Member 21", img: ImgsCollection.DSC06199 },
     { id: 30, title: "Gym Member 8", img: ImgsCollection.DSC06143 },
     { id: 88, title: "Sagar Kumar", img: w3.ow },
@@ -97,8 +97,8 @@ const Gallery = () => {
     { id: 41, title: "Gym Member 18", img: ImgsCollection.DSC06178 },
     { id: 1, title: "Amarjeet Singh", img: IMAGES.amarjeetSingh },
     { id: 40, title: "Sagar Kumar", img: w3.ow2 },
-    { id: 43, title: "Gym Member 20", img: ImgsCollection.DSC06193 },
-    { id: 18, title: "Amarjeet 6", img: w3.i6 },
+   
+    
     { id: 42, title: "Gym Member 19", img: ImgsCollection.DSC06181 },
     { id: 26, title: "Jasprit Singh 2", img: IMAGES.jaspritSingh3 },
     { id: 13, title: "Amarjeet Singh 2", img: IMAGES.amarjeetSingh7 },
@@ -110,28 +110,27 @@ const Gallery = () => {
     { id: 16, title: "Amarjeet Singh", img: w3.i7 },
     { id: 32, title: "Gym Member 10", img: ImgsCollection.DSC06150 },
     { id: 2, title: "Amarjeet 2", img: w3.i2 },
-    { id: 12, title: "Amarjeet", img: w3.i18 },
+   
     { id: 46, title: "Gym Member 23", img: ImgsCollection.DSC06204 },
     { id: 15, title: "Amarjeet Singh 6", img: IMAGES.amarjeetSingh6 },
     { id: 20, title: "Amarjeet Singh 3", img: IMAGES.amarjeetSingh3 },
     { id: 6, title: "Gym Member 1", img: ImgsCollection.DSC06105 },
-    { id: 21, title: "Sagar Kumar", img: w3.i1 },
-    { id: 5, title: "Jasprit Singh", img: w3.i12 },
-    { id: 14, title: "Jasprit Singh 2", img: w3.i13 },
+
+    
     { id: 10, title: "Amarjeet Singh 3", img: w3.i9 },
-    { id: 9, title: "Amarjeet 3", img: w3.i3 },
+    
     { id: 4, title: "Amarjeet Singh 4", img: IMAGES.amarjeetSingh4 },
     { id: 7, title: "Amarjeet Singh 2", img: w3.i8 },
-    { id: 35, title: "Gym Member 13", img: ImgsCollection.DSC06168 },
+   
     { id: 8, title: "Gym Member 2", img: ImgsCollection.DSC06109 },
     { id: 19, title: "Amarjeet Singh 4", img: w3.i10 },
     { id: 29, title: "Gym Member 7", img: ImgsCollection.DSC06141 },
     { id: 23, title: "Gym Member 5", img: ImgsCollection.DSC06120 },
     { id: 22, title: "Jasprit Singh", img: IMAGES.jaspritSingh },
-    { id: 36, title: "Gym Member 14", img: ImgsCollection.DSC06170 },
-    { id: 37, title: "Gym Member 15", img: ImgsCollection.DSC06172 },
+    
+    
     { id: 38, title: "Gym Member 16", img: ImgsCollection.DSC06176 },
-    { id: 39, title: "Gym Member 17", img: ImgsCollection.DSC06177 },
+   
     { id: 11, title: "Gym Member 3", img: ImgsCollection.DSC06113 },
     { id: 58, title: "Gym Member 35", img: ImgsCollection.DSC06236 },
     { id: 59, title: "Gym Member 36", img: ImgsCollection.DSC06244_1 },

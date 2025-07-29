@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { begBACK } from '../assets/assets';
+import {  DSC06120R } from '../Imgs/Imgs';
 
 const BackBeginner = () => {
   const exercises = [
@@ -112,9 +113,9 @@ const BackBeginner = () => {
         {/* Modern Hero Section */}
         <div className="relative">
           <img
-            src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+            src={DSC06120R}
             alt="Back Workout Banner"
-            className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
+            className="w-full h-[40vh] sm:h-[50vh] lg:h-[80vh] object-cover object-center"
           />
           
           {/* Clean overlay */}
