@@ -35,7 +35,7 @@ import DSC06230 from './DSC06230.webp';
 import DSC06231 from './DSC06231.webp';
 import DSC06233 from './DSC06233.webp';
 import DSC06236 from './DSC06236.webp';
-import DSC06244_1 from './DSC06244 (1).webp';
+import DSC06244_1 from './DSC06244.webp';
 import DSC06244 from './DSC06244.webp';
 import DSC06120R from './DSC06120R.webp'; // Assuming this is a different version of DSC06120
 

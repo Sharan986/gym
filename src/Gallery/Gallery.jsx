@@ -133,7 +133,7 @@ const Gallery = () => {
    
     { id: 11, title: "Gym Member 3", img: ImgsCollection.DSC06113 },
     { id: 58, title: "Gym Member 35", img: ImgsCollection.DSC06236 },
-    { id: 59, title: "Gym Member 36", img: ImgsCollection.DSC06244_1 },
+    { id: 59, title: "Gym Member 36", img: ImgsCollection.DSC06244 },
     { id: 34, title: "Gym Member 12", img: ImgsCollection.DSC06166 },
     { id: 45, title: "Gym Member 22", img: ImgsCollection.DSC06200 },
   ];
