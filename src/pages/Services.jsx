@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -143,6 +144,53 @@ const Services = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Fitness Services Jamshedpur - OneRepMaax Gym | K11 Certified Training</title>
+        <meta name="description" content="Premium fitness services at OneRepMaax Gym Jamshedpur including K11 certified personal training ₹5,000/month, weight loss programs, strength training, yoga & nutrition consultation." />
+        <link rel="canonical" href="https://onerepmaax.com/services" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Fitness Services Jamshedpur - OneRepMaax Gym | K11 Certified Training" />
+        <meta property="og:description" content="Premium fitness services at OneRepMaax Gym Jamshedpur including K11 certified personal training ₹5,000/month, weight loss programs, strength training, yoga & nutrition consultation." />
+        <meta property="og:url" content="https://onerepmaax.com/services" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Fitness Services Jamshedpur - OneRepMaax Gym | K11 Certified Training" />
+        <meta name="twitter:description" content="Premium fitness services at OneRepMaax Gym Jamshedpur including K11 certified personal training ₹5,000/month, weight loss programs, strength training, yoga & nutrition consultation." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Fitness Services at OneRepMaax Gym",
+            "description": "Premium fitness services including K11 certified personal training, weight loss programs, strength training, yoga and nutrition consultation",
+            "provider": {
+              "@type": "HealthClub",
+              "name": "OneRepMaax Gym",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jamshedpur",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Personal Training",
+              "price": "5000",
+              "priceCurrency": "INR",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "5000",
+                "priceCurrency": "INR",
+                "unitText": "month"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
       
       <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="services" aria-labelledby="services-heading">
         <div className="flex items-center gap-2">

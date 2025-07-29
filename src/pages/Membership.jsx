@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -155,6 +156,53 @@ const MembershipSection = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Gym Membership Plans Jamshedpur - OneRepMaax | Starting ₹1,200/Month</title>
+        <meta name="description" content="Affordable gym membership plans at OneRepMaax Jamshedpur starting ₹1,200/month. Includes K11 certified training, nutrition consultation, yoga sessions, and premium facilities." />
+        <link rel="canonical" href="https://onerepmaax.com/membership" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Gym Membership Plans Jamshedpur - OneRepMaax | Starting ₹1,200/Month" />
+        <meta property="og:description" content="Affordable gym membership plans at OneRepMaax Jamshedpur starting ₹1,200/month. Includes K11 certified training, nutrition consultation, yoga sessions, and premium facilities." />
+        <meta property="og:url" content="https://onerepmaax.com/membership" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Gym Membership Plans Jamshedpur - OneRepMaax | Starting ₹1,200/Month" />
+        <meta name="twitter:description" content="Affordable gym membership plans at OneRepMaax Jamshedpur starting ₹1,200/month. Includes K11 certified training, nutrition consultation, yoga sessions, and premium facilities." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MembershipProgram",
+            "name": "OneRepMaax Gym Membership",
+            "description": "Comprehensive gym membership plans with K11 certified training, nutrition consultation, and premium facilities",
+            "provider": {
+              "@type": "HealthClub",
+              "name": "OneRepMaax Gym",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jamshedpur",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+              }
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Monthly Membership",
+              "price": "1200",
+              "priceCurrency": "INR",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "1200",
+                "priceCurrency": "INR",
+                "unitText": "month"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
       
       <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="membership" aria-labelledby="membership-heading">
         <div className="flex items-center gap-2">

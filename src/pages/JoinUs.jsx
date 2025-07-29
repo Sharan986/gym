@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import ResponsiveImage from "../components/ResponsiveImage";
@@ -60,6 +61,42 @@ Message: ${data.message || ""}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
+      <Helmet>
+        <title>Join OneRepMaax Gym Jamshedpur - Premium Fitness Membership & Contact</title>
+        <meta name="description" content="Join OneRepMaax Gym Jamshedpur at Dimna Road, Mango. Contact +91 9204057290 for membership, K11 certified training, and modern fitness facilities." />
+        <link rel="canonical" href="https://onerepmaax.com/join-us" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Join OneRepMaax Gym Jamshedpur - Premium Fitness Membership & Contact" />
+        <meta property="og:description" content="Join OneRepMaax Gym Jamshedpur at Dimna Road, Mango. Contact +91 9204057290 for membership, K11 certified training, and modern fitness facilities." />
+        <meta property="og:url" content="https://onerepmaax.com/join-us" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Join OneRepMaax Gym Jamshedpur - Premium Fitness Membership & Contact" />
+        <meta name="twitter:description" content="Join OneRepMaax Gym Jamshedpur at Dimna Road, Mango. Contact +91 9204057290 for membership, K11 certified training, and modern fitness facilities." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HealthClub",
+            "name": "OneRepMaax Gym",
+            "description": "Premium fitness center with K11 certified trainers and modern equipment",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Dimna Road, Mango",
+              "addressLocality": "Jamshedpur",
+              "addressRegion": "Jharkhand",
+              "addressCountry": "IN"
+            },
+            "telephone": "+91 9204057290",
+            "url": "https://onerepmaax.com",
+            "hasMap": "https://maps.google.com/?q=OneRepMaax+Gym+Dimna+Road+Mango+Jamshedpur"
+          })}
+        </script>
+      </Helmet>
+      
       {/* Hero Section */}
        <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
               <img

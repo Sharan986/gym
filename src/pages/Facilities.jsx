@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import MembershipSection from "./Membership";
 
@@ -7,6 +8,23 @@ import { CardioIcon, StrengthIcon, YogaPoseIcon, SafetyIcon, AmenitiesIcon, Pers
 
 
 const Facilities = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "OneRepMaax Gym Facilities",
+    "description": "Explore our state-of-the-art gym facilities in Jamshedpur: cardio, strength, yoga, amenities, safety, and personal training.",
+    "url": "https://onerepmaaxgym.in/facilities",
+    "image": "https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dimna Rd, Shankoshai, Mango",
+      "addressLocality": "Jamshedpur",
+      "addressRegion": "Jharkhand",
+      "postalCode": "831018",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9204057290"
+  };
   const FacilitiesData = [
     {
       id: 1,
@@ -65,6 +83,23 @@ const Facilities = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Gym Facilities | OneRepMaax Gym Jamshedpur</title>
+        <meta name="description" content="Explore our state-of-the-art gym facilities in Jamshedpur: cardio, strength, yoga, amenities, safety, and personal training." />
+        <link rel="canonical" href="https://onerepmaaxgym.in/facilities" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gym Facilities | OneRepMaax Gym Jamshedpur" />
+        <meta property="og:description" content="Explore our state-of-the-art gym facilities in Jamshedpur: cardio, strength, yoga, amenities, safety, and personal training." />
+        <meta property="og:url" content="https://onerepmaaxgym.in/facilities" />
+        <meta property="og:image" content="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png" />
+        <meta property="og:site_name" content="OneRepMaax Gym" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gym Facilities | OneRepMaax Gym Jamshedpur" />
+        <meta name="twitter:description" content="Explore our state-of-the-art gym facilities in Jamshedpur: cardio, strength, yoga, amenities, safety, and personal training." />
+        <meta name="twitter:image" content="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png" />
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+      </Helmet>
 
       <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="facilities" aria-labelledby="facilities-heading">
         <div className="flex items-center gap-2">

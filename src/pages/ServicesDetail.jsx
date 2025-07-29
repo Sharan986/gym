@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Join from '../components/Join';
@@ -59,6 +60,42 @@ const ServicesDetail = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Detailed Services - OneRepMaax Gym Jamshedpur | Complete Fitness Solutions</title>
+        <meta name="description" content="Explore detailed fitness services at OneRepMaax Gym Jamshedpur. Personal training, weight loss, strength training, yoga, nutrition coaching with K11 certified professionals." />
+        <link rel="canonical" href="https://onerepmaax.com/services-detail" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Detailed Services - OneRepMaax Gym Jamshedpur | Complete Fitness Solutions" />
+        <meta property="og:description" content="Explore detailed fitness services at OneRepMaax Gym Jamshedpur. Personal training, weight loss, strength training, yoga, nutrition coaching with K11 certified professionals." />
+        <meta property="og:url" content="https://onerepmaax.com/services-detail" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Detailed Services - OneRepMaax Gym Jamshedpur | Complete Fitness Solutions" />
+        <meta name="twitter:description" content="Explore detailed fitness services at OneRepMaax Gym Jamshedpur. Personal training, weight loss, strength training, yoga, nutrition coaching with K11 certified professionals." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Detailed Fitness Services",
+            "description": "Complete fitness solutions including personal training, weight loss, and nutrition coaching",
+            "publisher": {
+              "@type": "HealthClub",
+              "name": "OneRepMaax Gym",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jamshedpur",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
+      
      <div className="relative overflow-hidden">
   <img
     src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"

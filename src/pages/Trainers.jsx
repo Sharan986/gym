@@ -1,4 +1,5 @@
 import React, { useRef} from 'react';
+import { Helmet } from 'react-helmet-async';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -169,6 +170,41 @@ const Trainers = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Professional Trainers Team - OneRepMaax Gym Jamshedpur | K11 Certified</title>
+        <meta name="description" content="Meet Jamshedpur's most qualified fitness professionals at OneRepMaax Gym. K11 certified trainers, nutrition experts, and transformation specialists for personalized fitness programs." />
+        <link rel="canonical" href="https://onerepmaax.com/our-trainers" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Professional Trainers Team - OneRepMaax Gym Jamshedpur | K11 Certified" />
+        <meta property="og:description" content="Meet Jamshedpur's most qualified fitness professionals at OneRepMaax Gym. K11 certified trainers, nutrition experts, and transformation specialists for personalized fitness programs." />
+        <meta property="og:url" content="https://onerepmaax.com/our-trainers" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Professional Trainers Team - OneRepMaax Gym Jamshedpur | K11 Certified" />
+        <meta name="twitter:description" content="Meet Jamshedpur's most qualified fitness professionals at OneRepMaax Gym. K11 certified trainers, nutrition experts, and transformation specialists for personalized fitness programs." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Professional Trainers Team",
+            "description": "K11 certified trainers and fitness professionals at OneRepMaax Gym Jamshedpur",
+            "publisher": {
+              "@type": "HealthClub",
+              "name": "OneRepMaax Gym",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jamshedpur",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
       
       <section className="text-white text-xl pt-32 lg:mx-24 mx-6 mb-3" id="trainers" aria-labelledby="trainers-heading">
         <div className="flex items-center gap-2">

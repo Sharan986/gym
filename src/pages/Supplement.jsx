@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { DSC06177 } from "../Imgs/Imgs";
@@ -45,6 +46,42 @@ const supplementData = [
 const Supplement = () => {
   return (
     <>
+      <Helmet>
+        <title>Premium Fitness Supplements - OneRepMaax Gym Jamshedpur | Protein, Creatine & More</title>
+        <meta name="description" content="Premium fitness supplements at OneRepMaax Gym Jamshedpur. Quality protein, creatine, pre-workout, vitamins, BCAA, fish oil, and nutrition products for optimal fitness results." />
+        <link rel="canonical" href="https://onerepmaax.com/supplements" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Premium Fitness Supplements - OneRepMaax Gym Jamshedpur | Protein, Creatine & More" />
+        <meta property="og:description" content="Premium fitness supplements at OneRepMaax Gym Jamshedpur. Quality protein, creatine, pre-workout, vitamins, BCAA, fish oil, and nutrition products for optimal fitness results." />
+        <meta property="og:url" content="https://onerepmaax.com/supplements" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="Premium Fitness Supplements - OneRepMaax Gym Jamshedpur | Protein, Creatine & More" />
+        <meta name="twitter:description" content="Premium fitness supplements at OneRepMaax Gym Jamshedpur. Quality protein, creatine, pre-workout, vitamins, BCAA, fish oil, and nutrition products for optimal fitness results." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Premium Fitness Supplements",
+            "description": "Quality fitness supplements including protein, creatine, vitamins, and nutrition products",
+            "publisher": {
+              "@type": "HealthClub",
+              "name": "OneRepMaax Gym",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jamshedpur",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+              }
+            }
+          })}
+        </script>
+      </Helmet>
+      
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
         <img

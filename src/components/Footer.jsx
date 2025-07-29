@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
+import { GymIcon, ContactIcon } from "../config/PublicIconExports";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -96,11 +97,11 @@ const Footer = () => {
               <address className="not-italic">
                 <ul className="space-y-6">
                   <li className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold flex gap-4 items-start bg-gradient-to-r from-gray-700/30 to-gray-800/30 p-3  border border-gray-600/30 hover:border-[#48D3A3]/50 transition-all duration-300">
-                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] ll p-2">
+                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] p-2 w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <img 
-                        src="https://framerusercontent.com/images/3Gjs31lJXDq4ZvzvREIv8CQ0H08.svg" 
+                        src={ContactIcon} 
                         alt="Phone icon" 
-                        className="w-4 h-4 flex-shrink-0 filter brightness-0 invert" 
+                        className="w-4 h-4 object-contain filter brightness-0 invert" 
                         loading="lazy"
                       />
                     </div>
@@ -113,11 +114,11 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold flex gap-4 items-start bg-gradient-to-r from-gray-700/30 to-gray-800/30 p-3 border border-gray-600/30 hover:border-[#48D3A3]/50 transition-all duration-300">
-                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] p-2">
+                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] p-2 w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <img 
-                        src="https://framerusercontent.com/images/h6wGZ0hxbQPDpnwFJ25d2ZMHicQ.svg" 
+                        src={ContactIcon} 
                         alt="Email icon" 
-                        className="w-4 h-4 flex-shrink-0 filter brightness-0 invert" 
+                        className="w-4 h-4 object-contain filter brightness-0 invert" 
                         loading="lazy"
                       />
                     </div>
@@ -130,16 +131,17 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold flex gap-4 items-start bg-gradient-to-r from-gray-700/30 to-gray-800/30 p-3 border border-gray-600/30 hover:border-[#48D3A3]/50 transition-all duration-300">
-                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] p-2">
+                    <div className="bg-gradient-to-br from-[#48D3A3] to-[#3BC493] p-2 w-8 h-8 flex items-center justify-center flex-shrink-0">
                       <img 
-                        src="https://framerusercontent.com/images/RmsksdVnRfJJKfOFy4VJv85AXLo.svg" 
+                        src={GymIcon} 
                         alt="Location icon" 
-                        className="w-4 h-4 flex-shrink-0 filter brightness-0 invert" 
+                        className="w-4 h-4 object-contain filter brightness-0 invert" 
                         loading="lazy"
                       />
                     </div>
                     <span>
-                      One Rep Maax Gym, Shankoshai Rd 4, 
+                      One Rep Maax Gym,<br />
+                      Shankoshai Rd 4, 
                       Dimna, Mango, 
                       Jamshedpur, 
                       Jharkhand 
