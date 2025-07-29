@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import {DSC06177,DSC06104,DSC06244,DSC06178} from "../Imgs/Imgs";
+import {DSC06177,DSC06104,DSC06244,DSC06178, DSC06236} from "../Imgs/Imgs";
+import {  DSC06120R } from '../Imgs/Imgs';
+import FTCollection from "../FT/ft";
 
 
 
@@ -12,9 +14,9 @@ const WorkoutGuide = () => {
         {/* Modern Hero Section */}
         <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
                <img
-                 src={DSC06177}
+                 src={DSC06120R}
                  alt="WORKOUT GUIDE- OneRepMaax Gym"
-                 className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+                 className="w-full h-72 lg:h-[80vh] object-cover object-center opacity-80"
                />
                <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
                <div className="absolute bottom-8 left-8 text-white z-10">
@@ -51,7 +53,7 @@ const WorkoutGuide = () => {
             <div className="relative overflow-hidden  h-[420px] sm:h-[460px] transition-all duration-300 group-hover:scale-[1.02] bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 group-hover:border-[#48D3A3]/40">
               {/* Background Image */}
               <img
-                src={DSC06104}
+                src={FTCollection.Co2}
                 alt="Beginner workout"
                 className="w-full h-full object-cover opacity-80"
               />
