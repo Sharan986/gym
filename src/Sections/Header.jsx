@@ -78,7 +78,7 @@ const Header = () => {
         <img
           src="/allPhotos/Header.webp"
           alt="OneRepMaax Gym (One Rep Maax) - Premium fitness center in Mango, Dimna, Jamshedpur with K11 certified trainers, modern equipment, 5000+ sq ft area"
-          
+          fetchPriority="high"
           className=" h-[140vw] md:pt-38 md:h-[75vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />
              

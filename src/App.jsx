@@ -34,6 +34,7 @@ import Membership from './pages/Membership'
 import Protein from './Supplements/Protein'
 import Muesli from './Supplements/Muesli'
 import PreWorkout from './Supplements/PreWorkout'
+import PeanutButter from './Supplements/PeanutButter'
 import BCAA from './Supplements/BCAA'
 import Vitamins from "./Supplements/Vitamins"
 import Fishoil from './Supplements/Fishoil'
@@ -91,6 +92,7 @@ const App = () => {
       <Route path="/Membership" element={<Membership />} />
       <Route path="/Supplement/Protein" element={<Protein />} />
       <Route path="/Supplement/Preworkout" element={<PreWorkout />} />
+      <Route path="/Supplement/PeanutButter" element={<PeanutButter />} />
       <Route path="/Supplement/Vitamins" element={<Vitamins/>} />
       <Route path="/Supplement/WeightGainer" element={<WeightGainers/>} />
       <Route path="/Supplement/Creatine" element={<Creatine />} />

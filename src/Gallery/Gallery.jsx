@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 import { w3 } from "../assets/w3/w3.js";
 import { IMAGES } from "../config/imageConfig.js";
 import { FTCollection } from "../FT/ft.js";
-import {ImgsCollection } from "../Imgs/Imgs.js";
-import {DSC06177} from "../Imgs/Imgs.js";
+import { ImgsCollection } from "../Imgs/Imgs.js";
+import { DSC06177 } from "../Imgs/Imgs.js";
+import { MAAXED_IMAGES } from "../config/imageConfig.js";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("Facility");
@@ -31,12 +32,9 @@ const Gallery = () => {
     { id: 5, title: "Boxing Class", img: FTCollection.z24 },
     { id: 6, title: "Boxing Class", img: FTCollection.z25 },
     { id: 7, title: "Boxing Class", img: FTCollection.z26 },
-
-    
   ];
 
   const facilityItems = [
-   
     { id: 2, title: "Yoga Session", img: FTCollection.z2 },
     { id: 3, title: "HIIT Workout", img: FTCollection.z3 },
     { id: 4, title: "Martial Arts", img: FTCollection.z4 },
@@ -60,7 +58,6 @@ const Gallery = () => {
     { id: 21, title: "Circuit Training", img: FTCollection.z28 },
     { id: 22, title: "Circuit Training", img: FTCollection.z29 },
     { id: 23, title: "Circuit Training", img: FTCollection.z30 },
-    
   ];
 
   const eventsItems = [
@@ -89,11 +86,17 @@ const Gallery = () => {
   ];
 
   const MaaxedItems = [
+    { id: 101, title: "New Member 1", img: MAAXED_IMAGES.IMG_20250728_WA0005 },
+    { id: 102, title: "New Member 2", img: MAAXED_IMAGES.IMG_20250728_WA0006 },
+    { id: 103, title: "New Member 3", img: MAAXED_IMAGES.IMG_20250728_WA0007 },
+    { id: 104, title: "New Member 4", img: MAAXED_IMAGES.IMG_20250728_WA0008 },
     { id: 44, title: "Gym Member 21", img: ImgsCollection.DSC06199 },
     { id: 30, title: "Gym Member 8", img: ImgsCollection.DSC06143 },
+    { id: 88, title: "Sagar Kumar", img: w3.ow },
     { id: 25, title: "Gym Member 6", img: ImgsCollection.DSC06126 },
     { id: 41, title: "Gym Member 18", img: ImgsCollection.DSC06178 },
     { id: 1, title: "Amarjeet Singh", img: IMAGES.amarjeetSingh },
+    { id: 40, title: "Sagar Kumar", img: w3.ow2 },
     { id: 43, title: "Gym Member 20", img: ImgsCollection.DSC06193 },
     { id: 18, title: "Amarjeet 6", img: w3.i6 },
     { id: 42, title: "Gym Member 19", img: ImgsCollection.DSC06181 },
@@ -129,13 +132,11 @@ const Gallery = () => {
     { id: 37, title: "Gym Member 15", img: ImgsCollection.DSC06172 },
     { id: 38, title: "Gym Member 16", img: ImgsCollection.DSC06176 },
     { id: 39, title: "Gym Member 17", img: ImgsCollection.DSC06177 },
-    { id: 40, title: "Sagar Kumar", img: w3.ow2 },
     { id: 11, title: "Gym Member 3", img: ImgsCollection.DSC06113 },
     { id: 58, title: "Gym Member 35", img: ImgsCollection.DSC06236 },
     { id: 59, title: "Gym Member 36", img: ImgsCollection.DSC06244_1 },
     { id: 34, title: "Gym Member 12", img: ImgsCollection.DSC06166 },
     { id: 45, title: "Gym Member 22", img: ImgsCollection.DSC06200 },
-    { id: 88, title: "Sagar Kumar", img: w3.ow },
   ];
 
   const getItems = () => {
@@ -156,24 +157,29 @@ const Gallery = () => {
   return (
     <div className=" min-h-screen">
       {/* Modern Banner */}
-       <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
-              <img
-                src={DSC06177}
-                alt="Premium FitnessGALLERY - OneRepMaax Gym"
-                className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
-              <div className="absolute bottom-8 left-8 text-white z-10">
-                <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
-                 GALLERY
-                </h1>
-                <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
-                  <Link to='/' className="hover:text-[#48D3A3] transition-colors duration-300">HOME</Link>
-                  <span className="text-gray-400">/</span>
-                  <span className="text-[#FCDE3B]">GALLERY</span>
-                </nav>
-              </div>
-            </div>
+      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+        <img
+          src={DSC06177}
+          alt="Premium FitnessGALLERY - OneRepMaax Gym"
+          className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
+        <div className="absolute bottom-8 left-8 text-white z-10">
+          <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
+            GALLERY
+          </h1>
+          <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
+            <Link
+              to="/"
+              className="hover:text-[#48D3A3] transition-colors duration-300"
+            >
+              HOME
+            </Link>
+            <span className="text-gray-400">/</span>
+            <span className="text-[#FCDE3B]">GALLERY</span>
+          </nav>
+        </div>
+      </div>
 
       {/* Modern Tabs */}
       <div className="py-16 px-6 md:px-12 lg:px-20">
@@ -185,10 +191,9 @@ const Gallery = () => {
                   key={tab}
                   onClick={() => handleTabChange(tab)}
                   className={`py-3 md:py-4 px-2 md:px-6  font-One text-xs md:text-3xl lg:text-4xl transition-all duration-300 transform hover:scale-105
-                    ${
-                      activeTab === tab
-                        ? "bg-[#48D3A3] text-black font-bold shadow-lg"
-                        : "text-white hover:bg-gray-800 hover:text-[#48D3A3]"
+                    ${activeTab === tab
+                      ? "bg-[#48D3A3] text-black font-bold shadow-lg"
+                      : "text-white hover:bg-gray-800 hover:text-[#48D3A3]"
                     }`}
                 >
                   {tab}
@@ -228,7 +233,6 @@ const Gallery = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                 
                 </div>
               </div>
             ))}
@@ -236,7 +240,6 @@ const Gallery = () => {
         )}
       </div>
 
-      
       <Footer />
     </div>
   );

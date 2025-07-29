@@ -6,43 +6,39 @@ import { DSC06177 } from "../Imgs/Imgs";
 const supplementData = [
   {
     title: "Protein",
-    imageUrl:
-      "https://imgs.search.brave.com/3UXd1tfSYqRNjvYMCHRwtyS5g1uj__MH2en0FMCHiRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vUWtOb0c5/ODlOQXE3OFA5LWhw/M3c0T0RUOGU0SlJh/YVJaUkVKM0hYdnpC/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk5U/QXgvTmpjeU9ESXdM/M0JvYjNSdi9MMjFo/YmkxcGJpMTBhR1V0/L1ozbHRMV1J5YVc1/cmFXNW4vTFhCeWIz/UmxhVzR0YzJoaC9h/MlV0WkhKcGJtc3Vh/bkJuL1AzTTlOakV5/ZURZeE1pWjMvUFRB/bWF6MHlNQ1pqUFhR/NC9hVkpLVG10elZs/OWljWFpCL1UzRjFO/Mk5mUm1jNUxUUmgv/TlVrM1VWaFZaRjkw/VkhsSC9TSGwwVFZr/OQ",
+    imageUrl: "/supplementImgs/onwhey.webp",
   },
   {
     title: "Creatine",
-    imageUrl:
-      "https://images.unsplash.com/photo-1704650311981-419f841421cc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/supplementImgs/wellcore.webp",
   },
   {
-    title: "Preworkout",
-    imageUrl:
-      "https://images.unsplash.com/photo-1704650311981-419f841421cc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "PreWorkout",
+    imageUrl: "/supplementImgs/wrathx.webp",
   },
-   {
+  {
+    title: "PeanutButter",
+    imageUrl: "/supplementImgs/alpino.webp",
+  },
+  {
     title: "Vitamins",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://m.media-amazon.com/images/I/4107+ceI2WL._SY300_SX300_.jpg",
   },
    {
     title: "BCAA",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCLjZY0apOPRR2QjW0CiCpxAtfHw2sQHLAbELMmuQR8XPp8bJ2uteWEifY8L8hYaBHqRTC-OZleJksRiFL5eoTcz9kfytehHZgkfo_1AghtWr5oYUIv4uN",
   },
    {
     title: "Fishoil",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://img8.hkrtcdn.com/39778/prd_3977707-MuscleBlaze-Omega-3-Fish-Oil-1000-mg-with-180mg-EPA-and-120mg-DHA-90-capsules_o.jpg",
   },
    {
     title: "Oats",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQEncjxXsyknxXyiVa14BZm16HRQKm2q6-Qnbt-OPBomChcVtmW8WwCktUXtK85SIHeeoEsBvi3QL6Oljr3vXCfv7OrrFGDKqBH-R3oQbdM6y7xF9bygXt7t0E66fZG5oJHLFLj0qb2yRlg&usqp=CAc",
   },
     {
     title: "Muesli",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565071783280-719b01b29912?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://m.media-amazon.com/images/I/71D7PfiOuYL._AC_UL480_FMwebp_QL65_.jpg",
   },
 ];
 
@@ -91,14 +87,14 @@ const Supplement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
             {supplementData.map((item, index) => (
               <Link to={`/Supplement/${item.title}`} key={index} className="group">
-                <div className="relative overflow-hidden  bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm">
-                  <div className="relative overflow-hidden xl">
+                <div className="relative overflow-hidden rounded-t-3xl bg-gradient-to-br from-gray-800/30 to-gray-900/30 border border-gray-600/20 hover:border-[#48D3A3]/40 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-[#48D3A3]/10 backdrop-blur-sm">
+                  <div className="relative overflow-hidden bg-white p-6">
                     <img 
                       src={item.imageUrl} 
                       alt={`${item.title} supplements at OneRepMaax Gym`} 
-                      className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" 
+                      className="w-full h-80 object-contain transition-transform duration-700 group-hover:scale-105" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-6">
                       <h3 className="text-3xl font-One text-white group-hover:text-[#48D3A3] transition-colors duration-300 drop-shadow-lg">
                         {item.title}

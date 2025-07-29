@@ -193,6 +193,14 @@ export const IMAGES = {
   sv2: "/allPhotos/sv2.webp",
 };
 
+// Adding new images for Maaxed section
+export const MAAXED_IMAGES = {
+  IMG_20250728_WA0005: "/allPhotos/IMG-20250728-WA0005.webp",
+  IMG_20250728_WA0006: "/allPhotos/IMG-20250728-WA0006.webp",
+  IMG_20250728_WA0007: "/allPhotos/IMG-20250728-WA0007.webp",
+  IMG_20250728_WA0008: "/allPhotos/IMG-20250728-WA0008.webp",
+};
+
 // Helper function to get random images from a category
 export const getRandomImages = (category, count = 3) => {
   const images = IMAGES_BY_CATEGORY[category] || [];

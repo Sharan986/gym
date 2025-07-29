@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </div>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-DM text-gray-300 font-semibold max-w-2xl mx-auto leading-relaxed">
-            Transform your fitness journey at Jamshedpur's premier gym. Professional training, modern equipment, and a supportive community since 2025.
+            Transform your fitness journey at Dimna,Jamshedpur's premier gym. Professional training, modern equipment, and a supportive community since 2025.
           </p>
         </div>
 
@@ -139,8 +139,8 @@ const Footer = () => {
                       />
                     </div>
                     <span>
-                      One Rep Maax Gym, Dimna Rd, Shankoshai, 
-                      Mango, 
+                      One Rep Maax Gym, Shankoshai Rd 4, 
+                      Dimna, Mango, 
                       Jamshedpur, 
                       Jharkhand 
                       831018

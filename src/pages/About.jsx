@@ -187,7 +187,7 @@ const About = () => {
                 <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">K11 Certified</span>
                 <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">REPS India Member</span>
                 <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">Certified Nutritionist</span>
-                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">10+ Years Experience</span>
+                <span className="px-2 sm:px-3 py-1 bg-gradient-to-r from-[#48D3A3]/20 to-[#3BC493]/20 text-[#48D3A3] ll text-xs sm:text-sm font-DM border border-[#48D3A3]/30" role="listitem">6+ Years Experience</span>
               </div>
             </footer>
           </div>
