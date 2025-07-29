@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import { interARMS } from '../assets/assets';
 import { advARMS } from '../assets/assets';
+import { advSHOULDERS } from '../assets/assets';
 
 const ArmsAdvanced = () => {
   const exercises = [
@@ -63,7 +63,7 @@ const ArmsAdvanced = () => {
       id: 3,
       name: "Tricep Rope Pushdown",
       muscles: ["Triceps (All Heads)", "Anconeus"],
-      video: interARMS.rope,
+      video: advSHOULDERS.ropepushdown,
       instructions: [
         "Attach a rope to a high pulley cable machine.",
         "Stand with a slight forward lean, elbows pinned to your sides.",
@@ -143,11 +143,11 @@ const ArmsAdvanced = () => {
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
       video: advARMS.reversecurls,
       instructions: [
-        "Stand holding an EZ bar with an overhand grip (palms down).",
-        "Keep your elbows pinned to your sides.",
-        "Curl the bar up while maintaining your grip position.",
-        "Squeeze your forearms at the top position.",
-        "Lower slowly with control."
+        "Stand upright holding a dumbbell in each hand with arms fully extended.",
+        "Grip dumbbells with an overhand (palms down) grip.",
+        "Keep elbows pinned to your sides and wrists straight.",
+        "Curl dumbbells up toward shoulders, focusing on forearms and brachialis.",
+        "Squeeze at the top, then lower slowly with control to starting position."
       ],
       benefits: [
         "Develops forearm and brachialis muscles.",

@@ -13,11 +13,12 @@ const ArmsIntermediate = () => {
       muscles: ["Triceps (Long Head)", "Anconeus"],
       video: begARMS.cableoverhead,
       instructions: [
-        "Sit on bench with back support, hold EZ bar with narrow overhand grip",
-        "Press weight overhead until arms are fully extended",
-        "Keeping elbows close to ears, lower bar behind head",
-        "Pause when forearms reach parallel to floor",
-        "Extend arms back to starting position"
+        "Attach rope to high pulley cable machine",
+        "Stand upright, grip rope handles with palms facing each other",
+        "Step forward slightly, lean forward, and start with elbows bent, rope behind head, elbows pointing up and close to ears",
+        "Extend arms to press rope overhead until fully straight",
+        "Lower rope behind head with control, feeling stretch in triceps",
+        "Pause, then press rope overhead to starting position"
       ],
       benefits: [
         "Targets the often underdeveloped long head of triceps",
@@ -117,12 +118,11 @@ const ArmsIntermediate = () => {
       muscles: ["Brachioradialis", "Brachialis", "Forearms"],
       video: interARMS.reversecurl,
       instructions: [
-        "Attach straight bar to low pulley cable machine",
-        "Grip bar with overhand grip (palms down)",
-        "Keep elbows pinned to sides",
-        "Curl bar up to shoulder height",
-        "Squeeze forearms at top position",
-        "Lower slowly with control"
+        "Stand upright holding a dumbbell in each hand with arms fully extended",
+        "Grip dumbbells with overhand (palms down) grip",
+        "Keep elbows pinned to sides and wrists straight",
+        "Curl dumbbells up toward shoulders, focusing on forearms and brachialis",
+        "Squeeze at the top, then lower slowly with control to starting position"
       ],
       benefits: [
         "Develops forearm and brachialis muscles",
