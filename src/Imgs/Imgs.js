@@ -37,6 +37,7 @@ import DSC06233 from './DSC06233.webp';
 import DSC06236 from './DSC06236.webp';
 import DSC06244_1 from './DSC06244.webp';
 import DSC06244 from './DSC06244.webp';
+import DSC06120R from './DSC06120R.webp'; // Assuming this is a different version of DSC06120
 
 // Export individual images
 export {
@@ -77,7 +78,8 @@ export {
   DSC06233,
   DSC06236,
   DSC06244_1,
-  DSC06244
+  DSC06244,
+  DSC06120R
 };
 
 // Export as an object for easy access

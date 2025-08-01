@@ -42,6 +42,10 @@ import cc1 from './cc1.webp';
 import cc2 from './cc2.webp';
 import BOSS2 from './BOSS2.webp'; // Importing the specific image for the Boss
 import oow from './oow.webp'; // Importing the specific image for other uses
+import Co1 from './Co1.webp';
+import Co2 from './Co2.webp';
+import Co3 from './Co3.webp';
+import Co4 from './Co4.webp';
 
 // FT Collection object for easy access
 export const FTCollection = {
@@ -85,6 +89,11 @@ export const FTCollection = {
     cc2,
     oow,
   BOSS2, // Adding the Boss image to the collection
+  Co1,
+  Co2,
+  Co3,
+  Co4,
+
     
 };
 
