@@ -40,22 +40,39 @@ const PreWorkout = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
+      <div className="relative">
         <img
           src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
           alt="Pre-Workout Supplements - OneRepMaax Gym"
-          className="w-full h-72 lg:h-[70vh] object-cover object-center opacity-80"
+          className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/50 to-transparent"></div>
-        <div className="absolute bottom-8 left-8 text-white z-10">
-          <h1 className="text-5xl font-One lg:text-7xl bg-gradient-to-r from-[#48D3A3] to-[#3BC493] bg-clip-text text-transparent mb-4">
-            PRE-WORKOUT
-          </h1>
-          <nav className="font-One text-lg lg:text-2xl flex items-center gap-2">
-            <Link to="/Supplement" className="hover:text-[#48D3A3] transition-colors duration-300">SUPPLEMENTS</Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-[#FCDE3B]">PRE-WORKOUT</span>
-          </nav>
+        
+        {/* Clean overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/60"></div>
+        
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-6 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-4xl">
+            <div className="inline-block px-4 py-2 bg-[#48D3A3]/20 backdrop-blur-sm border border-[#48D3A3]/30 text-[#48D3A3] text-sm sm:text-base font-M uppercase tracking-wider mb-4">
+              Supplements • Pre-Workout
+            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-One text-white leading-tight mb-4">
+              PRE-WORKOUT
+            </h1>
+            <div className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-One mb-6">
+              <Link 
+                to='/Supplement' 
+                className="text-white hover:text-[#48D3A3] transition-colors duration-300"
+              >
+                SUPPLEMENTS
+              </Link>
+              <span className="text-gray-400">/</span>
+              <span className="text-[#48D3A3]">PRE-WORKOUT</span>
+            </div>
+            <p className="text-lg sm:text-xl text-gray-200 font-M max-w-3xl leading-relaxed">
+              Energy-boosting supplements for enhanced workout performance
+            </p>
+          </div>
         </div>
       </div>
 
@@ -123,7 +140,7 @@ const PreWorkout = () => {
                 </div>
 
                 {/* Subtle hover glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-[#3BC493]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#48D3A3]/5 to-[#3BC493]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none"></div>
               </div>
             ))}
           </div>
