@@ -36,7 +36,7 @@ const PeanutButter = () => {
       {/* Hero Section */}
       <div className="relative">
         <img
-          src="https://framerusercontent.com/images/hG4I9ff8qPfIXCVjk5Ld1TthJUs.png?scale-down-to=2048"
+          src="/src/Imgs/DSC06120R.webp"
           alt="Natural Peanut Butter - OneRepMaax Gym"
           className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] object-cover object-center"
         />

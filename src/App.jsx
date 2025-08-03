@@ -1,5 +1,6 @@
 
 import Navbar from './components/Navbar'
+import Nav from './components/Nav'
 import Num from './Sections/Num'
 import Header from './Sections/Header'
 import Services from './pages/Services'
@@ -57,6 +58,8 @@ const App = () => {
    <>
    <HelmetProvider>
    <div className="bg-[#070915] overflow-hidden">
+    <Nav />
+    <div className="pt-20 sm:pt-22 lg:pt-24">
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Header />} />
@@ -109,6 +112,7 @@ const App = () => {
       
       
     </Routes>
+    </div>
 
     
    </div>

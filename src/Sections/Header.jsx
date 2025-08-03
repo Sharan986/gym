@@ -10,7 +10,6 @@ import Join from "../components/Join";
 import Testimonials from "../pages/Testimonials";
 import Num from "./Num";
 import Footer from "../components/Footer";
-import Nav from "../components/Nav";
 import Icon from "../components/Icon";
 import { Helmet } from "react-helmet-async"; 
 
@@ -73,29 +72,28 @@ const Header = () => {
         </script>
       </Helmet>
   
-      <Nav />
       <main className="relative overflow-hidden bg-black">
         <img
           src="/allPhotos/Header.webp"
           alt="OneRepMaax Gym (One Rep Maax) - Premium fitness center in Mango, Dimna, Jamshedpur with K11 certified trainers, modern equipment, 5000+ sq ft area"
-          fetchPriority="high"
+          fetchpriority="high"
           className=" h-[140vw] md:pt-38 md:h-[75vw] md:w-full lg:h-screen scale-100 lg:w-screen w-fit object-cover object-center"
         />
              
       
 
-        <section className="absolute top-0 left-0  h-20 w-24 sm:w-full mx-6  font-One uppercase  ">
-          <div className="text-white w-screen text-xl  mt-6 md:mt-6">
-            <div className="flex justify-center items-center gap-2 ">
+        <section className="absolute top-0 left-0 h-20 w-24 sm:w-full mx-6 lg:mx-0 lg:px-8 xl:px-12 font-One uppercase">
+          <div className="text-white w-screen text-xl mt-6 md:mt-6 lg:pl-4 xl:pl-8">
+            <div className="flex justify-center lg:justify-start items-center gap-2">
               <Icon className="" />
-              <header className="text-xl  w-screen text-[#48D3A3] pl ">OneRepMaax Gym</header>
+              <header className="text-xl w-screen lg:w-auto text-[#48D3A3] pl">OneRepMaax Gym</header>
             </div>
            
-            <h1 className=" text-4xl  w-80 md:w-160 md:text-[64px] lg:text-[80px] lg:w-full">
+            <h1 className="text-4xl w-80 md:w-160 md:text-[64px] lg:text-[80px] lg:w-full">
               Transform. Perform. <br /> Dominate.
             </h1>
           </div>
-          <div className="mt-50 lg:mt-100 md:mt-70 sm:flex sm:items-center font-One  sm:gap-7   ">
+          <div className="mt-50 lg:mt-100 md:mt-70 sm:flex sm:items-center lg:justify-start font-One sm:gap-7 lg:pl-4 xl:pl-8">
             <Link to="JoinUs" aria-label="Join OneRepMaax Gym today - Best gym in Mango, Dimna, Jamshedpur with K11 certified trainers">
               <Button text="JOIN US TODAY" className="text-2xl mb-4 sm:mb-0 md:text-3xl" />
             </Link>
