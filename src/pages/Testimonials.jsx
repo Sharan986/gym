@@ -11,7 +11,7 @@ const Testimonials = () => {
   return (
     <>
     <Helmet>
-      <title>Member Testimonials - OneRepMaax Gym Jamshedpur | Success Stories</title>
+      <title>OneRepMaax Gym Jamshedpur | Success Stories</title>
       <meta name="description" content="Read success stories and testimonials from OneRepMaax Gym Jamshedpur members. Real transformations with K11 certified trainers and proven fitness programs." />
       <link rel="canonical" href="https://onerepmaax.com/testimonials" />
       

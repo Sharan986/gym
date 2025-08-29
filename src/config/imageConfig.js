@@ -47,6 +47,8 @@ export const TRAINER = [
   "/allPhotos/co-founder.webp",
   "/allPhotos/FIVE.webp",
   "/allPhotos/SIX.webp",
+  "/allPhotos/trainer_asif.webp",
+  "/allPhotos/trainer_nishu.webp",
  
 ];
 // Gallery/Exercise Images
@@ -155,7 +157,7 @@ export const IMAGES = {
   souravKumar: "/allPhotos/SouravKumar.webp",
   gurnakeSingh: "/allPhotos/GurnakeSingh.webp",
   gurnakeSingh2: "/allPhotos/GurnakeSingh_96x128.webp",
-  
+  mani: "/allPhotos/mani.webp",
   // Gallery/Exercise
   e1: "/allPhotos/e1.webp",
   e2: "/allPhotos/e2.webp",

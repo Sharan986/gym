@@ -18,6 +18,7 @@ import JoinUs from './pages/JoinUs'
 import ServicesDetail from './pages/ServicesDetail'
 import TrainersPage from './pages/TrainersPage'
 import WorkoutGuide from './Exercises/WorkoutGuide'
+import EventPopup from './components/EventPopup'
 import Beginner from './Exercises/Beginner'
 import Intermediate from './Exercises/Intermediate'
 import Advance from './Exercises/Advance'
@@ -61,6 +62,7 @@ const App = () => {
     <Nav />
     <div className="pt-20 sm:pt-22 lg:pt-24">
     <ScrollToTop />
+    <EventPopup />
     <Routes>
       <Route path="/" element={<Header />} />
       <Route path="/about" element={<About />} />

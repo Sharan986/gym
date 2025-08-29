@@ -93,17 +93,17 @@ const Trainers = () => {
       title: "K11 CERTIFIED TRAINER",
       description: "K11 certified fitness professional focused on strength training and muscle building programs with proven methodologies",
       specializations: ["Strength Training", "Muscle Building", "Powerlifting", "Athletic Training"],
-      experience: "2+ years",
+      experience: "4+ years",
       certifications: ["K11 Certified", "Strength & Conditioning"]
     },
     {
       id: 3,
-      img: TRAINER[0],
-      name: "RAJ KUMAR",
-      title: "GOLD'S GYM CERTIFIED TRAINER",
-      description: "Gold's Gym certified professional trainer specializing in cardio workouts and endurance training programs",
-      specializations: ["Cardio Training", "Endurance", "HIIT", "Circuit Training"],
-      experience: "3+ years",
+      img: TRAINER[6],
+      name: "Md asif anwar",
+      title: "TRAINER",
+        description: "Professional trainer specializing in Arm Wrestling workouts and strength training programs",
+      specializations: ["Arm Wrestling", "Endurance", "Strength", "Circuit Training"],
+      experience: "1+ years",
       certifications: ["Gold's Gym Certified", "Cardio Specialist"]
     },
  
@@ -114,13 +114,13 @@ const Trainers = () => {
       title: "TRAINER",
       description: "Dedicated trainer with expertise in rehabilitation and injury prevention",
       specializations: ["Rehabilitation", "Injury Prevention", "Corrective Exercise", "Mobility Training"],
-      experience: "4+ years",
+      experience: "2+ years",
       certifications: ["Certified Fitness Trainer", "Corrective Exercise Specialist"]
     },
     {
       id: 6,
-      img: TRAINER[5],
-      name: "ZAIN IBRAHIM",
+      img: TRAINER[7],
+      name: "NISHU KUMARI",
       title: "TRAINER",
       description: "Dynamic and passionate trainer specializing in youth fitness and sports conditioning with dedicated approach",
       specializations: ["Youth Fitness", "Sports Conditioning", "Agility Training", "Flexibility"],
