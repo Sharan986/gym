@@ -76,36 +76,11 @@ const EventPopup = () => {
         WebkitBackdropFilter: 'blur(8px)',
       }}
     >
-      {/* Close Button - Positioned completely outside and above the card */}
-      <button
-        onClick={handleClose}
-        className="absolute -top-8 -right-2 sm:-top-10 sm:-right-4 z-30 bg-white/95 backdrop-blur-md text-[#070915] rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center hover:bg-[#48D3A3] hover:text-white transition-all duration-200 text-sm sm:text-xl md:text-2xl font-bold border-2 border-[#48D3A3] font-One shadow-lg"
-        aria-label="Close popup"
-        style={{
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
-        }}
-      >
-        ✕
-      </button>
-
-      <div 
-        className={`relative bg-[#070915]/95 backdrop-blur-xl border border-[#48D3A3]/30 rounded-2xl shadow-2xl w-auto max-w-[95vw] sm:max-w-[85vw] md:max-w-[75vw] lg:max-w-[60vw] max-h-[95vh] overflow-hidden transform transition-all duration-500 ${
-          isClosing ? 'scale-95 opacity-0' : 'scale-100 opacity-100'
-        }`}
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)',
-          background: 'rgba(7, 9, 21, 0.95)',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(72, 211, 163, 0.3), inset 0 1px 0 rgba(72, 211, 163, 0.1)',
-        }}
-      >
-        {/* Close Button - Top right above the card */}
+      <div className="relative">
+        {/* Close Button - Positioned outside and above the card */}
         <button
           onClick={handleClose}
-          className="absolute -top-4 -right-2 sm:-top-6 sm:-right-4 z-30 bg-white/95 backdrop-blur-md text-[#070915] rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center hover:bg-[#48D3A3] hover:text-white transition-all duration-200 text-sm sm:text-xl md:text-2xl font-bold border-2 border-[#48D3A3] font-One shadow-lg"
+          className="absolute -top-4 -right-4 sm:-top-8 sm:-right-4 z-40 bg-white/95 backdrop-blur-md text-[#070915] rounded-full w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center hover:bg-[#48D3A3] hover:text-white transition-all duration-200 text-sm sm:text-xl md:text-2xl font-bold border-2 border-[#48D3A3] font-One shadow-lg"
           aria-label="Close popup"
           style={{
             backdropFilter: 'blur(10px)',
@@ -115,6 +90,19 @@ const EventPopup = () => {
         >
           ✕
         </button>
+
+        <div 
+          className={`relative bg-[#070915]/95 backdrop-blur-xl border border-[#48D3A3]/30 rounded-2xl shadow-2xl w-auto max-w-[95vw] sm:max-w-[85vw] md:max-w-[75vw] lg:max-w-[60vw] max-h-[95vh] overflow-hidden transform transition-all duration-500 ${
+            isClosing ? 'scale-95 opacity-0' : 'scale-100 opacity-100'
+          }`}
+          onClick={(e) => e.stopPropagation()}
+          style={{
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            background: 'rgba(7, 9, 21, 0.95)',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(72, 211, 163, 0.3), inset 0 1px 0 rgba(72, 211, 163, 0.1)',
+          }}
+        >
         {/* Event Image */}
         <div className="relative">
           <img
@@ -177,6 +165,7 @@ const EventPopup = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
